@@ -24,6 +24,21 @@ import { i18nPlugin } from './plugins/i18n.plugin';
 
 import store from './tools/pomodoro-timer/app/store';
 
+import { init } from '@plausible-analytics/tracker'
+
+// disable if localstorage, disablePlausible is set to true
+if (!localStorage.getItem('disablePlausible')) {
+  init({
+    domain: 'ou0.cc',
+    endpoint: 'https://plausible.canine.tools/api/event',
+    captureOnLocalhost: false,
+    outboundLinks: true
+  })
+} else {
+  console.log('Plausible statistics disabled')
+}
+
+
 window.addEventListener('vite:preloadError', (event: Event) => {
   console.error('Vite preload error, forcing page reload:', event);
   event.preventDefault(); // Prevent the original error from being thrown again
