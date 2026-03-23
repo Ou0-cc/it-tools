@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head';
+import { onMounted } from 'vue';
 
 useHead({ title: 'Page not found - IT Tools' });
+
+onMounted(() => {
+  import('@plausible-analytics/tracker').then(({ track }) => {
+    track('404', { props: { path: window.location.pathname } });
+  }).catch(() => {});
+});
 </script>
 
 <template>
