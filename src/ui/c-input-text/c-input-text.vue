@@ -136,26 +136,6 @@ function checkOverflow(el: HTMLElement) {
   return isOverflowing;
 }
 
-function getMaxHeight(textarea: HTMLTextAreaElement) {
-  const maxRowsValue = Number(maxRows.value);
-  if (!Number.isFinite(maxRowsValue) || maxRowsValue <= 0) {
-    return null;
-  }
-
-  const computedStyle = window.getComputedStyle(textarea);
-  const lineHeight = Number.parseFloat(computedStyle.lineHeight);
-  const paddingTop = Number.parseFloat(computedStyle.paddingTop);
-  const paddingBottom = Number.parseFloat(computedStyle.paddingBottom);
-  const borderTop = Number.parseFloat(computedStyle.borderTopWidth);
-  const borderBottom = Number.parseFloat(computedStyle.borderBottomWidth);
-
-  if (!Number.isFinite(lineHeight)) {
-    return null;
-  }
-
-  return (lineHeight * maxRowsValue) + paddingTop + paddingBottom + borderTop + borderBottom;
-}
-
 function resizeTextarea() {
   if (textareaRef.value === undefined) {
     return; // cannot chnge textarea if element is not available
@@ -165,32 +145,13 @@ function resizeTextarea() {
     return; // textarea wont be displayed if multiline === false
   }
 
-  const textAreaElement = textareaRef.value!;
-  const maxHeight = getMaxHeight(textAreaElement);
-
-  if (maxHeight !== null) {
-    textAreaElement.style.maxHeight = `${maxHeight}px`;
-  }
-  else {
-    textAreaElement.style.maxHeight = '';
-    textAreaElement.style.overflowY = '';
-  }
-
-  if (!checkOverflow(textAreaElement)) {
-    if (maxHeight !== null) {
-      textAreaElement.style.overflowY = 'hidden';
-    }
+  if (!checkOverflow(textareaRef.value)) {
     return;
   }
+
+  const textAreaElement = textareaRef.value!;
 
   const scrollHeight = textAreaElement.scrollHeight + 2;
-  if (maxHeight !== null) {
-    const cappedHeight = Math.min(scrollHeight, maxHeight);
-    textAreaElement.style.height = `${cappedHeight}px`;
-    textAreaElement.style.overflowY = scrollHeight > maxHeight ? 'auto' : 'hidden';
-    return;
-  }
-
   textAreaElement.style.height = `${scrollHeight}px`;
 }
 
