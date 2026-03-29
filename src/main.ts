@@ -24,15 +24,6 @@ import { i18nPlugin } from './plugins/i18n.plugin';
 
 import store from './tools/pomodoro-timer/app/store';
 
-import { init } from '@plausible-analytics/tracker'
-
-init({
-  domain: 'ou0.cc',
-  endpoint: 'https://plausible.canine.tools/api/event',
-  captureOnLocalhost: false,
-  outboundLinks: true
-})
-
 
 window.addEventListener('vite:preloadError', (event: Event) => {
   console.error('Vite preload error, forcing page reload:', event);
