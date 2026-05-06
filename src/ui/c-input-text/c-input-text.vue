@@ -28,9 +28,11 @@ const props = withDefaults(
     type?: 'text' | 'password'
     multiline?: boolean
     rows?: number | string
+    maxRows?: number | string
     autosize?: boolean
     autofocus?: boolean
     monospace?: boolean
+    pasteHtml?: boolean
   }>(),
   {
     value: '',
@@ -55,16 +57,19 @@ const props = withDefaults(
     type: 'text',
     multiline: false,
     rows: 3,
+    maxRows: undefined,
     autosize: false,
     autofocus: false,
     monospace: false,
+    pasteHtml: false,
   },
 );
+
 const emit = defineEmits(['update:value']);
 const value = useVModel(props, 'value', emit);
 const showPassword = ref(false);
 
-const { id, placeholder, label, validationRules, labelPosition, labelWidth, labelAlign, autosize, readonly, disabled, clearable, type, multiline, rows, rawText, autofocus, monospace } = toRefs(props);
+const { id, placeholder, label, validationRules, labelPosition, labelWidth, labelAlign, autosize, readonly, disabled, clearable, type, multiline, rows, maxRows, rawText, autofocus, monospace, pasteHtml } = toRefs(props);
 
 const validation
   = props.validation
@@ -81,8 +86,30 @@ const textareaRef = ref<HTMLTextAreaElement>();
 const inputRef = ref<HTMLInputElement>();
 const inputWrapperRef = ref<HTMLElement>();
 
+interface HTMLElementWithValue {
+  value?: string
+}
+
+function onPasteInputHtml(evt: ClipboardEvent) {
+  if (!pasteHtml.value) {
+    return false;
+  }
+
+  const target = (evt.target as HTMLElementWithValue);
+  if (!target) {
+    return false;
+  }
+  const textHtmlData = evt.clipboardData?.getData('text/html');
+  if (textHtmlData && textHtmlData !== '') {
+    evt.preventDefault();
+    value.value = textHtmlData;
+    return true;
+  }
+  return false;
+}
+
 watch(
-  [value, autosize, multiline, inputWrapperRef, textareaRef],
+  [value, autosize, multiline, maxRows, inputWrapperRef, textareaRef],
   () => nextTick(() => {
     if (props.multiline && autosize.value) {
       resizeTextarea();
@@ -164,6 +191,8 @@ onMounted(() => {
 
 defineExpose({
   inputWrapperRef,
+  textareaRef,
+  inputRef,
   focus,
   blur,
 });
@@ -198,6 +227,7 @@ defineExpose({
           :autocorrect="autocorrect ?? (rawText ? 'off' : undefined)"
           :spellcheck="spellcheck ?? (rawText ? false : undefined)"
           :rows="rows"
+          @paste="onPasteInputHtml"
         />
 
         <input
@@ -219,6 +249,7 @@ defineExpose({
           :autocomplete="autocomplete ?? (rawText ? 'off' : undefined)"
           :autocorrect="autocorrect ?? (rawText ? 'off' : undefined)"
           :spellcheck="spellcheck ?? (rawText ? false : undefined)"
+          @paste="onPasteInputHtml"
         >
 
         <c-button v-if="clearable && value" variant="text" circle size="small" @click="value = ''">
@@ -276,6 +307,7 @@ defineExpose({
     flex: 1 1 0;
     min-width: 0;
   }
+
   .input-wrapper {
     display: flex;
     flex-direction: row;
@@ -299,8 +331,27 @@ defineExpose({
         overflow-wrap: break-word;
         border: none;
         outline: none;
-        font-family: inherit;
+        /* This font family structure will let the text use one of the fonts that are available on the system.
+        When an emoji is used, it will fall back to the first font that has proper support for it. ('Noto Color Emoji' and below).
+        Thus this structure will make sure that text and emojis are rendered correctly without interfering with each other.
+        */
+        font-family:
+          system-ui, /* System default */
+          -apple-system, /* Apple system font */
+          'Segoe UI', /* Windows */
+          'Roboto', /* Android */
+          'Helvetica Neue', /* macOS fallback */
+          Arial, /* Universal fallback */
+          'Noto Color Emoji', /* Best flag and complex emoji support */
+          'Apple Color Emoji', /* Apple devices emoji */
+          'Segoe UI Emoji', /* Windows emoji */
+          'Twemoji Mozilla', /* Firefox emoji fallback */
+          'EmojiOne Color', /* Additional emoji fallback */
+          sans-serif;
         font-size: inherit;
+        font-feature-settings: 'liga' off;
+        text-rendering: optimizeQuality;
+        line-height: 1.2;
         color: v-bind('appTheme.text.baseColor');
 
         &::placeholder {
@@ -321,6 +372,26 @@ defineExpose({
       -moz-box-shadow: none;
       box-shadow: none;
       border: none;
+      /* This font family structure will let the text use one of the fonts that are available on the system.
+      When an emoji is used, it will fall back to the first font that has proper support for it. ('Noto Color Emoji' and below).
+      Thus this structure will make sure that text and emojis are rendered correctly without interfering with each other.
+      */
+      font-family:
+        system-ui, /* System default */
+        -apple-system, /* Apple system font */
+        'Segoe UI', /* Windows */
+        'Roboto', /* Android */
+        'Helvetica Neue', /* macOS fallback */
+        Arial, /* Universal fallback */
+        'Noto Color Emoji', /* Best flag and complex emoji support */
+        'Apple Color Emoji', /* Apple devices emoji */
+        'Segoe UI Emoji', /* Windows emoji */
+        'Twemoji Mozilla', /* Firefox emoji fallback */
+        'EmojiOne Color', /* Additional emoji fallback */
+        sans-serif;
+      font-feature-settings: 'liga' off;
+      text-rendering: optimizeQuality;
+      line-height: 1.2;
       color: v-bind('appTheme.text.baseColor');
 
       &::placeholder {

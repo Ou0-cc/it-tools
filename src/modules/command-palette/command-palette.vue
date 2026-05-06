@@ -124,8 +124,8 @@ function activateOption(option: PaletteOption) {
       </span>
     </c-button>
 
-    <c-modal v-model:open="isModalOpen" class="palette-modal" shadow-xl important:max-w-650px important:pa-12px @keydown="handleKeydown">
-      <c-input-text ref="inputRef" v-model:value="searchPrompt" raw-text placeholder="Type to search a tool or a command..." autofocus clearable />
+    <c-modal v-model:open="isModalOpen" class="palette-modal" overflow-y-auto shadow-xl important:max-w-650px pretty-scrollbar important:pa-12px @keydown="handleKeydown">
+      <c-input-text ref="inputRef" v-model:value="searchPrompt" raw-text :placeholder="$t('search.placeholder')" autofocus clearable />
 
       <div v-for="(options, category) in filteredSearchResult" :key="category">
         <div ml-3 mt-3 text-sm font-bold text-primary op-60>
@@ -145,6 +145,10 @@ function activateOption(option: PaletteOption) {
       padding: 4px;
       padding-left: 18px;
   }
+}
+
+::v-deep(.palette-modal) {
+  max-height: 80vh;
 }
 
 .c-modal--overlay {

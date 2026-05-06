@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import { SHA1 } from 'crypto-js';
 import InputCopyable from '@/components/InputCopyable.vue';
 import { macAddressValidation } from '@/utils/macAddress';
+import { useQueryParam } from '@/composable/queryParams';
 
-const macAddress = ref('20:37:06:12:34:56');
+const { t } = useI18n();
+
+const macAddress = useQueryParam({ tool: 'ipv6-ula-gen', name: 'mac', defaultValue: '20:37:06:12:34:56' });
 const calculatedSections = computed(() => {
   const timestamp = new Date().getTime();
   const hex40bit = SHA1(timestamp + macAddress.value)
@@ -14,15 +18,15 @@ const calculatedSections = computed(() => {
 
   return [
     {
-      label: 'IPv6 ULA:',
+      label: t('tools.ipv6-ula-generator.texts.label-ipv6-ula'),
       value: `${ula}::/48`,
     },
     {
-      label: 'First routable block:',
+      label: t('tools.ipv6-ula-generator.texts.label-first-routable-block'),
       value: `${ula}:0::/64`,
     },
     {
-      label: 'Last routable block:',
+      label: t('tools.ipv6-ula-generator.texts.label-last-routable-block'),
       value: `${ula}:ffff::/64`,
     },
   ];
@@ -33,16 +37,16 @@ const addressValidation = macAddressValidation(macAddress);
 
 <template>
   <div>
-    <n-alert title="Info" type="info">
+    <n-alert :title="t('tools.ipv6-ula-generator.texts.title-info')" type="info">
       This tool uses the first method suggested by IETF using the current timestamp plus the mac address, sha1 hashed,
       and the lower 40 bits to generate your random ULA.
     </n-alert>
 
     <c-input-text
       v-model:value="macAddress"
-      placeholder="Type a MAC address"
+      :placeholder="t('tools.ipv6-ula-generator.texts.placeholder-type-a-mac-address')"
       clearable
-      label="MAC address:"
+      :label="t('tools.ipv6-ula-generator.texts.label-mac-address')"
       raw-text
       my-8
       :validation="addressValidation"

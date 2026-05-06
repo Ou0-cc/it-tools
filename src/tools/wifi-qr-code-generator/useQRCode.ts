@@ -2,7 +2,7 @@ import { type MaybeRef, get } from '@vueuse/core';
 import QRCode, { type QRCodeToDataURLOptions } from 'qrcode';
 import { isRef, ref, watch } from 'vue';
 
-export const wifiEncryptions = ['WEP', 'WPA', 'nopass', 'WPA2-EAP'] as const;
+export const wifiEncryptions = ['WEP', 'WPA', 'WPA3', 'WPA2/WPA3', 'nopass', 'WPA2-EAP'] as const;
 export type WifiEncryption = typeof wifiEncryptions[number];
 
 // @see https://en.wikipedia.org/wiki/Extensible_Authentication_Protocol
@@ -70,6 +70,12 @@ function getQrCodeText(options: GetQrCodeTextOptions): string | null {
   if (encryption === 'nopass') {
     return `WIFI:S:${escapeString(ssid)};;`; // type can be omitted in that case, and password is not needed, makes the QR Code smaller
   }
+  if (encryption === 'WPA3' && password) {
+    return `WIFI:S:${escapeString(ssid)};T:WPA3;P:${escapeString(password)};${isHiddenSSID ? 'H:true;' : ''}R:1;;`;
+  }
+  if (encryption === 'WPA2/WPA3' && password) {
+    return `WIFI:S:${escapeString(ssid)};T:WPA3;P:${escapeString(password)};${isHiddenSSID ? 'H:true;' : ''};`;
+  }
   if (encryption !== 'WPA2-EAP' && password) {
     // EAP has a lot of options, so we'll handle it separately
     // WPA and WEP are pretty simple though.
@@ -110,6 +116,7 @@ export function useWifiQRCode({
   color: { background, foreground },
   options,
 }: IWifiQRCodeOptions) {
+  const text = ref('');
   const qrcode = ref('');
   const encryption = ref<WifiEncryption>('WPA');
 
@@ -118,7 +125,7 @@ export function useWifiQRCode({
     async () => {
       // @see https://github.com/zxing/zxing/wiki/Barcode-Contents#wi-fi-network-config-android-ios-11
       // This is the full spec, there's quite a bit of logic to generate the string embeddedin the QR code.
-      const text = getQrCodeText({
+      const qrText = getQrCodeText({
         ssid: get(ssid),
         password: get(password),
         encryption: get(encryption),
@@ -128,8 +135,8 @@ export function useWifiQRCode({
         eapIdentity: get(eapIdentity),
         eapPhase2Method: get(eapPhase2Method),
       });
-      if (text) {
-        qrcode.value = await QRCode.toDataURL(get(text).trim(), {
+      if (qrText) {
+        qrcode.value = await QRCode.toDataURL(get(qrText).trim(), {
           color: {
             dark: get(foreground),
             light: get(background),
@@ -138,9 +145,10 @@ export function useWifiQRCode({
           errorCorrectionLevel: 'M',
           ...options,
         });
+        text.value = qrText;
       }
     },
     { immediate: true },
   );
-  return { qrcode, encryption };
+  return { qrcode, text, encryption };
 }

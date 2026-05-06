@@ -1,11 +1,11 @@
 import { DeviceMobile } from '@vicons/tabler';
 import { defineTool } from '../tool';
-import { translate } from '@/plugins/i18n.plugin';
+import { translate as t } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.otp-generator.title'),
+  name: t('tools.otp-generator.title'),
   path: '/otp-generator',
-  description: translate('tools.otp-generator.description'),
+  description: t('tools.otp-generator.description'),
   keywords: [
     'otp',
     'code',
@@ -25,4 +25,6 @@ export const tool = defineTool({
   ],
   component: () => import('./otp-code-generator-and-validator.vue'),
   icon: DeviceMobile,
+  npmPackages: ['crypto-js'],
+  category: 'Generators',
 });

@@ -13,7 +13,8 @@ monaco.editor.defineTheme('it-tools-dark', {
   inherit: true,
   rules: [],
   colors: {
-    'editor.background': '#00000000',
+    'editor.background': '#232323',
+    'editorStickyScroll.background': '#232323',
   },
 });
 
@@ -22,7 +23,8 @@ monaco.editor.defineTheme('it-tools-light', {
   inherit: true,
   rules: [],
   colors: {
-    'editor.background': '#00000000',
+    'editor.background': '#edeff5',
+    'editorStickyScroll.background': '#edeff5',
   },
 });
 
@@ -64,5 +66,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="editorContainer" h-600px />
+  <div ref="editorContainer" h-80vh />
 </template>

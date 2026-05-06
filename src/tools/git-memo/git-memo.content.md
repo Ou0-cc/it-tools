@@ -15,6 +15,12 @@ Create a git repository
 git init
 ```
 
+Pull a git repository
+
+```shell
+git pull [url]
+```
+
 Clone an existing git repository
 
 ```shell
@@ -33,6 +39,26 @@ Add new modifications to the last commit
 
 ```shell
 git commit --amend --no-edit
+```
+
+## Branches
+
+Lists all local branches in your repository (use -a for local and remote branches)
+
+```shell
+git branch
+```
+
+Switch to an existing branch
+
+```shell
+git switch [branch name]
+```
+
+Create a new branch
+
+```shell
+git checkout -b [branch name]
 ```
 
 ## I’ve made a mistake
@@ -74,4 +100,31 @@ Renaming the local master branch to main
 
 ```shell
 git branch -m master main
+```
+
+Checking log graph
+```shell
+git log --graph
+```
+
+Checking log graph (merges only)
+
+```shell
+git log --graph --merges
+```
+
+Tracking down a bad commit using binary search
+
+```shell
+git bisect start
+git bisect good 13c988d4f15e06bcdd0b0af290086a3079cdadb0
+git bisect bad ca82a6dff817ec66f44342007202690a93763949
+```
+
+Pulling new changes into current branch from mainline
+
+```shell
+git checkout [branch-name]
+git fetch origin [master-branch-name]
+git rebase origin/[master-branch-name]
 ```

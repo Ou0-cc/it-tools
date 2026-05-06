@@ -2,7 +2,6 @@ import { defineStore } from 'pinia';
 import _ from 'lodash';
 import type { PaletteOption } from './command-palette.types';
 import { useToolStore } from '@/tools/tools.store';
-import { useFuzzySearch } from '@/composable/fuzzySearch';
 import { useStyleStore } from '@/stores/style.store';
 
 import SunIcon from '~icons/mdi/white-balance-sunny';
@@ -10,6 +9,9 @@ import GithubIcon from '~icons/mdi/github';
 import BugIcon from '~icons/mdi/bug-outline';
 import DiceIcon from '~icons/mdi/dice-5';
 import InfoIcon from '~icons/mdi/information-outline';
+import { useFlexSearch } from '@/composable/flexSearch';
+
+const maxSearchResultsPerCategory = import.meta.env.VITE_MAX_SEARCH_RESULT || 25;
 
 export const useCommandPaletteStore = defineStore('command-palette', () => {
   const toolStore = useToolStore();
@@ -48,7 +50,7 @@ export const useCommandPaletteStore = defineStore('command-palette', () => {
     },
     {
       name: 'Github repository',
-      href: 'https://github.com/CorentinTh/it-tools',
+      href: 'https://github.com/sharevb/it-tools',
       category: 'External',
       description: 'View the source code of it-tools on Github.',
       keywords: ['github', 'repo', 'repository', 'source', 'code'],
@@ -57,7 +59,7 @@ export const useCommandPaletteStore = defineStore('command-palette', () => {
     {
       name: 'Report a bug or an issue',
       description: 'Report a bug or an issue to help improve it-tools.',
-      href: 'https://github.com/CorentinTh/it-tools/issues/new/choose',
+      href: 'https://github.com/sharevb/it-tools/issues/new/choose',
       category: 'Actions',
       keywords: ['report', 'issue', 'bug', 'problem', 'error'],
       icon: BugIcon,
@@ -72,17 +74,16 @@ export const useCommandPaletteStore = defineStore('command-palette', () => {
     },
   ];
 
-  const { searchResult } = useFuzzySearch({
+  const { searchResult } = useFlexSearch({
     search: searchPrompt,
     data: searchOptions,
     options: {
       keys: [{ name: 'name', weight: 2 }, 'description', 'keywords', 'category'],
-      threshold: 0.3,
     },
   });
 
   const filteredSearchResult = computed(() =>
-    _.chain(searchResult.value).groupBy('category').mapValues(categoryOptions => _.take(categoryOptions, 5)).value());
+    _.chain(searchResult.value).groupBy('category').mapValues(categoryOptions => _.take(categoryOptions, maxSearchResultsPerCategory)).value());
 
   return {
     filteredSearchResult,

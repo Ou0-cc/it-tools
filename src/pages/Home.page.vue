@@ -1,24 +1,143 @@
 <script setup lang="ts">
 import { IconDragDrop, IconHeart } from '@tabler/icons-vue';
 import { useHead } from '@vueuse/head';
-import { computed } from 'vue';
+import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue';
 import Draggable from 'vuedraggable';
+import VueMarkdown from 'vue-markdown-render';
 import ColoredCard from '../components/ColoredCard.vue';
 import ToolCard from '../components/ToolCard.vue';
 import { useToolStore } from '@/tools/tools.store';
 import { config } from '@/config';
+import { useTheme } from '../ui/c-link/c-link.theme';
+
+const base = import.meta.env.BASE_URL ?? '/';
+const homeCustomMarkdown = computedAsync(async () => {
+  try {
+    const remoteCustomHomeMarkdownResponse = await fetch(`${base}home.custom.md`);
+    if (remoteCustomHomeMarkdownResponse.ok) {
+      return await remoteCustomHomeMarkdownResponse.text();
+    }
+  }
+  catch {}
+  return '';
+});
 
 const toolStore = useToolStore();
+const desc = 'Collection of handy online tools for developers, with great UX. IT Tools is a free and open-source collection of handy online tools for developers & people working in IT.';
+const title = 'IT Tools - Handy online tools for developers';
 
-useHead({ title: 'IT Tools - Handy online tools for developers' });
+useHead({
+  title,
+  meta: [
+    {
+      itemprop: 'name',
+      content: title,
+    },
+    {
+      property: 'og:title',
+      content: title,
+    },
+    {
+      property: 'twitter:title',
+      content: title,
+    },
+    {
+      name: 'description',
+      content: desc,
+    },
+    {
+      itemprop: 'description',
+      content: desc,
+    },
+    {
+      property: 'og:description',
+      content: desc,
+    },
+    {
+      property: 'twitter:description',
+      content: desc,
+    },
+  ],
+});
 const { t } = useI18n();
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
 
+const linkTheme = useTheme();
+
+const isOrderingFavorites = ref(false);
+
+window.addEventListener('contextmenu', (e) => {
+  if (isOrderingFavorites.value) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    return false;
+  }
+});
+
+function startOrderingFavorites() {
+  isOrderingFavorites.value = true;
+}
+
 // Update favorite tools order when drag is finished
-function onUpdateFavoriteTools() {
+function stopOrderingFavorites() {
+  isOrderingFavorites.value = false;
   toolStore.updateFavoriteTools(favoriteTools.value); // Update the store with the new order
 }
+
+// Batch loading logic for tool cards
+const TOOLS_PER_ROW = 4; // Based on xl:grid-cols-4
+const ROWS_PER_BATCH = 6;
+const TOOLS_PER_BATCH = TOOLS_PER_ROW * ROWS_PER_BATCH; // 32 tools per batch
+
+const visibleToolsCount = ref(TOOLS_PER_BATCH); // Start with first batch
+let loadingObserver: IntersectionObserver | null = null;
+
+// Computed property for visible tools
+const visibleTools = computed(() => {
+  return toolStore.tools.slice(0, visibleToolsCount.value);
+});
+
+// Function to load next batch
+function loadNextBatch() {
+  if (visibleToolsCount.value < toolStore.tools.length) {
+    visibleToolsCount.value = Math.min(
+      visibleToolsCount.value + TOOLS_PER_BATCH,
+      toolStore.tools.length,
+    );
+  }
+}
+
+// Start intersection observer on component mount
+onMounted(() => {
+  nextTick(() => {
+    // Load first batch immediately
+    loadNextBatch();
+
+    // Setup intersection observer for lazy loading
+    const loadingIndicator = document.querySelector('[data-loading-indicator]');
+    if (loadingIndicator) {
+      loadingObserver = new IntersectionObserver(
+        (entries) => {
+          if (entries[0]?.isIntersecting && visibleToolsCount.value < toolStore.tools.length) {
+            loadNextBatch();
+          }
+        },
+        { rootMargin: '200px' },
+      );
+      loadingObserver.observe(loadingIndicator);
+    }
+  });
+});
+
+// Clean up on component unmount
+onUnmounted(() => {
+  if (loadingObserver) {
+    loadingObserver.disconnect();
+    loadingObserver = null;
+  }
+});
 </script>
 
 <template>
@@ -28,18 +147,11 @@ function onUpdateFavoriteTools() {
         <ColoredCard v-if="config.showBanner" :title="$t('home.follow.title')" :icon="IconHeart">
           {{ $t('home.follow.p1') }}
           <a
-            href="https://github.com/CorentinTh/it-tools"
+            href="https://github.com/sharevb/it-tools"
             rel="noopener"
             target="_blank"
             :aria-label="$t('home.follow.githubRepository')"
           >GitHub</a>
-          {{ $t('home.follow.p2') }}
-          <a
-            href="https://x.com/ittoolsdottech"
-            rel="noopener"
-            target="_blank"
-            :aria-label="$t('home.follow.twitterXAccount')"
-          >X</a>.
           {{ $t('home.follow.thankYou') }}
           <n-icon :component="IconHeart" />
         </ColoredCard>
@@ -47,7 +159,7 @@ function onUpdateFavoriteTools() {
 
       <transition name="height">
         <div v-if="toolStore.favoriteTools.length > 0">
-          <h3 class="mb-5px mt-25px text-neutral-400 font-500">
+          <h3 class="mb-5px mt-25px font-500 text-neutral-400">
             {{ $t('home.categories.favoriteTools') }}
             <c-tooltip :tooltip="$t('home.categories.favoritesDndToolTip')">
               <n-icon :component="IconDragDrop" size="18" />
@@ -58,7 +170,9 @@ function onUpdateFavoriteTools() {
             class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4"
             ghost-class="ghost-favorites-draggable"
             item-key="name"
-            @end="onUpdateFavoriteTools"
+            :delay="100"
+            @start="startOrderingFavorites"
+            @end="stopOrderingFavorites"
           >
             <template #item="{ element: tool }">
               <ToolCard :tool="tool" />
@@ -68,7 +182,7 @@ function onUpdateFavoriteTools() {
       </transition>
 
       <div v-if="toolStore.newTools.length > 0">
-        <h3 class="mb-5px mt-25px text-neutral-400 font-500">
+        <h3 class="mb-5px mt-25px font-500 text-neutral-400">
           {{ t('home.categories.newestTools') }}
         </h3>
         <div class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
@@ -76,11 +190,22 @@ function onUpdateFavoriteTools() {
         </div>
       </div>
 
-      <h3 class="mb-5px mt-25px text-neutral-400 font-500">
+      <div v-if="homeCustomMarkdown" class="home-custom-md">
+        <VueMarkdown :source="homeCustomMarkdown" />
+      </div>
+
+      <h3 class="mb-5px mt-25px font-500 text-neutral-400">
         {{ $t('home.categories.allTools') }}
       </h3>
       <div class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
-        <ToolCard v-for="tool in toolStore.tools" :key="tool.name" :tool="tool" />
+        <ToolCard v-for="tool in visibleTools" :key="tool.name" :tool="tool" />
+      </div>
+
+      <!-- Loading indicator when more tools are coming -->
+      <div v-if="visibleToolsCount < toolStore.tools.length" data-loading-indicator mt-6 text-center>
+        <div text-14px op-70>
+          {{ t('home.loading-more-tools') }} <span>({{ visibleTools.length }}/{{ toolStore.tools.length }})</span>
+        </div>
       </div>
     </div>
   </div>
@@ -119,6 +244,33 @@ function onUpdateFavoriteTools() {
   100% {
     opacity: 0.4;
     transform: scale(1.0);
+  }
+}
+
+::v-deep(.home-custom-md) a {
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  color: v-bind('linkTheme.default.textColor');
+  border-radius: 4px;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+
+  outline-offset: 1px;
+
+  &:hover {
+    color: v-bind('linkTheme.default.hover.textColor');
+  }
+
+  &:active {
+    color: v-bind('linkTheme.default.textColor');
+  }
+
+  &:focus {
+    color: v-bind('linkTheme.default.outline.color');
   }
 }
 </style>
