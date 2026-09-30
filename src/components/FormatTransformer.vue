@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import _ from 'lodash';
+import * as _ from 'es-toolkit/compat';
 import { Base64 } from 'js-base64';
 import type { UseValidationRule } from '@/composable/validation';
 import CInputText from '@/ui/c-input-text/c-input-text.vue';
@@ -9,19 +9,19 @@ import { useAppTheme } from '@/ui/theme/themes';
 
 const props = withDefaults(
   defineProps<{
-    transformer?: (v: string) => string
-    inputValidationRules?: UseValidationRule<string>[]
-    inputLabel?: string
-    inputPlaceholder?: string
-    inputDefault?: string
-    outputLabel?: string
-    outputLanguage?: string
-    downloadFileName?: string
-    downloadButtonText?: string
-    rows?: number
-    inputLineNumbers?: boolean
-    inputMaxRows?: number
-    inputAutosize?: boolean
+    transformer?: (v: string) => string;
+    inputValidationRules?: UseValidationRule<string>[];
+    inputLabel?: string;
+    inputPlaceholder?: string;
+    inputDefault?: string;
+    outputLabel?: string;
+    outputLanguage?: string;
+    downloadFileName?: string;
+    downloadButtonText?: string;
+    rows?: number;
+    inputLineNumbers?: boolean;
+    inputMaxRows?: number;
+    inputAutosize?: boolean;
   }>(),
   {
     transformer: _.identity,
@@ -41,8 +41,19 @@ const props = withDefaults(
 );
 
 const {
-  transformer, inputValidationRules, inputLabel, outputLabel, outputLanguage,
-  inputPlaceholder, inputDefault, downloadFileName, downloadButtonText, rows, inputLineNumbers, inputMaxRows, inputAutosize,
+  transformer,
+  inputValidationRules,
+  inputLabel,
+  outputLabel,
+  outputLanguage,
+  inputPlaceholder,
+  inputDefault,
+  downloadFileName,
+  downloadButtonText,
+  rows,
+  inputLineNumbers,
+  inputMaxRows,
+  inputAutosize,
 } = toRefs(props);
 
 const appTheme = useAppTheme();
@@ -140,12 +151,13 @@ watch(
 
 watch(
   input,
-  () => nextTick(() => {
-    const textarea = textareaElement.value;
-    if (textarea) {
-      lineNumbersOffset.value = textarea.scrollTop;
-    }
-  }),
+  () =>
+    nextTick(() => {
+      const textarea = textareaElement.value;
+      if (textarea) {
+        lineNumbersOffset.value = textarea.scrollTop;
+      }
+    }),
   { flush: 'post' },
 );
 
@@ -154,11 +166,10 @@ function focusInput() {
 }
 
 const outputBase64 = computed(() => Base64.encode(output.value));
-const { download } = useDownloadFileFromBase64(
-  {
-    source: outputBase64,
-    filename: downloadFileName,
-  });
+const { download } = useDownloadFileFromBase64({
+  source: outputBase64,
+  filename: downloadFileName,
+});
 </script>
 
 <template>
@@ -191,16 +202,26 @@ const { download } = useDownloadFileFromBase64(
         aria-hidden="true"
         @click="focusInput"
       >
-        <pre class="line-numbers__content" :style="{ transform: `translateY(-${lineNumbersOffset}px)` }">{{ lineNumbersText }}</pre>
+        <pre class="line-numbers__content" :style="{ transform: `translateY(-${lineNumbersOffset}px)` }">{{
+          lineNumbersText
+        }}</pre>
       </div>
     </template>
   </CInputText>
 
   <div overflow-auto>
-    <div mb-5px>
-      {{ outputLabel }}
-    </div>
-    <textarea-copyable :value="output" :language="outputLanguage" :follow-height-of="inputElement?.inputWrapperRef" />
+    <n-tabs type="line">
+      <n-tab-pane name="output" :tab="outputLabel">
+        <textarea-copyable
+          :value="output"
+          :language="outputLanguage"
+          :follow-height-of="inputElement?.inputWrapperRef"
+        />
+      </n-tab-pane>
+      <n-tab-pane name="editable" :tab="t('formatTransformer.viewer')">
+        <CodeBlockCopyable :value="output" :language="outputLanguage" />
+      </n-tab-pane>
+    </n-tabs>
 
     <div v-if="downloadFileName !== '' && output !== ''" mt-5 flex justify-center>
       <c-button secondary @click="download">

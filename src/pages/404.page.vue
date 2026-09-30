@@ -2,7 +2,9 @@
 import { useHead } from '@vueuse/head';
 import { onMounted } from 'vue';
 
-useHead({ title: 'Page not found - IT Tools' });
+const { t } = useI18n();
+
+useHead({ title: t('404.page.text.page-not-found-it-tools') });
 
 onMounted(() => {
   import('@plausible-analytics/tracker').then(({ track }) => {

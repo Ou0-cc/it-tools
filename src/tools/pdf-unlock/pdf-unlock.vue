@@ -17,12 +17,11 @@ const base64OutputPDF = ref('');
 const fileName = ref('');
 const logs = ref<string[]>([]);
 const fileExtension = ref('pdf');
-const { download } = useDownloadFileFromBase64(
-  {
-    source: base64OutputPDF,
-    filename: fileName,
-    extension: fileExtension,
-  });
+const { download } = useDownloadFileFromBase64({
+  source: base64OutputPDF,
+  filename: fileName,
+  extension: fileExtension,
+});
 const qpdfCommand = ref('');
 
 async function onPDFFileUploaded(uploadedFile: File) {
@@ -56,8 +55,7 @@ async function processFile() {
     usePassword.value = false;
     password.value = '';
     isPasswordError.value = false;
-  }
-  catch (e) {
+  } catch (e) {
     status.value = 'error';
     const errorLog = logs.value.join('\n').toLowerCase();
     isPasswordError.value = errorLog.includes('password') || errorLog.includes('encrypted');
@@ -78,7 +76,7 @@ async function callMainWithInOutPdf(data: ArrayBuffer, args: string[], expected_
   mod.FS.writeFile('in.pdf', new Uint8Array(data));
   const ret = mod.callMain(args);
   if (expected_exitcode !== ret) {
-    throw new Error('Process run failed');
+    throw new Error(t('tools.pdf-compressor.texts.process-run-failed'));
   }
   return mod.FS.readFile('out.pdf');
 }
@@ -88,7 +86,11 @@ async function callMainWithInOutPdf(data: ArrayBuffer, args: string[], expected_
   <div>
     <div style="flex: 0 0 100%">
       <div mx-auto max-w-600px>
-        <c-file-upload :title="t('tools.pdf-unlock.texts.title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file')" accept=".pdf" @file-upload="onPDFFileUploaded" />
+        <c-file-upload
+          :title="t('tools.pdf-unlock.texts.title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file')"
+          accept=".pdf"
+          @file-upload="onPDFFileUploaded"
+        />
       </div>
     </div>
 
@@ -120,12 +122,9 @@ async function callMainWithInOutPdf(data: ArrayBuffer, args: string[], expected_
 
     <div mt-3 flex justify-center>
       <c-alert v-if="status === 'error'" type="error">
-        An error occured processing {{ fileName }}
+        {{ $t('tools.file-type.texts.an-error-occured-processing') }} <span>{{ fileName }}</span>
       </c-alert>
-      <n-spin
-        v-if="status === 'processing'"
-        size="small"
-      />
+      <n-spin v-if="status === 'processing'" size="small" />
     </div>
 
     <c-card :title="t('tools.pdf-unlock.texts.title-logs')">

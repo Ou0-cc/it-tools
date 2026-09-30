@@ -4,20 +4,21 @@ export function hasNumberPrefix(value: string) {
   return (value ?? '').trim().match(/^(0[xob].|&[hob].)/i);
 }
 
-export function convertBase(
-  {
-    value, fromBase, toBase,
-    ignorePunctuationsRegexChars = ' \u00A0_\\.,-',
-    handlePrefixSuffix = true,
-    ignoreCase = true,
-  }: {
-    value: string
-    fromBase: number
-    toBase: number
-    ignorePunctuationsRegexChars?: string
-    handlePrefixSuffix?: boolean
-    ignoreCase?: boolean
-  }) {
+export function convertBase({
+  value,
+  fromBase,
+  toBase,
+  ignorePunctuationsRegexChars = ' \u00A0_\\.,-',
+  handlePrefixSuffix = true,
+  ignoreCase = true,
+}: {
+  value: string;
+  fromBase: number;
+  toBase: number;
+  ignorePunctuationsRegexChars?: string;
+  handlePrefixSuffix?: boolean;
+  ignoreCase?: boolean;
+}) {
   let cleanedValue = (value ?? '0').trim();
   if (ignorePunctuationsRegexChars) {
     cleanedValue = cleanedValue.replace(new RegExp(`[${ignorePunctuationsRegexChars}]`, 'g'), '');
@@ -50,7 +51,12 @@ export function convertBase(
     .reverse()
     .reduce((carry: bigint, digit: string, index: number) => {
       if (!fromRange.includes(digit)) {
-        throw new Error(t('tools.integer-base-converter.model.text.invalid-digit-digit-for-base-finalfrombase', [digit, finalFromBase]));
+        throw new Error(
+          t('tools.integer-base-converter.model.text.invalid-digit-digit-for-base-finalfrombase', [
+            digit,
+            finalFromBase,
+          ]),
+        );
       }
       return (carry += BigInt(fromRange.indexOf(digit)) * BigInt(finalFromBase) ** BigInt(index));
     }, 0n);
@@ -60,4 +66,16 @@ export function convertBase(
     decValue = (decValue - (decValue % BigInt(toBase))) / BigInt(toBase);
   }
   return newValue || '0';
+}
+
+export function formatWithSpaces(value: string, groupSize: number): string {
+  if (groupSize <= 0 || !value) {
+    return value;
+  }
+  const chunks: string[] = [];
+  for (let i = value.length; i > 0; i -= groupSize) {
+    const start = Math.max(0, i - groupSize);
+    chunks.unshift(value.slice(start, i));
+  }
+  return chunks.join(' ');
 }

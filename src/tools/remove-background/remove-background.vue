@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import { onMounted, ref } from 'vue';
 import type { BackgroundRemovalPipeline, ProgressInfo } from '@huggingface/transformers';
 import { RawImage, pipeline } from '@huggingface/transformers';
 import { useQueryParamOrStorage } from '@/composable/queryParams';
+
+const { t } = useI18n();
 
 const inputImage = ref<File | null>(null);
 const inputUrl = ref<string | null>(null);
@@ -14,25 +17,25 @@ const webgpuAvailable = ref(false);
 
 const selectedModel = useQueryParamOrStorage({ name: 'model', storageName: 'rmbg:m', defaultValue: 'rmbg' });
 const modelOptions = [
-  { label: 'RMBG‑1.4 (CPU/WASM)', value: 'rmbg' },
-  { label: 'MODNet (WebGPU)', value: 'modnet' },
+  { label: t('tools.remove-background.texts.label-rmbg-1-4-cpu-wasm'), value: 'rmbg' },
+  { label: t('tools.remove-background.texts.label-modnet-webgpu'), value: 'modnet' },
 ];
 
 const backgroundMode = useQueryParamOrStorage({ name: 'bgmode', storageName: 'rmbg:bgm', defaultValue: 'transparent' });
 const backgroundOptions = [
-  { label: 'Transparent', value: 'transparent' },
-  { label: 'Solid Color', value: 'color' },
-  { label: 'Pattern', value: 'pattern' },
-  { label: 'Blurred Original', value: 'blur' },
-  { label: 'Adjust Contrast/Brightness', value: 'adjust' },
+  { label: t('tools.remove-background.texts.label-transparent'), value: 'transparent' },
+  { label: t('tools.remove-background.texts.label-solid-color'), value: 'color' },
+  { label: t('tools.remove-background.texts.label-pattern'), value: 'pattern' },
+  { label: t('tools.remove-background.texts.label-blurred-original'), value: 'blur' },
+  { label: t('tools.remove-background.texts.label-adjust-contrast-brightness'), value: 'adjust' },
 ];
 
 const backgroundColor = useQueryParamOrStorage({ name: 'model', storageName: 'rmbg:bg', defaultValue: '#ffffff' });
 const patternName = useQueryParamOrStorage({ name: 'pattern', storageName: 'rmbg:pa', defaultValue: 'stripes' });
 const patternOptions = [
-  { label: 'Diagonal Stripes', value: 'stripes' },
-  { label: 'Dots', value: 'dots' },
-  { label: 'Checkerboard', value: 'checker' },
+  { label: t('tools.remove-background.texts.label-diagonal-stripes'), value: 'stripes' },
+  { label: t('tools.remove-background.texts.label-dots'), value: 'dots' },
+  { label: t('tools.remove-background.texts.label-checkerboard'), value: 'checker' },
 ];
 
 const blurAmount = useQueryParamOrStorage({ name: 'blur', storageName: 'rmbg:bl', defaultValue: 12 });
@@ -73,19 +76,14 @@ async function loadPipelines() {
 
   if (!rmbgPipeline) {
     // @ts-expect-error Probably a Typescript bug 'too complex type'
-    rmbgPipeline = await pipeline(
-      'background-removal',
-      'briaai/RMBG-1.4',
-      { progress_callback: update },
-    );
+    rmbgPipeline = await pipeline('background-removal', 'briaai/RMBG-1.4', { progress_callback: update });
   }
 
   if (webgpuAvailable.value && selectedModel.value === 'modnet' && !modnetPipeline) {
-    modnetPipeline = await pipeline(
-      'background-removal',
-      'Xenova/modnet',
-      { device: 'webgpu', progress_callback: update },
-    );
+    modnetPipeline = await pipeline('background-removal', 'Xenova/modnet', {
+      device: 'webgpu',
+      progress_callback: update,
+    });
   }
 
   modelLoading.value = false;
@@ -141,18 +139,38 @@ const backgroundRenderers = {
     ctx.fillRect(0, 0, w, h);
   },
 
-  blur(ctx: CanvasRenderingContext2D, w: number, h: number, opts: { blurAmount: number }, originalImage: CanvasImageSource) {
+  blur(
+    ctx: CanvasRenderingContext2D,
+    w: number,
+    h: number,
+    opts: { blurAmount: number },
+    originalImage: CanvasImageSource,
+  ) {
     ctx.filter = `blur(${opts.blurAmount}px)`;
     ctx.drawImage(originalImage, 0, 0, w, h);
     ctx.filter = 'none';
   },
 
-  adjust(ctx: CanvasRenderingContext2D, w: number, h: number, opts: { contrast: number; brightness: number }, originalImage: CanvasImageSource) {
+  adjust(
+    ctx: CanvasRenderingContext2D,
+    w: number,
+    h: number,
+    opts: { contrast: number; brightness: number },
+    originalImage: CanvasImageSource,
+  ) {
     ctx.filter = `contrast(${opts.contrast}) brightness(${opts.brightness})`;
     ctx.drawImage(originalImage, 0, 0, w, h);
     ctx.filter = 'none';
   },
-} as unknown as { [index: string]: (ctx: CanvasRenderingContext2D, w: number, h: number, opts: any, originalImage: CanvasImageSource) => void };
+} as unknown as {
+  [index: string]: (
+    ctx: CanvasRenderingContext2D,
+    w: number,
+    h: number,
+    opts: any,
+    originalImage: CanvasImageSource,
+  ) => void;
+};
 
 function rawImageToCanvas(raw: RawImage) {
   // Create canvas
@@ -200,8 +218,7 @@ async function removeBackground() {
     let results: RawImage[];
     if (selectedModel.value === 'modnet' && webgpuAvailable.value) {
       results = await modnetPipeline!(imageBitmap);
-    }
-    else {
+    } else {
       results = await rmbgPipeline!(imageBitmap);
     }
 
@@ -228,8 +245,7 @@ async function removeBackground() {
     ctx.drawImage(rawImageToCanvas(results[0]), 0, 0, canvas.width, canvas.height);
 
     outputUrl.value = canvas.toDataURL('image/png')!;
-  }
-  catch (e: any) {
+  } catch (e: any) {
     error.value = e.toString();
   }
 
@@ -247,7 +263,7 @@ function downloadResult() {
 <template>
   <div>
     <c-file-upload
-      title="Drag and drop an image or click to select"
+      :title="t('tools.remove-background.texts.title-drag-and-drop-an-image-or-click-to-select')"
       paste-image
       accept="image/*"
       mb-3
@@ -255,47 +271,32 @@ function downloadResult() {
     />
 
     <n-form label-placement="left">
-      <n-form-item v-if="webgpuAvailable" label="Model:">
-        <n-select
-          v-model:value="selectedModel"
-          :options="modelOptions"
-        />
+      <n-form-item v-if="webgpuAvailable" :label="t('tools.remove-background.texts.label-model')">
+        <n-select v-model:value="selectedModel" :options="modelOptions" />
       </n-form-item>
 
-      <n-form-item label="Model:">
-        <n-select
-          v-model:value="backgroundMode"
-          :options="backgroundOptions"
-        />
+      <n-form-item :label="t('tools.remove-background.texts.label-model')">
+        <n-select v-model:value="backgroundMode" :options="backgroundOptions" />
       </n-form-item>
 
-      <n-form-item v-if="backgroundMode === 'color'" label="Model:">
-        <n-color-picker
-          v-model:value="backgroundColor"
-        />
+      <n-form-item v-if="backgroundMode === 'color'" :label="t('tools.remove-background.texts.label-model')">
+        <n-color-picker v-model:value="backgroundColor" />
       </n-form-item>
 
-      <n-form-item v-if="backgroundMode === 'pattern'" label="Pattern:">
-        <n-select
-          v-model:value="patternName"
-          :options="patternOptions"
-        />
+      <n-form-item v-if="backgroundMode === 'pattern'" :label="t('tools.remove-background.texts.label-pattern')">
+        <n-select v-model:value="patternName" :options="patternOptions" />
       </n-form-item>
 
-      <n-form-item v-if="backgroundMode === 'blur'" label="Blur:">
-        <n-slider
-          v-model:value="blurAmount"
-          :min="0"
-          :max="40"
-        />
+      <n-form-item v-if="backgroundMode === 'blur'" :label="t('tools.remove-background.texts.label-blur')">
+        <n-slider v-model:value="blurAmount" :min="0" :max="40" />
       </n-form-item>
 
       <div v-if="backgroundMode === 'adjust'">
-        <n-form-item label="Contrast:">
+        <n-form-item :label="t('tools.remove-background.texts.label-contrast')">
           <n-slider v-model:value="contrast" :min="0.5" :max="2" :step="0.01" />
         </n-form-item>
 
-        <n-form-item label="Brightness:">
+        <n-form-item :label="t('tools.remove-background.texts.label-brightness')">
           <n-slider v-model:value="brightness" :min="0.5" :max="2" :step="0.01" />
         </n-form-item>
       </div>
@@ -311,12 +312,8 @@ function downloadResult() {
 
     <n-space justify="center" mb-1>
       <n-spin :show="loading" mb-1>
-        <n-button
-          type="success"
-          :disabled="!inputImage"
-          @click="removeBackground"
-        >
-          Apply Background
+        <n-button type="success" :disabled="!inputImage" @click="removeBackground">
+          {{ t('tools.remove-background.texts.tag-apply-background') }}
         </n-button>
       </n-spin>
     </n-space>
@@ -327,16 +324,16 @@ function downloadResult() {
 
     <n-space v-if="outputUrl" justify="center">
       <n-button @click="downloadResult">
-        Download Result
+        {{ t('tools.remove-background.texts.tag-download-result') }}
       </n-button>
     </n-space>
 
     <n-space justify="center" mr-1>
-      <NCard v-if="inputUrl" title="Original">
+      <NCard v-if="inputUrl" :title="t('tools.remove-background.texts.title-original')">
         <n-image :src="inputUrl" width="260" />
       </NCard>
 
-      <NCard v-if="outputUrl" title="Result">
+      <NCard v-if="outputUrl" :title="t('tools.remove-background.texts.title-result')">
         <n-image :src="outputUrl" width="260" />
       </NCard>
     </n-space>

@@ -3,6 +3,9 @@
   sorry: Desculpe, parece que essa página não existe
   maybe: Talvez o cache esteja fazendo bobagem, que tal tentar forçar a atualização?
   backHome: Voltar para o início
+  page:
+    text:
+      page-not-found-it-tools: Página não encontrada - Ferramentas de TI
 home:
   categories:
     newestTools: Novas ferramentas
@@ -32,7 +35,19 @@ home:
     darkMode: Modo Escuro
     lightMode: Modo Claro
     mode: Trocar modo escuro/claro
+    language: Linguagem
+    themeSystem: Sistema
+    themeLight: Luz
+    themeDark: Escuro
   loading-more-tools: Carregando mais ferramentas...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Coleção de ferramentas online práticas para desenvolvedores, com ótima
+        experiência do usuário. O IT Tools é uma coleção gratuita e de código
+        aberto de ferramentas online úteis para desenvolvedores e profissionais
+        de TI.
+      it-tools-handy-online-tools-for-developers: Ferramentas de TI - Ferramentas online úteis para desenvolvedores
 about:
   alltools-title: Todas as ferramentas {toolsCount}
   tools:
@@ -80,6 +95,13 @@ about:
     relatório de bug na [seção de
     problemas](https://github.com/sharevb/it-tools/issues/new/choose) do
     repositório GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Coleção de ferramentas online práticas para desenvolvedores, com ótima
+      experiência do usuário. O IT Tools é uma coleção gratuita e de código
+      aberto de ferramentas online úteis para desenvolvedores e profissionais de
+      TI.
+    about-it-tools: Sobre - Ferramentas de TI
 favoriteButton:
   remove: Remover dos favoritos
   add: Adicionar aos favoritos
@@ -89,6 +111,44 @@ search:
   label: Pesquisar
   placeholder: Digite para pesquisar uma ferramenta ou um comando...
 tools:
+  crop-image:
+    title: Recortar imagem
+    description: Recortar, redimensionar e rotacionar imagens com cores de fundo
+      personalizadas.
+    texts:
+      drag-drop: Arraste e solte sua imagem aqui, ou clique para navegar
+      drag-hint: Arraste para posicionar • Role para zoom ({zoom}%)
+      flip-h: Espelhar H
+      flip-v: Espelhar V
+      reset: Redefinir
+      fit: Ajustar
+      change-image: Alterar imagem
+      aspect-ratio: "Proporção de tela:"
+      custom-ratio: "Proporção personalizada:"
+      background-color: "Cor de fundo:"
+      transparent: Transparente
+      zoom-image: "Zoom na imagem:"
+      rotate-image: "Rotacionar imagem:"
+      rule-of-thirds-grid: "Grade da regra dos terços:"
+      export-settings: Configurações de exportação
+      export-format: "Formato de exportação:"
+      image-quality: "Qualidade da imagem:"
+      export-width: "Largura de exportação:"
+      custom-width: "Largura personalizada (px):"
+      export-download-image: Exportar e baixar imagem recortada
+      ratio-square: 1:1 (Quadrado)
+      ratio-widescreen: 16:9 (Widescreen)
+      ratio-portrait: 9:16 (Retrato)
+      ratio-standard: 4:3 (Padrão)
+      ratio-photo: 3:2 (Foto)
+      ratio-original: Proporção original
+      ratio-custom: Proporção personalizada
+      width-original: Tamanho de recorte original
+      width-viewport: Tamanho da janela de visualização
+      width-custom: Largura personalizada
+      label-png: PNG
+      label-jpeg: JPEG
+      label-webp: WebP
   categories:
     favorite-tools: Suas ferramentas favoritas
     crypto: Cripto
@@ -117,6 +177,9 @@ tools:
     physics: Física
     cheatsheets: Folhas de dicas
     forensic: Forense
+    finance: Financiar
+    default: Padrão
+    toml: TOML
   csv-to-json:
     title: CSV para JSON
     description: Converte CSV para JSON com detecção automática de cabeçalhos.
@@ -173,6 +236,7 @@ tools:
         pontuações)
       placeholder-put-characters-to-deny-from-token: Coloque caracteres para negar do token
       label-number-of-token-to-generate: Número de tokens a serem gerados
+      label-allow-ambiguous-characters: Permite caracteres visualmente ambíguos
   percentage-calculator:
     title: Calculadora de porcentagem
     description: Calcule facilmente porcentagens de um valor para outro valor, ou de
@@ -481,6 +545,7 @@ tools:
       tag-preview-image: Imagem de pré-visualização
       tag-download-file: Baixar arquivo
       tag-copy: Cópia
+      include-data-uri-prefix: "Incluir dados: prefixo URI"
   list-converter:
     title: Conversor de lista
     description: Esta ferramenta pode processar dados baseados em colunas e aplicar
@@ -543,6 +608,52 @@ tools:
       placeholder-the-decoded-string-will-be-here: A string decodificada estará aqui
       tag-copy-base64: Copiar base64
       tag-copy-decoded-string: Copiar string decodificada
+      text-encoding: "Codificação de texto:"
+      label-utf-8: UTF-8
+      label-utf-8-alias-utf8: "UTF-8 (Alias: UTF8)"
+      label-utf-16le: UTF-16LE
+      label-utf-16be: UTF-16BE
+      label-utf-7: UTF-7
+      label-utf-7-imap: UTF-7 (IMAP)
+      label-utf-32le: UTF-32LE
+      label-utf-32be: UTF-32BE
+      label-iso-8859-1-latin-1: ISO-8859-1 (Latim-1)
+      label-iso-8859-2-central-european: ISO-8859-2 (Europa Central)
+      label-iso-8859-3-south-european: ISO-8859-3 (Sul da Europa)
+      label-iso-8859-4-north-european: ISO-8859-4 (Norte Europeu)
+      label-iso-8859-5-cyrillic: ISO-8859-5 (Cirílico)
+      label-iso-8859-6-arabic: ISO-8859-6 (Árabe)
+      label-iso-8859-7-greek: ISO-8859-7 (Grego)
+      label-iso-8859-8-hebrew: ISO-8859-8 (hebraico)
+      label-iso-8859-9-turkish: ISO-8859-9 (Turco)
+      label-iso-8859-10-nordic: ISO-8859-10 (Nórdico)
+      label-iso-8859-13-baltic: ISO-8859-13 (Báltico)
+      label-iso-8859-14-celtic: ISO-8859-14 (Celta)
+      label-iso-8859-15-latin-9: ISO-8859-15 (Latin-9)
+      label-iso-8859-16-romanian: ISO-8859-16 (Romeno)
+      label-windows-1250-central-european: Windows-1250 (Europa Central)
+      label-windows-1251-cyrillic: Windows-1251 (Cirílico)
+      label-windows-1252-western-european: Windows-1252 (Europa Ocidental)
+      label-windows-1253-greek: Windows-1253 (Grego)
+      label-windows-1254-turkish: Windows-1254 (Turco)
+      label-windows-1255-hebrew: Windows-1255 (hebraico)
+      label-windows-1256-arabic: Windows-1256 (Árabe)
+      label-windows-1257-baltic: Windows-1257 (Báltico)
+      label-windows-1258-vietnamese: Windows-1258 (vietnamita)
+      label-koi8-r-russian: KOI8-R (Russo)
+      label-koi8-u-ukrainian: KOI8-U (Ucraniano)
+      label-gbk-simplified-chinese: GBK (chinês simplificado)
+      label-gb2312-simplified-chinese: GB2312 (Chinês Simplificado)
+      label-gb18030-simplified-chinese: GB18030 (Chinês Simplificado)
+      label-big5-traditional-chinese: Big5 (Chinês Tradicional)
+      label-shift-jis-japanese: Shift-JIS (Japonês)
+      label-euc-jp-japanese: EUC-JP (Japonês)
+      label-macroman: MacRoman
+      label-macgreek: MacGreek
+      label-macturkish: MacTurkish
+      label-maccyrillic: MacCyrillic
+      label-maccentraleurope: MacCentralEuropa
+      label-maciceland: MacIslândia
   toml-to-yaml:
     title: TOML para YAML
     description: Analise e converta TOML em YAML.
@@ -621,6 +732,9 @@ tools:
       label-titlecase: "Título em caixa alta:"
       label-spongecase: "Capa de esponja:"
       label-swapcase: "Troca de capa:"
+      label-lang-title-case: "Idioma: Maiúsculas e minúsculas (em maiúsculas e minúsculas)"
+      label-language: "Linguagem:"
+      placeholder-your-language: "Idioma do título: maiúsculas e minúsculas..."
   html-entities:
     title: Entidades HTML de escape
     description: Escape ou desescape entidades HTML (substitua caracteres como
@@ -762,6 +876,10 @@ tools:
       tag-refresh-key-pair: Atualizar par de chaves
       tag-public-key: Chave pública
       tag-private-key: Chave privada
+      tag-fingerprint: Impressão digital
+      tag-md5-fingerprint: Impressão digital (MD5)
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: O número de bits deve ser entre 256 e 16384, e ser um múltiplo de 8.
   html-wysiwyg-editor:
     title: Editor HTML WYSIWYG
     description: Editor HTML WYSIWYG on-line e rico em recursos que gera o
@@ -977,6 +1095,8 @@ tools:
       tag-quantity: Quantidade
       tag-copy: Cópia
       tag-refresh: Atualizar
+      uppercase: Maiúsculas
+      no-hyphen: Sem hífen
   nanoid-generator:
     title: Gerador de NanoIDs
     description: Gere IDs aleatórios, exclusivos e amigáveis a URL para seus aplicativos.
@@ -1216,6 +1336,13 @@ tools:
   angle-converter:
     title: Conversor de unidades de ângulo
     description: Converter valores entre unidades angulares
+    texts:
+      label-degree: grau (°)
+      label-radian: radiano
+      label-turn: vez
+      label-gradian: gradiente
+      label-grad: grau
+      label-gon: vai
   ansible-vault-crypt-decrypt:
     title: Descriptografia de cripta do cofre Ansible
     description: Criptografar e descriptografar segredos do Ansible Vault
@@ -1261,6 +1388,32 @@ tools:
   area-converter:
     title: Conversor de unidades de área
     description: Converter valores entre unidades de área
+    texts:
+      label-square-meter: metro quadrado
+      label-square-petameter: petâmetro quadrado
+      label-square-terameter: terâmetro quadrado
+      label-square-gigameter: gigametro quadrado
+      label-square-megameter: megômetro quadrado
+      label-square-kilometer: quilômetro quadrado
+      label-square-hectometer: hectômetro quadrado
+      label-square-decameter: decâmetro quadrado
+      label-square-decimeter: decímetro quadrado
+      label-square-centimeter: centímetro quadrado
+      label-square-millimeter: milímetro quadrado
+      label-square-micrometer: micrômetro quadrado
+      label-square-nanometer: nanômetro quadrado
+      label-square-picometer: picômetro quadrado
+      label-square-femtometer: femtômetro quadrado
+      label-acre: acre
+      label-centiare: ser cem
+      label-deciare: decidir
+      label-are: são
+      label-decare: decare
+      label-hectare: hectare
+      label-square-foot-ft2-sq-ft: pé quadrado (/ft2/pé quadrado)
+      label-square-inch-in2-sq-in: polegada quadrada (/in2/pol²)
+      label-square-yard-yd2-sq-yd: jarda quadrada (yd²/yd²)
+      label-square-mile-mi2-sq-mi: milha quadrada (mi²/milha quadrada)
   aspect-ratio-calculator:
     title: Calculadora de Proporção de Aspecto
     description: Use esta calculadora de proporção para verificar as dimensões ao
@@ -1503,6 +1656,8 @@ tools:
       tag-certificate-signing-request: Solicitação de assinatura de certificado
       tag-public-key: Chave pública
       tag-private-key: Chave privada
+      label-rsa-bits: "Bits RSA:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: O número de bits deve ser entre 256 e 16384, e ser um múltiplo de 8.
   css-prettifier:
     title: Embelezador CSS
     description: CSS Embelezar
@@ -1888,6 +2043,8 @@ tools:
       tag-refresh-key-pair: Atualizar par de chaves
       tag-public-key: Chave pública
       tag-private-key: Chave privada
+      tag-fingerprint: Impressão digital
+      tag-md5-fingerprint: Impressão digital (MD5)
   ed25519-key-pair-generator:
     title: Gerador de pares de chaves Ed25519
     description: Gere novas chaves privadas e públicas aleatórias Ed25519 (com ou
@@ -1907,6 +2064,8 @@ tools:
       tag-refresh-key-pair: Atualizar par de chaves
       tag-public-key: Chave pública
       tag-private-key: Chave privada
+      tag-md5-fingerprint: Impressão digital (MD5)
+      tag-fingerprint: Impressão digital
   energy-computer:
     title: Consumo de Energia e Despesas do Computador
     description: Calcular o consumo e as despesas de energia
@@ -1918,6 +2077,37 @@ tools:
   energy-converter:
     title: Conversor de unidades de energia
     description: Converter valores entre unidades de energia
+    texts:
+      label-joule: joule
+      label-petajoule: petajoule
+      label-terajoule: terajoule
+      label-gigajoule: gigajoule
+      label-megajoule: megajoule
+      label-kilojoule: quilojoule
+      label-hectojoule: hectojoule
+      label-decajoule: decajoule
+      label-decijoule: decijoule
+      label-centijoule: centijoule
+      label-millijoule: milijoule
+      label-microjoule: microjoule
+      label-nanojoule: nanojoule
+      label-picojoule: picojoule
+      label-femtojoule: femtojoule
+      label-watt-hour: watt-hora
+      label-petawatt-hour: petawatt-hora
+      label-terawatt-hour: terawatt-hora
+      label-gigawatt-hour: gigawatt-hora
+      label-megawatt-hour: megawatt-hora
+      label-kilowatt-hour: quilowatt-hora
+      label-hectowatt-hour: hectowatt-hora
+      label-decawatt-hour: decawatt-hora
+      label-deciwatt-hour: deciwatt-hora
+      label-centiwatt-hour: centiwatt-hora
+      label-milliwatt-hour: miliwatt-hora
+      label-microwatt-hour: microwatt-hora
+      label-nanowatt-hour: nanowatt-hora
+      label-picowatt-hour: picowatt-hora
+      label-femtowatt-hour: femtowatt-hora
   file-hasher:
     title: Hasher de arquivos
     description: Calcular Hash de arquivos
@@ -1961,6 +2151,7 @@ tools:
       label-file-name: "Nome do arquivo:"
       label-extension: "Extensão:"
       label-mime-type: "Tipo MIME:"
+      an-error-occured-processing: Ocorreu um erro ao processar
   folder-structure-diagram:
     title: Diagrama de estrutura de pastas
     description: utilitário em forma de árvore para gerar diagramas de estrutura de
@@ -1973,6 +2164,35 @@ tools:
   force-converter:
     title: Conversor de unidades de força
     description: Converter valores entre unidades de força
+    texts:
+      label-newton: Newton
+      label-petanewton: petanewton
+      label-teranewton: teranewton
+      label-giganewton: giganewton
+      label-meganewton: meganewton
+      label-kilonewton: kilonewton
+      label-hectonewton: hectonewton
+      label-decanewton: decanewton
+      label-decinewton: decinewton
+      label-centinewton: centinewton
+      label-millinewton: millinewton
+      label-micronewton: micronewton
+      label-nanonewton: nanonewton
+      label-piconewton: piconewton
+      label-femtonewton: femtonewton
+      label-dyne: dina
+      label-pound-of-force: libra de força
+      label-kip: soneca
+      label-klb: clube
+      label-kipf: kipf
+      label-klbf: klbf
+      label-poundal: libra
+      label-kilogram-force: quilograma-força
+      label-kilopond: quiloponte
+      label-megapond: megalago
+      label-tonne-force: tonelada-força
+      label-metric-ton-force: tonelada-força métrica
+      label-megagram-force: força de megagrama
   geo-distance-calculator:
     title: Calculadora de distância geográfica
     description: Calcula a distância entre duas localizações geográficas (e exibe
@@ -2061,10 +2281,10 @@ tools:
       label-gib: GiB
       label-tib: TiB
       label-pib: PiB
-      label-claimed-capacity: "Capacidade reivindicada:"
-      label-unit: "Unidade:"
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1 MiB = 1024 KiB; 1 MB = 1000 kB; 1 GiB = 1024 MiB; 1 GB = 1000 MB;
       tag-see-here-for-details: veja aqui para detalhes
+      column-decimal: Decimal
+      column-binary: Binário
   heic-converter:
     title: Conversor HEIC
     description: Conversor HEIC para JPEG ou PNG
@@ -2073,6 +2293,7 @@ tools:
       label-png: PNG
       label-output-format: Formato de saída
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: Arraste e solte um arquivo HEIC aqui ou clique para selecionar um arquivo
+      an-error-occured-processing-heic-heif-is-invalid: "Ocorreu um erro ao processar: HEIC/HEIF é inválido."
   hex-file-converter:
     title: Conversor de arquivos HEX
     description: Converter entre representação de arquivo e hexadecimal
@@ -2141,6 +2362,9 @@ tools:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file:
         Arraste e solte um arquivo ICO ou PNG/JPEG aqui ou clique para
         selecionar um arquivo
+      an-error-occured-processing: Ocorreu um erro no processamento.
+      invalid-ico-file: Arquivo ICO inválido!
+      invalid-png-file: Arquivo PNG inválido!
   illuminance-converter:
     title: Conversor de iluminância
     description: Conversor de unidades de iluminância (Lux, Foot Candles, Nox, Phot, Flame)
@@ -2159,6 +2383,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Em seguida, arraste e solte suas imagens abaixo e elas serão
         convertidas e baixadas imediatamente:"
+      invalid-image-file: Arquivo de imagem inválido!
+      an-error-occured-processing: Ocorreu um erro ao processar
   image-exif-reader:
     title: Leitor de qualidade de imagem EXIF/Metadados/GPS/JPEG
     description: Leia EXIF, IPTC, XMP, GPS e outros metadados, qualidade JPEG e
@@ -2364,6 +2590,7 @@ tools:
       tag-iso2-iso3: Iso2/Iso3
       tag-name-and-info: Nome e informações
       tag-gt-see-on-openstreetmap: "&gt; Veja no OpenStreetMap"
+      loading-more-results: Carregando mais resultados...
   javascript-prettifier:
     title: Embelezador Javascript
     description: Embelezador JS/Javascript
@@ -2418,6 +2645,7 @@ tools:
       title-schema-validation-errors: Erros de validação de esquema
       label-indent-size-0-compact: "Tamanho do recuo (0 = Compacto):"
       repair-json: Reparar JSON
+      label-auto-height: Altura automática
     externalAccess: Esta ferramenta pode baixar um esquema JSON de
       https://www.schemastore.org quando a validação for solicitada. Nenhum dado
       é enviado externamente.
@@ -2572,6 +2800,29 @@ tools:
   length-converter:
     title: Conversor de unidades de comprimento
     description: Converter valores de unidades de comprimento
+    texts:
+      label-meter: medidor
+      label-petameter: petâmetro
+      label-terameter: terâmetro
+      label-gigameter: gigametro
+      label-megameter: megômetro
+      label-kilometer: quilômetro
+      label-hectometer: hectômetro
+      label-decameter: decâmetro
+      label-decimeter: decímetro
+      label-centimeter: centímetro
+      label-millimeter: milímetro
+      label-micrometer: micrômetro
+      label-nanometer: nanômetro
+      label-picometer: picômetro
+      label-femtometer: femtômetro
+      label-inch: polegada (")
+      label-yard: quintal
+      label-mile: milha
+      label-nautical-mile-m-nm: milha náutica (M/NM)
+      label-light-year: ano-luz
+      label-parsec: parsec
+      label-pica: pica
   list-comparer:
     title: Listas Comparar
     description: Comparar dois itens da lista
@@ -2662,6 +2913,35 @@ tools:
   mass-converter:
     title: Conversor de unidades de massa
     description: Converter valores entre unidades de massa
+    texts:
+      label-gram: grama
+      label-petagram: petagrama
+      label-teragram: teragrama
+      label-gigagram: gigagrama
+      label-megagram: megagrama
+      label-kilogram: quilograma
+      label-hectogram: hectograma
+      label-decagram: decagram
+      label-decigram: dez gramas
+      label-centigram: centigrama
+      label-milligram: miligrama
+      label-microgram: micrograma
+      label-nanogram: nanograma
+      label-picogram: picograma
+      label-femtogram: femtograma
+      label-tonne: tonelada
+      label-metric-ton: tonelada métrica
+      label-kilotonne: quilotonelada
+      label-megatonne: megatonelada
+      label-gigatonne: gigatonelada
+      label-pound: libra
+      label-stone: pedra
+      label-ounce: onça
+      label-short-ton: tonelada curta
+      label-us-ton: tonelada americana
+      label-long-ton: tonelada longa
+      label-imperial-ton: tonelada imperial
+      label-displacement-ton: tonelada de deslocamento
   math-formats-converter:
     title: Conversor de formatos matemáticos
     description: Converter expressões matemáticas entre formatos
@@ -2704,6 +2984,18 @@ tools:
       tag-export-as-png: Exportar como PNG
       tag-export-as-jpg: Exportar como JPG
       tag-export-as-svg: Exportar como SVG
+      tag-showing-last-valid-diagram: Exibindo o último diagrama válido.
+      tag-hint-ctrl-scroll-to-zoom: Mantenha pressionada a tecla Ctrl (ou ⌘) e role a tela para ampliar.
+      label-diagram-preview: Pré-visualização do diagrama — arraste ou use as setas do
+        teclado para mover o diagrama, e os botões + e - para ampliar e reduzir
+        o zoom.
+      label-zoom-level-reset: Zoom {zoom}%, clique para redefinir para 100%
+      title-zoom-in: Ampliar
+      title-zoom-out: Diminuir o zoom
+      title-reset-zoom: Redefinir zoom para 100%
+      title-fit-view: Diagrama de ajuste para visualização
+      title-fullscreen: Tela cheia
+      title-exit-fullscreen: Sair do modo tela cheia
   mime-converter:
     title: Conversor de codificação MIME
     description: Converter de/para o formato MIME Encoded-Word (Assunto do e-mail)
@@ -2878,6 +3170,11 @@ tools:
       placeholder-passphrase: Senha...
       tag-copy: Cópia
       tag-refresh: Atualizar
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Não é possível gerar uma senha de [{0} - {1}] caracteres com as
+        configurações atuais. Tente alterar a contagem de palavras."
+      words-words: Palavras ({0})
+      label-min-passphrase-len: "Comprimento mínimo da senha:"
   paste-as-markdown:
     title: Colar como Markdown
     description: Colar células/tabelas e links do conteúdo da área de transferência
@@ -2938,10 +3235,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Arraste e solte um arquivo PDF aqui ou clique para selecionar um arquivo
       title-logs: Registros
       label-qpdf: qpdf
-      label-password: 'Senha:'
+      label-password: "Senha:"
       placeholder-password: Senha
       tag-decrypt-pdf: Descriptografar PDF
-      tag-output-file: 'Arquivo de saída:'
+      tag-output-file: "Arquivo de saída:"
   pgp-encryption:
     title: Criptografia PGP
     description: Criptografe e descriptografe texto não criptografado usando chaves PGP.
@@ -3013,12 +3310,97 @@ tools:
       title-drag-and-drop-an-image-here-or-click-to-select-a-file: Arraste e solte uma imagem aqui ou clique para selecionar um arquivo
       tag-posterize: Pôsterizar?
       tag-potrace-result: Resultado da pesquisa
+      button-trace: Rastrear
+      minimum-angle-displacement-in-degrees-to-be-considered-a-cutting-point-between-curves:
+        Deslocamento angular mínimo (em graus) para ser considerado um ponto de
+        corte entre curvas.
+      splice-threshold-more-accurate: "Limiar de emenda (Mais preciso):"
+      perform-iterative-subdivide-smooth-until-all-segments-are-shorter-than-this-length:
+        Execute o processo Iterativo de Subdivisão Suavizante até que todos os
+        segmentos sejam menores que este comprimento.
+      length-threshold-more-coarse: "Limiar de comprimento (mais grosseiro):"
+      minimum-momentary-angle-in-degrees-to-be-considered-a-corner-to-be-kept-after-smoothing:
+        Ângulo momentâneo mínimo (em graus) para ser considerado um canto (a ser
+        mantido após o alisamento)
+      corner-threshold-smoother: "Limiar de canto (mais suave):"
+      layer-difference: "Diferença entre camadas:"
+      number-of-significant-bits-to-use-in-a-rgb-channel: Número de bits significativos a serem usados em um canal RGB.
+      color-precision-more-accurate: "Precisão de cores (Mais precisa):"
+      color-difference-between-gradient-layers: Diferença de cor entre camadas de gradiente
+      gradient-step-less-layers: "Etapa de gradiente (menos camadas):"
+      discard-patches-small-than-x-px-in-size: Descartar patches com tamanho inferior a X pixels
+      filter-speckle-cleaner: "Filtro Speckle (Limpador):"
+      hierarchical-mode: "Modo Hierárquico:"
+      curve-fitting: "Ajuste de curvas:"
+      color-vtracer: Cor (VTracer)
+      color-potrace: Cor (Retrato)
+      bw: P&B
+      interpolate: Interpolar?
+      pixel: Pixel
+      polygon: Polígono
+      spline: Spline
+      stacked: Empilhado
+      cutout: Recortar
   power-converter:
     title: Conversor de energia
     description: Converter valores entre unidades de potência
+    texts:
+      label-watt: watt
+      label-petawatt: petawatt
+      label-terawatt: terawatt
+      label-gigawatt: gigawatt
+      label-megawatt: megawatt
+      label-kilowatt: quilowatt
+      label-hectowatt: hectovátio
+      label-decawatt: decawatt
+      label-deciwatt: deciwatt
+      label-centiwatt: centiwatt
+      label-milliwatt: miliwatt
+      label-microwatt: microwatt
+      label-nanowatt: nanowatt
+      label-picowatt: picowatt
+      label-femtowatt: femtowatt
+      label-horsepower: cavalos de potência
+      label-mechanical-horsepower: potência mecânica
   pressure-converter:
     title: Conversor de Unidades de Pressão
     description: Converter valores entre unidades de pressão
+    texts:
+      label-pascal: Pascal
+      label-pettapascal: pettapascal
+      label-terapascal: terapascal
+      label-gigapascal: gigapascal
+      label-megapascal: megapascal
+      label-kilopascal: quilopascal
+      label-hectopascal: hectopascal
+      label-decapascal: decapascal
+      label-decipascal: decipascal
+      label-centipascal: centipascal
+      label-millipascal: milipascal
+      label-micropascal: micropascal
+      label-nanopascal: nanopascal
+      label-picopascal: picopascal
+      label-femtopascal: femtopascal
+      label-bar: bar
+      label-petabar: petabar
+      label-terabar: espalhados
+      label-gigabar: gigabar
+      label-megabar: megabar
+      label-kilobar: quilobar
+      label-hectobar: hectobar
+      label-decabar: Fui decapitado.
+      label-decibar: decifrar
+      label-centibar: centibar
+      label-millibar: milibar
+      label-microbar: microbar
+      label-nanobar: nanobar
+      label-picobar: picobar
+      label-femtobar: femtobar
+      label-torr: torr
+      label-millitorr: militorr
+      label-atmosphere: atmosfera
+      label-pound-per-square-inch: libra por polegada quadrada
+      label-lbf-in2: lbf/pol²
   properties-to-yaml:
     title: Propriedades para YAML
     description: Converter conteúdo Java .properties para Yaml
@@ -3271,6 +3653,11 @@ tools:
       title-country-to-timezones: País para fusos horários
       label-country: País
       title-timezones-to-countries: Fusos horários para países
+      title-posix-timezones: Fusos horários Strings POSIX
+      search-posix-timezones: Digite um fuso horário ou uma sequência POSIX para pesquisar.
+      tag-no-results: Nenhum resultado
+      tag-timezone: Fuso horário
+      tag-posix: String POSIX
   torrent-to-magnet:
     title: Torrent para Magnet
     description: Converter um arquivo torrent em uma URL Magnet
@@ -3406,6 +3793,65 @@ tools:
   volume-converter:
     title: Conversor de unidades de volume
     description: Converter valores de unidades de volume
+    texts:
+      label-cubic-meter-stere: metro cúbico/estéreo
+      label-cubic-petameter: petâmetro cúbico
+      label-cubic-terameter: terametro cúbico
+      label-cubic-gigameter: gigametro cúbico
+      label-cubic-megameter: megâmetro cúbico
+      label-cubic-kilometer: quilômetro cúbico
+      label-cubic-hectometer: hectômetro cúbico
+      label-cubic-decameter: decâmetro cúbico
+      label-cubic-decimeter: decímetro cúbico
+      label-cubic-centimeter: centímetro cúbico
+      label-cubic-millimeter: milímetro cúbico
+      label-cubic-micrometer: micrômetro cúbico
+      label-cubic-nanometer: nanômetro cúbico
+      label-cubic-picometer: picômetro cúbico
+      label-cubic-femtometer: femtômetro cúbico
+      label-liter: litro
+      label-petaliter: petalitre
+      label-teraliter: terralitro
+      label-gigaliter: gigaliter
+      label-megaliter: megalitro
+      label-kiloliter: quilolitro
+      label-hectoliter: hectolitro
+      label-decaliter: decalitro
+      label-deciliter: decilitro
+      label-centiliter: centilitro
+      label-milliliter: mililitro
+      label-microliter: microlitro
+      label-nanoliter: nanolitro
+      label-picoliter: picolitro
+      label-femtoliter: femtolitro
+      label-cubic-mile: milha cúbica
+      label-acre-foot: acre-pé
+      label-cubic-yard: jarda cúbica
+      label-cubic-foot: pé cúbico
+      label-board-feet: pés de tábua
+      label-cubic-inch: polegada cúbica
+      label-measurement-ton: tonelada de medição
+      label-imperial-barrel: barril imperial
+      label-imperial-bushel: alqueire imperial
+      label-imperial-peck: bico imperial
+      label-imperial-gallon: galão imperial
+      label-imperial-quart: quarto imperial
+      label-imperial-pint: pinta imperial
+      label-imperial-fluid-ounce: onça fluida imperial
+      label-teaspoon: colher de chá
+      label-tablespoon: colher de sopa
+      label-us-fluid-ounce: onça fluida americana
+      label-cup: xícara
+      label-us-legal-cup: Copa legal dos EUA
+      label-us-liquid-pint: pinta líquida americana
+      label-us-liquid-quart: quarto líquido americano
+      label-us-liquid-gallon: galão líquido americano
+      label-us-bushel: bushel americano
+      label-us-peck: bicada americana
+      label-us-dry-gallon: galão seco americano
+      label-us-dry-barrel: barril seco americano
+      label-us-dry-quart: Quarto seco americano
+      label-us-dry-pint: pinta seca americana
   week-number-converter:
     title: Conversor de números de semana
     description: Converter entre número da semana ISO, número da semana em mês e data
@@ -3471,6 +3917,7 @@ tools:
       tag-fingerprint: "Impressão digital:"
       tag-public-key: Chave pública
       tag-private-key: Chave privada
+      rsa-bits: "Bits RSA:"
   xpath-memo:
     title: Folha de dicas de sintaxe XPath
     description: Folha de dicas de sintaxe XPath
@@ -3859,8 +4306,6 @@ tools:
       title-converted-data: Dados convertidos
       tag-convert: Converter
   firewalld-generator:
-    title: Gerador de linha de comando FW
-    description: Gerar linhas de comando fw
     texts:
       label-service: Serviço
       label-port: Porta
@@ -3881,6 +4326,8 @@ tools:
       label-permanent: Permanente
       title-generated-fw-command: "Comando fw gerado:"
       tag-const-zone-ref: zona constante = ref
+    title: gerador de linha de comando firewalld
+    description: Gerar linhas de comando do firewalld
   fortune-wheel:
     title: Roda da fortuna
     description: Uma roda da fortuna configurável
@@ -5058,6 +5505,8 @@ tools:
       label-brightness: Brilho
       label-grayscale: Tons de cinza
       label-invert: Invertido
+      label-oklab: com licença
+      label-oklch: oklch
     models:
       text:
         invalid-label-tolowercase-format: Formato {0} inválido.
@@ -5144,6 +5593,9 @@ tools:
       tag-corners-square-options: Opções de cantos quadrados
       tag-small-terminal: Terminal Pequeno
       title-image: Imagem
+      label-qr-code-embeddable-dataurl: "URL dos dados da imagem do código QR:"
+      link-qr-code-open-embeddable-link: Abrir link incorporável
+      label-qr-code-image-viewer: Código QR incorporável
   basic-auth-generator:
     title: Gerador de autenticação básica
     description: Gere um cabeçalho de autenticação básico base64 a partir de um nome
@@ -5177,6 +5629,8 @@ tools:
   meta-tag-generator:
     texts:
       label-your-meta-tags: Suas meta tags
+      isbn: ISBN
+      book: Livro
     article:
       text:
         tag-words-associated-with-this-article: Palavras-chave associadas a este artigo...
@@ -5258,6 +5712,7 @@ tools:
         summary-with-large-image: Resumo com imagem grande
         summary: Resumo
         twitter: Twitter
+        the-name-of-the-twitter-account-of-the-creator-ex-cthmsst: "O nome da conta do Twitter do criador (ex: {':'} {'@'}cthmsst)..."
     videoEpisode:
       text:
         which-series-this-episode-belongs-to: A qual série esse episódio pertence...
@@ -5278,6 +5733,50 @@ tools:
     videoOther:
       text:
         other-video-details: Outros detalhes do vídeo
+    website:
+      text:
+        article: Artigo
+        profile: Perfil
+        song: Canção
+        book: Livro
+        music: Música
+        music-0: Música
+        music-album: Álbum de música
+        playlist: Lista de reprodução
+        radio-station: Estação de rádio
+        video: Vídeo
+        video-0: Vídeo
+        movie: Filme
+        episode: Episódio
+        tv-show: Programa de TV
+        other-video: Outro vídeo
+        general-information: Informações gerais
+        page-type: Tipo de página
+        select-the-type-of-your-website: Selecione o tipo do seu site...
+        enter-the-title-of-your-website: Digite o título do seu site...
+        enter-the-description-of-your-website: Insira a descrição do seu site...
+        page-url: URL da página
+        enter-the-url-of-your-website: Digite o endereço do seu site...
+    ies-lighting-guidelines:
+      texts:
+        tag-application: Aplicativo
+    videoTVShow:
+      text:
+        tv-show-details: Detalhes do programa de TV
+    basic-auth-generator:
+      username: Digite o nome de usuário da pessoa...
+    qr-code-generator:
+      texts:
+        title-image: Imagem
+    qr-contact-info-generator:
+      texts:
+        label-website: Site
+    xslt-tester:
+      texts:
+        tag-title: Título
+    ical-generator:
+      texts:
+        label-description: Descrição
   regex-tester:
     title: Testador de Regex
     description: Teste suas expressões regulares com texto de exemplo.
@@ -5508,6 +6007,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Digite um IBAN para verificar a validade...
       title-valid-iban-examples: Exemplos de IBAN válidos
       placeholder-enter-ibans-to-check-for-validity: Insira um IBAN por linha para verificar a validade
+      bank-name: Nome do banco
+      account-number: Número de conta
+      branch-identifier: Identificador da filial
+      bank-identifier: Identificador bancário
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: QR-IBAN não permitido
@@ -5555,6 +6059,13 @@ tools:
       label-base64-64: Base64 (64)
       placeholder-base64-version-will-be-here: A versão Base64 estará aqui...
       tag-custom: "Personalizado:"
+      label-space-separation: Separação espacial
+      label-binary-size: Tamanho binário
+      label-octal-size: Tamanho octal
+      label-decimal-size: Tamanho decimal
+      label-hexadecimal-size: Tamanho hexagonal
+      label-base64-size: Tamanho Base64
+      label-custom-size: Tamanho personalizado
     model:
       text:
         invalid-digit-digit-for-base-finalfrombase: Dígito inválido &quot;{0}&quot; para base {1}.
@@ -5814,6 +6325,7 @@ tools:
       placeholder-paste-your-json-schema-here: Cole seu esquema JSON aqui...
       title-schema-validation-errors: Erros de validação de esquema
       label-unescape-json-string: "Desfazer o escape da string JSON:"
+      label-viewer: Visualizador
     text:
       provided-json-is-not-valid: O JSON fornecido não é válido.
       try-again-with-repairjsonlabel: Tente novamente com &quot;{0}&quot;
@@ -5905,6 +6417,23 @@ tools:
       label-fingerprint-base64: "Impressão digital (base64):"
       label-fingerprint-asn1: "Impressão digital (asn1):"
       label-fingerprint-ssh: "Impressão digital (ssh):"
+      label-pem-header: "Tipo de cabeçalho PEM:"
+      autodetect: Detecção automática
+      certificate-x-509: Certificado (X.509)
+      certificate-request-csr-pkcs-10: Solicitação de Certificado (CSR / PKCS#10)
+      private-key-pkcs-8: Chave privada (PKCS#8)
+      public-key-pkcs-8: Chave pública (PKCS#8)
+      encrypted-private-key-pkcs-8-encrypted: Chave privada criptografada (criptografia PKCS#8)
+      rsa-private-key-pkcs-1: Chave privada RSA (PKCS#1)
+      rsa-public-key-pkcs-1: Chave pública RSA (PKCS#1)
+      ec-private-key: Chave privada EC
+      ec-parameters: Parâmetros CE
+      dsa-private-key: Chave privada DSA
+      dsa-public-key: Chave pública DSA
+      openssh-private-key: Chave privada do OpenSSH
+      ssh-public-key-rfc4716: Chave pública SSH (RFC4716)
+      pgp-public-key-block: Bloco de chave pública PGP
+      pgp-private-key-block: Bloco de chave privada PGP
     service:
       text:
         type: "Tipo:"
@@ -6289,6 +6818,9 @@ tools:
       label-django-secret-key: "Chave secreta do Django:"
       tag-copy: Cópia
       tag-regenerate: Regenerado
+    service:
+      texts:
+        generating-range-is-too-large: O alcance de geração é muito grande.
   dnsbl-checker:
     title: Verificador DNSBL
     description: Verifique se um determinado IP está em algum dos servidores
@@ -6337,6 +6869,7 @@ tools:
       title-html-head-tags: 📄 Tags de cabeçalho HTML
       tag-upload-png-image: Carregar imagem PNG
       tag-download-zip: 📦 Baixar ZIP
+      invalid-png-file: Arquivo PNG inválido!
   font-compare:
     title: Comparar fontes
     description: Comparar com fontes em um determinado texto
@@ -6422,6 +6955,12 @@ tools:
       label-fallback: "Cair pra trás:"
       placeholder-fallback-font: Fonte de reserva
       tag-defineprops: defineProps
+    text:
+      by-font-name: Por nome da fonte
+      by-font-url: Por URL da fonte
+      by-font-file: Por arquivo de fonte
+      by-inline-css: Por CSS embutido
+      by-css-url: Por URL CSS
   gpt-token-encoder:
     title: Codificador/Decodificador de Token GPT
     description: Codificar texto em tokens GPT e decodificar tokens GPT de volta para texto
@@ -6458,6 +6997,10 @@ tools:
       tag-original-image: Imagem original
       tag-inverted-image: Imagem Invertida
       tag-clear-upload-new: Limpar e carregar novo
+    service:
+      texts:
+        file-must-be-an-image: O arquivo deve ser uma imagem.
+        failed-to-process-image-err: "Falha ao processar a imagem:"
   image-comparer:
     title: Comparação de imagens
     description: Uma ferramenta para comparar imagens visualmente
@@ -6472,6 +7015,9 @@ tools:
       tag-compare: Comparar
       tag-upload-left: Carregar à esquerda
       tag-upload-right: Carregar direito
+    text:
+      compare-by-url: Comparar por URL
+      compare-by-upload: Comparar por Upload
   logrotate-generator:
     title: Gerador Apache LogRotate
     description: Gerar configuração de rotação do Apache .log
@@ -6599,6 +7145,16 @@ tools:
       label-decimal: "Decimal:"
       label-octal: "Octal:"
       label-hexadecimal: "Hexadecimal:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Entrada hexadecimal inválida.
+          Somente números de 0 a 9 e de A a F são permitidos.
+        invalid-1: Inválido
+        invalid-0: Inválido
+        invalid: Inválido
+        unsupported-middle-endian-format: Formato middle-endian não suportado.
+        failed-to-parse-bytes: Falha ao analisar os bytes.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: A entrada deve ser {0} caracteres hexadecimais para {1} bit.
   mttdl-calculator:
     title: Calculadora de confiabilidade RAID
     description: Calcula a confiabilidade do sistema de armazenamento usando a
@@ -6740,6 +7296,11 @@ tools:
       tag-convert: Converter
       tag-axial: Axial
       tag-radial: Radial
+    text:
+      bands-notation: Bandas → Notação
+      notation-bands: Notação → Bandas
+      number-notation: Número → Notação
+      notation-number: Notação → Número
   sed-command-generator:
     title: Gerador de comandos Sed
     description: Gerar comandos sed unix
@@ -7124,6 +7685,9 @@ tools:
       title-mw-to-dbm: mW para dBm
       label-mw-value: "Valor mW:"
       label-corresponding-dbm-value: "Valor dBm correspondente:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: A potência em miliwatts deve ser maior que 0.
   diceware-generator:
     title: Gerador de senhas Diceware
     description: Gerar senha aleatória usando o método Diceware
@@ -7318,6 +7882,7 @@ tools:
       label-docker-compose-file: "Arquivo Docker Compose:"
       placeholder-paste-your-docker-compose-yaml-here: Cole aqui o seu arquivo YAML do Docker Compose...
       title-extract-env: Extraia o arquivo .env
+      title-updated-docker-compose: "Docker Compose atualizado:"
   emv-tlv-decoder:
     title: decodificador EMV TLV
     description: Decodifica os dados EMV TLV (tag-length-value) e suas tags
@@ -7358,6 +7923,9 @@ tools:
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x:
         "{'{'}&quot;to&quot;:&quot;0x...&quot;,&quot;data&quot;:&quot;0x...&quo\
         t;{'}'} ou raw 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Os dados da transação devem começar com 0x.
   file-splitter:
     title: Divisor de Arquivos
     description: Dividir arquivos JSON, XML ou de texto por grupo de nós ou por
@@ -7376,6 +7944,9 @@ tools:
       tag-process-chunks: Processar partes
       tag-download-all: Baixar tudo
       tag-download: Download
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Formato não suportado ou conteúdo inválido
   gitignore-generator:
     title: Gerador de GitIgnore
     description: Gere um arquivo .gitignore para um conjunto de modelos comuns.
@@ -7489,6 +8060,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Arraste e solte um arquivo PDF aqui ou clique para selecionar um arquivo.
       title-logs: Registros
       label-ghostscript: Script fantasma
+      process-run-failed: A execução do processo falhou
+      an-error-occured-processing: Ocorreu um erro no processamento.
   serial-console:
     title: Console de porta serial
     description: Conectar, ler e enviar mensagens para a porta serial
@@ -7749,6 +8322,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: ": Sair do Modo de Pixel Morto"
       tag-start-dead-pixel: Início Pixel morto
+    title: Testador de Pixel Morto
+    description: Ferramenta para verificar se um pixel na sua tela está morto ou não.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Excluir prefixos SI
@@ -7756,7 +8331,9 @@ tools:
       si-converter: Acesse o Conversor de Prefixos SI
   geo-coordinates-converter:
     title: Conversor de Coordenadas Geográficas
-    description: Converter coordenadas geográficas entre WGS84, GCJ02, BD09 e CGCS2000
+    description: Converta coordenadas geográficas entre WGS84, GCJ02, BD09, CGCS2000
+      e WebMercator. Converta também entre Decimal, DMS e UTM. E com um mapa
+      interativo.
     texts:
       label-latitude: "Latitude:"
       label-longitude: "Longitude:"
@@ -7776,6 +8353,32 @@ tools:
       tag-convert-batch: Converter em lote
       tag-longitude-east-is-positive-west-is-negative: "Longitude: Leste é positivo, Oeste é negativo."
       tag-latitude-north-is-positive-south-is-negative: "Latitude: Norte é positivo, Sul é negativo."
+      coordinates-notations: Notações de coordenadas
+      decimal-projections: Projeções decimais
+      north: Norte
+      south: Sul
+      decimal-notation: Notação decimal
+      latitude-decimal: Latitude (decimal)
+      longitude-decimal: Longitude (decimal)
+      dms-notation: Notação DMS
+      latitude-dms: Latitude (DMS)
+      longitude-dms: Longitude (DMS)
+      utm-notation: Notação UTM
+      utm-zone: Zona UTM
+      hemisphere: Hemisfério
+      easting: Leste
+      northing: Norte
+      label-n: N
+      label-s: S
+      label-e: E
+      label-w: EM
+    text:
+      coordinate-system: Sistema de coordenadas
+      decimal-format-lng-lat: Formato decimal (longitude, latitude)
+      dms-format-lng-lat: Formato DMS (longitude, latitude)
+      download-results-csv: Baixar resultados em CSV
+      batch-lat-lng-converter: Conversor de Latitude/Longitude em Lote
+      single-lat-lng-converter: Conversor único de latitude/longitude
   si-prefixes-converter:
     title: Conversor de prefixos SI
     description: Converter entre prefixos métricos
@@ -7818,10 +8421,14 @@ tools:
     layout:
       text:
         made-with-npmpackages: Feito com {0}
+        runs-entirely-in-your-browser-no-external-requests: Funciona inteiramente no seu navegador. Sem requisições externas.
   acceleration-converter:
     title: Conversor de aceleração
     description: Converter valores entre unidades de aceleração
     externalAccess: nulo
+    texts:
+      label-g-force: força g
+      label-meter-per-second-squared: metro por segundo ao quadrado
   docker-image-downloader:
     title: Downloader de imagens Docker
     description: Baixe uma imagem Docker a partir de um registro Docker, uma
@@ -7897,6 +8504,16 @@ tools:
     title: Conversor de Frequência
     description: Converter valores entre unidades de frequência
     externalAccess: nulo
+    texts:
+      label-hertz: hertz
+      label-millihertz: milihertz
+      label-kilohertz: quilohertz
+      label-megahertz: megahertz
+      label-gigahertz: gigahertz
+      label-terahertz: terahertz
+      label-revolutions-per-minute: rotações por minuto
+      label-degree-per-second: graus por segundo
+      label-radian-per-second: radiano por segundo
   markdown-to-text:
     title: Markdown para texto
     description: Converter Markdown em texto simples
@@ -7938,7 +8555,6 @@ tools:
       tag-back: Voltar (←)
       tag-next: Próximo (→)
       tag-reset: Reiniciar
-      tag-: ↓
       tag-or: "- OU -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Controle a reprodução e a navegação sem tocar no mouse.
       tag-shortcut: Atalho
@@ -7957,10 +8573,26 @@ tools:
       tag-jump-to-start: Ir para o início
       tag-end: Fim
       tag-jump-to-end: Ir para o fim
+    text:
+      please-provide-some-text-first: Por favor, forneça algum texto primeiro.
+      unsupported-file-type: Tipo de arquivo não suportado.
+      display: Mostrar
+      text: Texto
+      settings: Configurações
+      keyboard-shortcuts: Atalhos de teclado
+      ready: Preparar
+      words: palavras
+      wpm: Palavras por minuto
   speed-converter:
     title: Conversor de velocidade
     description: Converter valores entre unidades de velocidade
     externalAccess: nulo
+    texts:
+      label-meter-per-second: metro por segundo
+      label-kilometer-per-hour: quilômetro por hora
+      label-miles-per-hour: milhas por hora
+      label-knot: nó
+      label-feet-per-second: pés por segundo
   tab-to-spaces:
     title: Tabulação para Espaços
     description: Converter tabulação em vários espaços
@@ -8006,10 +8638,1572 @@ tools:
       tag-apply-configuration: Aplicar configuração
       tag-clear-logs: Limpar registros
       tag-send: Enviar
+      already-connected: ⚠️ Já está conectado
+      connected-to-websocket-bridge: ✅ Conectado à ponte WebSocket
+      disconnected: 🔌 Desconectado
+      no-active-connection: ⚠️ Sem conexão ativa
+      sent-text: "➡️ Mensagem enviada:"
+      configured: ⚙️ Configurado
+      sent-hex: "➡️ Enviou hexadecimal:"
+      disconnecting: 🔻 Desconectando...
+      error: "❌ Erro:"
+      end: "🛑 Fim:"
+      text: "📩 Texto:"
+      binary: "📩 Binário:"
+    text:
+      connected: Conectado
+      disconnected: Desconectado
   volume-flow-rate-converter:
     title: Conversor de taxa de fluxo de volume
     description: Converter valores entre unidades de vazão volumétrica
     externalAccess: nulo
+    texts:
+      label-cubic-millimeters-per-second: milímetros cúbicos por segundo
+      label-cubic-centimeters-per-second: centímetros cúbicos por segundo
+      label-milliliters-per-second: mililitros por segundo
+      label-centiliters-per-second: centilitros por segundo
+      label-deciliters-per-second: decilitros por segundo
+      label-liters-per-second: litros por segundo
+      label-liters-per-minute: litros por minuto
+      label-liters-per-hour: litros por hora
+      label-kiloliters-per-second: quilolitros por segundo
+      label-kiloliters-per-minute: quilolitros por minuto
+      label-kiloliters-per-hour: quilolitros por hora
+      label-cubic-meters-per-second: metros cúbicos por segundo
+      label-cubic-meters-per-minute: metros cúbicos por minuto
+      label-cubic-meters-per-hour: metros cúbicos por hora
+      label-cubic-kilometers-per-second: quilômetros cúbicos por segundo
+      label-teaspoons-per-second: colheres de chá por segundo
+      label-tablespoons-per-second: colheres de sopa por segundo
+      label-cubic-inches-per-second: polegadas cúbicas por segundo
+      label-cubic-inches-per-minute: polegadas cúbicas por minuto
+      label-cubic-inches-per-hour: polegadas cúbicas por hora
+      label-fluid-ounces-per-second: onças fluidas por segundo
+      label-fluid-ounces-per-minute: onças fluidas por minuto
+      label-fluid-ounces-per-hour: onças fluidas por hora
+      label-cups-per-second: xícaras por segundo
+      label-pints-per-second: pintas por segundo
+      label-pints-per-minute: pintas por minuto
+      label-pints-per-hour: pintas por hora
+      label-quarts-per-second: quartos por segundo
+      label-gallons-per-second: galões por segundo
+      label-gallons-per-minute: galões por minuto
+      label-gallons-per-hour: galões por hora
+      label-cubic-feet-per-second: pés cúbicos por segundo
+      label-cubic-feet-per-minute: pés cúbicos por minuto
+      label-cubic-feet-per-hour: pés cúbicos por hora
+      label-cubic-yards-per-second: jardas cúbicas por segundo
+      label-cubic-yards-per-minute: jardas cúbicas por minuto
+      label-cubic-yards-per-hour: jardas cúbicas por hora
+  tip-calculator:
+    title: Calculadora de gorjetas
+    description: Calcule a gorjeta da conta e divida-a entre várias pessoas.
+    texts:
+      title-bill-details: Detalhes da fatura
+      label-bill-amount: "Valor da fatura:"
+      placeholder-total-bill: Valor total da fatura
+      label-tip-percentage: "Percentagem da gorjeta:"
+      placeholder-tip: Dica %
+      label-number-of-person: "Número de pessoas:"
+      placeholder-people: Pessoas
+      title-results: Resultados
+      label-tip-amount: "Valor da gorjeta:"
+      label-total-bill: "Valor total da conta:"
+      label-amount-per-person: "Valor por pessoa:"
+      title-quick-tip: Dica rápida %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: JSON para .env
+    description: Converta um objeto JSON simples em um arquivo .env. As chaves são
+      escritas em maiúsculas e os valores são colocados entre aspas com
+      segurança quando contêm espaços em branco, aspas ou caracteres especiais
+      do ambiente.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: O JSON fornecido não é um objeto plano válido.
+      input-label-your-json: Seu JSON
+      input-placeholder-paste-your-json-here: Cole seu JSON aqui...
+      output-label-env-from-your-json: .env do seu JSON
+  calendar-converter:
+    service:
+      text:
+        sunday: Domingo
+        wednesday: Quarta-feira
+        tuesday: Terça-feira
+        monday: Segunda-feira
+        thursday: Quinta-feira
+        friday: Sexta-feira
+        saturday: Sábado
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Duração do ano inválida: {0} dias."
+        common-deficient-353-days: Deficiência comum (353 dias)
+        common-regular-354-days: Comum regular (354 dias)
+        common-complete-355-days: Comum completo (355 dias)
+        embolismic-deficient-383-days: Deficiência embólica (383 dias)
+        embolismic-regular-384-days: Embolismo regular (384 dias)
+        embolismic-complete-385-days: Embolia completa (385 dias)
+        normal-year: Ano normal
+        leap-year: Ano bissexto
+    title: Conversor de calendário
+    description: Converter datas e horas entre os formatos gregoriano, juliano,
+      hebraico, islâmico, persa, maia, indiano, francês republicano, ISO-8601,
+      Unix e serial do Excel.
+    externalAccess: nulo
+    texts:
+      label-january: Janeiro
+      label-february: Fevereiro
+      label-march: Marchar
+      label-april: abril
+      label-may: Poderia
+      label-june: Junho
+      label-july: Julho
+      label-august: Agosto
+      label-september: Setembro
+      label-october: outubro
+      label-november: novembro
+      label-december: dezembro
+      label-nisan-נִיסָן: Nisan
+      label-iyyar-אִיָּר: Iyyar (Iyyar)
+      label-sivan-סִיוָן: Sivan
+      label-tammuz-תַּמּוּז: Tamuz
+      label-av-אָב: Av (Av)
+      label-elul-אֱלוּל: Elul
+      label-tishri-תִּשְׁרֵי: Tishri
+      label-heshvan-חֶשְׁוָן: Heshvan (Heshvan)
+      label-kislev-כִּסְלֵו: Kislev
+      label-teveth-טֵבֵת: Teveth
+      label-shevat-שְׁבָט: Shevat (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Adar/Adar I (Adar)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Veadar/Adar II (Segundo Adar)
+      label-muharram-مُحَرَّم: Muharram (مُحَرَّم)
+      label-safar-صَفَر: Safar (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al-Awwal (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabiʿ ath-Thani (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada al-Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath-Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Rajab (رَجَب)
+      label-shaʿban-شَعْبان: Shaʿban (شَعْبان)
+      label-ramadan-رَمَضان: Ramadã
+      label-shawwal-شَوّال: Shawwal
+      label-dhu-al-qaʿda-ذو-القَعْدة: Dhu al-Qaʿda (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al-Hijja (ذو الحِجّة)
+      label-farvardin-فروردین: Farvardin (Farvardin)
+      label-ordibehesht-اردیبهشت: Ordibehesht (Ordibehesht)
+      label-khordad-خرداد: Khordad (Khordad)
+      label-tir-تیر: Tir (Tir)
+      label-mordad-مرداد: Mordad (Mordad)
+      label-shahrivar-شهریور: Shahrivar (Shahrivar)
+      label-mehr-مهر: Mais (Mais)
+      label-aban-آبان: Aban (novembro)
+      label-azar-آذر: Azar (Azar)
+      label-dey-دی: Dey (O)
+      label-bahman-بهمن: Bahman (Bahman)
+      label-esfand-اسفند: Esfand (março)
+      label-caitra-चैत्र: Caitra (Chaitra)
+      label-vaisakha-वैशाख: Vaisakha (Vaishakh)
+      label-jyaistha-ज्येष्ठ: Jyaistha (Sênior)
+      label-asadha-आषाढ़: Asadha
+      label-sravana-श्रावण: Sravaná
+      label-bhadra-भाद्रपद: Bhadra (Bhadrapada)
+      label-asvina-आश्विन: Asvina (Ashwin)
+      label-kartika-कार्तिक: Kartika
+      label-agrahayana-अग्रहायण: Agrahayana (Agrahayana)
+      label-pausa-पौष: Pausa
+      label-magha-माघ: Magha
+      label-phalguna-फाल्गुन: Phalguna
+      label-vendémiaire: Vendémiaire
+      label-brumaire: Brumário
+      label-frimaire: Frimaire
+      label-nivôse: Nivôse
+      label-pluviôse: Pluviôse
+      label-ventôse: Ventôse
+      label-germinal: Germinal
+      label-floréal: Floral
+      label-prairial: Pradaria
+      label-messidor: Messidor
+      label-thermidor: Termidor
+      label-fructidor: Frutífero
+      label-sans-culottides: Sans-culottides
+      label-i: EU
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Primidi (1)
+      label-duodi-2: Dê (2)
+      label-tridi-3: Três (3)
+      label-quartidi-4: Quartos (4)
+      label-quintidi-5: Quintídio (5)
+      label-sextidi-6: Sextidi (6)
+      label-septidi-7: Septidi (7)
+      label-octidi-8: Octidi (8)
+      label-nonidi-9: De fato (9)
+      label-décadi-10: Décadi (10)
+      label-vertu-1: Virtude (1)
+      label-génie-2: Gênio (2)
+      label-travail-3: Trabalho (3)
+      label-opinion-4: Opinião (4)
+      label-récompenses-5: Recompensas (5)
+      label-révolution-6: Revolução (6)
+      tab-gregorian: gregoriano
+      label-date: Data
+      label-leap: "Salto:"
+      label-time: "Tempo:"
+      label-weekday: "Dias de semana:"
+      tab-julian-day: Dia de Julian
+      label-julian-day: "Dia de Julian:"
+      tab-modified-julian: Juliano modificado
+      label-modified-julian-day: "Dia Juliano Modificado:"
+      tab-julian-calendar: Calendário juliano
+      tab-gregorian-serial: Serial Gregoriano
+      label-gregorian-serial-day: "Dia da Serialização Gregoriana:"
+      tab-hebrew: hebraico
+      tab-islamic: islâmico
+      tab-persian: persa
+      tab-persian-algorithmic: Algoritmo Persa
+      tab-mayan: Maia
+      label-long-count: "Contagem longa:"
+      label-haab: Ter esperança
+      label-tzolkin: Tzolkin
+      tab-indian-civil: Civil indiano
+      tab-french-republican: Republicanos franceses
+      label-day: "Dia:"
+      label-month: "Mês:"
+      label-décade: "Década:"
+      label-year: "Ano:"
+      tab-iso-8601: ISO‑8601
+      label-day-of-week: "Dia da semana:"
+      label-week: "Semana:"
+      label-day-of-year: "Dia do ano:"
+      tab-unix-time: Tempo Unix()
+      label-unix-time: "Tempo Unix():"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Dia da Série Excel (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Dia da Série Excel (1904):"
+      tag-this-is-a-port-of-wonderful: Este é um porto maravilhoso.
+      tag-fourmilab-ch-calendar-converter: Conversor de calendário Fourmilab.ch
+      tag-by-john-walker: Por John Walker
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: Atualizar outros calendários
+      tag-today: Hoje
+  bech32:
+    title: Codificador/Decodificador Bech32
+    description: Codificar/Decodificar/Validar betch32(m)
+    externalAccess: nulo
+    texts:
+      label-bech32: Bech32
+      label-bech32m: Praia 32m
+      tab-decode: Decodificar
+      label-bech32-m-string: "Cadeia Bech32(m):"
+      placeholder-bech32-bech32m-string: Corda Bech32 / Bech32m
+      label-variant: "Variante:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "Carga útil:"
+      placeholder-hex-payload: Carga útil hexadecimal
+      placeholder-variant: Variante
+      tab-encode: Codificar
+      label-encoded-bech32-string: "String bech32 codificada:"
+      placeholder-bech32-string: corda bech32
+      tab-batch: Lote
+      label-bech32-strings-one-per-line: "Cadeias Bech32 (uma por linha):"
+      placeholder-one-bech32-string-per-line: Uma corda Bech32 por linha
+      title-results: Resultados
+      tag-auto-detect: Detecção automática
+      tag-manual: Manual
+      tag-checksum-only: apenas a soma de verificação
+      tag-full-decode: Decodificação completa
+      tag-checksum-valid: Soma de verificação válida
+      tag-checksum-invalid: Soma de verificação inválida
+      tag-encode: Codificar
+      tag-convert: Converter
+      tag-export-csv: Exportar CSV
+      invalid-hex-payload: Carga útil hexadecimal inválida
+      input: Entrada
+      variant: Variante
+      status: Status
+      hex: Hex
+      hrp: HRP
+  docker-pangolin-labels:
+    title: Etiquetas Docker Pangolin
+    description: Converter rótulos do Docker Compose Pangolin em blueprints e vice-versa
+    externalAccess: nulo
+    texts:
+      tab-compose-blueprint: Compor → Projeto
+      label-docker-compose-yaml: "YAML do Docker Compose:"
+      placeholder-paste-full-docker-compose-yml-here: Cole o arquivo docker-compose.yml completo aqui…
+      label-generated-blueprint: "Projeto gerado:"
+      placeholder-blueprint-yaml-will-appear-here: O arquivo YAML do projeto aparecerá aqui…
+      tab-blueprint-labels: Projeto → Etiquetas
+      label-blueprint-yaml: "YAML do projeto:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Cole aqui o arquivo YAML do projeto Pangolin…
+      label-generated-docker-labels: "Rótulos Docker gerados:"
+      placeholder-docker-labels-will-appear-here: Os rótulos do Docker aparecerão aqui...
+      tag-extract-pangolin-blueprint: Extrair o projeto do pangolim
+      tag-array-key-value: Array (- chave=valor)
+      tag-object-key-value: "Objeto (chave: valor)"
+      tag-convert-to-docker-labels: Converter para rótulos do Docker
+      invalid-blueprint-yaml: YAML de projeto inválido
+  fitness-computer:
+    title: Computador de fitness
+    description: "Calcula a Taxa Metabólica Basal (TMB), o Gasto Energético Diário
+      Total (GET) / Calorias (Gasto Energético Diário Total), o Índice de Massa
+      Corporal (IMC), o Peso Ideal (Peso Corporal Ideal), a Gordura Corporal
+      (Percentual de Gordura Corporal) e a Frequência Cardíaca Máxima (FC
+      Máxima): métricas essenciais utilizadas para avaliar o condicionamento
+      físico geral e a saúde fisiológica."
+    externalAccess: nulo
+    texts:
+      label-bmr: BMR
+      label-tdee-calories: TDEE/Calorias
+      label-bmi: "IMC:"
+      label-ideal-weight: "Peso ideal:"
+      label-body-fat-us-navy: Gordura Corporal (Marinha dos EUA)
+      label-body-fat-bmi: Gordura Corporal (IMC)
+      label-max-heart-rate: Frequência cardíaca máxima
+      label-sedentary-little-or-no-exercise: "Sedentário: pouco ou nenhum exercício"
+      label-light-exercise-1-3-times-week: "Leve: exercite-se de 1 a 3 vezes por semana."
+      label-moderate-exercise-4-5-times-week: "Moderado: exercite-se de 4 a 5 vezes por semana."
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week: "Ativo: exercício diário ou exercício intenso 3 a 4 vezes por semana."
+      label-very-active-intense-exercise-6-7-times-week: "Muito ativo: exercícios intensos de 6 a 7 vezes por semana."
+      label-extra-active-very-intense-exercise-daily-or-physical-job:
+        "Extra Ativo: exercício físico muito intenso diariamente ou trabalho
+        físico."
+      label-units: "Unidades:"
+      label-formula: "Fórmula:"
+      label-gender: "Gênero:"
+      label-age: "Idade:"
+      title-body-measurements: Medidas corporais
+      label-activity-level: "Nível de atividade:"
+      title-results: Resultados
+      label-bmr-kcal-day: "Taxa metabólica basal (kcal/dia):"
+      label-tdee-calories-kcal-day: "Gasto Energético Diário Total (GET)/Calorias (kcal/dia):"
+      label-bmi-category: "Categoria de IMC:"
+      label-healthy-range-min: "Faixa saudável (mín.):"
+      label-healthy-range-max: "Faixa saudável (máxima):"
+      label-devine-1974: "— (Torna-se 1974):"
+      label-hamwi-1964: "— (Hamwi 1964):"
+      label-miller-1983: "— (Miller 1983):"
+      label-robinson-1983: "— (Robinson 1983):"
+      label-body-fat: "Percentual de gordura corporal:"
+      label-fat-mass: "Massa gorda:"
+      label-lean-mass: "Massa magra:"
+      label-max-heart-rate-bpm: "Frequência cardíaca máxima (bpm):"
+      tag-metric-kg-cm: Sistema métrico (kg, cm)
+      tag-us-lbs-inches: EUA (libras, polegadas)
+      tag-male: Macho
+      tag-female: Fêmea
+  food-energy-converter:
+    title: Conversor de Energia Alimentar
+    description: Converter entre unidades de medida de alimentos (joules, calorias)
+    externalAccess: nulo
+  iso-639-searcher:
+    title: Pesquisador ISO 639
+    description: Pesquisar em códigos de idioma ISO 639-1/2T/2B/3
+    externalAccess: nulo
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Pesquisar código de idioma ISO-639 por ISO-1, ISO-2T/2B, ISO-3, nome...
+      label-max-results: "Resultados máximos:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "INGLÊS:"
+      tag-no-results: Nenhum resultado
+      tag-search-results: Resultados da pesquisa
+      tag-iso-639-1: iso-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: iso-639-3
+      tag-english-and-local-name: Nome em inglês e nome local
+      loading-more-results: Carregando mais resultados...
+  jasypt-string-encryption:
+    title: Criptografia de strings Jasypt
+    description: Criptografe e descriptografe strings usando o padrão Jasypt (Java
+      Simplified Encryption).
+    externalAccess: nulo
+    texts:
+      label-mode: "Modo:"
+      label-password-secret-key: "Senha (Chave Secreta):"
+      placeholder-enter-jasypt-password-salt-secret-key: Digite a senha do Jasypt (salt / chave secreta)
+      title-results: Resultados
+      label-decoded: "Decodificado:"
+      label-raw: "Cru:"
+      label-enc-form: "Formulário ENC:"
+      tag-encrypt: Criptografar
+      tag-decrypt: Descriptografar
+      plain-text: "Texto simples:"
+      jasypt-encrypted-string: "Cadeia de caracteres criptografada do Jasypt:"
+      text-to-encrypt-e-g-db-password: "Texto a ser criptografado (ex.: senha do banco de dados)"
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Valor criptografado (por exemplo, ENC(...)) ou string Jasypt bruta
+  k8s-rbac-generator:
+    title: Gerador RBAC do Kubernetes
+    description: Gerar YAML de política RBAC do Kubernetes
+    externalAccess: nulo
+    texts:
+      label-user: Usuário
+      label-group: Grupo
+      label-serviceaccount: Conta de serviço
+      label-role-name: "Nome do cargo:"
+      label-role-type: Tipo de função
+      label-namespace: Espaço de nomes
+      title-rules: Regras
+      label-resources: Recursos
+      placeholder-select-resources-supports: Selecione os recursos (suporta *)
+      label-resource-names-optional: Nomes dos recursos (opcional)
+      placeholder-specific-resources-names: Nomes de recursos específicos
+      label-verbs: Verbos
+      placeholder-select-verbs-supports: Selecione os verbos (suporta *)
+      title-subjects: Assuntos
+      label-kind: Tipo
+      label-name: Nome
+      title-output-yaml: YAML de saída
+      tab-role-yaml: YAML de função
+      tab-rolebinding-yaml: YAML de vinculação de função
+      tag-clusterrole-global: Função de cluster (global)
+      tag-role-namespaced: Função (com namespace)
+      tag-add-rule: + Adicionar regra
+      tag-remove-rule: Remover regra
+      tag-add-subject: + Adicionar disciplina
+      tag-remove-subject: Remover assunto
+  objgen-html:
+    title: Conversão de ObjGen para HTML
+    description: Gere HTML xomplex a partir de sintaxe semelhante a TOML.
+    externalAccess: nulo
+    texts:
+      input-label-objgen-html-definition: Definição HTML do ObjGen
+      input-placeholder-put-your-objgen-html-definition-here: Insira aqui sua definição HTML do ObjGen...
+      output-label-generated-html: HTML gerado
+      tag-documentation: Documentação
+  objgen-json:
+    title: Geração de objetos para JSON
+    description: Gere JSON xomplex a partir de sintaxe semelhante a TOML.
+    externalAccess: nulo
+    texts:
+      input-label-objgen-json-definition: Definição JSON do ObjGen
+      input-placeholder-put-your-objgen-json-definition-here: Insira aqui sua definição JSON do ObjGen...
+      output-label-generated-json: JSON gerado
+      tag-documentation: Documentação
+  pgp-file-encryption:
+    title: Criptografia de arquivos PGP
+    description: Criptografe e descriptografe arquivos usando PGP
+    externalAccess: nulo
+    texts:
+      title-1-select-a-file: 1. Selecione um arquivo
+      title-drag-and-drop-a-file-or-click-to-select: Arraste e solte um arquivo ou clique para selecionar.
+      title-2-public-key-for-encryption: 2. Chave pública (para criptografia)
+      title-3-private-key-passphrase-for-decryption: 3. Chave privada + senha (para descriptografia)
+      label-passphrase: "Senha:"
+      placeholder-passphrase: Senha
+      tag-selected-file: "Arquivo selecionado:"
+      tag-encrypt-stream: Criptografar (fluxo)
+      tag-decrypt-stream: Decifrar (fluxo)
+      tag-encrypting: Criptografando…
+      tag-decrypting: Decifrando…
+      tag-encrypted-file-ready: Arquivo criptografado pronto.
+      tag-download-encrypted: Baixar criptografado
+      tag-decrypted-file-ready: Arquivo descriptografado pronto.
+      tag-download-decrypted: Baixar versão descriptografada
+  remove-background:
+    title: Remover o fundo da imagem
+    description: Remover o fundo de uma imagem usando IA
+    externalAccess: Baixe os modelos de fundo do HuggingFace. O processamento é
+      feito no seu navegador.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG‑1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Transparente
+      label-solid-color: Cor sólida
+      label-pattern: "Padrão:"
+      label-blurred-original: Original desfocado
+      label-adjust-contrast-brightness: Ajustar contraste/brilho
+      label-diagonal-stripes: Listras diagonais
+      label-dots: Pontos
+      label-checkerboard: Tabuleiro de xadrez
+      title-drag-and-drop-an-image-or-click-to-select: Arraste e solte uma imagem ou clique para selecionar.
+      label-model: "Modelo:"
+      label-blur: "Borrão:"
+      label-contrast: "Contraste:"
+      label-brightness: "Brilho:"
+      title-original: Original
+      title-result: Resultado
+      tag-apply-background: Aplicar experiência
+      tag-download-result: Baixar Resultado
+  shell-formatter:
+    title: Formatador de comandos do shell
+    description: Formate os comandos do shell como comandos de várias linhas
+      divididos por argumentos.
+    externalAccess: nulo
+    texts:
+      input-label-shell-commands-to-format: Comandos do Shell para formatar
+      input-placeholder-put-your-shell-commands-to-format-here: Insira aqui os comandos do shell que deseja formatar...
+      output-label-formatted-shell-commands: Comandos de shell formatados
+  shell-linearizer:
+    title: Linearizador de comandos do shell
+    description: Linearizar comandos de shell de múltiplas linhas
+    externalAccess: nulo
+    texts:
+      input-label-shell-commands-to-linearize: Comandos do Shell para linearizar
+      input-placeholder-put-your-shell-commands-to-linearize-here: Insira aqui os comandos do shell que deseja linearizar...
+      output-label-linearized-shell-commands: Comandos de shell linearizados
+  ufw-generator:
+    title: Gerador de comandos UFW
+    description: Gerar linhas de comando UFW
+    externalAccess: nulo
+    texts:
+      label-allow: Permitir
+      label-deny: Negar
+      label-reject: Rejeitar
+      label-limit: Limite
+      label-incoming: Entrada
+      label-outgoing: Extrovertido
+      label-tcp: TCP
+      label-udp: UDP
+      label-any: Qualquer
+      label-action: "Ação:"
+      label-direction: "Direção:"
+      label-protocol: "Protocolo:"
+      label-port: "Porta:"
+      placeholder-80: "80"
+      label-port-to-range: "Porta para (alcance):"
+      placeholder-443: "443"
+      label-from-ip: "Do endereço IP:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "Para IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Interface:"
+      placeholder-eth0: eth0
+      label-logging: "Registro de atividades:"
+      label-comment: "Comentário:"
+      placeholder-optional-comment: Comentário opcional
+      title-generated-command: Comando gerado
+      missing-port: Porto ausente
+  visual-subnet-calculator:
+    title: Calculadora visual de sub-redes
+    description: Uma ferramenta para projetar redes rapidamente e colaborar nesse
+      projeto com outras pessoas. Ela se concentra em agilizar o trabalho dos
+      administradores de rede, e não em cálculos acadêmicos de sub-redes.
+    externalAccess: nulo
+  zalgo:
+    title: Gerador/Banner Zalgo
+    description: Gere texto Zalgo e limpe o texto Zalgo gerado.
+    externalAccess: nulo
+    texts:
+      text-zalgo-text-copied: Texto do Zalgo copiado!
+      title-zalgo-text-generation: Geração de texto Zalgo
+      placeholder-put-your-string-here: Coloque seu fio aqui...
+      label-text-to-decorate-with-zalgo: Texto para decorar com Zalgo
+      label-intensity: "Intensidade:"
+      title-zalgo-text: Texto Zalgo
+      title-zalgo-cleaner: Limpador Zalgo
+      placeholder-put-zalgo-text-to-clean-here: Insira o texto zalgo para limpar aqui...
+      label-zalgo-text-to-clean: Texto Zalgo para limpar
+      label-cleaned-text: Texto limpo
+      placeholder-clean-zalgo-text-will-appear-here: O texto limpo do zalgo aparecerá aqui...
+      tag-generate: Gerar
+      tag-copy: Cópia
+      tag-clean: Limpar
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: É necessário definir uma das mensagens | função
+        function-must-set-messages: A função deve definir mensagens
+  dead-pixel-tester:
+    title: Testador de Pixel Morto
+  gif-to-mp4:
+    title: GIF para MP4
+    description: Converter GIF para MP4 usando ffmpeg
+    externalAccess: nulo
+    texts:
+      label-stream-loop: "Fluxo contínuo:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Arraste e solte o GIF aqui ou clique para selecionar um arquivo.
+      title-logs: Registros
+  html-to-pdf:
+    title: HTML para PDF
+    description: Gere PDFs a partir de conteúdo HTML ou URL com seleção de formato e
+      ocultação automática de banners de cookies.
+    externalAccess: Esta ferramenta envia URLs e conteúdo HTML para o serviço web
+      Puppeteer *auto-hospedado* configurado.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: Carta
+      label-legal: Jurídico
+      label-html-to-pdf-service-url: "URL do serviço de conversão de HTML para PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Autenticação básica:"
+      placeholder-username-password: nome de usuário:senha
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "Conteúdo HTML:"
+      tab-batch-url-pdf: URL do lote → PDF
+      label-urls-one-per-line: "URLs (uma por linha):"
+      title-results: Resultados
+      tab-custom-pdf-options: Opções de PDF personalizadas
+      label-format: "Formatar:"
+      label-language: "Linguagem:"
+      placeholder-en-us: en-EUA
+      label-landscape: "Paisagem:"
+      label-one-long-page: "Uma página longa:"
+      label-auto-hide-cookie-banners: "Ocultar automaticamente os banners de cookies:"
+      label-print-background: "Fundo para impressão:"
+      title-margins: Margens
+      label-top-mm: "Topo (mm):"
+      label-bottom-mm: "Parte inferior (mm):"
+      label-left-mm: "Esquerda (mm):"
+      label-right-mm: "Direita (mm):"
+      tag-html-to-pdf-service-configuration-self-hosted: Configuração do serviço HTML para PDF (hospedado localmente)
+      tag-you-must-self-host-html-to-pdf-service-see: "Você precisa hospedar o serviço
+        de conversão de HTML para PDF por conta própria. Veja:"
+      tag-html-to-pdf-service-install: Instalação do serviço HTML para PDF
+      tag-generate-pdf: Gerar PDF
+      tag-generate-pdfs: Gerar PDFs
+      tag-url: URL
+      tag-download: Download
+      tag-download-pdf: Baixar PDF
+      tag-failed: Fracassado
+  shutdown-command-generator:
+    title: Gerador de comandos de desligamento
+    description: Gere comandos de desligamento para diversos sistemas operacionais.
+    externalAccess: nulo
+    texts:
+      label-windows: Windows
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Atraso:"
+      label-specific-time: Horário específico
+      label-platform: "Plataforma:"
+      label-shutdown-time: "Tempo de desligamento:"
+      label-force: Vigor
+      label-reboot: Reinício
+      label-logoff: Logoff
+      label-cancel: Cancelar
+      label-hibernate: Hibernar
+      title-generated-command: Comando gerado
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: m
+      tag-nbsp-s: "&nbsp;s"
+  random-line-picker:
+    title: Seletor de linhas aleatórias
+    description: Selecione linhas aleatórias de um texto
+    externalAccess: "null"
+    texts:
+      label-allow-repeated-lines: Permitir linhas repetidas
+      label-number-of-lines-to-pick: "Número de linhas para escolher:"
+      label-prefix-lines-with-line-number: Adicionar números de linha
+      placeholder-picked-lines: Linhas selecionadas
+      placeholder-put-your-text-here: Coloque seu texto aqui...
+      tag-copy: Copiar
+      tag-refresh: Atualizar
+      text-picked-lines-copied-to-clipboard: Linhas selecionadas copiadas para a área de transferência!
+  keyboard-tester:
+    instructions:
+      highlight: As teclas pressionadas serão destacadas.
+      press: Pressione qualquer tecla do seu teclado para testá-lo.
+      reset: Clique no botão "Redefinir" para limpar os registros de teste.
+      tested: As teclas testadas serão exibidas em verde.
+      title: Instruções
+    keys: Chaves
+    layout: "Layout do teclado:"
+    legend:
+      pressed: Pressionado
+      tested: Testado
+      untested: Não testado
+    progress: Progresso do teste
+    reset: Reiniciar
+    size: "Tamanho do teclado:"
+    sizes:
+      "60": 60% Compact
+      full: Tamanho completo (100%)
+      tkl: TCL (80%)
+    texts:
+      label-qwerty: QWERTY
+      label-azerty: AZERTY
+      label-dvorak: Dvorak
+      label-colemak: COLEMAK
+  markdown-to-data:
+    texts:
+      label-paste-your-markdown-content: "Cole seu conteúdo em Markdown:"
+      placeholder-your-markdown: Seu markdown...
+    title: Markdown para dados
+    description: Converter tabela Markdown para JSON, YAML, CSV, SQL INSERT, XML,
+      Markdown ou XLSX.
+    externalAccess: nulo
+  html-to-data:
+    texts:
+      label-paste-your-html-content: "Cole seu conteúdo HTML:"
+      placeholder-your-html: Seu HTML aqui...
+      error-multiple-json-blocks: Não é possível converter várias tabelas simultaneamente.
+    title: HTML para dados
+    description: Converter tabela HTML para JSON, YAML, CSV, SQL INSERT, XML,
+      Markdown ou XLSX.
+    externalAccess: nulo
+  cron-expression-builder:
+    title: Construtor de expressões Cron
+    description: Gere expressões Cron a partir de uma interface de usuário.
+    externalAccess: nulo
+    texts:
+      label-seconds: Segundos
+      label-minutes: Minutos
+      label-hours: Horas
+      label-day-of-month: Dia do mês
+      label-month: Mês
+      label-january: Janeiro
+      label-february: Fevereiro
+      label-march: Marchar
+      label-april: abril
+      label-may: Poderia
+      label-june: Junho
+      label-july: Julho
+      label-august: Agosto
+      label-september: Setembro
+      label-october: outubro
+      label-november: novembro
+      label-december: dezembro
+      label-day-of-week: Dia da semana
+      label-sunday: Domingo
+      label-monday: Segunda-feira
+      label-tuesday: Terça-feira
+      label-wednesday: Quarta-feira
+      label-thursday: Quinta-feira
+      label-friday: Sexta-feira
+      label-saturday: Sábado
+      label-year: Ano
+      label-every: todo
+      label-specific-values: Valores específicos
+      label-range: Faixa
+      label-increment: Incremento
+      title-generated-cron-expression: Expressão Cron gerada
+      title-validation-errors: Erros de validação
+      label-mode: "Modo:"
+      label-from: "De:"
+      label-to: "Para:"
+      label-start-at: "Comece em:"
+      tag-cron-expression-is-invalid: A expressão Cron é inválida.
+      paste-cron-expression: Expressão Cron de Pasta
+      e-g-5-0-12-1-2025: "Exemplo: */5 0 12 * * 1 2025"
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Domingo=0, Segunda-feira=1, ..., Sábado=6)
+      label-select-at-least-one-value: "{0}: selecione pelo menos um valor"
+      day-of-month-and-day-of-week-cannot-both-be-specific: O dia do mês e o dia da semana não podem ser ambos específicos.
+      label-start-cannot-be-greater-than-end: "{0}: o início não pode ser maior que o fim"
+      label-start-must-be-within-allowed-range: "{0}: o início deve estar dentro do intervalo permitido"
+      label-step-must-be-greater-than-1: "{0}: o passo deve ser >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: o início não pode ser maior que o fim"
+      seconds: Segundos
+      minutes: Minutos
+      hours: Horas
+      day-of-month: Dia do mês
+      month: Mês
+      day-of-week: Dia da semana
+      year: Ano
+  css-js-prettify-minify:
+    title: Formatar e minimizar CSS/JS
+    description: Formate ou minimize seu código CSS e JavaScript online.
+    externalAccess: nulo
+    texts:
+      label-javascript: JavaScript
+      label-css: CSS
+      label-language: Linguagem
+      label-indent-size: Tamanho do recuo
+      placeholder-2: "2"
+      title-prettify: Embelezar
+      label-your-code: Seu código
+      placeholder-paste-your-code-to-prettify: Cole seu código para formatá-lo...
+      label-prettified-code: Código formatado
+      title-minify: Minificar
+      placeholder-paste-your-code-to-minify: Cole seu código para minificá-lo...
+      label-minified-code: Código minificado
+  dns-propagation-tester:
+    title: Testador de propagação de DNS
+    description: Uma ferramenta simples para testar a propagação de DNS em
+      diferentes servidores.
+    externalAccess: Esta ferramenta utiliza o seu serviço de utilitários de rede
+      auto-hospedado para realizar consultas de DNS.
+    texts:
+      label-network-utilities-service-url: "URL do serviço de utilitários de rede:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Autenticação básica:"
+      placeholder-username-password: nome de usuário:senha
+      tab-dns-propagation: Propagação de DNS
+      label-domain: "Domínio:"
+      placeholder-example-com: exemplo.com
+      label-record-type: "Tipo de registro:"
+      title-resolvers-to-check: Resolvedores para verificar
+      title-results: Resultados
+      tab-custom-resolvers: Resolvedores personalizados
+      title-add-custom-resolver: Adicionar resolvedor personalizado
+      label-resolver-name: "Nome do resolvedor:"
+      placeholder-resolver-name-e-g-my-dns: "Nome do resolvedor (ex.: Meu DNS)"
+      label-resolver-ip: "Endereço IP do servidor:"
+      placeholder-resolver-ip-e-g-10-0-0-1: "Endereço IP do resolvedor (ex.: 10.0.0.1)"
+      title-your-custom-resolvers: Seus resolvedores personalizados
+      tag-network-utilities-service-configuration-self-hosted: Configuração do serviço de utilitários de rede (hospedado localmente)
+      tag-you-must-self-host-network-utilities-service-see: "Você deve hospedar o
+        serviço de utilitários de rede por conta própria. Consulte:"
+      tag-network-utilities-service-docker-install: Instalação do Docker do serviço de utilitários de rede
+      tag-select-all: Selecionar tudo
+      tag-deselect-all: Desmarcar tudo
+      tag-check-propagation: Verificar propagação
+      tag-resolver: Resolver
+      tag-resolver-ip: IP do resolvedor
+      tag-status: Status
+      tag-answers: Respostas
+      tag-checking: Verificando...
+      tag-no-answers: Sem respostas
+      tag-add-resolver: Adicionar resolvedor
+      tag-remove: Remover
+      tag-no-custom-resolvers-added-yet: Nenhum resolvedor personalizado foi adicionado ainda.
+  dns-query:
+    title: Consultas DNS/RDAP do Cloudflare
+    description: Consulte registros DNS e RDAP para qualquer nome de domínio online
+      usando o Cloudflare DNS/RDAP.org.
+    externalAccess: nulo
+    texts:
+      message-please-enter-a-valid-domain-name: Por favor, insira um nome de domínio válido.
+      text-dns-records-copied-to-the-clipboard: Registros DNS copiados para a área de transferência
+      label-domain-name: Nome de domínio
+      placeholder-e-g-example-com: "Exemplo: example.com"
+      tag-name: Nome
+      tag-ttl: TTL
+      tag-data: Dados
+      tag-copy-results: Copiar resultados
+      tag-no-records-found-for-this-domain: Nenhum registro encontrado para este domínio.
+      tag-loading-whois-info: Carregando informações do WHOIS...
+      tag-whois: QUEM É
+      tag-domain-name: Nome de domínio
+      tag-registrar: Secretário
+      tag-registration-date: Data de inscrição
+      tag-expiration-date: Data de validade
+      tag-updated-date: Data de atualização
+      tag-registrant: Registrante
+      tag-name-servers: Servidores de nomes
+      tag-domain-status: Status do domínio
+      tag-dnssec: DNSSEC
+  dns-tester:
+    title: Testador de DNS
+    description: Uma ferramenta simples para testar a resolução de DNS, consultas
+      whois e outras tarefas relacionadas ao DNS.
+    externalAccess: Esta ferramenta utiliza o seu serviço de utilitários de rede
+      auto-hospedado para realizar consultas DNS/Whois e tarefas relacionadas.
+    texts:
+      label-a-ipv4-address: A — Endereço IPv4
+      label-aaaa-ipv6-address: AAAA — Endereço IPv6
+      label-afsdb-afs-database-location: AFSDB — localização do banco de dados AFS
+      label-apl-address-prefix-list: APL — Lista de prefixos de endereço
+      label-caa-certificate-authority-authorization: CAA — Autorização da Autoridade Certificadora
+      label-cdnskey-child-dnskey: CDNSKEY — Chave DNS filha
+      label-cds-child-ds: CDS — Criança DS
+      label-cert-certificate-storage: CERT — Armazenamento de certificados
+      label-cname-canonical-name: CNAME — Nome canônico
+      label-csync-child-to-parent-sync: CSYNC — Sincronização de filho para pai
+      label-dhcid-dhcp-identifier: DHCID — Identificador DHCP
+      label-dlv-dnssec-lookaside-validation-obsolete: DLV — Validação DNSSEC Lookaside (obsoleto)
+      label-dname-non-terminal-rename: DNAME — Renomear sem ser terminal
+      label-dnskey-dnssec-public-key: DNSKEY — Chave pública DNSSEC
+      label-ds-delegation-signer: DS — Signatário da delegação
+      label-eui48-mac-address-48-bit: EUI48 — Endereço MAC (48 bits)
+      label-eui64-mac-address-64-bit: EUI64 — Endereço MAC (64 bits)
+      label-hinfo-host-information: INFORMAÇÕES IMPORTANTES — Informações do anfitrião
+      label-hip-host-identity-protocol: HIP — Protocolo de identidade do host
+      label-https-https-service-binding: HTTPS — Vinculação de serviço HTTPS
+      label-ipseckey-ipsec-key: IPSECKEY — Chave IPsec
+      label-key-security-key-obsolete: CHAVE — Chave de segurança (obsoleta)
+      label-kx-key-exchanger: KX — Trocador de chaves
+      label-loc-geographic-location: LOC — Localização geográfica
+      label-mx-mail-exchanger: MX — Trocador de correio
+      label-naptr-regex-based-rewrite: NAPTR — Reescrita baseada em expressões regulares
+      label-ns-name-server: NS — Servidor de nomes
+      label-nsec-dnssec-denial-of-existence: NSEC — DNSSEC negação de existência
+      label-nsec3-hashed-denial-of-existence: NSEC3 — Negação de existência em forma de hash
+      label-nsec3param-nsec3-parameters: NSEC3PARAM — Parâmetros NSEC3
+      label-openpgpkey-openpgp-public-key: OPENPGPKEY — Chave pública OpenPGP
+      label-ptr-reverse-lookup-pointer: PTR — Ponteiro de pesquisa reversa
+      label-rrsig-dnssec-signature: RRSIG — Assinatura DNSSEC
+      label-rp-responsible-person: RP — Pessoa responsável
+      label-sig-signature-obsolete: SIG — Assinatura (obsoleto)
+      label-smimea-s-mime-cert-association: SMIMEA — Associação de certificação S/MIME
+      label-soa-start-of-authority: SOA — Início da autoridade
+      label-spf-sender-policy-framework-deprecated: SPF — Sender Policy Framework (obsoleto)
+      label-srv-service-locator: SRV — Localizador de serviços
+      label-sshfp-ssh-public-key-fingerprint: SSHFP — Impressão digital da chave pública SSH
+      label-svcb-service-binding: SVCB — Ligação de serviço
+      label-ta-trust-anchor-experimental: TA — Âncora de confiança (experimental)
+      label-tkey-secret-key-agreement: TKEY — Acordo de chave secreta
+      label-tlsa-dane-tls-association: TLSA — Associação DANE TLS
+      label-tsig-transaction-signature: TSIG — Assinatura da transação
+      label-txt-text-record: TXT — Registro de texto
+      label-uri-uri-template: URIs — modelos de URI
+      label-zonemd-zone-message-digest: ZONEMD — Resumo da mensagem da Zona
+      label-system-default: Padrão do sistema
+      label-custom-dns-resolver: Resolvedor DNS personalizado
+      label-google-8-8-8-8: Google 8.8.8.8
+      label-google-8-8-4-4: Google 8.8.4.4
+      label-cloudflare-1-1-1-1: Cloudflare 1.1.1.1
+      label-cloudflare-1-0-0-1: Cloudflare 1.0.0.1
+      label-quad9-9-9-9-9: Quad9 9.9.9.9
+      label-quad9-149-112-112-112: Quad9 149.112.112.112
+      label-opendns-208-67-222-222: OpenDNS 208.67.222.222
+      label-opendns-208-67-220-220: OpenDNS 208.67.220.220
+      label-cleanbrowsing-185-228-168-9: Navegação limpa 185.228.168.9
+      label-cleanbrowsing-185-228-169-9: Navegação limpa 185.228.169.9
+      label-dns-watch-84-200-69-80: DNS.Watch 84.200.69.80
+      label-dns-watch-84-200-70-40: DNS.Watch 84.200.70.40
+      label-freedns-37-235-1-174: FreeDNS 37.235.1.174
+      label-freedns-37-235-1-177: FreeDNS 37.235.1.177
+      label-fdn-france-80-67-169-12: FDN France 80.67.169.12
+      label-fdn-france-80-67-169-40: FDN France 80.67.169.40
+      label-neustar-eu-156-154-70-1: Neustar EU 156.154.70.1
+      label-neustar-eu-156-154-71-1: Neustar EU 156.154.71.1
+      label-level3-209-244-0-3: Nível 3 209.244.0.3
+      label-level3-209-244-0-4: Nível 3 209.244.0.4
+      label-comodo-8-26-56-26: Confortável 8.26.56.26
+      label-comodo-8-20-247-20: Conveniente 8.20.247.20
+      label-centurylink-205-171-3-65: CenturyLink 205.171.3.65
+      label-centurylink-205-171-2-65: CenturyLink 205.171.2.65
+      label-dnspod-119-29-29-29: DNSPod 119.29.29.29
+      label-alidns-223-5-5-5: AliDNS 223.5.5.5
+      label-alidns-223-6-6-6: AliDNS 223.6.6.6
+      label-yandex-77-88-8-8: Yandex 77.88.8.8
+      label-yandex-77-88-8-1: Yandex 77.88.8.1
+      label-naver-korea-125-209-222-141: Naver Coreia 125.209.222.141
+      label-naver-korea-125-209-249-1: Naver Coreia 125.209.249.1
+      label-gigadns-brazil-189-38-95-95: GigaDNS Brasil 189.38.95.95
+      label-gigadns-brazil-189-38-95-96: GigaDNS Brasil 189.38.95.96
+      label-opendns-africa-196-3-132-153: OpenDNS África 196.3.132.153
+      label-opendns-africa-196-3-132-154: OpenDNS África 196.3.132.154
+      label-network-utilities-service-url: "URL do serviço de utilitários de rede:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Autenticação básica:"
+      placeholder-username-password: nome de usuário:senha
+      label-target-dns-resolver-ip: "Endereço IP do servidor DNS de destino:"
+      placeholder-system-default: Padrão do sistema
+      placeholder-e-g-10-0-0-53: "Exemplo: 10.0.0.53"
+      tab-dns-query: Consulta DNS
+      label-domain: Domínio
+      placeholder-example-com: exemplo.com
+      label-dns-record-type: "Tipo de registro DNS:"
+      title-result: Resultado
+      label-record-type: Tipo de registro
+      title-answers: Respostas
+      tab-whois: QUEM É
+      label-raw-whois: WHOIS bruto
+      label-parsed: Analisado
+      tab-dnssec-validation: Validação DNSSEC
+      label-validated: Validado
+      label-dnskey: Chave DNS
+      label-rrsig: RRSIG
+      tab-reverse-dns-ptr: DNS reverso (PTR)
+      label-ip-address: "Endereço IP:"
+      placeholder-8-8-8-8: 8.8.8.8
+      label-ip: IP
+      label-ptr: PTR
+      tab-soa-axfr-test: Teste SOA + AXFR
+      label-soa: SOA
+      label-axfr-allowed: AXFR permitido
+      label-records: Registros
+      tag-network-utilities-service-configuration-self-hosted: Configuração do serviço de utilitários de rede (hospedado localmente)
+      tag-you-must-self-host-network-utilities-service-see: "Você deve hospedar o
+        serviço de utilitários de rede por conta própria. Consulte:"
+      tag-network-utilities-service-docker-install: Instalação do Docker do serviço de utilitários de rede
+      tag-query-dns: Consulta de DNS
+      tag-lookup-whois: Consultar WHOIS
+      tag-validate-dnssec: Validar DNSSEC
+      tag-reverse-lookup: Pesquisa reversa
+      tag-run-soa-axfr: Executar SOA + AXFR
+  dockerfile-label-generator:
+    title: Gerador de rótulos Dockerfile
+    description: Uma ferramenta simples para gerar rótulos para Dockerfiles.
+    externalAccess: nulo
+    texts:
+      label-title: "Título:"
+      placeholder-my-project: Meu Projeto
+      label-description: "Descrição:"
+      placeholder-short-project-description: Descrição resumida do projeto
+      label-repository-url: "URL do repositório:"
+      placeholder-https-github-com-username-repo: https://github.com/username/repo
+      label-source-url: "URL de origem:"
+      label-documentation-url: "URL da documentação:"
+      placeholder-https-github-com-username-repo-readme: https://github.com/username/repo#readme
+      label-license-spdx: "Licença (SPDX):"
+      placeholder-mit: COM
+      label-version: "Versão:"
+      placeholder-1-0-0: 1.0.0
+      label-revision-commit-sha: "Revisão (Commit SHA):"
+      placeholder-abcdef123456: abcdef123456
+      label-created: "Criado:"
+      placeholder-2024-01-01t12-00-00z: 2024-01-01T12:00:00Z
+      label-authors: "Autores:"
+      placeholder-your-name-you-example-com: Seu nome {'<'}you{'@'}example.com{'>'}
+      title-generated-label-block: Bloco de RÓTULO gerado
+  https-tester:
+    title: Testador HTTPS
+    description: Validar certificado HTTPS, HSTS e redirecionamento 302.
+    externalAccess: Esta ferramenta utiliza o seu serviço de utilitários de rede
+      auto-hospedado para executar tarefas relacionadas a HTTPS/HSTS.
+    texts:
+      label-network-utilities-service-url: "URL do serviço de utilitários de rede:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Autenticação básica:"
+      placeholder-username-password: nome de usuário:senha
+      tab-certificate: Certificado
+      label-host: "Hospedar:"
+      placeholder-example-com: exemplo.com
+      label-port: "Porta:"
+      placeholder-443: "443"
+      title-result: Resultado
+      label-hostname: "Nome do host:"
+      label-not-before: "Não antes de:"
+      label-not-after: "Não depois:"
+      label-days-until-expiry: "Dias até o vencimento:"
+      label-subject: "Assunto:"
+      label-issuer: "Emissor:"
+      label-sub-alt-name: "Subnome alternativo:"
+      tab-hsts: HSTS
+      label-url: URL
+      placeholder-https-example-com: https://example.com
+      label-hsts-present: HSTS presente
+      label-max-age: Idade máxima
+      label-inc-subdomains: Subdomínios da Inc.
+      label-preload: Pré-carga
+      label-raw-header: Cabeçalho bruto
+      tab-http-https-redirect: Redirecionamento HTTP → HTTPS
+      label-domain: "Domínio:"
+      label-http-url: URL HTTP
+      label-redirected: Redirecionado
+      label-final-url: URL final
+      label-status-code: Código de status
+      label-redirect-chain: Cadeia de redirecionamento
+      title-redirect-chain-details: Detalhes da cadeia de redirecionamento
+      tag-network-utilities-service-configuration-self-hosted: Configuração do serviço de utilitários de rede (hospedado localmente)
+      tag-you-must-self-host-network-utilities-service-see: "Você deve hospedar o
+        serviço de utilitários de rede por conta própria. Consulte:"
+      tag-network-utilities-service-docker-install: Instalação do Docker do serviço de utilitários de rede
+      tag-check-certificate: Verificar certificado
+      tag-check-hsts: Verifique o HSTS
+      tag-check-redirect: Verificar redirecionamento
+  k6-script-generator:
+    title: Gerador de scripts de teste de carga K6
+    description: Gere scripts de teste de carga k6 com configurações predefinidas comuns.
+    externalAccess: nulo
+    texts:
+      label-smoke-test: Teste de fumaça
+      label-load-test: Teste de carga
+      label-stress-test: Teste de estresse
+      label-spike-test: Teste de pico
+      label-soak-test: Teste de imersão
+      label-get: PEGAR
+      label-post: PUBLICAR
+      label-put: COLOCAR
+      label-patch: CORREÇÃO
+      label-delete: EXCLUIR
+      label-scenario-preset: "Cenário predefinido:"
+      label-virtual-users-vus: "Usuários Virtuais (UVs):"
+      label-duration: "Duração:"
+      label-ramp-up-duration: "Duração da fase de aceleração:"
+      label-ramp-down-duration: "Duração da redução gradual da intensidade:"
+      label-thresholds-name-expression: "Limiares (Nome/Expressão):"
+      placeholder-metric: Métrica
+      placeholder-rule: Regra
+      label-checks-name-expression: "Verificações (Nome/Expressão):"
+      placeholder-check-name: Verifique o nome
+      placeholder-expression: Expressão
+      label-request-steps: "Etapas da solicitação:"
+      placeholder-request-url: URL de solicitação
+      label-payload: "Carga útil:"
+      placeholder-payload-json-or-text: Carga útil (JSON ou texto)
+      placeholder-headers-json: Cabeçalhos (JSON)
+      label-headers: "Cabeçalhos:"
+      label-sleep-after-this-step-seconds: "Dormir após esta etapa (em segundos):"
+      title-generated-k6-script: Script K6 gerado
+      tag-apply-preset: Aplicar predefinição
+      tag-remove: Remover
+      tag-add-threshold: Adicionar Limiar
+      tag-add-check: Adicionar verificação
+      tag-remove-step: Remover etapa
+      tag-add-step: Adicionar etapa
+  markdown-diff:
+    title: Diferença em Markdown
+    description: Compare dois documentos Markdown e veja as diferenças entre eles.
+    externalAccess: nulo
+    texts:
+      label-code: Código
+      label-preview: Pré-visualização
+      tag-source-markdown: Fonte Markdown
+      tag-modified-markdown: Markdown modificado
+  markdown-preview:
+    title: Pré-visualização em Markdown
+    description: Pré-visualização em tempo real do Markdown enquanto você digita
+    externalAccess: nulo
+    texts:
+      placeholder-your-markdown-content: Seu conteúdo em Markdown...
+      label-your-markdown-to-preview: "Seu Markdown para pré-visualização:"
+      label-rendered-preview: "Pré-visualização renderizada:"
+  markdown-table-generator:
+    title: Gerador de tabelas Markdown
+    description: Crie tabelas Markdown com a aparência do GitHub usando um editor visual.
+    externalAccess: nulo
+    texts:
+      label-left: Esquerda
+      label-center: Centro
+      label-right: Certo
+      label-paste-clipboard-table-data-here: "Cole aqui os dados da tabela da área de transferência:"
+      placeholder-paste-your-table-to-edit: Cole a tabela que deseja editar...
+      label-generated-markdown-table: "Tabela Markdown gerada:"
+      tag-import-table-data: Importar dados da tabela
+      tag-add-row: Adicionar linha
+      tag-add-column: Adicionar coluna
+  nmap-command-builder:
+    title: Construtor de comandos Nmap
+    description: Um construtor de comandos simples para gerar comandos de varredura Nmap.
+    externalAccess: nulo
+    texts:
+      label-default-scan: Verificação padrão
+      label-quick-scan: Leitura rápida
+      label-intense-scan: Varredura Intensa
+      label-full-tcp-scan: Varredura TCP completa
+      label-udp-scan: Varredura UDP
+      label-ping-sweep: Varredura de Ping
+      label-no-ping-stealth-host-discovery: Sem ping (descoberta furtiva de hosts)
+      label-top-ports-100: Principais Portos (100)
+      label-top-ports-1000: Principais Portos (1000)
+      label-firewall-evasion: Evasão de firewall
+      label-ipv6-scan: Varredura IPv6
+      label-service-version-deep-scan: Serviço e versão Análise detalhada
+      label-vulnerability-scan-nse-vuln: Análise de vulnerabilidades (NSE vuln)
+      label-http-enumeration: Enumeração HTTP
+      label-smb-enumeration: Enumeração SMB
+      label-dns-brute-force: Força bruta de DNS
+      label-ftp-audit: Auditoria FTP
+      label-ssh-audit: Auditoria SSH
+      label-full-recon-os-version-scripts: Reconhecimento completo (SO + Versão + Scripts)
+      label-target: "Alvo:"
+      placeholder-example-com-or-192-168-1-1: exemplo.com ou 192.168.1.1
+      tab-presets: Predefinições
+      label-preset: "Predefinição:"
+      placeholder-choose-a-preset: Escolha uma predefinição
+      tab-custom: Personalizado
+      title-scan-options: Opções de digitalização
+      label-os-detection-o: OS Detection (-O)
+      label-version-detection-sv: Detecção de versão (-sV)
+      label-default-scripts-sc: Scripts padrão (-sC)
+      label-traceroute-traceroute: Traceroute (--traceroute)
+      label-verbose-v: Verbose (-v)
+      label-aggressive-a: Agressivo (-A)
+      title-advanced: Avançado
+      label-custom-ports-p: Portas personalizadas (-p)
+      placeholder-80-443-or-1-65535: 80.443 ou 1-65535
+      label-timing-t: Tempo (-T)
+      label-nse-scripts-script: Scripts NSE (--script)
+      placeholder-vuln-http-title: vuln, http-title, ...
+      label-output-file-on: Arquivo de saída (-oN)
+      placeholder-scan-txt: scan.txt
+      title-generated-command: Comando gerado
+  picomatch-tester:
+    title: Testador Picomatch
+    description: Um testador simples para a biblioteca picomatch, usada para
+      correspondência de padrões glob.
+    externalAccess: nulo
+    texts:
+      label-pattern: "Padrão:"
+      placeholder-enter-a-glob-pattern-like-js: Insira um padrão glob como *.js
+      label-options: "Opções:"
+      label-generated-regex: "Expressão regular gerada:"
+      label-test-lines-one-per-line: "Linhas de teste (uma por linha):"
+      placeholder-enter-one-string-per-line: Insira uma string por linha
+      tag-case-insensitive: Sem distinção entre maiúsculas e minúsculas
+      tag-match-dotfiles: Arquivos ocultos correspondentes
+      tag-no-nested-directories-with-globstars: Não há diretórios aninhados com asteriscos glob (**)
+      tag-allows-glob-to-match-any-part-of-the-given-string-s: Permite que o glob
+        corresponda a qualquer parte da(s) string(s) fornecida(s).
+      tag-don-t-match-trailing-slashes-with-single-stars: Não combine barras invertidas com estrelas isoladas.
+  powershell-memo:
+    title: Folha de dicas do PowerShell
+    description: O PowerShell é uma linguagem de script poderosa e um shell de linha
+      de comando projetado para administração e automação de sistemas. Ele
+      oferece uma ampla gama de cmdlets e recursos que permitem aos usuários
+      gerenciar e automatizar tarefas em sistemas Windows com eficiência.
+    externalAccess: nulo
+  running-pace-calculator:
+    title: Calculadora de Ritmo de Corrida
+    description: Calcule seu ritmo de corrida, estime seus tempos de chegada para
+      corridas populares, analise os tempos parciais e encontre suas zonas de
+      treinamento.
+    externalAccess: nulo
+    texts:
+      label-length: "Comprimento:"
+      placeholder-e-g-10km-or-100m: Por exemplo, 10 km ou 100 m
+      label-time: "Tempo:"
+      placeholder-e-g-45-00-or-45min-or-1h30m: Por exemplo, 45:00 ou 45 min ou 1 h30 m...
+      label-pace: "Ritmo:"
+      placeholder-e-g-4-30-km: "Exemplo: 4,30/km"
+      label-unit: "Unidade:"
+      label-output-speed-in-instead-of-pace: "Velocidade de saída em vez de ritmo:"
+      title-result: Resultado
+      tag-km: km
+      tag-mile: milha
+      tag-calculate: Calcular
+  saml-parser:
+    title: Analisador SAML
+    description: Detecta a entrada SAML (Base64, DEFLATE ou XML), analisa, valida
+      sua assinatura e exibe uma visão estruturada da declaração, incluindo
+      emissor, sujeito, condições, contexto de autenticação, declarações e
+      status de validação.
+    externalAccess: nulo
+    texts:
+      label-saml-assertion-base64-deflate-or-xml: "Declaração SAML (Base64, DEFLATE ou XML):"
+      placeholder-paste-saml-assertion-base64-deflate-or-xml: Cole a declaração SAML (Base64, DEFLATE ou XML)
+      title-validation-options: Opções de Validação
+      label-thumbprint: "Impressão digital:"
+      placeholder-thumbprint-optional: Impressão digital (opcional)
+      label-public-key: "Chave pública:"
+      placeholder-public-key-optional: Chave pública (opcional)
+      label-audience: "Público:"
+      placeholder-audience-optional: Público (opcional)
+      title-parsed-saml-assertion: Declaração SAML analisada
+      label-issuer: "Emissor:"
+      label-assertion-id: "ID da declaração:"
+      label-session-index: "Índice da sessão:"
+      label-notbefore: "Não antes:"
+      label-notonorafter: "Não em ou depois de:"
+      label-signature-validation-status: "Status da Validação da Assinatura:"
+      title-claims: Reivindicações
+      title-raw-assertion: Asserção Bruta
+      tag-bypass-expiration: Ignorar expiração
+      tag-don-t-bypass-expiration: Não ignore o prazo de validade.
+      tag-detect-parse-and-validate: Detectar, analisar e validar
+  url-builder:
+    title: Construtor de URLs
+    description: Permite editar e construir URLs com parâmetros de consulta.
+    externalAccess: nulo
+    texts:
+      label-string: corda
+      label-number: número
+      label-boolean: booleano
+      label-date: data
+      label-datetime: data e hora
+      label-array: variedade
+      label-load-url: "Carregar URL:"
+      placeholder-paste-url-to-parse: Cole o URL para analisar
+      label-base-url: "URL base:"
+      placeholder-base-url: URL base
+      title-url-parameters: Parâmetros da URL
+      placeholder-key: chave
+      placeholder-value: valor
+      title-generated-url: URL gerada
+      tag-parse: Analisar
+  json-patch:
+    texts:
+      text-json-paths-copied-to-clipboard: Caminhos JSON copiados para a área de transferência!
+      tab-paths: Caminhos
+      label-input-json: JSON de entrada
+      placeholder-paste-json: Cole o JSON...
+      tab-generate-patch: Gerar Patch
+      label-before-json: Antes do JSON
+      placeholder-before-json: Antes do JSON...
+      label-after-json: Após JSON
+      placeholder-after-json: Após JSON...
+      title-generate-json-patch: Gerar patch JSON
+      tab-apply-patch: Aplicar Patch
+      label-json-to-patch: JSON para aplicar patch
+      placeholder-json-to-patch: JSON para aplicar patch...
+      label-json-patch-array: Matriz JSON Patch
+      placeholder-json-patch-array: Matriz JSON Patch...
+      title-patched-json: JSON corrigido
+      tag-generate-paths: Gerar caminhos
+      tag-copy-json-paths: Copiar caminhos JSON
+      tag-generate-patch: Gerar patch
+      tag-apply-patch: Aplicar remendo
+  ping:
+    title: Ping
+    description: Faça ping em um conjunto de nomes de host, IPs, CIDR ou intervalos de IP.
+    externalAccess: Esta ferramenta utiliza o serviço Self Host Network Utilities
+      para realizar pings ICMP.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Alvos (IPs/CIDRs/Nomes de host, um por linha ou , ou ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Contar:"
+      label-timeout-seconds: "Tempo limite (em segundos):"
+      tag-ping-all: Ping All
+      tag-target: Alvo
+      tag-ip: IP
+      tag-status: Status
+      tag-avg-rtt-ms: Tempo médio de ida e volta (ms)
+      tag-packet-loss: Perda de pacotes
+      tag-error: Erro
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: O CIDR expande para {0} IPs, excedendo o limite de {1}
+      tag-reachable: Acessível
+      tag-unreachable: Inalcançável
+  command-palette:
+    store:
+      texts:
+        pages: Páginas
+        learn-more-about-it-tools: Saiba mais sobre ferramentas de TI.
+        actions-0: Ações
+        report-a-bug-or-an-issue-to-help-improve-it-tools: Reporte um erro ou problema para ajudar a melhorar o it-tools.
+        report-a-bug-or-an-issue: Reportar um erro ou um problema
+        view-the-source-code-of-it-tools-on-github: Veja o código-fonte do it-tools no Github.
+        external: Externo
+        github-repository: Repositório do Github
+        actions: Ações
+        toggle-dark-mode-on-or-off: Ative ou desative o modo escuro.
+        toggle-dark-mode: Alternar modo escuro
+        tools-0: Ferramentas
+        get-a-random-tool-from-the-list: Selecione uma ferramenta aleatória da lista.
+        random-tool: Ferramenta aleatória
+        tools: Ferramentas
+  external-self-hosted-required: Hospedagem externa própria obrigatória
+  markdown-format-converter:
+    title: Conversor de Formatos
+    description: Converta entre formatos padrão como Markdown, Obsidian, Logseq,
+      Slack, Jira e outros.
+    texts:
+      label-source-format: Formato de origem
+      label-target-format: Formato de destino
+      placeholder-input-markdown: Cole ou digite seu código Markdown padrão, Obsidian ou Logseq aqui...
+      label-input-markdown: Insira Markdown
+      label-converted-output: Saída convertida
+      label-text: Texto
+      label-preview: Pré-visualização
+  restic-command-generator:
+    title: Gerador de comandos Restic
+    description: "Gere comandos CLI restic para restaurar um repositório Backrest ou
+      restic simples: um snapshot completo, apenas alguns arquivos ou um ponto
+      de montagem navegável."
+    texts:
+      intro: "Gerador apenas: nada é executado aqui e nada do que você digita sai do
+        seu navegador. Descreva seu repositório, escolha o que você precisa
+        recuperar e copie o trecho de código do shell."
+      title-repository: Repositório
+      label-backend: Backend
+      backend-s3: Compatível com S3 (Backblaze B2, MinIO, Wasabi, AWS...)
+      backend-b2: Backblaze B2 (nativo)
+      backend-local: Caminho local ou disco montado
+      backend-sftp: SFTP
+      backend-rest: servidor REST restic
+      backend-rclone: Rclone
+      backend-azure: Armazenamento de Blobs do Azure
+      backend-gs: Armazenamento em nuvem do Google
+      backend-raw: Outro (URI do repositório bruto)
+      label-local-path: Caminho do repositório
+      label-endpoint: Ponto final
+      label-bucket: Balde
+      label-prefix: Caminho no balde
+      label-region: Região (opcional)
+      label-user: Usuário
+      label-host: Hospedar
+      label-port: Porta (opcional)
+      label-path: Caminho do repositório
+      label-url: URL do servidor
+      label-remote: Rclone remoto e caminho
+      label-container: Recipiente
+      label-raw-repository: URI do repositório
+      label-repository-mode: Repositório passado como
+      repository-flag: A opção -r está presente em todos os comandos.
+      repository-env: variável de ambiente RESTIC_REPOSITORY
+      label-repository-uri: URI do repositório
+      label-password: Senha do repositório
+      password-prompt: Solicitar o comando no shell (ler -rs, não fica registrado no histórico)
+      password-file: --arquivo-de-senha
+      password-command: --comando-senha
+      password-placeholder: Exportação RESTIC_PASSWORD com um espaço reservado
+      password-none: Já configurado no meu ambiente.
+      label-password-file: Arquivo de senha
+      label-password-command: Comando de senha
+      label-credentials: Credenciais de backend
+      credentials-prompt: Pergunta sobre o segredo na concha
+      credentials-placeholder: Exporte-os com marcadores de posição.
+      credentials-none: Já configurado no meu ambiente.
+      label-account-id: ID da chave / nome da conta
+      hint-secrets: 'Nenhum segredo é inserido no comando gerado: as opções do prompt
+        os leem para o seu shell com "read -rs", para que não fiquem armazenados
+        no seu histórico.'
+      title-operation: O que você quer fazer?
+      operation-restore: restaurar — gravar arquivos de um instantâneo de volta para o disco
+      operation-dump: despejar — transmitir um arquivo ou pasta de um instantâneo
+      operation-mount: montar — navegar pelo repositório como um sistema de arquivos
+      operation-snapshots: snapshots — lista os snapshots do repositório
+      operation-ls: ls — lista os arquivos dentro de um snapshot
+      operation-find: encontrar — localizar um arquivo entre instantâneos
+      operation-diff: diff — comparar duas capturas de tela
+      operation-check: verificação — verificar a integridade do repositório
+      operation-stats: estatísticas — tamanho de um instantâneo ou do repositório
+      operation-unlock: desbloquear — remover fechaduras antigas
+      title-snapshot: Seleção de instantâneo
+      label-snapshot-id: ID do instantâneo
+      label-subfolder: Apenas esta subpasta do instantâneo
+      label-plan: ID do plano do encosto
+      label-instance: ID da instância do encosto
+      label-filter-host: Hospedar
+      label-tags: Etiquetas extras
+      placeholder-tag: manual
+      label-filter-paths: Caminhos
+      placeholder-path: /home/me/documentos
+      hint-tags: O Backrest marca os snapshots que cria com "plan:" e "created-by:",
+        seguidos pelo plano e pelos IDs da instância. As tags dentro de uma
+        única --tag são combinadas com um operador AND, enquanto as flags --tag
+        repetidas são combinadas com um operador OR. Assim, o plano e a
+        instância permanecem em uma única flag e cada tag adicional recebe a sua
+        própria.
+      title-restore-options: Opções de restauração
+      label-target: Diretório de destino
+      label-include: Restaure apenas estes caminhos ou padrões.
+      placeholder-include: /home/me/documentos/**/*.pdf
+      label-exclude: Exclua esses caminhos ou padrões.
+      placeholder-exclude: "**/node_modules"
+      label-overwrite: Sobrescrever arquivos existentes
+      overwrite-default: restic padrão (sempre)
+      overwrite-always: sempre
+      overwrite-if-changed: se alterado
+      overwrite-if-newer: se-mais recente
+      overwrite-never: nunca
+      label-case-insensitive: Padrões que não diferenciam maiúsculas de minúsculas
+      label-dry-run: Ensaio geral
+      label-verify: Verificar arquivos restaurados
+      label-sparse: Escrever arquivos esparsos
+      label-delete: Excluir arquivos ausentes do instantâneo
+      title-dump-options: Opções de despejo
+      label-dump-path: Arquivo ou pasta dentro do instantâneo
+      label-archive: Formato de arquivo
+      archive-none: Arquivo bruto
+      archive-tar: leva
+      archive-zip: zíper
+      label-output-file: Redirecionar para um arquivo local (opcional)
+      hint-dump: O comando `dump` extrai um único arquivo ou pasta diretamente do
+        repositório, portanto, você não precisa restaurar um snapshot inteiro
+        para recuperar um arquivo de configuração.
+      title-mount-options: Opções de montagem
+      label-mount-point: Ponto de montagem
+      label-allow-other: Permitir que outros usuários acessem o ponto de montagem
+      title-ls-options: Listar opções
+      label-ls-directory: Lista de diretórios (opcional)
+      label-long: Lista longa
+      label-recursive: Recursivo
+      title-find-options: Encontrar opções
+      label-find-pattern: Padrão
+      label-restrict-snapshot: Pesquisar apenas o instantâneo selecionado
+      title-diff-options: Opções diferentes
+      label-diff-snapshot: Comparar com a imagem instantânea
+      label-metadata: Relatar também alterações nos metadados
+      title-snapshots-options: Opções de instantâneos
+      label-compact: Saída compacta
+      title-check-options: Confira as opções
+      label-read-data-subset: Leia o subconjunto de dados
+      label-read-data: Leia e verifique cada arquivo compactado.
+      label-check-unused: Denunciar blobs não utilizados
+      label-with-cache: Utilizar o cache existente
+      title-stats-options: Opções de estatísticas
+      label-stats-mode: Modo de contagem
+      stats-restore-size: tamanho-de-restauração — tamanho de uma restauração
+      stats-files-by-contents: arquivos-por-conteúdo — arquivos únicos
+      stats-raw-data: dados brutos — tamanho antes da deduplicação
+      stats-blobs-per-file: blobs-por-arquivo
+      label-stats-all: Todas as fotos
+      title-unlock-options: Opções de desbloqueio
+      label-remove-all: Remova todas as fechaduras, incluindo as que estão em uso.
+      title-global-options: Opções globais
+      label-cache-dir: Diretório de cache
+      label-limit-download: Limite de download (KiB/s)
+      label-retry-lock: Tente novamente um repositório bloqueado para
+      label-extra-options: Opções de backend (-o)
+      placeholder-extra-option: s3.conexões=4
+      label-extra-arguments: Argumentos adicionais (anexados tal como estão)
+      label-no-lock: --sem trava
+      label-no-cache: --sem cache
+      label-insecure-tls: --tls inseguro
+      label-json: --json
+      label-quiet: --quieto
+      label-verbose: --verbose
+      title-output: Comando gerado
+      label-include-environment: Inclua a configuração do ambiente.
+      label-multiline: Um argumento por linha
+      button-reset: Restaurar padrões de fábrica
+      warning-history: "Os campos de exportação provisórios permanecem no histórico do
+        seu shell depois de preenchidos: prefira as opções sugeridas ou limpe o
+        histórico posteriormente."
+      warning-target: O comando restore recria o caminho completo de todos os arquivos
+        no diretório de destino, de forma que o arquivo /etc/hosts acabe na
+        subpasta etc/hosts do diretório de destino.
+      warning-delete: A opção --delete remove os arquivos do diretório de destino que
+        não estão presentes no snapshot. Experimente primeiro com a opção
+        --dry-run.
+      warning-restic-version: --dry-run, --delete e --overwrite requerem restic 0.17 ou mais recente.
+      warning-mount: O comando mount requer FUSE, expõe os snapshots em modo somente
+        leitura e continua em execução até que você o interrompa com Ctrl-C.
+      title-walkthrough: Guia de recuperação
+      hint-walkthrough: A sequência usual quando o repositório é tudo o que resta,
+        construída a partir das configurações acima.
+      walkthrough-snapshots: Liste os snapshots do repositório.
+      walkthrough-find: Encontre o snapshot que contém o arquivo que você precisa.
+      walkthrough-ls: Liste os arquivos do instantâneo escolhido.
+      walkthrough-restore: Restaure apenas os arquivos necessários.
+      walkthrough-mount: Ou navegue pelo repositório e copie os arquivos manualmente.
+      title-backrest: Guia rápido para encosto
+      table-item: Item
+      table-value: Caminho ou formato padrão (imagem Docker entre parênteses)
+      backrest-config: Arquivo de configuração contendo o URI do repositório, sua
+        senha e as variáveis de ambiente do backend.
+      backrest-data: Diretório de dados
+      backrest-binary: Binário Restic baixado por Backrest
+      backrest-plan-tag: Etiqueta que identifica o plano
+      backrest-instance-tag: Etiqueta que identifica a instância
+      hint-backrest: "Um repositório Backrest é um repositório restic simples: se a
+        interface web estiver indisponível, ele lê o URI e a senha do arquivo
+        config.json e o executa com o binário restic Backrest já baixado."
+  epc-qrcode-generator:
+    title: Gerador de código QR EPC
+    description: Gere um código QR do Conselho Europeu de Pagamentos (EPC) para
+      iniciar uma transferência de crédito SEPA.
+    externalAccess: nulo
+    texts:
+      text-copied-to-clipboard: Copiado para a área de transferência
+      label-v1: V1
+      label-v2: V2
+      label-beneficiary-name: "Nome do beneficiário:"
+      placeholder-beneficiary-name: Nome do beneficiário
+      label-account-iban: "Conta (IBAN):"
+      placeholder-fr76: FR76...
+      label-bic: "BIC:"
+      placeholder-bank-bic-optional: Código BIC bancário (opcional)
+      label-amount-eur: "Valor (EUR):"
+      label-payment-reference: "Referência de pagamento:"
+      placeholder-optional: Opcional
+      label-purpose: "Propósito:"
+      label-version: "Versão:"
+      label-foreground-color: "Cor de primeiro plano:"
+      label-background-color: "Cor de fundo:"
+      label-qr-size: "Tamanho do QR:"
+      tag-generate-qr: Gerar QR
+      tag-download-qrcode: Baixar QRCode
+      tag-copy-qrcode-text: Copiar texto do código QR
+  url-redirection-checker:
+    title: Verificador de redirecionamento de URL
+    description: Verifique se um URL redireciona para outro URL.
+    externalAccess: nulo
+    texts:
+      label-get: PEGAR
+      label-head: CABEÇA
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      label-method: "Método:"
+      label-user-agent: "Agente do usuário:"
+      label-max-hops: "Max Hops:"
+      label-include-body-preview: Incluir pré-visualização do corpo
+      label-preview-bytes: "Pré-visualização em bytes:"
+      title-warnings: Avisos
+      title-summary: Resumo
+      label-input-url: "URL de entrada:"
+      label-final-url: "URL final:"
+      label-hop-count: "Contagem de saltos:"
+      title-redirect-chain: Cadeia de redirecionamento
+      tag-inspect-redirect-chain: Inspecionar cadeia de redirecionamento
+      tag-: "-"
+      tag-url: URL
+      tag-status: Status
+      tag-duration: Duração
+      tag-redirect: Redirecionar
+      tag-location: Localização
+      tag-300-hop-status-code: = 300 && hop.status_code
+      tag-headers-body-preview: Pré-visualização do cabeçalho e do corpo do texto
+      tag-truncated: Truncado
 spanCopyable:
   copy: Copiar para a área de transferência
   copied: Copiado!
@@ -8021,9 +10215,16 @@ formatTransformer:
   input-placeholder: Entrada...
   output: Saída
   download: Download
+  viewer: Visualizador
 textareaCopyable:
   copy: Copiar para a área de transferência
   copied: Copiado!
   download: Download
 locale-selector:
   select-a-language: Selecione um idioma
+collapsibleToolMenu:
+  text:
+    expanding: Expandindo...
+    collapsing: Desabando...
+    collapse-all-tools: Recolher todas as ferramentas
+    expand-all-tools: Expandir todas as ferramentas

@@ -3,6 +3,9 @@
   sorry: عذرًا، هذه الصفحة غير موجودة
   maybe: قد يكون الكاش يعمل بشكل غير متوقع، جرب تحديث الصفحة يدويًا؟
   backHome: العودة للصفحة الرئيسية
+  page:
+    text:
+      page-not-found-it-tools: الصفحة غير موجودة - أدوات تكنولوجيا المعلومات
 home:
   categories:
     newestTools: أحدث الأدوات
@@ -32,7 +35,18 @@ home:
     darkMode: الوضع الليلي
     lightMode: الوضع النهاري
     mode: تبديل الوضع الليلي/النهاري
+    language: لغة
+    themeSystem: نظام
+    themeLight: ضوء
+    themeDark: مظلم
   loading-more-tools: جاري تحميل المزيد من الأدوات...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        مجموعة من الأدوات الإلكترونية المفيدة للمطورين، مع تجربة مستخدم رائعة.
+        أدوات تكنولوجيا المعلومات هي مجموعة مجانية ومفتوحة المصدر من الأدوات
+        الإلكترونية المفيدة للمطورين والعاملين في مجال تكنولوجيا المعلومات.
+      it-tools-handy-online-tools-for-developers: أدوات تكنولوجيا المعلومات - أدوات مفيدة عبر الإنترنت للمطورين
 about:
   alltools-title: جميع الأدوات {toolsCount}
   tools:
@@ -79,6 +93,12 @@ about:
     الخطأ في [قسم
     المشكلات](https://github.com/sharevb/it-tools/issues/new/choose) في مستودع
     GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      مجموعة من الأدوات الإلكترونية المفيدة للمطورين، مع تجربة مستخدم رائعة.
+      أدوات تكنولوجيا المعلومات هي مجموعة مجانية ومفتوحة المصدر من الأدوات
+      الإلكترونية المفيدة للمطورين والعاملين في مجال تكنولوجيا المعلومات.
+    about-it-tools: نبذة عن أدوات تكنولوجيا المعلومات
 favoriteButton:
   remove: إزالة من المفضلة
   add: إضافة إلى المفضلة
@@ -88,6 +108,43 @@ search:
   label: بحث
   placeholder: اكتب للبحث عن أداة أو أمر...
 tools:
+  crop-image:
+    title: قص الصورة
+    description: قم بقص الصور وتغيير حجمها وتدويرها باستخدام ألوان خلفية مخصصة.
+    texts:
+      drag-drop: اسحب وأسقط صورتك هنا، أو انقر للتصفح
+      drag-hint: اسحب للتحريك • مرر للتكبير ({zoom}%)
+      flip-h: انعكاس أفقي
+      flip-v: انعكاس رأسي
+      reset: إعادة تعيين
+      fit: ملائمة
+      change-image: تغيير الصورة
+      aspect-ratio: "نسبة الارتفاع إلى العرض:"
+      custom-ratio: "نسبة مخصصة:"
+      background-color: "لون الخلفية:"
+      transparent: شفاف
+      zoom-image: "تكبير الصورة:"
+      rotate-image: "تدوير الصورة:"
+      rule-of-thirds-grid: "شبكة قاعدة الأثلاث:"
+      export-settings: إعدادات التصدير
+      export-format: "صيغة التصدير:"
+      image-quality: "جودة الصورة:"
+      export-width: "عرض التصدير:"
+      custom-width: "العرض المخصص (بكسل):"
+      export-download-image: تصدير وتنزيل الصورة المقصوصة
+      ratio-square: 1:1 (مربع)
+      ratio-widescreen: 16:9 (شاشة عريضة)
+      ratio-portrait: 9:16 (عمودي)
+      ratio-standard: 4:3 (قياسي)
+      ratio-photo: 3:2 (صورة)
+      ratio-original: نسبة العرض إلى الارتفاع الأصلية
+      ratio-custom: نسبة مخصصة
+      width-original: حجم القص الأصلي
+      width-viewport: حجم نافذة العرض
+      width-custom: عرض مخصص
+      label-png: PNG
+      label-jpeg: JPEG
+      label-webp: WebP
   categories:
     favorite-tools: أدواتك المفضلة
     crypto: التشفير
@@ -116,6 +173,9 @@ tools:
     physics: الفيزياء
     cheatsheets: أوراق الغش
     forensic: الطب الشرعي
+    finance: تمويل
+    default: تقصير
+    toml: TOML
   password-strength-analyser:
     title: محلل قوة كلمة المرور
     description: اكتشف قوة كلمة المرور الخاصة بك باستخدام أداة التحليل هذه التي تعمل
@@ -180,6 +240,7 @@ tools:
       label-denied-characters-ie-visually-similar-oo01li-or-punctuations: الأحرف المرفوضة (أي الأحرف المتشابهة بصريًا { oO01lI } أو علامات الترقيم)
       placeholder-put-characters-to-deny-from-token: ضع الأحرف للرفض من الرمز
       label-number-of-token-to-generate: عدد الرموز المراد إنشاؤها
+      label-allow-ambiguous-characters: يسمح باستخدام شخصيات ذات مظهر غامض
   percentage-calculator:
     title: حاسبة النسب المئوية
     description: احسب النسب المئوية بسهولة بين قيمتين أو من نسبة إلى قيمة.
@@ -300,6 +361,8 @@ tools:
       label-brightness: سطوع
       label-grayscale: تدرج الرمادي
       label-invert: عكس
+      label-oklab: اعذرني
+      label-oklch: أوكلتش
     models:
       text:
         invalid-label-tolowercase-format: تنسيق {0} غير صالح.
@@ -711,6 +774,7 @@ tools:
       tag-preview-image: معاينة الصورة
       tag-download-file: تنزيل الملف
       tag-copy: ينسخ
+      include-data-uri-prefix: "تضمين البيانات: بادئة URI"
   list-converter:
     title: محول القوائم
     description: يمكن لهذه الأداة معالجة البيانات ذات الأعمدة وتطبيق تغييرات متنوعة
@@ -773,6 +837,52 @@ tools:
       placeholder-the-decoded-string-will-be-here: سيتم فك تشفير السلسلة هنا
       tag-copy-base64: نسخ base64
       tag-copy-decoded-string: نسخ السلسلة المفكوكة
+      text-encoding: "ترميز النص:"
+      label-utf-8: UTF-8
+      label-utf-8-alias-utf8: "UTF-8 (الاسم المستعار: UTF8)"
+      label-utf-16le: UTF-16LE
+      label-utf-16be: UTF-16BE
+      label-utf-7: UTF-7
+      label-utf-7-imap: UTF-7 (IMAP)
+      label-utf-32le: UTF-32LE
+      label-utf-32be: UTF-32BE
+      label-iso-8859-1-latin-1: ISO-8859-1 (لاتيني-1)
+      label-iso-8859-2-central-european: ISO-8859-2 (أوروبا الوسطى)
+      label-iso-8859-3-south-european: ISO-8859-3 (جنوب أوروبا)
+      label-iso-8859-4-north-european: ISO-8859-4 (شمال أوروبا)
+      label-iso-8859-5-cyrillic: ISO-8859-5 (الأحرف السيريلية)
+      label-iso-8859-6-arabic: ISO-8859-6 (العربية)
+      label-iso-8859-7-greek: ISO-8859-7 (يوناني)
+      label-iso-8859-8-hebrew: ISO-8859-8 (عبري)
+      label-iso-8859-9-turkish: ISO-8859-9 (باللغة التركية)
+      label-iso-8859-10-nordic: ISO-8859-10 (الشمالية)
+      label-iso-8859-13-baltic: ISO-8859-13 (البلطيق)
+      label-iso-8859-14-celtic: ISO-8859-14 (سلتيك)
+      label-iso-8859-15-latin-9: ISO-8859-15 (Latin-9)
+      label-iso-8859-16-romanian: ISO-8859-16 (روماني)
+      label-windows-1250-central-european: ويندوز-1250 (أوروبا الوسطى)
+      label-windows-1251-cyrillic: ويندوز-1251 (سيريلية)
+      label-windows-1252-western-european: ويندوز-1252 (أوروبا الغربية)
+      label-windows-1253-greek: ويندوز-1253 (يوناني)
+      label-windows-1254-turkish: ويندوز-1254 (تركي)
+      label-windows-1255-hebrew: ويندوز-1255 (عبري)
+      label-windows-1256-arabic: ويندوز-1256 (عربي)
+      label-windows-1257-baltic: ويندوز-1257 (البلطيق)
+      label-windows-1258-vietnamese: ويندوز-1258 (الفيتنامية)
+      label-koi8-r-russian: KOI8-R (روسي)
+      label-koi8-u-ukrainian: KOI8-U (أوكراني)
+      label-gbk-simplified-chinese: GBK (الصينية المبسطة)
+      label-gb2312-simplified-chinese: GB2312 (الصينية المبسطة)
+      label-gb18030-simplified-chinese: GB18030 (الصينية المبسطة)
+      label-big5-traditional-chinese: Big5 (الصينية التقليدية)
+      label-shift-jis-japanese: Shift-JIS (ياباني)
+      label-euc-jp-japanese: EUC-JP (ياباني)
+      label-macroman: ماكرومان
+      label-macgreek: ماكغريك
+      label-macturkish: ماكتركيش
+      label-maccyrillic: ماك سيريلية
+      label-maccentraleurope: ماك سنترال أوروبا
+      label-maciceland: ماك أيسلندا
   toml-to-yaml:
     title: تحويل TOML إلى YAML
     description: تحليل TOML وتحويله إلى YAML.
@@ -842,6 +952,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: أدخل رقم IBAN للتحقق من صحته...
       title-valid-iban-examples: أمثلة على رقم IBAN صالح
       placeholder-enter-ibans-to-check-for-validity: أدخل رقم IBAN لكل سطر للتحقق من صحته
+      bank-name: اسم البنك
+      account-number: رقم الحساب
+      branch-identifier: معرّف الفرع
+      bank-identifier: معرّف البنك
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: لا يُسمح بـ QR-IBAN
@@ -900,6 +1015,9 @@ tools:
       label-titlecase: "حالة الأحرف الأولى:"
       label-spongecase: "سبونج كيس:"
       label-swapcase: "علبة تبديل:"
+      label-lang-title-case: "كتابة العنوان باللغة:"
+      label-language: "لغة:"
+      placeholder-your-language: لغة العنوان، حالة الأحرف، لغة...
   html-entities:
     title: تهريب كيانات HTML (HTML Entities)
     description: تهريب أو الغاء تهريب كيانات HTML ( استبدال أحرف مثل < و > و & و " و
@@ -1093,6 +1211,10 @@ tools:
       tag-refresh-key-pair: تحديث زوج المفاتيح
       tag-public-key: المفتاح العام
       tag-private-key: مفتاح خاص
+      tag-fingerprint: بصمة
+      tag-md5-fingerprint: بصمة الإصبع (MD5)
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: يجب أن يكون عدد البتات 256 ≤ بتات ≤ 16384 وأن يكون من مضاعفات العدد 8
   html-wysiwyg-editor:
     title: محرر HTML مرئي
     description: محرر ويب لصفحات HTML (ما تراه هو ما تحصل عليه WYSIWYG). يتيح لك هذ
@@ -1468,6 +1590,8 @@ tools:
       tag-quantity: كمية
       tag-copy: ينسخ
       tag-refresh: ينعش
+      uppercase: أحرف كبيرة
+      no-hyphen: بدون واصلة
   nanoid-generator:
     title: مولد معرفات NanoIDs
     description: إنشاء معرفات عشوائية وفريدة وملائمة لعناوين URL لتطبيقاتك
@@ -1768,6 +1892,13 @@ tools:
   angle-converter:
     title: محول وحدات الزاوية
     description: تحويل القيم بين وحدات الزاوية
+    texts:
+      label-degree: درجة (°)
+      label-radian: راديان
+      label-turn: دور
+      label-gradian: جراديان
+      label-grad: درجة
+      label-gon: غون
   ansible-vault-crypt-decrypt:
     title: فك تشفير Ansible Vault Crypt
     description: تشفير وفك تشفير أسرار Ansible Vault
@@ -1813,6 +1944,32 @@ tools:
   area-converter:
     title: محول وحدات المساحة
     description: تحويل القيم بين وحدات المساحة
+    texts:
+      label-square-meter: متر مربع
+      label-square-petameter: بيتمتر مربع
+      label-square-terameter: تيرامتر مربع
+      label-square-gigameter: جيجامتر مربع
+      label-square-megameter: ميغامتر مربع
+      label-square-kilometer: كيلومتر مربع
+      label-square-hectometer: الهكتومتر المربع
+      label-square-decameter: ديكامتر مربع
+      label-square-decimeter: ديسيمتر مربع
+      label-square-centimeter: سنتيمتر مربع
+      label-square-millimeter: مليمتر مربع
+      label-square-micrometer: ميكرومتر مربع
+      label-square-nanometer: نانومتر مربع
+      label-square-picometer: بيكومتر مربع
+      label-square-femtometer: فيمتومتر مربع
+      label-acre: فدان
+      label-centiare: أن تكون سنتًا
+      label-deciare: للقرار
+      label-are: نكون
+      label-decare: ديكير
+      label-hectare: هكتار
+      label-square-foot-ft2-sq-ft: قدم مربع (قدم مربع)
+      label-square-inch-in2-sq-in: بوصة مربعة (بوصة مربعة /in2/sq in)
+      label-square-yard-yd2-sq-yd: ياردة مربعة (ياردة مربعة/ياردة مربعة)
+      label-square-mile-mi2-sq-mi: ميل مربع (ميل مربع/ميل مربع)
   aspect-ratio-calculator:
     title: حاسبة نسبة العرض إلى الارتفاع
     description: استخدم حاسبة النسبة هذه للتحقق من الأبعاد عند تغيير حجم الصور.
@@ -2051,6 +2208,8 @@ tools:
       tag-certificate-signing-request: طلب توقيع الشهادة
       tag-public-key: المفتاح العام
       tag-private-key: مفتاح خاص
+      label-rsa-bits: "بتات RSA:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: يجب أن يكون عدد البتات 256 ≤ بتات ≤ 16384 وأن يكون من مضاعفات العدد 8
   css-prettifier:
     title: مُجمِّل CSS
     description: تجميل CSS
@@ -2431,6 +2590,8 @@ tools:
       tag-refresh-key-pair: تحديث زوج المفاتيح
       tag-public-key: المفتاح العام
       tag-private-key: مفتاح خاص
+      tag-fingerprint: بصمة
+      tag-md5-fingerprint: بصمة الإصبع (MD5)
   ed25519-key-pair-generator:
     title: مولد زوج المفاتيح Ed25519
     description: إنشاء مفاتيح خاصة وعامة جديدة عشوائية Ed25519 (مع أو بدون عبارة مرور).
@@ -2449,6 +2610,8 @@ tools:
       tag-refresh-key-pair: تحديث زوج المفاتيح
       tag-public-key: المفتاح العام
       tag-private-key: مفتاح خاص
+      tag-md5-fingerprint: بصمة الإصبع (MD5)
+      tag-fingerprint: بصمة
   energy-computer:
     title: استهلاك الطاقة ونفقاتها في الكمبيوتر
     description: حساب استهلاك الطاقة والنفقات
@@ -2460,6 +2623,37 @@ tools:
   energy-converter:
     title: محول وحدات الطاقة
     description: تحويل القيم بين وحدات الطاقة
+    texts:
+      label-joule: جول
+      label-petajoule: بيتاجول
+      label-terajoule: تيراجول
+      label-gigajoule: جيجا جول
+      label-megajoule: ميغا جول
+      label-kilojoule: كيلوجول
+      label-hectojoule: هيكتوجول
+      label-decajoule: ديكاجول
+      label-decijoule: ديسيجول
+      label-centijoule: سنتيجول
+      label-millijoule: ملي جول
+      label-microjoule: ميكرو جول
+      label-nanojoule: نانو جول
+      label-picojoule: بيكوجول
+      label-femtojoule: فيمتوجول
+      label-watt-hour: واط ساعة
+      label-petawatt-hour: بيتاواط ساعة
+      label-terawatt-hour: تيراواط ساعة
+      label-gigawatt-hour: جيجاوات ساعة
+      label-megawatt-hour: ميغاواط ساعة
+      label-kilowatt-hour: كيلوواط ساعة
+      label-hectowatt-hour: هيكتواط ساعة
+      label-decawatt-hour: ديكاواط ساعة
+      label-deciwatt-hour: ديسي واط ساعة
+      label-centiwatt-hour: سنتي واط ساعة
+      label-milliwatt-hour: milliwatt-hour
+      label-microwatt-hour: ميكروواط ساعة
+      label-nanowatt-hour: نانوواط ساعة
+      label-picowatt-hour: بيكوواط ساعة
+      label-femtowatt-hour: فيمتوات ساعة
   file-hasher:
     title: هاشر الملفات
     description: حساب تجزئة الملفات
@@ -2503,6 +2697,7 @@ tools:
       label-file-name: "اسم الملف:"
       label-extension: "امتداد:"
       label-mime-type: "نوع MIME:"
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
   folder-structure-diagram:
     title: مخطط هيكل المجلد
     description: أداة شبيهة بالشجرة لإنشاء مخططات بنية مجلد ASCII
@@ -2514,6 +2709,35 @@ tools:
   force-converter:
     title: محول وحدات القوة
     description: تحويل القيم بين وحدات القوة
+    texts:
+      label-newton: نيوتن
+      label-petanewton: بيتانيوتن
+      label-teranewton: تيرا نيوتن
+      label-giganewton: جيجانيوتن
+      label-meganewton: ميغانيوتن
+      label-kilonewton: كيلونيوتن
+      label-hectonewton: هيكتونيوتن
+      label-decanewton: ديكانويتون
+      label-decinewton: ديسينيوتن
+      label-centinewton: سينتينيوتون
+      label-millinewton: ميلينيوتون
+      label-micronewton: ميكرونيوتن
+      label-nanonewton: نانونيوتن
+      label-piconewton: بيكونيوتن
+      label-femtonewton: فيمتون نيوتن
+      label-dyne: داين
+      label-pound-of-force: رطل من القوة
+      label-kip: كيب
+      label-klb: نادي
+      label-kipf: كيبف
+      label-klbf: klbf
+      label-poundal: جنيه
+      label-kilogram-force: قوة كيلوغرام
+      label-kilopond: كيلوبوند
+      label-megapond: ميغابوند
+      label-tonne-force: طن-قوة
+      label-metric-ton-force: طن متري-قوة
+      label-megagram-force: قوة ميغاغرام
   geo-distance-calculator:
     title: حاسبة المسافة الجغرافية
     description: حساب المسافة بين موقعين جغرافيين (وعرض معلومات موقع المستخدم الحالي)
@@ -2600,12 +2824,12 @@ tools:
       label-gib: جيجا بايت
       label-tib: تي بي
       label-pib: باي بي
-      label-claimed-capacity: "القدرة المطلوبة:"
-      label-unit: "وحدة:"
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1 ميجا بايت = 1024
         كيلوبايت؛ 1 ميجا بايت = 1000 كيلوبايت؛ 1 جيجابايت = 1024 ميجا بايت؛ 1
         جيجابايت = 1000 ميجا بايت؛
       tag-see-here-for-details: انظر هنا للمزيد من التفاصيل
+      column-decimal: عشري
+      column-binary: ثنائي
   heic-converter:
     title: محول HEIC
     description: محول HEIC إلى JPEG أو PNG
@@ -2614,6 +2838,7 @@ tools:
       label-png: PNG
       label-output-format: تنسيق الإخراج
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف HEIC هنا، أو انقر لتحديد ملف
+      an-error-occured-processing-heic-heif-is-invalid: "حدث خطأ أثناء المعالجة: HEIC/HEIF غير صالح."
   hex-file-converter:
     title: محول ملفات HEX
     description: التحويل بين الملف والتمثيل السداسي عشري
@@ -2680,6 +2905,9 @@ tools:
     description: التحويل من PNG/JPEG إلى/من ICO
     texts:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف ICO أو PNG/JPEG هنا، أو انقر لتحديد ملف
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
+      invalid-ico-file: ملف ICO غير صالح!
+      invalid-png-file: ملف PNG غير صالح!
   illuminance-converter:
     title: محول الإضاءة
     description: محول وحدات الإضاءة (لوكس، شمعة القدم، أكاسيد النيتروجين، الضوء، اللهب)
@@ -2694,6 +2922,8 @@ tools:
       title-drag-and-drop-images-files-here-or-click-to-select-some-files: اسحب ملفات الصور وأفلِتها هنا، أو انقر لتحديد بعض الملفات
       tag-first-select-output-options: "أولاً، حدد خيارات الإخراج:"
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately: "بعد ذلك، قم بسحب صورك وإفلاتها أدناه وسيتم تحويلها وتنزيلها على الفور:"
+      invalid-image-file: ملف صورة غير صالح!
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
   image-exif-reader:
     title: قارئ جودة الصور EXIF/Metadata/GPS/JPEG
     description: قراءة EXIF وIPTC وXMP وGPS والبيانات الوصفية الأخرى وجودة JPEG
@@ -2896,6 +3126,7 @@ tools:
       tag-iso2-iso3: ايزو2/ايزو3
       tag-name-and-info: الاسم والمعلومات
       tag-gt-see-on-openstreetmap: "&gt; انظر على OpenStreetMap"
+      loading-more-results: جارٍ تحميل المزيد من النتائج...
   javascript-prettifier:
     title: مُحسِّن جافا سكريبت
     description: مُحسِّن JS/Javascript
@@ -2949,6 +3180,7 @@ tools:
       title-schema-validation-errors: أخطاء التحقق من صحة المخطط
       label-indent-size-0-compact: "حجم المسافة البادئة (0 = مضغوط):"
       repair-json: إصلاح JSON
+      label-auto-height: الارتفاع التلقائي
     externalAccess: قد تقوم هذه الأداة بتنزيل مخطط JSON من
       https://www.schemastore.org عند طلب التحقق. لا يتم إرسال أي بيانات إلى
       جهات خارجية.
@@ -3103,6 +3335,29 @@ tools:
   length-converter:
     title: محول وحدات الطول
     description: تحويل القيم من وحدات الطول
+    texts:
+      label-meter: متر
+      label-petameter: بيتامتر
+      label-terameter: تيرامتر
+      label-gigameter: جيجامتر
+      label-megameter: ميغامتر
+      label-kilometer: كيلومتر
+      label-hectometer: الهكتومتر
+      label-decameter: ديكامتر
+      label-decimeter: ديسيمتر
+      label-centimeter: سنتيمتر
+      label-millimeter: مليمتر
+      label-micrometer: ميكرومتر
+      label-nanometer: نانومتر
+      label-picometer: البيكومتر
+      label-femtometer: مقياس الفيمتومتر
+      label-inch: بوصة (")
+      label-yard: ساحة
+      label-mile: ميل
+      label-nautical-mile-m-nm: الميل البحري (M/NM)
+      label-light-year: سنة ضوئية
+      label-parsec: فرسخ فلكي
+      label-pica: بيكا
   list-comparer:
     title: مقارنة القوائم
     description: مقارنة عنصرين من القائمة
@@ -3194,6 +3449,35 @@ tools:
   mass-converter:
     title: محول وحدات الكتلة
     description: تحويل القيم بين وحدات الكتلة
+    texts:
+      label-gram: غرام
+      label-petagram: بيتاجرام
+      label-teragram: تيراغرام
+      label-gigagram: جيجاجرام
+      label-megagram: ميغاغرام
+      label-kilogram: كيلوغرام
+      label-hectogram: الهكتوغرافيا
+      label-decagram: ديكاغرام
+      label-decigram: عشرة غرامات
+      label-centigram: سنتيغرام
+      label-milligram: مليغرام
+      label-microgram: ميكروغرام
+      label-nanogram: نانوجرام
+      label-picogram: البيكوغرام
+      label-femtogram: الفيمتوغرام
+      label-tonne: طن
+      label-metric-ton: طن متري
+      label-kilotonne: كيلوطن
+      label-megatonne: ميغاطن
+      label-gigatonne: جيجاتون
+      label-pound: جنيه
+      label-stone: حجر
+      label-ounce: أونصة
+      label-short-ton: شورت طن
+      label-us-ton: طن أمريكي
+      label-long-ton: طن طويل
+      label-imperial-ton: طن إمبراطوري
+      label-displacement-ton: طن الإزاحة
   math-formats-converter:
     title: محول صيغ الرياضيات
     description: تحويل التعبيرات الرياضية بين الصيغ
@@ -3236,6 +3520,17 @@ tools:
       tag-export-as-png: تصدير بصيغة PNG
       tag-export-as-jpg: تصدير بصيغة JPG
       tag-export-as-svg: التصدير بصيغة SVG
+      tag-showing-last-valid-diagram: عرض آخر رسم بياني صالح
+      tag-hint-ctrl-scroll-to-zoom: اضغط باستمرار على مفتاح Ctrl (أو ⌘) وقم بالتمرير للتكبير/التصغير
+      label-diagram-preview: معاينة الرسم التخطيطي — اسحب أو استخدم مفاتيح الأسهم
+        للتحريك، و+ و- للتكبير والتصغير
+      label-zoom-level-reset: تكبير {zoom}%، انقر لإعادة التعيين إلى 100%
+      title-zoom-in: تكبير الصورة
+      title-zoom-out: تصغير العرض
+      title-reset-zoom: أعد ضبط التكبير إلى 100%
+      title-fit-view: قم بمطابقة الرسم التوضيحي لعرضه
+      title-fullscreen: ملء الشاشة
+      title-exit-fullscreen: الخروج من وضع ملء الشاشة
   mime-converter:
     title: محول ترميز MIME
     description: التحويل من/إلى تنسيق MIME Encoded-Word (موضوع البريد)
@@ -3407,6 +3702,11 @@ tools:
       placeholder-passphrase: عبارة المرور...
       tag-copy: ينسخ
       tag-refresh: ينعش
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# لا يمكن إنشاء عبارة مرور مكونة من [{0} - {1}] حرفًا بالإعدادات
+        الحالية، حاول تغيير عدد الكلمات"
+      words-words: الكلمات ({0})
+      label-min-passphrase-len: "الحد الأدنى لطول عبارة المرور:"
   paste-as-markdown:
     title: لصق كعلامة Markdown
     description: لصق الخلايا/الجداول والروابط من محتوى الحافظة بتنسيق Markdown
@@ -3464,10 +3764,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف PDF هنا، أو انقر لتحديد ملف
       title-logs: السجلات
       label-qpdf: كيو بي دي إف
-      label-password: 'كلمة السر:'
+      label-password: "كلمة السر:"
       placeholder-password: كلمة السر
       tag-decrypt-pdf: فك تشفير PDF
-      tag-output-file: 'ملف الإخراج:'
+      tag-output-file: "ملف الإخراج:"
   pgp-encryption:
     title: تشفير PGP
     description: تشفير وفك تشفير النص العادي باستخدام مفاتيح PGP.
@@ -3537,12 +3837,95 @@ tools:
       title-drag-and-drop-an-image-here-or-click-to-select-a-file: اسحب وأفلِت صورة هنا، أو انقر لتحديد ملف
       tag-posterize: ملصق؟
       tag-potrace-result: نتيجة البحث
+      button-trace: يتعقب
+      minimum-angle-displacement-in-degrees-to-be-considered-a-cutting-point-between-curves: الحد الأدنى لإزاحة الزاوية (بالدرجات) الذي يُعتبر نقطة قطع بين المنحنيات
+      splice-threshold-more-accurate: "عتبة الربط (أكثر دقة):"
+      perform-iterative-subdivide-smooth-until-all-segments-are-shorter-than-this-length:
+        قم بتنفيذ عملية التنعيم التكراري للتقسيم الفرعي حتى تصبح جميع الأجزاء
+        أقصر من هذا الطول
+      length-threshold-more-coarse: "عتبة الطول (أكثر خشونة):"
+      minimum-momentary-angle-in-degrees-to-be-considered-a-corner-to-be-kept-after-smoothing:
+        الحد الأدنى للزاوية اللحظية (بالدرجات) التي تُعتبر زاوية (يتم الاحتفاظ
+        بها بعد التنعيم)
+      corner-threshold-smoother: "عتبة الزاوية (أكثر سلاسة):"
+      layer-difference: "الفرق بين الطبقات:"
+      number-of-significant-bits-to-use-in-a-rgb-channel: عدد البتات المهمة المستخدمة في قناة RGB
+      color-precision-more-accurate: "دقة الألوان (أكثر دقة):"
+      color-difference-between-gradient-layers: اختلاف اللون بين طبقات التدرج
+      gradient-step-less-layers: "خطوة التدرج (طبقات أقل):"
+      discard-patches-small-than-x-px-in-size: تجاهل الرقع التي يقل حجمها عن X بكسل
+      filter-speckle-cleaner: "فلتر البقع (المنظف):"
+      hierarchical-mode: "الوضع الهرمي:"
+      curve-fitting: "تركيب المنحنيات:"
+      color-vtracer: اللون (VTracer)
+      color-potrace: اللون (بوتريس)
+      bw: أبيض وأسود
+      interpolate: أقحم؟
+      pixel: بكسل
+      polygon: مضلع
+      spline: خدد
+      stacked: مكدس
+      cutout: انقطاع
   power-converter:
     title: محول الطاقة
     description: تحويل القيم بين وحدات القدرة
+    texts:
+      label-watt: واط
+      label-petawatt: بيتاواط
+      label-terawatt: تيراواط
+      label-gigawatt: جيجاوات
+      label-megawatt: ميغاواط
+      label-kilowatt: كيلوواط
+      label-hectowatt: هيكتاوات
+      label-decawatt: ديكاواط
+      label-deciwatt: ديسي واط
+      label-centiwatt: سنتيواط
+      label-milliwatt: ميلي واط
+      label-microwatt: ميكروواط
+      label-nanowatt: نانوواط
+      label-picowatt: بيكوواط
+      label-femtowatt: فيمتوواط
+      label-horsepower: قوة حصانية
+      label-mechanical-horsepower: قوة حصانية ميكانيكية
   pressure-converter:
     title: محول وحدات الضغط
     description: تحويل القيم بين وحدات الضغط
+    texts:
+      label-pascal: باسكال
+      label-pettapascal: بيتاباسكال
+      label-terapascal: تيرا باسكال
+      label-gigapascal: جيجاباسكال
+      label-megapascal: ميجاباسكال
+      label-kilopascal: كيلوباسكال
+      label-hectopascal: ناضح
+      label-decapascal: ديكاباسكال
+      label-decipascal: ديباسكال
+      label-centipascal: سنتيباسكال
+      label-millipascal: ميلي باسكال
+      label-micropascal: ميكروباسكال
+      label-nanopascal: نانوباسكال
+      label-picopascal: بيكوباسكال
+      label-femtopascal: فيمتوباسكال
+      label-bar: حاجِز
+      label-petabar: بيتابار
+      label-terabar: انتشروا
+      label-gigabar: جيجابار
+      label-megabar: ميغابار
+      label-kilobar: كيلوبار
+      label-hectobar: هيكتوبار
+      label-decabar: لقد قُطِع رأسي.
+      label-decibar: فك الشفرة
+      label-centibar: سنتيبار
+      label-millibar: مليبار
+      label-microbar: ميكروبار
+      label-nanobar: نانوبار
+      label-picobar: بيكوبار
+      label-femtobar: فيمتوبار
+      label-torr: تور
+      label-millitorr: ميليتور
+      label-atmosphere: أَجواء
+      label-pound-per-square-inch: رطل لكل بوصة مربعة
+      label-lbf-in2: رطل/بوصة مربعة
   properties-to-yaml:
     title: خصائص YAML
     description: تحويل محتوى Java .propries إلى Yaml
@@ -3784,6 +4167,11 @@ tools:
       title-country-to-timezones: البلد إلى المناطق الزمنية
       label-country: دولة
       title-timezones-to-countries: المناطق الزمنية للدول
+      title-posix-timezones: سلاسل POSIX للمناطق الزمنية
+      search-posix-timezones: أدخل المنطقة الزمنية أو سلسلة POSIX للبحث
+      tag-no-results: لا توجد نتائج
+      tag-timezone: المنطقة الزمنية
+      tag-posix: سلسلة POSIX
   torrent-to-magnet:
     title: تورنت إلى مغناطيس
     description: تحويل ملف تورنت إلى رابط مغناطيسي
@@ -3914,6 +4302,65 @@ tools:
   volume-converter:
     title: محول وحدات الحجم
     description: تحويل القيم من وحدات الحجم
+    texts:
+      label-cubic-meter-stere: متر مكعب/ستير
+      label-cubic-petameter: بيتامتر مكعب
+      label-cubic-terameter: تيرامتر مكعب
+      label-cubic-gigameter: جيجامتر مكعب
+      label-cubic-megameter: ميغامتر مكعب
+      label-cubic-kilometer: كيلومتر مكعب
+      label-cubic-hectometer: الهكتومتر المكعب
+      label-cubic-decameter: ديكامتر مكعب
+      label-cubic-decimeter: ديسيمتر مكعب
+      label-cubic-centimeter: سنتيمتر مكعب
+      label-cubic-millimeter: مليمتر مكعب
+      label-cubic-micrometer: ميكرومتر مكعب
+      label-cubic-nanometer: نانومتر مكعب
+      label-cubic-picometer: بيكومتر مكعب
+      label-cubic-femtometer: الفيمتومتر المكعب
+      label-liter: لتر
+      label-petaliter: بيتالتر
+      label-teraliter: تيرا لتر
+      label-gigaliter: جيجالتر
+      label-megaliter: ميجا لتر
+      label-kiloliter: كيلولتر
+      label-hectoliter: هيكتولتر
+      label-decaliter: عشرة لترات
+      label-deciliter: ديسيلتر
+      label-centiliter: سنتيلتر
+      label-milliliter: ملليلتر
+      label-microliter: ميكرولتر
+      label-nanoliter: نانولتر
+      label-picoliter: بيكولتر
+      label-femtoliter: فيمتولتر
+      label-cubic-mile: ميل مكعب
+      label-acre-foot: فدان-قدم
+      label-cubic-yard: ياردة مكعبة
+      label-cubic-foot: قدم مكعب
+      label-board-feet: أقدام لوحية
+      label-cubic-inch: بوصة مكعبة
+      label-measurement-ton: قياس طن
+      label-imperial-barrel: برميل إمبراطوري
+      label-imperial-bushel: بوشل إمبراطوري
+      label-imperial-peck: بيك إمبراطوري
+      label-imperial-gallon: غالون إمبراطوري
+      label-imperial-quart: ربع جالون إمبراطوري
+      label-imperial-pint: باينت إمبراطوري
+      label-imperial-fluid-ounce: أونصة سائلة إمبراطورية
+      label-teaspoon: ملعقة صغيرة
+      label-tablespoon: ملعقة طعام
+      label-us-fluid-ounce: أونصة سائلة أمريكية
+      label-cup: كوب
+      label-us-legal-cup: كأس الولايات المتحدة القانوني
+      label-us-liquid-pint: باينت سائل أمريكي
+      label-us-liquid-quart: ربع جالون سائل أمريكي
+      label-us-liquid-gallon: جالون سائل أمريكي
+      label-us-bushel: بوشل أمريكي
+      label-us-peck: رقبة أمريكية
+      label-us-dry-gallon: جالون جاف أمريكي
+      label-us-dry-barrel: برميل جاف أمريكي
+      label-us-dry-quart: ربع جالون جاف أمريكي
+      label-us-dry-pint: باينت أمريكي جاف
   week-number-converter:
     title: محول أرقام الأسبوع
     description: التحويل بين رقم أسبوع ISO ورقم الأسبوع في الشهر والتاريخ
@@ -3979,6 +4426,7 @@ tools:
       tag-fingerprint: "بصمة:"
       tag-public-key: المفتاح العام
       tag-private-key: مفتاح خاص
+      rsa-bits: "بتات RSA:"
   xpath-memo:
     title: ورقة غش لقواعد XPath
     description: ورقة غش لقواعد XPath
@@ -4365,8 +4813,6 @@ tools:
       title-converted-data: البيانات المحولة
       tag-convert: يتحول
   firewalld-generator:
-    title: مولد سطر أوامر البرامج الثابتة
-    description: إنشاء أسطر أوامر البرامج الثابتة
     texts:
       label-service: خدمة
       label-port: ميناء
@@ -4387,6 +4833,8 @@ tools:
       label-permanent: دائم
       title-generated-fw-command: "أمر fw المُولَّد:"
       tag-const-zone-ref: منطقة ثابتة = مرجع
+    title: مولد أوامر جدار الحماية
+    description: إنشاء أوامر جدار الحماية (firewalld)
   fortune-wheel:
     title: عجلة الحظ
     description: عجلة الحظ القابلة للتكوين
@@ -5390,6 +5838,9 @@ tools:
       tag-corners-square-options: خيارات الزوايا المربعة
       tag-small-terminal: محطة صغيرة
       title-image: صورة
+      label-qr-code-embeddable-dataurl: "بيانات صورة رمز الاستجابة السريعة - عنوان URL:"
+      link-qr-code-open-embeddable-link: افتح الرابط القابل للتضمين
+      label-qr-code-image-viewer: رمز الاستجابة السريعة القابل للتضمين
   ies-lighting-guidelines:
     title: إرشادات الإضاءة من IES
     description: ابحث في توصيات الإضاءة الحالية لجمعية الهندسة المضيئة (IES).
@@ -5407,6 +5858,8 @@ tools:
   meta-tag-generator:
     texts:
       label-your-meta-tags: علامات التعريف الخاصة بك
+      isbn: رقم الكتاب المعياري الدولي (ISBN)
+      book: كتاب
     article:
       text:
         tag-words-associated-with-this-article: الكلمات المرتبطة بهذه المقالة...
@@ -5488,6 +5941,7 @@ tools:
         summary-with-large-image: ملخص مع صورة كبيرة
         summary: ملخص
         twitter: تغريد
+        the-name-of-the-twitter-account-of-the-creator-ex-cthmsst: "اسم حساب تويتر الخاص بالمنشئ (مثال: {':'} {'@'}cthmsst)..."
     videoEpisode:
       text:
         which-series-this-episode-belongs-to: إلى أي سلسلة تنتمي هذه الحلقة؟
@@ -5508,6 +5962,50 @@ tools:
     videoOther:
       text:
         other-video-details: تفاصيل الفيديو الأخرى
+    website:
+      text:
+        article: شرط
+        profile: حساب تعريفي
+        song: أغنية
+        book: كتاب
+        music: موسيقى
+        music-0: موسيقى
+        music-album: ألبوم موسيقي
+        playlist: قائمة التشغيل
+        radio-station: محطة إذاعية
+        video: فيديو
+        video-0: فيديو
+        movie: فيلم
+        episode: حلقة
+        tv-show: برنامج تلفزيوني
+        other-video: فيديو آخر
+        general-information: معلومات عامة
+        page-type: نوع الصفحة
+        select-the-type-of-your-website: اختر نوع موقعك الإلكتروني...
+        enter-the-title-of-your-website: أدخل عنوان موقعك الإلكتروني...
+        enter-the-description-of-your-website: أدخل وصف موقعك الإلكتروني...
+        page-url: رابط الصفحة
+        enter-the-url-of-your-website: أدخل عنوان موقعك الإلكتروني...
+    ies-lighting-guidelines:
+      texts:
+        tag-application: طلب
+    videoTVShow:
+      text:
+        tv-show-details: تفاصيل البرنامج التلفزيوني
+    basic-auth-generator:
+      username: أدخل اسم المستخدم الخاص بالشخص...
+    qr-code-generator:
+      texts:
+        title-image: صورة
+    qr-contact-info-generator:
+      texts:
+        label-website: موقع إلكتروني
+    xslt-tester:
+      texts:
+        tag-title: عنوان
+    ical-generator:
+      texts:
+        label-description: وصف
   regex-tester:
     title: اختبار التعابير العادية
     description: اختبر تعبيراتك العادية باستخدام نص عينة.
@@ -5640,6 +6138,13 @@ tools:
       label-base64-64: قاعدة 64 (64)
       placeholder-base64-version-will-be-here: سيكون إصدار Base64 هنا...
       tag-custom: "مخصص:"
+      label-space-separation: الفصل المكاني
+      label-binary-size: الحجم الثنائي
+      label-octal-size: حجم ثماني
+      label-decimal-size: الحجم العشري
+      label-hexadecimal-size: حجم سداسي
+      label-base64-size: حجم Base64
+      label-custom-size: مقاس مخصص
     model:
       text:
         invalid-digit-digit-for-base-finalfrombase: رقم غير صالح &quot;{0}&quot; للقاعدة {1}.
@@ -5879,6 +6384,7 @@ tools:
       placeholder-paste-your-json-schema-here: قم بلصق مخطط JSON الخاص بك هنا...
       title-schema-validation-errors: أخطاء التحقق من صحة المخطط
       label-unescape-json-string: "فك تشفير سلسلة JSON:"
+      label-viewer: مشاهد
     text:
       provided-json-is-not-valid: بشرط أن يكون JSON غير صالح.
       try-again-with-repairjsonlabel: حاول مرة أخرى باستخدام &quot;{0}&quot;
@@ -5966,6 +6472,23 @@ tools:
       label-fingerprint-base64: "بصمة الإصبع (base64):"
       label-fingerprint-asn1: "بصمة الإصبع (asn1):"
       label-fingerprint-ssh: "بصمة الإصبع (ssh):"
+      label-pem-header: "نوع رأس PEM:"
+      autodetect: الكشف التلقائي
+      certificate-x-509: شهادة (X.509)
+      certificate-request-csr-pkcs-10: طلب الشهادة (CSR / PKCS#10)
+      private-key-pkcs-8: المفتاح الخاص (PKCS#8)
+      public-key-pkcs-8: المفتاح العام (PKCS#8)
+      encrypted-private-key-pkcs-8-encrypted: مفتاح خاص مشفر (مشفر باستخدام PKCS#8)
+      rsa-private-key-pkcs-1: مفتاح RSA الخاص (PKCS#1)
+      rsa-public-key-pkcs-1: مفتاح RSA العام (PKCS#1)
+      ec-private-key: المفتاح الخاص لـ EC
+      ec-parameters: معايير EC
+      dsa-private-key: مفتاح DSA الخاص
+      dsa-public-key: المفتاح العام لـ DSA
+      openssh-private-key: مفتاح OpenSSH الخاص
+      ssh-public-key-rfc4716: مفتاح SSH العام (RFC4716)
+      pgp-public-key-block: كتلة المفتاح العام PGP
+      pgp-private-key-block: كتلة المفاتيح الخاصة بـ PGP
     service:
       text:
         type: "يكتب:"
@@ -6120,6 +6643,9 @@ tools:
       label-django-secret-key: "المفتاح السري لـ Django:"
       tag-copy: ينسخ
       tag-regenerate: تجدد
+    service:
+      texts:
+        generating-range-is-too-large: نطاق التوليد كبير جدًا
   dnsbl-checker:
     title: مدقق DNSBL
     description: التحقق مما إذا كان عنوان IP معين موجودًا في أي من خوادم القائمة
@@ -6168,6 +6694,7 @@ tools:
       title-html-head-tags: 📄 علامات رأس HTML
       tag-upload-png-image: تحميل صورة PNG
       tag-download-zip: 📦 تنزيل ملف ZIP
+      invalid-png-file: ملف PNG غير صالح!
   font-compare:
     title: مقارنة الخطوط
     description: مقارنة الخطوط الموجودة في نص معين
@@ -6254,6 +6781,12 @@ tools:
       label-fallback: "البديل:"
       placeholder-fallback-font: الخط البديل
       tag-defineprops: تعريف الدعائم
+    text:
+      by-font-name: حسب اسم الخط
+      by-font-url: عن طريق رابط الخط
+      by-font-file: بواسطة ملف الخط
+      by-inline-css: باستخدام CSS المضمن
+      by-css-url: باستخدام CSS URL
   gpt-token-encoder:
     title: مُشفِّر/فك تشفير رمز GPT
     description: تشفير النص إلى رموز GPT وفك تشفير رموز GPT مرة أخرى إلى نص
@@ -6289,6 +6822,10 @@ tools:
       tag-original-image: الصورة الأصلية
       tag-inverted-image: صورة مقلوبة
       tag-clear-upload-new: مسح وتحميل جديد
+    service:
+      texts:
+        file-must-be-an-image: يجب أن يكون الملف صورة
+        failed-to-process-image-err: "فشل معالجة الصورة:"
   image-comparer:
     title: مقارنة الصور
     description: أداة لمقارنة الصور بصريًا
@@ -6303,6 +6840,9 @@ tools:
       tag-compare: يقارن
       tag-upload-left: تحميل اليسار
       tag-upload-right: تحميل اليمين
+    text:
+      compare-by-url: قارن حسب عنوان URL
+      compare-by-upload: قارن عن طريق التحميل
   logrotate-generator:
     title: مولد Apache LogRotate
     description: إنشاء تكوين دوران Apache .log
@@ -6430,6 +6970,15 @@ tools:
       label-decimal: "عشري:"
       label-octal: "ثماني:"
       label-hexadecimal: "سداسي عشري:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: إدخال سداسي عشري غير صالح. يُسمح فقط بالأرقام من 0 إلى 9 ومن A إلى F.
+        invalid-1: غير صالح
+        invalid-0: غير صالح
+        invalid: غير صالح
+        unsupported-middle-endian-format: تنسيق middle-endian غير مدعوم.
+        failed-to-parse-bytes: فشل تحليل البايتات.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: يجب أن يكون الإدخال {0} حرفًا سداسيًا عشريًا لـ {1} بت.
   mttdl-calculator:
     title: حاسبة موثوقية RAID
     description: يحسب موثوقية نظام التخزين باستخدام منهجية MTTDL المعروفة
@@ -6562,6 +7111,11 @@ tools:
       tag-convert: يتحول
       tag-axial: محوري
       tag-radial: شعاعي
+    text:
+      bands-notation: الفرق الموسيقية ← التدوين الموسيقي
+      notation-bands: الترميز → الأشرطة
+      number-notation: الرقم ← الترميز
+      notation-number: الترميز ← الرقم
   sed-command-generator:
     title: مولد أوامر Sed
     description: إنشاء أوامر unix sed
@@ -6944,6 +7498,9 @@ tools:
       title-mw-to-dbm: من mW إلى dBm
       label-mw-value: "قيمة الميغاواط:"
       label-corresponding-dbm-value: "قيمة dBm المقابلة:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: يجب أن تكون القدرة بالمللي واط أكبر من 0
   diceware-generator:
     title: مولد كلمة المرور Diceware
     description: إنشاء كلمة مرور عشوائية باستخدام طريقة Diceware
@@ -7135,6 +7692,7 @@ tools:
       label-docker-compose-file: "ملف Docker Compose:"
       placeholder-paste-your-docker-compose-yaml-here: قم بلصق ملف YAML الخاص بـ docker-compose هنا...
       title-extract-env: استخراج .env
+      title-updated-docker-compose: "تحديث Docker Compose:"
   emv-tlv-decoder:
     title: فك تشفير EMV TLV
     description: يقوم بفك تشفير بيانات EMV TLV (طول العلامة والقيمة) وعلاماتها
@@ -7175,6 +7733,9 @@ tools:
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x:
         "{'{'}&quot;to&quot;:&quot;0x...&quot;,&quot;data&quot;:&quot;0x...&quo\
         t;{'}'} or raw 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: يجب أن تبدأ بيانات المعاملة بـ 0x
   file-splitter:
     title: مقسم الملفات
     description: تقسيم ملف JSON أو XML أو النص إما حسب مجموعة العقد أو حسب مجموعة الأسطر
@@ -7190,6 +7751,9 @@ tools:
       tag-process-chunks: قطع العملية
       tag-download-all: تنزيل الكل
       tag-download: تحميل
+    service:
+      texts:
+        unsupported-format-or-invalid-content: تنسيق غير مدعوم أو محتوى غير صالح
   gitignore-generator:
     title: مولد تجاهل Git
     description: إنشاء .gitignore لمجموعة من القوالب الشائعة
@@ -7299,6 +7863,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف PDF هنا، أو انقر لتحديد ملف
       title-logs: السجلات
       label-ghostscript: غوست سكريبت
+      process-run-failed: فشلت عملية التشغيل
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
   serial-console:
     title: وحدة التحكم بالمنفذ التسلسلي
     description: الاتصال وقراءة وإرسال الرسالة إلى المنفذ التسلسلي
@@ -7557,6 +8123,8 @@ tools:
       tag-esc: خروج
       tag-exit-dead-pixel-mode: الخروج من وضع البكسل الميت
       tag-start-dead-pixel: ابدأ تشغيل Dead Pixel
+    title: مختبر البكسلات الميتة
+    description: أداة للتحقق مما إذا كانت إحدى وحدات البكسل على شاشتك معطلة أم لا.
   UnitsConverter:
     texts:
       exclude-si-prefixes: استبعاد البادئات الدولية
@@ -7564,7 +8132,9 @@ tools:
       si-converter: انتقل إلى محول البادئات SI
   geo-coordinates-converter:
     title: محول الإحداثيات الجغرافية
-    description: تحويل الإحداثيات الجغرافية بين WGS84 و GCJ02 و BD09 و CGCS2000
+    description: تحويل الإحداثيات الجغرافية بين أنظمة WGS84 و GCJ02 و BD09 و
+      CGCS2000 و WebMercator. كما يمكن التحويل بين أنظمة Decimal و DMS و UTM. مع
+      خريطة تفاعلية.
     texts:
       label-latitude: "خط العرض:"
       label-longitude: "خط الطول:"
@@ -7582,6 +8152,32 @@ tools:
       tag-convert-batch: تحويل الدفعة
       tag-longitude-east-is-positive-west-is-negative: "خط الطول: الشرق موجب، والغرب سالب."
       tag-latitude-north-is-positive-south-is-negative: "خط العرض: الشمال موجب، والجنوب سالب."
+      coordinates-notations: رموز الإحداثيات
+      decimal-projections: إسقاطات عشرية
+      north: شمال
+      south: جنوب
+      decimal-notation: الترميز العشري
+      latitude-decimal: خط العرض (عشري)
+      longitude-decimal: خط الطول (عشري)
+      dms-notation: تدوين DMS
+      latitude-dms: خط العرض (DMS)
+      longitude-dms: خط الطول (DMS)
+      utm-notation: تدوين UTM
+      utm-zone: منطقة UTM
+      hemisphere: نصف الكرة الأرضية
+      easting: بإتجاه الشرق
+      northing: الشمال
+      label-n: شمال
+      label-s: S
+      label-e: و
+      label-w: في
+    text:
+      coordinate-system: نظام الإحداثيات
+      decimal-format-lng-lat: التنسيق العشري (خط الطول، خط العرض)
+      dms-format-lng-lat: تنسيق DMS (خط الطول، خط العرض)
+      download-results-csv: تنزيل نتائج ملف CSV
+      batch-lat-lng-converter: محول خطوط الطول والعرض الدفعي
+      single-lat-lng-converter: محول خطوط الطول والعرض أحادي
   si-prefixes-converter:
     title: محول بادئات النظام الدولي للوحدات
     description: التحويل بين البادئات المترية
@@ -7624,10 +8220,14 @@ tools:
     layout:
       text:
         made-with-npmpackages: صُنع باستخدام {0}
+        runs-entirely-in-your-browser-no-external-requests: يعمل بالكامل داخل متصفحك. لا توجد طلبات خارجية.
   acceleration-converter:
     title: محول التسارع
     description: تحويل القيم بين وحدات التسارع
     externalAccess: باطل
+    texts:
+      label-g-force: قوة الجاذبية
+      label-meter-per-second-squared: متر في الثانية المربعة
   docker-image-downloader:
     title: برنامج تنزيل صور Docker
     description: قم بتنزيل صورة Docker باستخدام سجل Docker، وبنية النظام، واسم الصورة.
@@ -7695,6 +8295,16 @@ tools:
     title: محول التردد
     description: تحويل القيم بين وحدات التردد
     externalAccess: باطل
+    texts:
+      label-hertz: هرتز
+      label-millihertz: ميلي هرتز
+      label-kilohertz: كيلوهرتز
+      label-megahertz: ميغاهرتز
+      label-gigahertz: جيجاهرتز
+      label-terahertz: تيراهيرتز
+      label-revolutions-per-minute: عدد الدورات في الدقيقة
+      label-degree-per-second: درجة في الثانية
+      label-radian-per-second: راديان في الثانية
   markdown-to-text:
     title: تحويل Markdown إلى نص
     description: تحويل Markdown إلى نص عادي
@@ -7733,7 +8343,6 @@ tools:
       tag-back: الرجوع (←)
       tag-next: التالي (→)
       tag-reset: إعادة ضبط
-      tag-: ↓
       tag-or: "- أو -"
       tag-control-playback-and-navigation-without-touching-the-mouse: تحكم في التشغيل والتنقل دون لمس الماوس.
       tag-shortcut: اختصار
@@ -7752,10 +8361,26 @@ tools:
       tag-jump-to-start: انتقل إلى البداية
       tag-end: نهاية
       tag-jump-to-end: انتقل إلى النهاية
+    text:
+      please-provide-some-text-first: يرجى تقديم بعض النصوص أولاً.
+      unsupported-file-type: نوع الملف غير مدعوم.
+      display: عرض
+      text: نص
+      settings: إعدادات
+      keyboard-shortcuts: اختصارات لوحة المفاتيح
+      ready: مستعد
+      words: كلمات
+      wpm: كلمة في الدقيقة
   speed-converter:
     title: محول السرعة
     description: تحويل القيم بين وحدات السرعة
     externalAccess: باطل
+    texts:
+      label-meter-per-second: متر في الثانية
+      label-kilometer-per-hour: كيلومتر في الساعة
+      label-miles-per-hour: ميل في الساعة
+      label-knot: عقدة
+      label-feet-per-second: قدم في الثانية
   tab-to-spaces:
     title: انتقل إلى المسافات باستخدام زر Tab
     description: تحويل علامة الجدولة إلى مسافات متعددة
@@ -7799,10 +8424,1557 @@ tools:
       tag-apply-configuration: تطبيق التكوين
       tag-clear-logs: مسح السجلات
       tag-send: يرسل
+      already-connected: ⚠️ متصل بالفعل
+      connected-to-websocket-bridge: ✅ متصل بجسر WebSocket
+      disconnected: 🔌 غير متصل
+      no-active-connection: ⚠️ لا يوجد اتصال نشط
+      sent-text: "➡️ تم إرسال النص:"
+      configured: ⚙️ مُهيأ
+      sent-hex: "➡️ تم إرسال الرمز السداسي العشري:"
+      disconnecting: 🔻 جارٍ قطع الاتصال...
+      error: "❌ خطأ:"
+      end: "🛑 النهاية:"
+      text: "📩 نص:"
+      binary: "📩 ثنائي:"
+    text:
+      connected: متصل
+      disconnected: غير متصل
   volume-flow-rate-converter:
     title: محول معدل التدفق الحجمي
     description: تحويل القيم بين وحدات معدل التدفق الحجمي
     externalAccess: باطل
+    texts:
+      label-cubic-millimeters-per-second: ملليمترات مكعبة في الثانية
+      label-cubic-centimeters-per-second: سنتيمترات مكعبة في الثانية
+      label-milliliters-per-second: ملليلتر في الثانية
+      label-centiliters-per-second: سنتيلتر في الثانية
+      label-deciliters-per-second: ديسيلتر في الثانية
+      label-liters-per-second: لترات في الثانية
+      label-liters-per-minute: لترات في الدقيقة
+      label-liters-per-hour: لترات في الساعة
+      label-kiloliters-per-second: كيلولتر في الثانية
+      label-kiloliters-per-minute: كيلولتر في الدقيقة
+      label-kiloliters-per-hour: كيلولتر في الساعة
+      label-cubic-meters-per-second: متر مكعب في الثانية
+      label-cubic-meters-per-minute: متر مكعب في الدقيقة
+      label-cubic-meters-per-hour: متر مكعب في الساعة
+      label-cubic-kilometers-per-second: كيلومترات مكعبة في الثانية
+      label-teaspoons-per-second: ملاعق شاي في الثانية
+      label-tablespoons-per-second: ملاعق طعام في الثانية
+      label-cubic-inches-per-second: بوصة مكعبة في الثانية
+      label-cubic-inches-per-minute: بوصة مكعبة في الدقيقة
+      label-cubic-inches-per-hour: بوصة مكعبة في الساعة
+      label-fluid-ounces-per-second: أونصة سائلة في الثانية
+      label-fluid-ounces-per-minute: أونصات سائلة في الدقيقة
+      label-fluid-ounces-per-hour: أونصات سائلة في الساعة
+      label-cups-per-second: أكواب في الثانية
+      label-pints-per-second: باينت في الثانية
+      label-pints-per-minute: لترات في الدقيقة
+      label-pints-per-hour: لترات في الساعة
+      label-quarts-per-second: كوارت في الثانية
+      label-gallons-per-second: غالونات في الثانية
+      label-gallons-per-minute: جالون في الدقيقة
+      label-gallons-per-hour: غالونات في الساعة
+      label-cubic-feet-per-second: قدم مكعب في الثانية
+      label-cubic-feet-per-minute: قدم مكعب في الدقيقة
+      label-cubic-feet-per-hour: قدم مكعب في الساعة
+      label-cubic-yards-per-second: ياردات مكعبة في الثانية
+      label-cubic-yards-per-minute: ياردات مكعبة في الدقيقة
+      label-cubic-yards-per-hour: ياردات مكعبة في الساعة
+  tip-calculator:
+    title: حاسبة الإكراميات
+    description: احسب الإكرامية للفاتورة وقم بتقسيمها بين عدة أشخاص.
+    texts:
+      title-bill-details: تفاصيل الفاتورة
+      label-bill-amount: "مبلغ الفاتورة:"
+      placeholder-total-bill: إجمالي الفاتورة
+      label-tip-percentage: "نسبة الإكرامية:"
+      placeholder-tip: نصيحة ٪
+      label-number-of-person: "عدد الأشخاص:"
+      placeholder-people: الناس
+      title-results: نتائج
+      label-tip-amount: "مبلغ الإكرامية:"
+      label-total-bill: "إجمالي الفاتورة:"
+      label-amount-per-person: "المبلغ لكل شخص:"
+      title-quick-tip: نصيحة سريعة %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: JSON إلى .env
+    description: حوّل كائن JSON مسطحًا إلى ملف .env. يتم تحويل المفاتيح إلى أحرف
+      كبيرة، ويتم وضع القيم بين علامتي اقتباس بأمان عندما تحتوي على مسافات بيضاء
+      أو علامات اقتباس أو أحرف خاصة بـ env.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: البيانات المُقدمة بتنسيق JSON ليست كائنًا مسطحًا صالحًا.
+      input-label-your-json: بيانات JSON الخاصة بك
+      input-placeholder-paste-your-json-here: ألصق بيانات JSON الخاصة بك هنا...
+      output-label-env-from-your-json: ملف .env من ملف JSON الخاص بك
+  calendar-converter:
+    service:
+      text:
+        sunday: الأحد
+        wednesday: الأربعاء
+        tuesday: يوم الثلاثاء
+        monday: الاثنين
+        thursday: يوم الخميس
+        friday: جمعة
+        saturday: السبت
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "طول السنة غير صالح: {0} يومًا."
+        common-deficient-353-days: نقص شائع (353 يومًا)
+        common-regular-354-days: منتظم شائع (354 يومًا)
+        common-complete-355-days: مكتملة بشكل عام (355 يومًا)
+        embolismic-deficient-383-days: نقص في الانصمام (383 يومًا)
+        embolismic-regular-384-days: انصمام منتظم (384 يومًا)
+        embolismic-complete-385-days: اكتمال الانصمام (385 يومًا)
+        normal-year: سنة عادية
+        leap-year: سنة كبيسة
+    title: محول التقويم
+    description: تحويل التواريخ والأوقات بين التنسيقات الميلادية، واليوليانية،
+      والعبرية، والإسلامية، والفارسية، والماياوية، والهندية، والفرنسية
+      الجمهورية، وISO-8601، وتوقيت يونكس، والتنسيقات التسلسلية لبرنامج إكسل.
+    externalAccess: باطل
+    texts:
+      label-january: يناير
+      label-february: فبراير
+      label-march: يمشي
+      label-april: أبريل
+      label-may: يمكن
+      label-june: يونيو
+      label-july: يوليو
+      label-august: أغسطس
+      label-september: سبتمبر
+      label-october: أكتوبر
+      label-november: نوفمبر
+      label-december: ديسمبر
+      label-nisan-נִיסָן: نيسان
+      label-iyyar-אִיָּר: إيار (إيار)
+      label-sivan-סִיוָן: سيفان
+      label-tammuz-תַּמּוּז: تموز
+      label-av-אָב: Av (Av)
+      label-elul-אֱלוּל: إيلول
+      label-tishri-תִּשְׁרֵי: تشري
+      label-heshvan-חֶשְׁוָן: هيشفان (هيشفان)
+      label-kislev-כִּסְלֵו: كيسليف
+      label-teveth-טֵבֵת: تيفيث
+      label-shevat-שְׁבָט: شيفات (שְׁבָט)
+      label-adar-adar-i-אֲדָר: أدار/أدار 1 (أدار)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: فيدار/أدار الثاني (أدار الثاني)
+      label-muharram-مُحَرَّم: Muharram (مُحَرَّم)
+      label-safar-صَفَر: Safar (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al‑Awwal (رَبيع الأوّل)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabiʿ ath‑Thani (رَبيع الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada al‑Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath‑Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Rajab (رَجَب)
+      label-shaʿban-شَعْبان: Shaʿban (شَعْبان)
+      label-ramadan-رَمَضان: Ramadan (رَمَضان)
+      label-shawwal-شَوّال: شوال
+      label-dhu-al-qaʿda-ذو-القَعْدة: Dhu al‑Qaʿda (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al‑Hijja (ذو الحِجّة)
+      label-farvardin-فروردین: فارواردين (فارواردين)
+      label-ordibehesht-اردیبهشت: أورديبهشت (أورديبهشت)
+      label-khordad-خرداد: خرداد (خرداد)
+      label-tir-تیر: تير (تير)
+      label-mordad-مرداد: مورداد (مورداد)
+      label-shahrivar-شهریور: شهريوار (شهريوار)
+      label-mehr-مهر: مهر (مهر)
+      label-aban-آبان: أبان (نوفمبر)
+      label-azar-آذر: آزار (آزار)
+      label-dey-دی: دي (الـ)
+      label-bahman-بهمن: بهمن (بهمن)
+      label-esfand-اسفند: إسفاند (مارس)
+      label-caitra-चैत्र: كايترا (شايترا)
+      label-vaisakha-वैशाख: فايساخا (فايشاخ)
+      label-jyaistha-ज्येष्ठ: جيايشتا (كبير)
+      label-asadha-आषाढ़: أسادها
+      label-sravana-श्रावण: سرافانا
+      label-bhadra-भाद्रपद: بهادرا (بهادرابادا)
+      label-asvina-आश्विन: أشفينا (أشوين)
+      label-kartika-कार्तिक: كارتيكا
+      label-agrahayana-अग्रहायण: أغراهايانا (أغراهايانا)
+      label-pausa-पौष: يوقف
+      label-magha-माघ: ماغا
+      label-phalguna-फाल्गुन: فالغونا
+      label-vendémiaire: بائع متجول
+      label-brumaire: برومير
+      label-frimaire: فريمير
+      label-nivôse: نيفوز
+      label-pluviôse: بلوفيوز
+      label-ventôse: مكنسة كهربائية
+      label-germinal: الخلايا الجرثومية
+      label-floréal: فلوريال
+      label-prairial: البراري
+      label-messidor: مسيدور
+      label-thermidor: ثيرميدور
+      label-fructidor: فروكتيدور
+      label-sans-culottides: سان كولوتيد
+      label-i: أنا
+      label-ii: ٢
+      label-iii: "3"
+      label-primidi-1: بريميدي (1)
+      label-duodi-2: أعطِ (2)
+      label-tridi-3: ثلاثة (3)
+      label-quartidi-4: أرباع (4)
+      label-quintidi-5: كوينتيديوس (5)
+      label-sextidi-6: سيكستيدي (6)
+      label-septidi-7: سيبتيدي (7)
+      label-octidi-8: أوكتيدي (8)
+      label-nonidi-9: بالفعل (9)
+      label-décadi-10: ديكادي (10)
+      label-vertu-1: الفضيلة (1)
+      label-génie-2: عبقري (2)
+      label-travail-3: العمل (3)
+      label-opinion-4: الرأي (4)
+      label-récompenses-5: المكافآت (5)
+      label-révolution-6: الثورة (6)
+      tab-gregorian: غريغوريان
+      label-date: تاريخ
+      label-leap: "خطوة:"
+      label-time: "وقت:"
+      label-weekday: "أيام الأسبوع:"
+      tab-julian-day: جوليان داي
+      label-julian-day: "جوليان داي:"
+      tab-modified-julian: جوليان المعدل
+      label-modified-julian-day: "جوليان داي المعدل:"
+      tab-julian-calendar: التقويم اليولياني
+      tab-gregorian-serial: المسلسل الغريغوري
+      label-gregorian-serial-day: "اليوم التسلسلي الغريغوري:"
+      tab-hebrew: العبرية
+      tab-islamic: الإسلام
+      tab-persian: الفارسية
+      tab-persian-algorithmic: الخوارزمية الفارسية
+      tab-mayan: المايا
+      label-long-count: "العد الطويل:"
+      label-haab: يأمل
+      label-tzolkin: تزولكين
+      tab-indian-civil: الهندسة المدنية الهندية
+      tab-french-republican: الجمهورية الفرنسية
+      label-day: "يوم:"
+      label-month: "شهر:"
+      label-décade: "عقد:"
+      label-year: "سنة:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "يوم الأسبوع:"
+      label-week: "أسبوع:"
+      label-day-of-year: "يوم السنة:"
+      tab-unix-time: وقت يونكس()
+      label-unix-time: "وقت يونكس():"
+      tab-excel-1900-windows: إكسل 1900 (ويندوز)
+      label-excel-serial-day-1900: "يوم التسلسل في إكسل (1900):"
+      tab-excel-1904-macintosh: إكسل 1904 (ماكنتوش)
+      label-excel-serial-day-1904: "يوم التسلسل في إكسل (1904):"
+      tag-this-is-a-port-of-wonderful: هذا ميناء رائع
+      tag-fourmilab-ch-calendar-converter: محول التقويم من Fourmilab.ch
+      tag-by-john-walker: بقلم جون ووكر
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: قم بتحديث التقاويم الأخرى
+      tag-today: اليوم
+  bech32:
+    title: مشفر/مفكك شفرة Bech32
+    description: تشفير/فك تشفير/التحقق من صحة betch32(m)
+    externalAccess: باطل
+    texts:
+      label-bech32: Bech32
+      label-bech32m: Bech32m
+      tab-decode: فك الشفرة
+      label-bech32-m-string: "سلسلة Bech32(m):"
+      placeholder-bech32-bech32m-string: وتر Bech32 / Bech32m
+      label-variant: "النسخة البديلة:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "الحمولة:"
+      placeholder-hex-payload: حمولة سداسية
+      placeholder-variant: متغير
+      tab-encode: التشفير
+      label-encoded-bech32-string: "سلسلة bech32 المشفرة:"
+      placeholder-bech32-string: سلسلة bech32
+      tab-batch: حزمة
+      label-bech32-strings-one-per-line: "سلاسل Bech32 (سلسلة واحدة لكل سطر):"
+      placeholder-one-bech32-string-per-line: وتر واحد من نوع Bech32 لكل سطر
+      title-results: نتائج
+      tag-auto-detect: الكشف التلقائي
+      tag-manual: يدوي
+      tag-checksum-only: مجموع التحقق فقط
+      tag-full-decode: فك التشفير الكامل
+      tag-checksum-valid: المجموع الاختباري صالح
+      tag-checksum-invalid: مجموع التحقق غير صالح
+      tag-encode: التشفير
+      tag-convert: يتحول
+      tag-export-csv: تصدير ملف CSV
+      invalid-hex-payload: حمولة سداسية عشرية غير صالحة
+      input: مدخل
+      variant: متغير
+      status: حالة
+      hex: عرافة
+      hrp: HRP
+  docker-pangolin-labels:
+    title: ملصقات دوكر بانغولين
+    description: تحويل تسميات Docker Compose Pangolin إلى مخططات والعكس صحيح
+    externalAccess: باطل
+    texts:
+      tab-compose-blueprint: تأليف → مخطط
+      label-docker-compose-yaml: "ملف YAML الخاص بـ Docker Compose:"
+      placeholder-paste-full-docker-compose-yml-here: ألصق ملف docker-compose.yml كاملاً هنا…
+      label-generated-blueprint: "المخطط المُنشأ:"
+      placeholder-blueprint-yaml-will-appear-here: سيظهر مخطط YAML هنا...
+      tab-blueprint-labels: مخطط → ملصقات
+      label-blueprint-yaml: "مخطط YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: ألصق مخطط بانغولين بصيغة YAML هنا…
+      label-generated-docker-labels: "تم إنشاء تسميات Docker:"
+      placeholder-docker-labels-will-appear-here: ستظهر تسميات Docker هنا...
+      tag-extract-pangolin-blueprint: استخراج مخطط البنغول
+      tag-array-key-value: مصفوفة (- المفتاح=القيمة)
+      tag-object-key-value: "كائن (مفتاح: قيمة)"
+      tag-convert-to-docker-labels: تحويل إلى تسميات Docker
+      invalid-blueprint-yaml: مخطط YAML غير صالح
+  fitness-computer:
+    title: كمبيوتر اللياقة البدنية
+    description: "حساب معدل الأيض الأساسي (BMR)، وإجمالي استهلاك الطاقة اليومي /
+      السعرات الحرارية (TDEE)، ومؤشر كتلة الجسم (BMI)، والوزن المثالي (الوزن
+      المثالي للجسم)، ونسبة الدهون في الجسم (نسبة الدهون في الجسم)، والحد الأقصى
+      لمعدل ضربات القلب (الحد الأقصى لمعدل ضربات القلب): مقاييس رئيسية تستخدم
+      لتقييم اللياقة البدنية العامة والصحة الفسيولوجية."
+    externalAccess: باطل
+    texts:
+      label-bmr: معدل الأيض الأساسي
+      label-tdee-calories: إجمالي الطاقة المستهلكة/السعرات الحرارية
+      label-bmi: "مؤشر كتلة الجسم:"
+      label-ideal-weight: "الوزن المثالي:"
+      label-body-fat-us-navy: نسبة الدهون في الجسم (البحرية الأمريكية)
+      label-body-fat-bmi: نسبة الدهون في الجسم (مؤشر كتلة الجسم)
+      label-max-heart-rate: الحد الأقصى لمعدل ضربات القلب
+      label-sedentary-little-or-no-exercise: "نمط حياة خامل: ممارسة قليلة أو معدومة للرياضة"
+      label-light-exercise-1-3-times-week: "خفيف: ممارسة الرياضة من 1 إلى 3 مرات في الأسبوع"
+      label-moderate-exercise-4-5-times-week: "متوسط: ممارسة الرياضة 4-5 مرات في الأسبوع"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week:
+        "النشاط: ممارسة التمارين الرياضية يوميًا أو ممارسة التمارين الرياضية
+        المكثفة 3-4 مرات في الأسبوع"
+      label-very-active-intense-exercise-6-7-times-week: "نشاط عالٍ: تمارين مكثفة 6-7 مرات في الأسبوع"
+      label-extra-active-very-intense-exercise-daily-or-physical-job: "نشاط إضافي: ممارسة تمارين رياضية مكثفة للغاية يوميًا، أو عمل بدني."
+      label-units: "الوحدات:"
+      label-formula: "صيغة:"
+      label-gender: "جنس:"
+      label-age: "عمر:"
+      title-body-measurements: قياسات الجسم
+      label-activity-level: "مستوى النشاط:"
+      title-results: نتائج
+      label-bmr-kcal-day: "معدل الأيض الأساسي (كيلو كالوري/يوم):"
+      label-tdee-calories-kcal-day: "إجمالي الطاقة المستهلكة/السعرات الحرارية (كيلو كالوري/يوم):"
+      label-bmi-category: "فئة مؤشر كتلة الجسم:"
+      label-healthy-range-min: "النطاق الصحي (بالدقائق):"
+      label-healthy-range-max: "النطاق الصحي (الحد الأقصى):"
+      label-devine-1974: "— (يصبح عام 1974):"
+      label-hamwi-1964: "— (حموي 1964):"
+      label-miller-1983: "— (ميلر 1983):"
+      label-robinson-1983: "— (روبنسون 1983):"
+      label-body-fat: "نسبة الدهون في الجسم (%):"
+      label-fat-mass: "كتلة الدهون:"
+      label-lean-mass: "الكتلة العضلية الخالية من الدهون:"
+      label-max-heart-rate-bpm: "الحد الأقصى لمعدل ضربات القلب (نبضة في الدقيقة):"
+      tag-metric-kg-cm: النظام المتري (كجم، سم)
+      tag-us-lbs-inches: الولايات المتحدة (رطل، بوصة)
+      tag-male: ذكر
+      tag-female: أنثى
+  food-energy-converter:
+    title: محول طاقة الطعام
+    description: التحويل بين أنواع الطعام (الجول، السعرات الحرارية)
+    externalAccess: باطل
+  iso-639-searcher:
+    title: باحث ISO 639
+    description: ابحث باستخدام رموز لغة ISO 639-1/2T/2B/3
+    externalAccess: باطل
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: ابحث عن رمز لغة ISO-639 باستخدام ISO-1، ISO-2T/2B، ISO-3، الاسم...
+      label-max-results: "أقصى النتائج:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "إنجليزي:"
+      tag-no-results: لا توجد نتائج
+      tag-search-results: نتائج البحث
+      tag-iso-639-1: iso-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: iso-639-3
+      tag-english-and-local-name: الاسم الإنجليزي والاسم المحلي
+      loading-more-results: جارٍ تحميل المزيد من النتائج...
+  jasypt-string-encryption:
+    title: تشفير سلسلة Jasypt
+    description: تشفير وفك تشفير السلاسل النصية باستخدام معيار Jasypt (التشفير
+      المبسط في جافا).
+    externalAccess: باطل
+    texts:
+      label-mode: "وضع:"
+      label-password-secret-key: "كلمة المرور (المفتاح السري):"
+      placeholder-enter-jasypt-password-salt-secret-key: أدخل كلمة مرور Jasypt (الملح / المفتاح السري)
+      title-results: نتائج
+      label-decoded: "تم فك التشفير:"
+      label-raw: "خام:"
+      label-enc-form: "نموذج ENC:"
+      tag-encrypt: تشفير
+      tag-decrypt: فك التشفير
+      plain-text: "نص عادي:"
+      jasypt-encrypted-string: "سلسلة Jasypt المشفرة:"
+      text-to-encrypt-e-g-db-password: "النص المراد تشفيره (مثلاً: كلمة مرور قاعدة البيانات)"
+      encrypted-value-e-g-enc-or-raw-jasypt-string: قيمة مشفرة (مثل ENC(...)) أو سلسلة Jasypt خام
+  k8s-rbac-generator:
+    title: مولد التحكم في الوصول المستند إلى الأدوار (RBAC) في Kubernetes
+    description: إنشاء سياسة RBAC لـ Kubernetes بصيغة YAML
+    externalAccess: باطل
+    texts:
+      label-user: مستخدم
+      label-group: مجموعة
+      label-serviceaccount: حساب الخدمة
+      label-role-name: "اسم الدور:"
+      label-role-type: نوع الدور
+      label-namespace: مساحة الاسم
+      title-rules: قواعد
+      label-resources: موارد
+      placeholder-select-resources-supports: حدد الموارد (يدعم *)
+      label-resource-names-optional: أسماء الموارد (اختياري)
+      placeholder-specific-resources-names: أسماء الموارد المحددة
+      label-verbs: الأفعال
+      placeholder-select-verbs-supports: اختر الأفعال (يدعم *)
+      title-subjects: المواضيع
+      label-kind: عطوف
+      label-name: اسم
+      title-output-yaml: مخرجات YAML
+      tab-role-yaml: دور YAML
+      tab-rolebinding-yaml: ربط الأدوار YAML
+      tag-clusterrole-global: دور المجموعة (عالمي)
+      tag-role-namespaced: الدور (المُسمى)
+      tag-add-rule: + إضافة قاعدة
+      tag-remove-rule: إزالة القاعدة
+      tag-add-subject: + إضافة موضوع
+      tag-remove-subject: إزالة الموضوع
+  objgen-html:
+    title: تحويل ObjGen إلى HTML
+    description: إنشاء HTML معقد من صيغة مشابهة لـ TOML
+    externalAccess: باطل
+    texts:
+      input-label-objgen-html-definition: تعريف ObjGen HTML
+      input-placeholder-put-your-objgen-html-definition-here: ضع تعريف ObjGen HTML الخاص بك هنا...
+      output-label-generated-html: HTML المُنشأ
+      tag-documentation: الوثائق
+  objgen-json:
+    title: تحويل ObjGen إلى JSON
+    description: إنشاء JSON معقد من صيغة مشابهة لـ TOML
+    externalAccess: باطل
+    texts:
+      input-label-objgen-json-definition: تعريف ObjGen JSON
+      input-placeholder-put-your-objgen-json-definition-here: ضع تعريف ObjGen JSON الخاص بك هنا...
+      output-label-generated-json: JSON المُنشأ
+      tag-documentation: الوثائق
+  pgp-file-encryption:
+    title: تشفير الملفات باستخدام PGP
+    description: تشفير وفك تشفير الملفات باستخدام PGP
+    externalAccess: باطل
+    texts:
+      title-1-select-a-file: 1. حدد ملفًا
+      title-drag-and-drop-a-file-or-click-to-select: اسحب الملف وأفلته أو انقر لتحديده
+      title-2-public-key-for-encryption: 2. المفتاح العام (للتشفير)
+      title-3-private-key-passphrase-for-decryption: 3. المفتاح الخاص + عبارة المرور (لفك التشفير)
+      label-passphrase: "عبارة المرور:"
+      placeholder-passphrase: عبارة المرور
+      tag-selected-file: "الملف المحدد:"
+      tag-encrypt-stream: تشفير (بث)
+      tag-decrypt-stream: فك التشفير (البث)
+      tag-encrypting: جارٍ التشفير…
+      tag-decrypting: جارٍ فك التشفير...
+      tag-encrypted-file-ready: الملف المشفر جاهز.
+      tag-download-encrypted: تنزيل مشفر
+      tag-decrypted-file-ready: الملف الذي تم فك تشفيره جاهز.
+      tag-download-decrypted: قم بتنزيل الملف الذي تم فك تشفيره
+  remove-background:
+    title: إزالة خلفية الصورة
+    description: إزالة الخلفية من الصورة باستخدام الذكاء الاصطناعي
+    externalAccess: "تنزيلات: إزالة نماذج الخلفية من HuggingFace. تتم المعالجة في متصفحك."
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG-1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: شفاف
+      label-solid-color: لون موحد
+      label-pattern: "نمط:"
+      label-blurred-original: الأصل غير الواضح
+      label-adjust-contrast-brightness: ضبط التباين/السطوع
+      label-diagonal-stripes: خطوط مائلة
+      label-dots: نقاط
+      label-checkerboard: رقعة الشطرنج
+      title-drag-and-drop-an-image-or-click-to-select: اسحب الصورة وأفلتها أو انقر لتحديدها
+      label-model: "نموذج:"
+      label-blur: "ضبابية:"
+      label-contrast: "مقابلة:"
+      label-brightness: "سطوع:"
+      title-original: إبداعي
+      title-result: نتيجة
+      tag-apply-background: تطبيق الخلفية
+      tag-download-result: تنزيل النتيجة
+  shell-formatter:
+    title: مُنسِّق أوامر الصدفة
+    description: قم بتنسيق أوامر الصدفة كأوامر صدفة متعددة الأسطر مقسمة حسب الوسائط
+    externalAccess: باطل
+    texts:
+      input-label-shell-commands-to-format: أوامر سطر الأوامر لتنسيق
+      input-placeholder-put-your-shell-commands-to-format-here: ضع أوامر سطر الأوامر الخاصة بك هنا...
+      output-label-formatted-shell-commands: أوامر shell المنسقة
+  shell-linearizer:
+    title: مُحَوِّل أوامر الصدفة
+    description: تبسيط أوامر shell متعددة الأسطر
+    externalAccess: باطل
+    texts:
+      input-label-shell-commands-to-linearize: أوامر سطر الأوامر لتحويل البيانات إلى خطية
+      input-placeholder-put-your-shell-commands-to-linearize-here: ضع أوامر سطر الأوامر الخاصة بك لترتيبها بشكل خطي هنا...
+      output-label-linearized-shell-commands: أوامر shell خطية
+  ufw-generator:
+    title: مولد أوامر UFW
+    description: إنشاء سطور أوامر UFW
+    externalAccess: باطل
+    texts:
+      label-allow: يسمح
+      label-deny: ينكر
+      label-reject: يرفض
+      label-limit: حد
+      label-incoming: وارد
+      label-outgoing: صادر
+      label-tcp: بروتوكول التحكم بالنقل (TCP)
+      label-udp: بروتوكول UDP
+      label-any: أي
+      label-action: "فعل:"
+      label-direction: "اتجاه:"
+      label-protocol: "بروتوكول:"
+      label-port: "ميناء:"
+      placeholder-80: "80"
+      label-port-to-range: "المنفذ إلى (النطاق):"
+      placeholder-443: "443"
+      label-from-ip: "من عنوان IP:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "إلى عنوان IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "واجهة المستخدم:"
+      placeholder-eth0: eth0
+      label-logging: "تسجيل الدخول:"
+      label-comment: "تعليق:"
+      placeholder-optional-comment: تعليق اختياري
+      title-generated-command: الأمر المُنشأ
+      missing-port: منفذ مفقود
+  visual-subnet-calculator:
+    title: حاسبة الشبكات الفرعية المرئية
+    description: أداة لتصميم الشبكات بسرعة والتعاون في هذا التصميم مع الآخرين. تركز
+      على تسريع عمل مديري الشبكات، وليس على حسابات تقسيم الشبكات الفرعية
+      المعقدة.
+    externalAccess: باطل
+  zalgo:
+    title: مولد/بانر زالغو
+    description: قم بإنشاء نص Zalgo وتنظيف النص الناتج عن Zalgo
+    externalAccess: باطل
+    texts:
+      text-zalgo-text-copied: تم نسخ نص زالغو!
+      title-zalgo-text-generation: توليد النصوص باستخدام Zalgo
+      placeholder-put-your-string-here: ضع الخيط هنا...
+      label-text-to-decorate-with-zalgo: نص للتزيين باستخدام زالغو
+      label-intensity: "شدة:"
+      title-zalgo-text: نص زالغو
+      title-zalgo-cleaner: منظف زالغو
+      placeholder-put-zalgo-text-to-clean-here: ضع نص زالغو للتنظيف هنا...
+      label-zalgo-text-to-clean: نص زالغو للتنظيف
+      label-cleaned-text: نص منقح
+      placeholder-clean-zalgo-text-will-appear-here: سيظهر نص زالغو نظيف هنا...
+      tag-generate: يولد
+      tag-copy: ينسخ
+      tag-clean: ينظف
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: يجب تحديد إحدى الرسائل | الوظيفة
+        function-must-set-messages: يجب أن تقوم الدالة بتعيين الرسائل
+  dead-pixel-tester:
+    title: مختبر البكسلات الميتة
+  gif-to-mp4:
+    title: تحويل GIF إلى MP4
+    description: تحويل صور GIF إلى MP4 باستخدام ffmpeg
+    externalAccess: باطل
+    texts:
+      label-stream-loop: "حلقة البث:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: اسحب ملف GIF وأفلته هنا أو انقر لتحديد ملف
+      title-logs: سجلات
+  html-to-pdf:
+    title: تحويل HTML إلى PDF
+    description: إنشاء ملف PDF من محتوى HTML أو عنوان URL مع تحديد التنسيق وإخفاء
+      لافتات ملفات تعريف الارتباط تلقائيًا
+    externalAccess: تقوم هذه الأداة بإرسال عناوين URL ومحتوى HTML إلى خدمة الويب
+      Puppeteer *المستضافة ذاتيًا* التي تم تكوينها.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: خطاب
+      label-legal: قانوني
+      label-html-to-pdf-service-url: "رابط خدمة تحويل HTML إلى PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "المصادقة الأساسية:"
+      placeholder-username-password: "اسم المستخدم: كلمة المرور"
+      tab-url-pdf: رابط URL → ملف PDF
+      label-url: "عنوان URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "محتوى HTML:"
+      tab-batch-url-pdf: رابط الدفعة → PDF
+      label-urls-one-per-line: "عناوين المواقع الإلكترونية (عنوان واحد في كل سطر):"
+      title-results: نتائج
+      tab-custom-pdf-options: خيارات PDF مخصصة
+      label-format: "شكل:"
+      label-language: "لغة:"
+      placeholder-en-us: en-US
+      label-landscape: "منظر جمالي:"
+      label-one-long-page: "صفحة واحدة طويلة:"
+      label-auto-hide-cookie-banners: "إخفاء لافتات ملفات تعريف الارتباط تلقائيًا:"
+      label-print-background: "خلفية الطباعة:"
+      title-margins: الهوامش
+      label-top-mm: "أعلى (مم):"
+      label-bottom-mm: "القاع (مم):"
+      label-left-mm: "اليسار (مم):"
+      label-right-mm: "اليمين (مم):"
+      tag-html-to-pdf-service-configuration-self-hosted: تهيئة خدمة تحويل HTML إلى PDF (مستضافة ذاتيًا)
+      tag-you-must-self-host-html-to-pdf-service-see: "يجب عليك استضافة خدمة تحويل HTML إلى PDF بنفسك. انظر:"
+      tag-html-to-pdf-service-install: تثبيت خدمة تحويل HTML إلى PDF
+      tag-generate-pdf: إنشاء ملف PDF
+      tag-generate-pdfs: إنشاء ملفات PDF
+      tag-url: عنوان URL
+      tag-download: تحميل
+      tag-download-pdf: تنزيل ملف PDF
+      tag-failed: فشل
+  shutdown-command-generator:
+    title: مولد أوامر الإيقاف
+    description: إنشاء أمر إيقاف التشغيل لأنظمة تشغيل مختلفة
+    externalAccess: باطل
+    texts:
+      label-windows: ويندوز
+      label-linux: لينكس
+      label-macos: نظام التشغيل macOS
+      label-delay: "تأخير:"
+      label-specific-time: وقت محدد
+      label-platform: "منصة:"
+      label-shutdown-time: "وقت الإيقاف:"
+      label-force: قوة
+      label-reboot: إعادة التشغيل
+      label-logoff: إطفاء
+      label-cancel: يلغي
+      label-hibernate: السبات
+      title-generated-command: الأمر المُنشأ
+      tag-nbsp-h-nbsp: ح
+      tag-nbsp-m-nbsp: م
+      tag-nbsp-s: "&nbsp;s"
+  random-line-picker:
+    title: محدد سطور عشوائية
+    description: اختر سطورًا عشوائية من نص الإدخال
+    externalAccess: "null"
+    texts:
+      label-allow-repeated-lines: السماح بتكرار الأسطر
+      label-number-of-lines-to-pick: "عدد الأسطر للاختيار:"
+      label-prefix-lines-with-line-number: أضف أرقام الأسطر
+      placeholder-picked-lines: الأسطر المختارة
+      placeholder-put-your-text-here: ضع نصك هنا...
+      tag-copy: نسخ
+      tag-refresh: تحديث
+      text-picked-lines-copied-to-clipboard: تم نسخ الأسطر المختارة إلى الحافظة!
+  keyboard-tester:
+    instructions:
+      highlight: سيتم تمييز المفاتيح المضغوطة
+      press: اضغط على أي مفتاح في لوحة المفاتيح لاختباره
+      reset: انقر على زر "إعادة الضبط" لمسح سجلات الاختبار
+      tested: ستظهر المفاتيح التي تم اختبارها باللون الأخضر
+      title: تعليمات
+    keys: مفاتيح
+    layout: "تخطيط لوحة المفاتيح:"
+    legend:
+      pressed: مضغوط
+      tested: تم اختباره
+      untested: غير مختبر
+    progress: تقدم الاختبار
+    reset: إعادة ضبط
+    size: "حجم لوحة المفاتيح:"
+    sizes:
+      "60": مضغوط بنسبة 60%
+      full: الحجم الكامل (100%)
+      tkl: TCL (80٪)
+    texts:
+      label-qwerty: لوحة مفاتيح QWERTY
+      label-azerty: أزيرتي
+      label-dvorak: دفوراك
+      label-colemak: كولماك
+  markdown-to-data:
+    texts:
+      label-paste-your-markdown-content: "ألصق محتوى Markdown الخاص بك:"
+      placeholder-your-markdown: تخفيض السعر الخاص بك...
+    title: Markdown إلى بيانات
+    description: تحويل جدول Markdown إلى JSON أو YAML أو CSV أو SQL INSERT أو XML أو
+      Markdown أو XLSX
+    externalAccess: باطل
+  html-to-data:
+    texts:
+      label-paste-your-html-content: "ألصق محتوى HTML الخاص بك:"
+      placeholder-your-html: أدخل رمز HTML الخاص بك هنا...
+      error-multiple-json-blocks: لا يمكن تحويل عدة جداول في وقت واحد
+    title: تحويل HTML إلى بيانات
+    description: تحويل جدول HTML إلى JSON أو YAML أو CSV أو SQL INSERT أو XML أو
+      Markdown أو XLSX
+    externalAccess: باطل
+  cron-expression-builder:
+    title: منشئ تعبيرات Cron
+    description: إنشاء تعبيرات Cron من واجهة المستخدم
+    externalAccess: باطل
+    texts:
+      label-seconds: ثوانٍ
+      label-minutes: دقائق
+      label-hours: ساعات
+      label-day-of-month: يوم من الشهر
+      label-month: شهر
+      label-january: يناير
+      label-february: فبراير
+      label-march: يمشي
+      label-april: أبريل
+      label-may: يمكن
+      label-june: يونيو
+      label-july: يوليو
+      label-august: أغسطس
+      label-september: سبتمبر
+      label-october: أكتوبر
+      label-november: نوفمبر
+      label-december: ديسمبر
+      label-day-of-week: يوم من أيام الأسبوع
+      label-sunday: الأحد
+      label-monday: الاثنين
+      label-tuesday: يوم الثلاثاء
+      label-wednesday: الأربعاء
+      label-thursday: يوم الخميس
+      label-friday: جمعة
+      label-saturday: السبت
+      label-year: سنة
+      label-every: كل
+      label-specific-values: قيم محددة
+      label-range: يتراوح
+      label-increment: زيادة
+      title-generated-cron-expression: تم إنشاء تعبير Cron
+      title-validation-errors: أخطاء التحقق
+      label-mode: "وضع:"
+      label-from: "من:"
+      label-to: "ل:"
+      label-start-at: "ابدأ من:"
+      tag-cron-expression-is-invalid: تعبير Cron غير صالح
+      paste-cron-expression: لصق تعبير Cron
+      e-g-5-0-12-1-2025: "مثال: */5 0 12 * * 1 2025"
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (الأحد=0، الاثنين=1، ...، السبت=6)
+      label-select-at-least-one-value: "{0}: حدد قيمة واحدة على الأقل"
+      day-of-month-and-day-of-week-cannot-both-be-specific: لا يمكن تحديد كل من يوم الشهر ويوم الأسبوع بشكل دقيق
+      label-start-cannot-be-greater-than-end: "{0}: لا يمكن أن تكون قيمة البداية أكبر من قيمة النهاية"
+      label-start-must-be-within-allowed-range: "{0}: يجب أن تكون نقطة البداية ضمن النطاق المسموح به"
+      label-step-must-be-greater-than-1: "{0}: يجب أن تكون الخطوة أكبر من أو تساوي 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: لا يمكن أن تكون قيمة البداية أكبر من قيمة النهاية"
+      seconds: ثوانٍ
+      minutes: دقائق
+      hours: ساعات
+      day-of-month: يوم من الشهر
+      month: شهر
+      day-of-week: يوم من أيام الأسبوع
+      year: سنة
+  css-js-prettify-minify:
+    title: تنسيق وتصغير ملفات CSS/JS
+    description: قم بتنسيق أو تصغير كود CSS و JavaScript الخاص بك عبر الإنترنت.
+    externalAccess: باطل
+    texts:
+      label-javascript: جافا سكريبت
+      label-css: CSS
+      label-language: لغة
+      label-indent-size: حجم المسافة البادئة
+      placeholder-2: "2"
+      title-prettify: تجميل
+      label-your-code: الكود الخاص بك
+      placeholder-paste-your-code-to-prettify: ألصق الكود الخاص بك لتنسيقه...
+      label-prettified-code: كود منسق
+      title-minify: تصغير
+      placeholder-paste-your-code-to-minify: ألصق الكود الخاص بك لضغطه...
+      label-minified-code: تصغير الكود
+  dns-propagation-tester:
+    title: أداة اختبار انتشار نظام أسماء النطاقات (DNS)
+    description: أداة بسيطة لاختبار انتشار نظام أسماء النطاقات (DNS) عبر خوادم مختلفة.
+    externalAccess: تستدعي هذه الأداة خدمة أدوات الشبكة ذاتية الاستضافة لتنفيذ
+      استعلامات نظام أسماء النطاقات (DNS).
+    texts:
+      label-network-utilities-service-url: "عنوان URL لخدمة مرافق الشبكة:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "المصادقة الأساسية:"
+      placeholder-username-password: "اسم المستخدم: كلمة المرور"
+      tab-dns-propagation: نشر نظام أسماء النطاقات
+      label-domain: "اِختِصاص:"
+      placeholder-example-com: example.com
+      label-record-type: "نوع السجل:"
+      title-resolvers-to-check: المُحلِّلات التي يجب فحصها
+      title-results: نتائج
+      tab-custom-resolvers: مُحلِّلات مخصصة
+      title-add-custom-resolver: إضافة محلل مخصص
+      label-resolver-name: "اسم المُحلِّل:"
+      placeholder-resolver-name-e-g-my-dns: "اسم المُحلِّل (مثلاً: نظام أسماء النطاقات الخاص بي)"
+      label-resolver-ip: "عنوان IP الخاص بالمُحلِّل:"
+      placeholder-resolver-ip-e-g-10-0-0-1: عنوان IP الخاص بالمحلل (على سبيل المثال 10.0.0.1)
+      title-your-custom-resolvers: مُحلِّلاتك المُخصصة
+      tag-network-utilities-service-configuration-self-hosted: تكوين خدمة أدوات الشبكة (مستضافة ذاتيًا)
+      tag-you-must-self-host-network-utilities-service-see: "يجب عليك استضافة خدمة أدوات الشبكة بنفسك. انظر:"
+      tag-network-utilities-service-docker-install: تثبيت خدمة أدوات الشبكة باستخدام Docker
+      tag-select-all: حدد الكل
+      tag-deselect-all: قم بإلغاء تحديد الكل
+      tag-check-propagation: تحقق من انتشار البيانات
+      tag-resolver: يحل
+      tag-resolver-ip: عنوان IP الخاص بالمحلل
+      tag-status: حالة
+      tag-answers: الإجابات
+      tag-checking: جارٍ التحقق...
+      tag-no-answers: لا توجد إجابات
+      tag-add-resolver: إضافة محلل
+      tag-remove: يزيل
+      tag-no-custom-resolvers-added-yet: لم تتم إضافة أي مُحلِّلات مخصصة حتى الآن.
+  dns-query:
+    title: استعلامات Cloudflare DNS/RDAP
+    description: استعلم عن سجلات نظام أسماء النطاقات (DNS) و RDAP لأي اسم نطاق عبر
+      الإنترنت باستخدام Cloudflare DNS/RDAP.org.
+    externalAccess: باطل
+    texts:
+      message-please-enter-a-valid-domain-name: الرجاء إدخال اسم نطاق صالح
+      text-dns-records-copied-to-the-clipboard: تم نسخ سجلات نظام أسماء النطاقات إلى الحافظة
+      label-domain-name: اسم النطاق
+      placeholder-e-g-example-com: "مثال: example.com"
+      tag-name: اسم
+      tag-ttl: TTL
+      tag-data: بيانات
+      tag-copy-results: نسخ النتائج
+      tag-no-records-found-for-this-domain: لم يتم العثور على أي سجلات لهذا النطاق.
+      tag-loading-whois-info: جارٍ تحميل معلومات WHOIS...
+      tag-whois: WHOIS
+      tag-domain-name: اسم النطاق
+      tag-registrar: المسجل
+      tag-registration-date: تاريخ التسجيل
+      tag-expiration-date: تاريخ انتهاء الصلاحية
+      tag-updated-date: تاريخ التحديث
+      tag-registrant: المسجل
+      tag-name-servers: خوادم الأسماء
+      tag-domain-status: حالة النطاق
+      tag-dnssec: DNSSEC
+  dns-tester:
+    title: أداة اختبار نظام أسماء النطاقات (DNS)
+    description: أداة بسيطة لاختبار تحليل نظام أسماء النطاقات (DNS)، واستعلامات
+      WHOIS، ومهام أخرى متعلقة بنظام أسماء النطاقات.
+    externalAccess: تستدعي هذه الأداة خدمة أدوات الشبكة ذاتية الاستضافة الخاصة بك
+      لإجراء استعلامات DNS/Whois والمهام ذات الصلة.
+    texts:
+      label-a-ipv4-address: أ - عنوان IPv4
+      label-aaaa-ipv6-address: AAAA — عنوان IPv6
+      label-afsdb-afs-database-location: موقع قاعدة بيانات AFSDB
+      label-apl-address-prefix-list: قائمة بادئات العناوين (APL)
+      label-caa-certificate-authority-authorization: هيئة إصدار الشهادات (CAA)
+      label-cdnskey-child-dnskey: مفتاح نظام أسماء النطاقات الفرعي (CDNSKEY) — مفتاح
+        نظام أسماء النطاقات الفرعي
+      label-cds-child-ds: CDS — متلازمة موت الأطفال
+      label-cert-certificate-storage: تخزين الشهادات (CERT)
+      label-cname-canonical-name: CNAME — الاسم المتعارف عليه
+      label-csync-child-to-parent-sync: مزامنة CSYNC — مزامنة من الطفل إلى الوالد
+      label-dhcid-dhcp-identifier: DHCID — مُعرِّف DHCP
+      label-dlv-dnssec-lookaside-validation-obsolete: DLV — التحقق من صحة DNSSEC Lookaside (قديم)
+      label-dname-non-terminal-rename: DNAME — إعادة تسمية غير طرفية
+      label-dnskey-dnssec-public-key: مفتاح DNSKEY — مفتاح DNSSEC العام
+      label-ds-delegation-signer: DS — مُوقِّع التفويض
+      label-eui48-mac-address-48-bit: EUI48 — عنوان MAC (48 بت)
+      label-eui64-mac-address-64-bit: EUI64 — عنوان MAC (64 بت)
+      label-hinfo-host-information: معلومات المضيف (HINFO)
+      label-hip-host-identity-protocol: بروتوكول هوية المضيف (HIP)
+      label-https-https-service-binding: HTTPS — ربط خدمة HTTPS
+      label-ipseckey-ipsec-key: مفتاح IPsec — مفتاح IPsec
+      label-key-security-key-obsolete: مفتاح — مفتاح الأمان (مهجور)
+      label-kx-key-exchanger: KX — مبدل المفاتيح
+      label-loc-geographic-location: الموقع الجغرافي
+      label-mx-mail-exchanger: MX — مُبدِّل البريد
+      label-naptr-regex-based-rewrite: NAPTR — إعادة كتابة تعتمد على التعبيرات النمطية
+      label-ns-name-server: NS — خادم الأسماء
+      label-nsec-dnssec-denial-of-existence: NSEC - إنكار DNSSEC للوجود
+      label-nsec3-hashed-denial-of-existence: NSEC3 - إنكار وجود مشفر
+      label-nsec3param-nsec3-parameters: NSEC3PARAM — معلمات NSEC3
+      label-openpgpkey-openpgp-public-key: مفتاح OpenPGP — المفتاح العام لـ OpenPGP
+      label-ptr-reverse-lookup-pointer: PTR — مؤشر البحث العكسي
+      label-rrsig-dnssec-signature: RRSIG — توقيع DNSSEC
+      label-rp-responsible-person: الشخص المسؤول (RP)
+      label-sig-signature-obsolete: SIG — التوقيع (مهجور)
+      label-smimea-s-mime-cert-association: SMIMEA - جمعية شهادات S/MIME
+      label-soa-start-of-authority: SOA — بداية السلطة
+      label-spf-sender-policy-framework-deprecated: SPF — إطار سياسة المرسل (مهمل)
+      label-srv-service-locator: SRV — محدد موقع الخدمة
+      label-sshfp-ssh-public-key-fingerprint: SSHFP — بصمة المفتاح العام لبروتوكول SSH
+      label-svcb-service-binding: SVCB — خدمة التجليد
+      label-ta-trust-anchor-experimental: TA — مرساة الثقة (تجريبية)
+      label-tkey-secret-key-agreement: TKEY — اتفاقية المفتاح السري
+      label-tlsa-dane-tls-association: جمعية TLSA - DANE TLS
+      label-tsig-transaction-signature: TSIG — توقيع المعاملة
+      label-txt-text-record: TXT — سجل نصي
+      label-uri-uri-template: معرّفات الموارد الموحدة (URIs) - قوالب معرّفات الموارد الموحدة (URIs)
+      label-zonemd-zone-message-digest: ملخص رسائل المنطقة (ZONEMD)
+      label-system-default: الإعدادات الافتراضية للنظام
+      label-custom-dns-resolver: محلل أسماء النطاقات المخصص
+      label-google-8-8-8-8: جوجل 8.8.8.8
+      label-google-8-8-4-4: جوجل 8.8.4.4
+      label-cloudflare-1-1-1-1: كلاود فلير 1.1.1.1
+      label-cloudflare-1-0-0-1: كلاود فلير 1.0.0.1
+      label-quad9-9-9-9-9: Quad9 9.9.9.9
+      label-quad9-149-112-112-112: Quad9 149.112.112.112
+      label-opendns-208-67-222-222: OpenDNS 208.67.222.222
+      label-opendns-208-67-220-220: OpenDNS 208.67.220.220
+      label-cleanbrowsing-185-228-168-9: CleanBrowsing 185.228.168.9
+      label-cleanbrowsing-185-228-169-9: CleanBrowsing 185.228.169.9
+      label-dns-watch-84-200-69-80: DNS.Watch 84.200.69.80
+      label-dns-watch-84-200-70-40: DNS.Watch 84.200.70.40
+      label-freedns-37-235-1-174: FreeDNS 37.235.1.174
+      label-freedns-37-235-1-177: FreeDNS 37.235.1.177
+      label-fdn-france-80-67-169-12: FDN فرنسا 80.67.169.12
+      label-fdn-france-80-67-169-40: FDN فرنسا 80.67.169.40
+      label-neustar-eu-156-154-70-1: نيوستار الاتحاد الأوروبي 156.154.70.1
+      label-neustar-eu-156-154-71-1: نيوستار الاتحاد الأوروبي 156.154.71.1
+      label-level3-209-244-0-3: Level3 209.244.0.3
+      label-level3-209-244-0-4: Level3 209.244.0.4
+      label-comodo-8-26-56-26: مريح 8.26.56.26
+      label-comodo-8-20-247-20: مريح 8.20.247.20
+      label-centurylink-205-171-3-65: CenturyLink 205.171.3.65
+      label-centurylink-205-171-2-65: CenturyLink 205.171.2.65
+      label-dnspod-119-29-29-29: DNSPod 119.29.29.29
+      label-alidns-223-5-5-5: AliDNS 223.5.5.5
+      label-alidns-223-6-6-6: AliDNS 223.6.6.6
+      label-yandex-77-88-8-8: ياندكس 77.88.8.8
+      label-yandex-77-88-8-1: ياندكس 77.88.8.1
+      label-naver-korea-125-209-222-141: نيفر كوريا 125.209.222.141
+      label-naver-korea-125-209-249-1: نيفر كوريا 125.209.249.1
+      label-gigadns-brazil-189-38-95-95: GigaDNS البرازيل 189.38.95.95
+      label-gigadns-brazil-189-38-95-96: GigaDNS البرازيل 189.38.95.96
+      label-opendns-africa-196-3-132-153: OpenDNS Africa 196.3.132.153
+      label-opendns-africa-196-3-132-154: OpenDNS Africa 196.3.132.154
+      label-network-utilities-service-url: "عنوان URL لخدمة مرافق الشبكة:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "المصادقة الأساسية:"
+      placeholder-username-password: "اسم المستخدم: كلمة المرور"
+      label-target-dns-resolver-ip: "عنوان IP الخاص بخادم DNS المستهدف:"
+      placeholder-system-default: الإعدادات الافتراضية للنظام
+      placeholder-e-g-10-0-0-53: "مثال: 10.0.0.53"
+      tab-dns-query: استعلام نظام أسماء النطاقات (DNS)
+      label-domain: اِختِصاص
+      placeholder-example-com: example.com
+      label-dns-record-type: "نوع سجل نظام أسماء النطاقات (DNS):"
+      title-result: نتيجة
+      label-record-type: نوع السجل
+      title-answers: الإجابات
+      tab-whois: WHOIS
+      label-raw-whois: بيانات WHOIS الخام
+      label-parsed: تمت عملية التحليل
+      tab-dnssec-validation: التحقق من صحة DNSSEC
+      label-validated: تم التحقق منه
+      label-dnskey: مفتاح DNS
+      label-rrsig: RRSIG
+      tab-reverse-dns-ptr: نظام أسماء النطاقات العكسي (PTR)
+      label-ip-address: "عنوان IP:"
+      placeholder-8-8-8-8: 8.8.8.8
+      label-ip: الملكية الفكرية
+      label-ptr: PTR
+      tab-soa-axfr-test: اختبار SOA + AXFR
+      label-soa: SOA
+      label-axfr-allowed: مسموح بـ AXFR
+      label-records: سجلات
+      tag-network-utilities-service-configuration-self-hosted: تكوين خدمة أدوات الشبكة (مستضافة ذاتيًا)
+      tag-you-must-self-host-network-utilities-service-see: "يجب عليك استضافة خدمة أدوات الشبكة بنفسك. انظر:"
+      tag-network-utilities-service-docker-install: تثبيت خدمة أدوات الشبكة باستخدام Docker
+      tag-query-dns: استعلام DNS
+      tag-lookup-whois: ابحث عن معلومات WHOIS
+      tag-validate-dnssec: التحقق من صحة DNSSEC
+      tag-reverse-lookup: البحث العكسي
+      tag-run-soa-axfr: تشغيل SOA + AXFR
+  dockerfile-label-generator:
+    title: مولد تسميات Dockerfile
+    description: أداة بسيطة لإنشاء تسميات لملفات Dockerfile.
+    externalAccess: باطل
+    texts:
+      label-title: "عنوان:"
+      placeholder-my-project: مشروعي
+      label-description: "وصف:"
+      placeholder-short-project-description: وصف موجز للمشروع
+      label-repository-url: "رابط المستودع:"
+      placeholder-https-github-com-username-repo: https://github.com/username/repo
+      label-source-url: "رابط المصدر:"
+      label-documentation-url: "رابط التوثيق:"
+      placeholder-https-github-com-username-repo-readme: https://github.com/username/repo#readme
+      label-license-spdx: "الترخيص (SPDX):"
+      placeholder-mit: مع
+      label-version: "إصدار:"
+      placeholder-1-0-0: 1.0.0
+      label-revision-commit-sha: "مراجعة (تثبيت SHA):"
+      placeholder-abcdef123456: abcdef123456
+      label-created: "مخلوق:"
+      placeholder-2024-01-01t12-00-00z: 2024-01-01T12:00:00Z
+      label-authors: "المؤلفون:"
+      placeholder-your-name-you-example-com: اسمك {'<'}you{'@'}example.com{'>'}
+      title-generated-label-block: كتلة التسمية المُنشأة
+  https-tester:
+    title: أداة اختبار HTTPS
+    description: التحقق من صحة شهادة HTTPS وHSTS وإعادة التوجيه 302
+    externalAccess: تستدعي هذه الأداة خدمة أدوات الشبكة ذاتية الاستضافة لتنفيذ
+      المهام المتعلقة بـ HTTPS/HSTS.
+    texts:
+      label-network-utilities-service-url: "عنوان URL لخدمة مرافق الشبكة:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "المصادقة الأساسية:"
+      placeholder-username-password: "اسم المستخدم: كلمة المرور"
+      tab-certificate: شهادة
+      label-host: "يستضيف:"
+      placeholder-example-com: example.com
+      label-port: "ميناء:"
+      placeholder-443: "443"
+      title-result: نتيجة
+      label-hostname: "اسم المضيف:"
+      label-not-before: "ليس قبل:"
+      label-not-after: "ليس بعد:"
+      label-days-until-expiry: "عدد الأيام المتبقية حتى تاريخ انتهاء الصلاحية:"
+      label-subject: "موضوع:"
+      label-issuer: "الجهة المصدرة:"
+      label-sub-alt-name: "الاسم البديل الفرعي:"
+      tab-hsts: HSTS
+      label-url: عنوان URL
+      placeholder-https-example-com: https://example.com
+      label-hsts-present: HSTS موجود
+      label-max-age: الحد الأقصى للعمر
+      label-inc-subdomains: نطاقات فرعية لشركة Inc.
+      label-preload: التحميل المسبق
+      label-raw-header: رأس الصفحة الخام
+      tab-http-https-redirect: إعادة توجيه HTTP → HTTPS
+      label-domain: "اِختِصاص:"
+      label-http-url: عنوان URL لبروتوكول HTTP
+      label-redirected: تمت إعادة التوجيه
+      label-final-url: الرابط النهائي
+      label-status-code: رمز الحالة
+      label-redirect-chain: سلسلة إعادة التوجيه
+      title-redirect-chain-details: تفاصيل سلسلة إعادة التوجيه
+      tag-network-utilities-service-configuration-self-hosted: تكوين خدمة أدوات الشبكة (مستضافة ذاتيًا)
+      tag-you-must-self-host-network-utilities-service-see: "يجب عليك استضافة خدمة أدوات الشبكة بنفسك. انظر:"
+      tag-network-utilities-service-docker-install: تثبيت خدمة أدوات الشبكة باستخدام Docker
+      tag-check-certificate: شهادة التحقق
+      tag-check-hsts: تحقق من HSTS
+      tag-check-redirect: تحقق من إعادة التوجيه
+  k6-script-generator:
+    title: مولد نصوص اختبار التحميل K6
+    description: قم بإنشاء نصوص اختبار تحميل k6 باستخدام الإعدادات المسبقة الشائعة
+    externalAccess: باطل
+    texts:
+      label-smoke-test: اختبار الدخان
+      label-load-test: اختبار التحميل
+      label-stress-test: اختبار الإجهاد
+      label-spike-test: اختبار الارتفاع المفاجئ
+      label-soak-test: اختبار النقع
+      label-get: يحصل
+      label-post: بريد
+      label-put: يضع
+      label-patch: رقعة
+      label-delete: يمسح
+      label-scenario-preset: "سيناريو مُعد مسبقًا:"
+      label-virtual-users-vus: "المستخدمون الافتراضيون (VUs):"
+      label-duration: "مدة:"
+      label-ramp-up-duration: "مدة التسارع:"
+      label-ramp-down-duration: "مدة التباطؤ التدريجي:"
+      label-thresholds-name-expression: "العتبات (الاسم/التعبير):"
+      placeholder-metric: متري
+      placeholder-rule: قاعدة
+      label-checks-name-expression: "التحقق (الاسم/التعبير):"
+      placeholder-check-name: تحقق من الاسم
+      placeholder-expression: تعبير
+      label-request-steps: "خطوات الطلب:"
+      placeholder-request-url: عنوان URL للطلب
+      label-payload: "الحمولة:"
+      placeholder-payload-json-or-text: البيانات المرسلة (بصيغة JSON أو نص)
+      placeholder-headers-json: الرؤوس (JSON)
+      label-headers: "العناوين:"
+      label-sleep-after-this-step-seconds: "النوم بعد هذه الخطوة (بالثواني):"
+      title-generated-k6-script: نص K6 المُنشأ
+      tag-apply-preset: تطبيق الإعدادات المسبقة
+      tag-remove: يزيل
+      tag-add-threshold: إضافة عتبة
+      tag-add-check: إضافة علامة صح
+      tag-remove-step: خطوة الإزالة
+      tag-add-step: إضافة خطوة
+  markdown-diff:
+    title: مقارنة ماركداون
+    description: قارن بين مستندين من نوع Markdown ولاحظ الاختلافات بينهما.
+    externalAccess: باطل
+    texts:
+      label-code: شفرة
+      label-preview: معاينة
+      tag-source-markdown: ترميز المصدر
+      tag-modified-markdown: ماركداون معدل
+  markdown-preview:
+    title: معاينة Markdown
+    description: معاينة مباشرة لـ Markdown أثناء الكتابة
+    externalAccess: باطل
+    texts:
+      placeholder-your-markdown-content: محتوى Markdown الخاص بك...
+      label-your-markdown-to-preview: "ملف Markdown الخاص بك للمعاينة:"
+      label-rendered-preview: "معاينة مُعالجة:"
+  markdown-table-generator:
+    title: مولد جداول Markdown
+    description: أنشئ جداول Markdown بنكهة GitHub باستخدام محرر مرئي.
+    externalAccess: باطل
+    texts:
+      label-left: غادر
+      label-center: مركز
+      label-right: يمين
+      label-paste-clipboard-table-data-here: "ألصق بيانات الجدول الموجود في الحافظة هنا:"
+      placeholder-paste-your-table-to-edit: ألصق جدولك للتعديل...
+      label-generated-markdown-table: "جدول Markdown المُنشأ:"
+      tag-import-table-data: استيراد بيانات الجدول
+      tag-add-row: إضافة صف
+      tag-add-column: إضافة عمود
+  nmap-command-builder:
+    title: أداة إنشاء أوامر Nmap
+    description: أداة بسيطة لإنشاء أوامر مسح Nmap.
+    externalAccess: باطل
+    texts:
+      label-default-scan: المسح الافتراضي
+      label-quick-scan: المسح السريع
+      label-intense-scan: فحص مكثف
+      label-full-tcp-scan: فحص كامل لبروتوكول TCP
+      label-udp-scan: فحص UDP
+      label-ping-sweep: مسح بينغ
+      label-no-ping-stealth-host-discovery: لا يوجد اتصال (اكتشاف المضيف الخفي)
+      label-top-ports-100: أفضل الموانئ (100)
+      label-top-ports-1000: أفضل الموانئ (1000)
+      label-firewall-evasion: تجاوز جدار الحماية
+      label-ipv6-scan: فحص IPv6
+      label-service-version-deep-scan: فحص الخدمة والإصدار المتعمق
+      label-vulnerability-scan-nse-vuln: فحص الثغرات الأمنية (ثغرات NSE)
+      label-http-enumeration: تعداد HTTP
+      label-smb-enumeration: تعداد الشركات الصغيرة والمتوسطة
+      label-dns-brute-force: هجوم القوة الغاشمة على نظام أسماء النطاقات (DNS)
+      label-ftp-audit: تدقيق بروتوكول نقل الملفات (FTP)
+      label-ssh-audit: تدقيق SSH
+      label-full-recon-os-version-scripts: إعادة بناء كاملة (نظام التشغيل + الإصدار + البرامج النصية)
+      label-target: "هدف:"
+      placeholder-example-com-or-192-168-1-1: example.com أو 192.168.1.1
+      tab-presets: الإعدادات المسبقة
+      label-preset: "الإعداد المسبق:"
+      placeholder-choose-a-preset: اختر إعدادًا مسبقًا
+      tab-custom: مخصص
+      title-scan-options: خيارات المسح الضوئي
+      label-os-detection-o: الكشف عن نظام التشغيل (-O)
+      label-version-detection-sv: الكشف عن الإصدار (-sV)
+      label-default-scripts-sc: البرامج النصية الافتراضية (-sC)
+      label-traceroute-traceroute: تتبع المسار (--traceroute)
+      label-verbose-v: مُسهب (-v)
+      label-aggressive-a: عدواني (-أ)
+      title-advanced: متقدم
+      label-custom-ports-p: المنافذ المخصصة (-p)
+      placeholder-80-443-or-1-65535: 80,443 أو 1-65535
+      label-timing-t: التوقيت (-T)
+      label-nse-scripts-script: نصوص بورصة الأوراق المالية الوطنية (--script)
+      placeholder-vuln-http-title: ثغرة أمنية، عنوان HTTP، ...
+      label-output-file-on: ملف الإخراج (-oN)
+      placeholder-scan-txt: scan.txt
+      title-generated-command: الأمر المُنشأ
+  picomatch-tester:
+    title: جهاز اختبار بيكوماتش
+    description: أداة اختبار بسيطة لمكتبة picomatch، والتي تُستخدم لمطابقة أنماط glob.
+    externalAccess: باطل
+    texts:
+      label-pattern: "نمط:"
+      placeholder-enter-a-glob-pattern-like-js: أدخل نمطًا عامًا مثل *.js
+      label-options: "خيارات:"
+      label-generated-regex: "التعبير النمطي المُنشأ:"
+      label-test-lines-one-per-line: "خطوط الاختبار (خط واحد لكل سطر):"
+      placeholder-enter-one-string-per-line: أدخل سلسلة نصية واحدة في كل سطر
+      tag-case-insensitive: غير حساس لحالة الأحرف
+      tag-match-dotfiles: مطابقة الملفات المخفية
+      tag-no-nested-directories-with-globstars: لا توجد مجلدات متداخلة تحتوي على علامات النجمة العامة (**)
+      tag-allows-glob-to-match-any-part-of-the-given-string-s: يسمح الأمر glob بمطابقة أي جزء من السلسلة (السلاسل) المعطاة.
+      tag-don-t-match-trailing-slashes-with-single-stars: لا تقم بمطابقة الشرطات المائلة الأخيرة مع النجوم المفردة
+  powershell-memo:
+    title: دليل مختصر لـ PowerShell
+    description: باور شيل هي لغة برمجة نصية قوية وواجهة سطر أوامر مصممة لإدارة
+      الأنظمة وأتمتتها. توفر مجموعة واسعة من أوامر cmdlets والميزات التي تُمكّن
+      المستخدمين من إدارة وأتمتة المهام على أنظمة ويندوز بكفاءة.
+    externalAccess: باطل
+  running-pace-calculator:
+    title: حاسبة سرعة الجري
+    description: احسب سرعة الجري الخاصة بك، وقدّر أوقات إنهاء السباقات الشائعة، وحلل
+      الفترات الزمنية، واعثر على مناطق التدريب الخاصة بك.
+    externalAccess: باطل
+    texts:
+      label-length: "طول:"
+      placeholder-e-g-10km-or-100m: "مثال: 10 كيلومترات أو 100 متر"
+      label-time: "وقت:"
+      placeholder-e-g-45-00-or-45min-or-1h30m: على سبيل المثال، 45:00 أو 45 دقيقة أو 1 ساعة و30 دقيقة...
+      label-pace: "خطوة:"
+      placeholder-e-g-4-30-km: "مثال: 4:30/كم"
+      label-unit: "وحدة:"
+      label-output-speed-in-instead-of-pace: "سرعة الإخراج بدلاً من السرعة:"
+      title-result: نتيجة
+      tag-km: كم
+      tag-mile: ميل
+      tag-calculate: احسب
+  saml-parser:
+    title: محلل SAML
+    description: يكتشف مدخلات SAML (Base64 أو DEFLATE أو XML)، ويحللها، ويتحقق من
+      صحة توقيعها، ويعرض عرضًا منظمًا للتأكيد - بما في ذلك المُصدر، والموضوع،
+      والشروط، وسياق المصادقة، والمطالبات، وحالة التحقق.
+    externalAccess: باطل
+    texts:
+      label-saml-assertion-base64-deflate-or-xml: "تأكيد SAML (Base64 أو DEFLATE أو XML):"
+      placeholder-paste-saml-assertion-base64-deflate-or-xml: لصق تأكيد SAML (Base64 أو DEFLATE أو XML)
+      title-validation-options: خيارات التحقق
+      label-thumbprint: "بصمة الإبهام:"
+      placeholder-thumbprint-optional: بصمة الإبهام (اختياري)
+      label-public-key: "المفتاح العام:"
+      placeholder-public-key-optional: المفتاح العام (اختياري)
+      label-audience: "جمهور:"
+      placeholder-audience-optional: الجمهور (اختياري)
+      title-parsed-saml-assertion: تأكيد SAML المُحلل
+      label-issuer: "الجهة المصدرة:"
+      label-assertion-id: "معرّف التأكيد:"
+      label-session-index: "فهرس الجلسات:"
+      label-notbefore: "ليس قبل:"
+      label-notonorafter: "ليس في أو بعد:"
+      label-signature-validation-status: "حالة التحقق من صحة التوقيع:"
+      title-claims: المطالبات
+      title-raw-assertion: تأكيد صريح
+      tag-bypass-expiration: تجاوز انتهاء الصلاحية
+      tag-don-t-bypass-expiration: لا تتجاوز تاريخ انتهاء الصلاحية
+      tag-detect-parse-and-validate: الكشف والتحليل والتحقق
+  url-builder:
+    title: منشئ عناوين URL
+    description: يتيح تحرير وإنشاء عناوين URL باستخدام معلمات الاستعلام
+    externalAccess: باطل
+    texts:
+      label-string: خيط
+      label-number: رقم
+      label-boolean: منطقي
+      label-date: تاريخ
+      label-datetime: التاريخ والوقت
+      label-array: مصفوفة
+      label-load-url: "تحميل عنوان URL:"
+      placeholder-paste-url-to-parse: ألصق الرابط لتحليله
+      label-base-url: "عنوان URL الأساسي:"
+      placeholder-base-url: عنوان URL الأساسي
+      title-url-parameters: معلمات عنوان URL
+      placeholder-key: مفتاح
+      placeholder-value: قيمة
+      title-generated-url: عنوان URL المُنشأ
+      tag-parse: تحليل
+  json-patch:
+    texts:
+      text-json-paths-copied-to-clipboard: تم نسخ مسارات JSON إلى الحافظة!
+      tab-paths: المسارات
+      label-input-json: إدخال JSON
+      placeholder-paste-json: ألصق بيانات JSON...
+      tab-generate-patch: إنشاء رقعة
+      label-before-json: قبل JSON
+      placeholder-before-json: قبل JSON...
+      label-after-json: بعد JSON
+      placeholder-after-json: بعد JSON...
+      title-generate-json-patch: إنشاء رقعة JSON
+      tab-apply-patch: ضع اللاصقة
+      label-json-to-patch: JSON للتصحيح
+      placeholder-json-to-patch: JSON المراد تعديله...
+      label-json-patch-array: مصفوفة JSON Patch
+      placeholder-json-patch-array: مصفوفة JSON Patch...
+      title-patched-json: JSON مُعدّل
+      tag-generate-paths: إنشاء المسارات
+      tag-copy-json-paths: انسخ مسارات JSON
+      tag-generate-patch: إنشاء رقعة
+      tag-apply-patch: قم بتطبيق التصحيح
+  ping:
+    title: بينغ
+    description: قم بإجراء اختبار اتصال (ping) لمجموعة من أسماء المضيفين أو عناوين
+      IP أو نطاقات عناوين IP (CIDR)
+    externalAccess: تستدعي هذه الأداة خدمة أدوات الشبكة ذاتية الاستضافة الخاصة بك
+      لإجراء اختبارات ICMP ping.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "الأهداف (عناوين IP/CIDRs/أسماء المضيفين، واحد لكل سطر أو ، أو ؛):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "عدد:"
+      label-timeout-seconds: "المهلة الزمنية (بالثواني):"
+      tag-ping-all: إرسال إشارة للجميع
+      tag-target: هدف
+      tag-ip: الملكية الفكرية
+      tag-status: حالة
+      tag-avg-rtt-ms: متوسط زمن الاستجابة (بالمللي ثانية)
+      tag-packet-loss: فقدان الحزم
+      tag-error: خطأ
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: يتوسع نطاق CIDR إلى {0} عنوان IP، متجاوزًا الحد الأقصى البالغ {1}
+      tag-reachable: يمكن الوصول إليه
+      tag-unreachable: غير قابل للوصول
+  command-palette:
+    store:
+      texts:
+        pages: الصفحات
+        learn-more-about-it-tools: تعرف على المزيد حول أدوات تكنولوجيا المعلومات.
+        actions-0: الإجراءات
+        report-a-bug-or-an-issue-to-help-improve-it-tools: أبلغ عن أي خلل أو مشكلة للمساعدة في تحسين أدوات تكنولوجيا المعلومات.
+        report-a-bug-or-an-issue: أبلغ عن خطأ أو مشكلة
+        view-the-source-code-of-it-tools-on-github: يمكنك الاطلاع على الكود المصدري لـ it-tools على موقع Github.
+        external: خارجي
+        github-repository: مستودع جيت هاب
+        actions: الإجراءات
+        toggle-dark-mode-on-or-off: قم بتشغيل أو إيقاف الوضع الداكن.
+        toggle-dark-mode: تفعيل الوضع الداكن
+        tools-0: أدوات
+        get-a-random-tool-from-the-list: اختر أداة عشوائية من القائمة.
+        random-tool: أداة عشوائية
+        tools: أدوات
+  external-self-hosted-required: مطلوب استضافة خارجية ذاتية
+  markdown-format-converter:
+    title: محول التنسيق
+    description: التحويل بين تنسيقات Markdown القياسية، و Obsidian، و Logseq، و
+      Slack، و Jira، وغيرها من التنسيقات.
+    texts:
+      label-source-format: تنسيق المصدر
+      label-target-format: تنسيق الهدف
+      placeholder-input-markdown: ألصق أو اكتب هنا تنسيق Markdown القياسي أو تنسيق
+        Obsidian أو تنسيق Logseq الخاص بك...
+      label-input-markdown: إدخال Markdown
+      label-converted-output: الناتج المحول
+      label-text: نص
+      label-preview: معاينة
+  restic-command-generator:
+    title: مولد أوامر ريستيك
+    description: "قم بإنشاء أوامر سطر الأوامر restic لاستعادة مستودع Backrest أو
+      مستودع restic عادي: لقطة كاملة، أو بعض الملفات فقط، أو نقطة ربط قابلة
+      للتصفح."
+    texts:
+      intro: "للمولد فقط: لا يتم تشغيل أي شيء هنا، ولا يخرج أي شيء تكتبه من متصفحك. صف
+        مستودعك، وحدد ما تحتاج إلى استعادته، وانسخ مقتطف الشفرة البرمجية."
+      title-repository: مستودع
+      label-backend: الواجهة الخلفية
+      backend-s3: متوافق مع S3 (Backblaze B2، MinIO، Wasabi، AWS...)
+      backend-b2: Backblaze B2 (أصلي)
+      backend-local: المسار المحلي أو القرص المُثبَّت
+      backend-sftp: SFTP
+      backend-rest: خادم REST الخاص بـ restic
+      backend-rclone: Rclone
+      backend-azure: تخزين Azure Blob
+      backend-gs: تخزين جوجل السحابي
+      backend-raw: أخرى (معرّف الموارد الموحد للمستودع الخام)
+      label-local-path: مسار المستودع
+      label-endpoint: نقطة النهاية
+      label-bucket: دلو
+      label-prefix: المسار في الدلو
+      label-region: المنطقة (اختياري)
+      label-user: مستخدم
+      label-host: يستضيف
+      label-port: المنفذ (اختياري)
+      label-path: مسار المستودع
+      label-url: عنوان الخادم
+      label-remote: Rclone remote and path
+      label-container: حاوية
+      label-raw-repository: معرّف الموارد الموحد للمستودع
+      label-repository-mode: تم تمرير المستودع كـ
+      repository-flag: الخيار -r في كل أمر
+      repository-env: متغير البيئة RESTIC_REPOSITORY
+      label-repository-uri: معرّف الموارد الموحد للمستودع
+      label-password: كلمة مرور المستودع
+      password-prompt: اطلب ذلك في سطر الأوامر (اقرأ -rs، يبقى خارج سجل الأوامر)
+      password-file: ملف كلمة المرور
+      password-command: --password-command
+      password-placeholder: تصدير كلمة مرور RESTIC مع عنصر نائب
+      password-none: تم ضبطه مسبقًا في بيئتي
+      label-password-file: ملف كلمة المرور
+      label-password-command: أمر كلمة المرور
+      label-credentials: بيانات اعتماد الواجهة الخلفية
+      credentials-prompt: اطلب الكشف عن السر الموجود في الصدفة
+      credentials-placeholder: قم بتصديرها مع العناصر النائبة
+      credentials-none: تم ضبطه مسبقًا في بيئتي
+      label-account-id: معرّف المفتاح / اسم الحساب
+      hint-secrets: 'لا يتم وضع أي سر في الأمر المُنشأ: تقرأ خيارات الموجه هذه
+        المعلومات في غلاف النظام الخاص بك باستخدام "read -rs" بحيث تبقى خارج سجل
+        الأوامر.'
+      title-operation: ماذا تريد أن تفعل؟
+      operation-restore: استعادة — كتابة الملفات من لقطة إلى القرص
+      operation-dump: تفريغ — بث ملف أو مجلد واحد من لقطة
+      operation-mount: قم بتثبيت المستودع — تصفح المستودع كنظام ملفات
+      operation-snapshots: اللقطات — قائمة لقطات المستودع
+      operation-ls: ls — لعرض قائمة الملفات داخل اللقطة
+      operation-find: البحث — تحديد موقع ملف عبر اللقطات
+      operation-diff: diff — مقارنة لقطتين
+      operation-check: التحقق — التحقق من سلامة المستودع
+      operation-stats: الإحصائيات - حجم اللقطة أو حجم المستودع
+      operation-unlock: فتح القفل — إزالة الأقفال القديمة
+      title-snapshot: اختيار اللقطة
+      label-snapshot-id: معرف اللقطة
+      label-subfolder: هذا المجلد الفرعي فقط من اللقطة
+      label-plan: معرف خطة مسند الظهر
+      label-instance: معرف مثيل مسند الظهر
+      label-filter-host: يستضيف
+      label-tags: علامات إضافية
+      placeholder-tag: يدوي
+      label-filter-paths: المسارات
+      placeholder-path: /home/me/documents
+      hint-tags: يُضيف Backrest وسومًا إلى اللقطات التي يُنشئها، وهي "plan:"
+        و"created-by:"، متبوعةً بمعرف الخطة ومعرف المثيل. تُربط الوسوم داخل وسم
+        --tag واحد باستخدام AND، بينما تُربط الوسوم المتكررة باستخدام OR، بحيث
+        تبقى الخطة والمثيل في وسم واحد، ويحصل كل وسم إضافي على وسم خاص به.
+      title-restore-options: خيارات الاستعادة
+      label-target: الدليل المستهدف
+      label-include: استعد هذه المسارات أو الأنماط فقط
+      placeholder-include: /home/me/documents/**/*.pdf
+      label-exclude: استبعد هذه المسارات أو الأنماط
+      placeholder-exclude: "**/node_modules"
+      label-overwrite: استبدال الملفات الموجودة
+      overwrite-default: الوضع الافتراضي لـ restic (دائماً)
+      overwrite-always: دائماً
+      overwrite-if-changed: إذا تم التغيير
+      overwrite-if-newer: إذا كان أحدث
+      overwrite-never: أبداً
+      label-case-insensitive: أنماط غير حساسة لحالة الأحرف
+      label-dry-run: تجربة جافة
+      label-verify: تحقق من الملفات المستعادة
+      label-sparse: كتابة ملفات متفرقة
+      label-delete: احذف الملفات المفقودة من اللقطة
+      title-dump-options: خيارات التفريغ
+      label-dump-path: ملف أو مجلد داخل اللقطة
+      label-archive: تنسيق الأرشيف
+      archive-none: ملف خام
+      archive-tar: يأخذ
+      archive-zip: أَزِيز
+      label-output-file: إعادة التوجيه إلى ملف محلي (اختياري)
+      hint-dump: تقوم وظيفة dump streams باستخراج ملف أو مجلد واحد مباشرة من المستودع،
+        لذلك لن تضطر إلى استعادة لقطة كاملة لاستعادة ملف تكوين واحد.
+      title-mount-options: خيارات التثبيت
+      label-mount-point: نقطة التثبيت
+      label-allow-other: السماح للمستخدمين الآخرين بالوصول إلى الحامل
+      title-ls-options: خيارات القائمة
+      label-ls-directory: دليل لعرضه (اختياري)
+      label-long: قائمة طويلة
+      label-recursive: التكراري
+      title-find-options: ابحث عن الخيارات
+      label-find-pattern: نمط
+      label-restrict-snapshot: ابحث فقط في اللقطة المحددة
+      title-diff-options: خيارات Diff
+      label-diff-snapshot: قارن مع اللقطة
+      label-metadata: أبلغ عن تغييرات البيانات الوصفية أيضًا
+      title-snapshots-options: خيارات اللقطات
+      label-compact: مخرج مضغوط
+      title-check-options: تحقق من الخيارات
+      label-read-data-subset: مجموعة بيانات القراءة الفرعية
+      label-read-data: اقرأ وتحقق من كل ملف حزمة
+      label-check-unused: الإبلاغ عن الكتل غير المستخدمة
+      label-with-cache: استخدم ذاكرة التخزين المؤقت الموجودة
+      title-stats-options: خيارات الإحصائيات
+      label-stats-mode: وضع العد
+      stats-restore-size: حجم الاستعادة — حجم الاستعادة
+      stats-files-by-contents: الملفات حسب المحتويات — ملفات فريدة
+      stats-raw-data: البيانات الأولية — الحجم قبل إزالة التكرارات
+      stats-blobs-per-file: عدد الكتل لكل ملف
+      label-stats-all: جميع اللقطات
+      title-unlock-options: خيارات الفتح
+      label-remove-all: قم بإزالة جميع الأقفال، بما في ذلك الأقفال المستخدمة.
+      title-global-options: خيارات عالمية
+      label-cache-dir: دليل التخزين المؤقت
+      label-limit-download: حد التنزيل (كيلوبايت/ثانية)
+      label-retry-lock: أعد محاولة الوصول إلى مستودع مغلق لـ
+      label-extra-options: خيارات الواجهة الخلفية (-o)
+      placeholder-extra-option: s3.connections=4
+      label-extra-arguments: وسائط إضافية (مرفقة كما هي)
+      label-no-lock: --بدون قفل
+      label-no-cache: --no-cache
+      label-insecure-tls: --insecure-tls
+      label-json: --json
+      label-quiet: --هادئ
+      label-verbose: --مطول
+      title-output: الأمر المُنشأ
+      label-include-environment: قم بتضمين إعداد البيئة
+      label-multiline: وسيط واحد لكل سطر
+      button-reset: إعادة ضبط الإعدادات الافتراضية
+      warning-history: "تبقى عمليات تصدير العناصر النائبة في سجل الأوامر بمجرد ملئها:
+        فضل استخدام خيارات المطالبة، أو امسح السجل بعد ذلك."
+      warning-target: تقوم عملية الاستعادة بإعادة إنشاء المسار الكامل لكل ملف ضمن
+        الدليل الهدف، بحيث ينتهي الأمر بملف /etc/hosts في المجلد الفرعي
+        etc/hosts الخاص بالهدف.
+      warning-delete: يحذف الخيار --delete الملفات الموجودة في المجلد المستهدف والتي
+        لا توجد في اللقطة. جربه أولاً باستخدام الخيار --dry-run.
+      warning-restic-version: تتطلب الخيارات --dry-run و --delete و --overwrite
+        الإصدار 0.17 من restic أو أحدث.
+      warning-mount: يحتاج برنامج mount إلى FUSE، ويعرض اللقطات للقراءة فقط، ويستمر في
+        العمل حتى تقوم بإيقافه باستخدام Ctrl-C.
+      title-walkthrough: دليل التعافي
+      hint-walkthrough: التسلسل المعتاد عندما يكون المستودع هو كل ما تبقى، والذي تم
+        إنشاؤه من الإعدادات المذكورة أعلاه.
+      walkthrough-snapshots: اذكر لقطات المستودع
+      walkthrough-find: ابحث عن اللقطة التي تحتوي على الملف الذي تحتاجه
+      walkthrough-ls: اذكر ملفات اللقطة المختارة
+      walkthrough-restore: استعد الملفات التي تحتاجها فقط
+      walkthrough-mount: أو تصفح المستودع وانسخ الملفات يدويًا
+      title-backrest: ورقة غش مسند الظهر
+      table-item: غرض
+      table-value: المسار أو التنسيق الافتراضي (صورة Docker بين قوسين)
+      backrest-config: ملف التكوين، الذي يحتوي على عنوان URI للمستودع وكلمة المرور
+        الخاصة به ومتغيرات بيئة الواجهة الخلفية
+      backrest-data: دليل البيانات
+      backrest-binary: تم تنزيل ملف Restic الثنائي بواسطة Backrest
+      backrest-plan-tag: بطاقة تعريف الخطة
+      backrest-instance-tag: الوسم الذي يحدد الحالة
+      hint-backrest: "مستودع Backrest هو مستودع restic عادي: إذا اختفت واجهة المستخدم
+        على الويب، فاقرأ عنوان URI وكلمة المرور من ملف config.json وقم بتشغيله
+        باستخدام ملف backrest الثنائي restic الذي تم تنزيله مسبقًا."
+  epc-qrcode-generator:
+    title: مولد رمز الاستجابة السريعة EPC
+    description: قم بإنشاء رمز الاستجابة السريعة (QR Code) الخاص بمجلس المدفوعات
+      الأوروبي (EPC) لبدء عملية تحويل ائتماني ضمن منطقة المدفوعات الأوروبية
+      الموحدة (SEPA).
+    externalAccess: باطل
+    texts:
+      text-copied-to-clipboard: تم نسخها إلى الحافظة
+      label-v1: الإصدار الأول
+      label-v2: V2
+      label-beneficiary-name: "اسم المستفيد:"
+      placeholder-beneficiary-name: اسم المستفيد
+      label-account-iban: "رقم الحساب (IBAN):"
+      placeholder-fr76: FR76...
+      label-bic: "رمز تعريف البنك (BIC):"
+      placeholder-bank-bic-optional: رمز تعريف البنك (اختياري)
+      label-amount-eur: "المبلغ (باليورو):"
+      label-payment-reference: "رقم مرجع الدفع:"
+      placeholder-optional: خياري
+      label-purpose: "غاية:"
+      label-version: "إصدار:"
+      label-foreground-color: "لون المقدمة:"
+      label-background-color: "لون الخلفية:"
+      label-qr-size: "حجم رمز الاستجابة السريعة:"
+      tag-generate-qr: إنشاء رمز الاستجابة السريعة (QR)
+      tag-download-qrcode: تنزيل رمز الاستجابة السريعة
+      tag-copy-qrcode-text: انسخ نص رمز الاستجابة السريعة
+  url-redirection-checker:
+    title: مدقق إعادة توجيه عناوين URL
+    description: تحقق مما إذا كان عنوان URL يعيد التوجيه إلى عنوان URL آخر.
+    externalAccess: باطل
+    texts:
+      label-get: يحصل
+      label-head: رأس
+      label-url: "عنوان URL:"
+      placeholder-https-example-com: https://example.com
+      label-method: "طريقة:"
+      label-user-agent: "وكيل المستخدم:"
+      label-max-hops: "أقصى عدد من القفزات:"
+      label-include-body-preview: تضمين معاينة النص
+      label-preview-bytes: "بايتات المعاينة:"
+      title-warnings: تحذيرات
+      title-summary: ملخص
+      label-input-url: "عنوان URL المدخل:"
+      label-final-url: "الرابط النهائي:"
+      label-hop-count: "عدد القفزات:"
+      title-redirect-chain: سلسلة إعادة التوجيه
+      tag-inspect-redirect-chain: فحص سلسلة إعادة التوجيه
+      tag-: "-"
+      tag-url: عنوان URL
+      tag-status: حالة
+      tag-duration: مدة
+      tag-redirect: إعادة التوجيه
+      tag-location: موقع
+      tag-300-hop-status-code: = 300 && hop.status_code
+      tag-headers-body-preview: معاينة العناوين والمحتوى
+      tag-truncated: مختصر
 spanCopyable:
   copy: نسخ إلى الحافظة
   copied: تم النسخ!
@@ -7814,9 +9986,16 @@ formatTransformer:
   input-placeholder: مدخل...
   output: الناتج
   download: تحميل
+  viewer: مشاهد
 textareaCopyable:
   copy: نسخ إلى الحافظة
   copied: تم النسخ!
   download: تحميل
 locale-selector:
   select-a-language: اختر لغة
+collapsibleToolMenu:
+  text:
+    expanding: توسع...
+    collapsing: ينهار...
+    collapse-all-tools: طي جميع الأدوات
+    expand-all-tools: عرض جميع الأدوات

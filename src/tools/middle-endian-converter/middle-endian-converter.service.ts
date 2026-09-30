@@ -1,7 +1,9 @@
+import { translate as t } from '@/plugins/i18n.plugin';
+
 export interface EndianResult {
-  bigEndian: string
-  littleEndian: string
-};
+  bigEndian: string;
+  littleEndian: string;
+}
 
 export function convertEndian(
   hexInput: string,
@@ -11,17 +13,22 @@ export function convertEndian(
   const hex = hexInput.replace(/^0x/, '').toUpperCase();
 
   if (!/^[0-9A-F]+$/.test(hex)) {
-    throw new Error('Invalid hex input. Only 0-9 and A-F allowed.');
+    throw new Error(t('tools.middle-endian-converter.service.texts.invalid-hex-input-only-0-9-and-a-f-allowed'));
   }
 
   const byteCount = bitLength / 8;
   if (hex.length !== byteCount * 2) {
-    throw new Error(`Input must be ${byteCount * 2} hex characters for ${bitLength}-bit.`);
+    throw new Error(
+      t('tools.middle-endian-converter.service.texts.input-must-be-bytecount-2-hex-characters-for-bitlength-bit', [
+        byteCount * 2,
+        bitLength,
+      ]),
+    );
   }
 
   const bytes = hex.match(/.{2}/g);
   if (!bytes) {
-    throw new Error('Failed to parse bytes.');
+    throw new Error(t('tools.middle-endian-converter.service.texts.failed-to-parse-bytes'));
   }
 
   const reordered: string[] = [];
@@ -30,14 +37,12 @@ export function convertEndian(
     for (let i = 0; i < bytes.length; i += 2) {
       reordered.push(bytes[i + 1], bytes[i]);
     }
-  }
-  else if (middleEndianType === 'word-swapped') {
+  } else if (middleEndianType === 'word-swapped') {
     for (let i = 0; i < bytes.length; i += 4) {
       reordered.push(...bytes.slice(i + 2, i + 4), ...bytes.slice(i, i + 2));
     }
-  }
-  else {
-    throw new Error('Unsupported middle-endian format.');
+  } else {
+    throw new Error(t('tools.middle-endian-converter.service.texts.unsupported-middle-endian-format'));
   }
 
   return {
@@ -47,9 +52,9 @@ export function convertEndian(
 }
 
 export function formatInteger(hexInput: string): {
-  decimal: string
-  octal: string
-  hexadecimal: string
+  decimal: string;
+  octal: string;
+  hexadecimal: string;
 } {
   try {
     const hex = hexInput.replace(/^0x/, '');
@@ -60,12 +65,11 @@ export function formatInteger(hexInput: string): {
       octal: `0o${intValue.toString(8)}`,
       hexadecimal: `0x${intValue.toString(16).toUpperCase()}`,
     };
-  }
-  catch {
+  } catch {
     return {
-      decimal: 'Invalid',
-      octal: 'Invalid',
-      hexadecimal: 'Invalid',
+      decimal: t('tools.middle-endian-converter.service.texts.invalid'),
+      octal: t('tools.middle-endian-converter.service.texts.invalid-0'),
+      hexadecimal: t('tools.middle-endian-converter.service.texts.invalid-1'),
     };
   }
 }

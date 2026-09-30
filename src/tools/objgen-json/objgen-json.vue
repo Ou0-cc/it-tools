@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import { useQueryParamOrStorage } from '@/composable/queryParams';
 import { ObjGen2Json } from '@/utils/objgen';
+
+const { t } = useI18n();
 
 const defaultValue = `// Model & generate Live JSON data values
 // interactively using a simple syntax.
@@ -42,8 +45,7 @@ const indentSize = useQueryParamOrStorage({ name: 'indent', storageName: 'objgen
 function transformer(value: string) {
   try {
     return ObjGen2Json(value, { numSpaces: indentSize.value });
-  }
-  catch (e: any) {
+  } catch (e: any) {
     return `/* ERROR: ${e.toString()} */`;
   }
 }
@@ -51,15 +53,15 @@ function transformer(value: string) {
 
 <template>
   <details mb-1>
-    <summary>Documentation</summary>
+    <summary>{{ t('tools.objgen-json.texts.tag-documentation') }}</summary>
     <textarea-copyable :value="defaultValue" language="toml" />
   </details>
 
   <format-transformer
-    input-label="ObjGen JSON definition"
+    :input-label="t('tools.objgen-json.texts.input-label-objgen-json-definition')"
     :input-default="defaultValue"
-    input-placeholder="Put your ObjGen JSON definition here..."
-    output-label="Generated JSON"
+    :input-placeholder="t('tools.objgen-json.texts.input-placeholder-put-your-objgen-json-definition-here')"
+    :output-label="t('tools.objgen-json.texts.output-label-generated-json')"
     output-language="json"
     :transformer="transformer"
     download-file-name="output.json"

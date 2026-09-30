@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import _ from 'lodash';
+import * as _ from 'es-toolkit/compat';
 
 const { t } = useI18n();
 
@@ -26,7 +26,14 @@ const minifiedQuery = computed(() => {
 
 <template>
   <c-card :title="t('tools.sql-minifier.texts.title-sql-minifier')">
-    <c-input-text v-model:value="sqlQuery" :label="t('tools.sql-minifier.texts.label-sql-query')" multiline mb-1 rows="10" :placeholder="t('tools.sql-minifier.texts.placeholder-enter-sql-query')" />
+    <c-input-text
+      v-model:value="sqlQuery"
+      :label="t('tools.sql-minifier.texts.label-sql-query')"
+      multiline
+      mb-1
+      rows="10"
+      :placeholder="t('tools.sql-minifier.texts.placeholder-enter-sql-query')"
+    />
 
     <c-card :title="t('tools.sql-minifier.texts.title-minified-sql-query')">
       <textarea-copyable :value="minifiedQuery" language="sql" download-file-name="output.sql" />

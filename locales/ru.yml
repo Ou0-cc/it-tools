@@ -3,6 +3,9 @@
   sorry: Извините, эта страница, похоже, не существует
   maybe: Возможно, кэш играет шутки, попробуйте принудительно обновить страницу?
   backHome: Вернуться на главную
+  page:
+    text:
+      page-not-found-it-tools: Страница не найдена - IT-инструменты
 home:
   categories:
     newestTools: Новейшие инструменты
@@ -32,7 +35,19 @@ home:
     darkMode: Темный режим
     lightMode: Светлый режим
     mode: Переключение темного/светлого режима
+    language: Язык
+    themeSystem: Система
+    themeLight: Свет
+    themeDark: Темный
   loading-more-tools: Загрузка дополнительных инструментов...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Набор удобных онлайн-инструментов для разработчиков с отличным
+        пользовательским интерфейсом. IT Tools — это бесплатный набор удобных
+        онлайн-инструментов с открытым исходным кодом для разработчиков и
+        специалистов в сфере ИТ.
+      it-tools-handy-online-tools-for-developers: IT-инструменты — удобные онлайн-инструменты для разработчиков.
 about:
   alltools-title: Все {toolsCount} инструменты
   tools:
@@ -81,6 +96,13 @@ about:
     отправьте отчёт об ошибке в раздел
     [issues](https://github.com/sharevb/it-tools/issues/new/choose) репозитория
     GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Набор удобных онлайн-инструментов для разработчиков с отличным
+      пользовательским интерфейсом. IT Tools — это бесплатный набор удобных
+      онлайн-инструментов с открытым исходным кодом для разработчиков и
+      специалистов в сфере ИТ.
+    about-it-tools: О нас - IT-инструменты
 favoriteButton:
   remove: Удалить из избранного
   add: Добавить в избранное
@@ -90,6 +112,45 @@ search:
   label: Поиск
   placeholder: Введите для поиска инструмента или команды...
 tools:
+  crop-image:
+    title: Обрезать изображение
+    description: Обрезка, изменение размера и поворот изображений с настраиваемыми
+      цветами фона.
+    texts:
+      drag-drop: Перетащите изображение сюда или нажмите для выбора
+      drag-hint: Перетаскивайте для перемещения • Прокручивайте для масштабирования
+        ({zoom}%)
+      flip-h: Отразить по гориз.
+      flip-v: Отразить по верт.
+      reset: Сбросить
+      fit: Вписать
+      change-image: Сменить изображение
+      aspect-ratio: "Соотношение сторон:"
+      custom-ratio: "Свой формат:"
+      background-color: "Цвет фона:"
+      transparent: Прозрачный
+      zoom-image: "Масштаб:"
+      rotate-image: "Поворот:"
+      rule-of-thirds-grid: "Сетка правила третей:"
+      export-settings: Параметры экспорта
+      export-format: "Формат файла:"
+      image-quality: "Качество сжатия:"
+      export-width: "Ширина файла:"
+      custom-width: "Своя ширина (px):"
+      export-download-image: Экспортировать и скачать
+      ratio-square: 1:1 (Квадрат)
+      ratio-widescreen: 16:9 (Широкий)
+      ratio-portrait: 9:16 (Портрет)
+      ratio-standard: 4:3 (Стандарт)
+      ratio-photo: 3:2 (Фото)
+      ratio-original: Исходное соотношение
+      ratio-custom: Своя пропорция
+      width-original: Исходный размер
+      width-viewport: Размер области просмотра
+      width-custom: Своя ширина
+      label-png: ПНГ
+      label-jpeg: JPEG
+      label-webp: ВебП
   categories:
     favorite-tools: Ваши любимые инструменты
     crypto: Крипта
@@ -118,6 +179,9 @@ tools:
     physics: Физика
     cheatsheets: Шпаргалки
     forensic: Судебная экспертиза
+    finance: Финансы
+    default: По умолчанию
+    toml: ТОМЛ
   password-strength-analyser:
     title: Анализатор надежности пароля
     description: Узнайте о надежности своего пароля с помощью этого анализатора
@@ -187,6 +251,7 @@ tools:
         препинания)
       placeholder-put-characters-to-deny-from-token: Поместите символы, которые следует запретить, в токен
       label-number-of-token-to-generate: Количество токенов для генерации
+      label-allow-ambiguous-characters: Позволяет отображать визуально неоднозначных персонажей.
   percentage-calculator:
     title: Калькулятор процентов
     description: Легко вычисляйте проценты от одного значения до другого значения
@@ -297,6 +362,8 @@ tools:
       label-brightness: Яркость
       label-grayscale: Оттенки серого
       label-invert: Инвертировать
+      label-oklab: прошу прощения
+      label-oklch: оклч
     models:
       text:
         invalid-label-tolowercase-format: Неверный формат {0}.
@@ -745,6 +812,7 @@ tools:
       tag-preview-image: Предварительный просмотр изображения
       tag-download-file: Загрузить файл
       tag-copy: Копировать
+      include-data-uri-prefix: "Включить данные: префикс URI"
   list-converter:
     title: Конвертер списков
     description: Этот инструмент может обрабатывать данные на основе столбцов и
@@ -808,6 +876,52 @@ tools:
       placeholder-the-decoded-string-will-be-here: Расшифрованная строка будет здесь
       tag-copy-base64: Копировать base64
       tag-copy-decoded-string: Копировать декодированную строку
+      text-encoding: "Кодировка текста:"
+      label-utf-8: UTF-8
+      label-utf-8-alias-utf8: "UTF-8 (псевдоним: UTF8)"
+      label-utf-16le: UTF-16LE
+      label-utf-16be: UTF-16BE
+      label-utf-7: UTF-7
+      label-utf-7-imap: UTF-7 (IMAP)
+      label-utf-32le: UTF-32LE
+      label-utf-32be: UTF-32BE
+      label-iso-8859-1-latin-1: ISO-8859-1 (Latin-1)
+      label-iso-8859-2-central-european: ISO-8859-2 (Центральноевропейский)
+      label-iso-8859-3-south-european: ISO-8859-3 (Южноевропейский)
+      label-iso-8859-4-north-european: ISO-8859-4 (Северная Европа)
+      label-iso-8859-5-cyrillic: ISO-8859-5 (кириллица)
+      label-iso-8859-6-arabic: ISO-8859-6 (на арабском языке)
+      label-iso-8859-7-greek: ISO-8859-7 (греческий)
+      label-iso-8859-8-hebrew: ISO-8859-8 (на иврите)
+      label-iso-8859-9-turkish: ISO-8859-9 (турецкий)
+      label-iso-8859-10-nordic: ISO-8859-10 (скандинавский)
+      label-iso-8859-13-baltic: ISO-8859-13 (Балтийское море)
+      label-iso-8859-14-celtic: ISO-8859-14 (кельтский)
+      label-iso-8859-15-latin-9: ISO-8859-15 (Latin-9)
+      label-iso-8859-16-romanian: ISO-8859-16 (румынский)
+      label-windows-1250-central-european: Windows-1250 (Центральная Европа)
+      label-windows-1251-cyrillic: Windows-1251 (кириллица)
+      label-windows-1252-western-european: Windows-1252 (Западная Европа)
+      label-windows-1253-greek: Windows-1253 (греческий)
+      label-windows-1254-turkish: Windows-1254 (турецкий)
+      label-windows-1255-hebrew: Windows-1255 (на иврите)
+      label-windows-1256-arabic: Windows-1256 (арабский)
+      label-windows-1257-baltic: Windows-1257 (Балтийское море)
+      label-windows-1258-vietnamese: Windows-1258 (вьетнамский)
+      label-koi8-r-russian: КОИ8-Р (русский)
+      label-koi8-u-ukrainian: KOI8-U (украинский)
+      label-gbk-simplified-chinese: GBK (упрощенный китайский)
+      label-gb2312-simplified-chinese: GB2312 (Упрощенный китайский)
+      label-gb18030-simplified-chinese: GB18030 (упрощенный китайский)
+      label-big5-traditional-chinese: Большая пятерка (традиционная китайская кухня)
+      label-shift-jis-japanese: Shift-JIS (японский)
+      label-euc-jp-japanese: EUC-JP (японский)
+      label-macroman: МакРоман
+      label-macgreek: МакГрик
+      label-macturkish: МакТуркиш
+      label-maccyrillic: Маккириллица
+      label-maccentraleurope: MacCentralEurope
+      label-maciceland: МакИсландия
   toml-to-yaml:
     title: TOML в YAML
     description: Парсинг и конвертация TOML в YAML.
@@ -856,6 +970,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Введите IBAN для проверки действительности...
       title-valid-iban-examples: Действительные примеры IBAN
       placeholder-enter-ibans-to-check-for-validity: Введите IBAN в каждой строке для проверки действительности.
+      bank-name: Название банка
+      account-number: Номер счета
+      branch-identifier: Идентификатор филиала
+      bank-identifier: Банковский идентификатор
+      bic: БИК
     service:
       text:
         qr-iban-not-allowed: QR-IBAN не допускается
@@ -914,6 +1033,9 @@ tools:
       label-titlecase: "Заглавная буква:"
       label-spongecase: "Чехол-губка:"
       label-swapcase: "Swapcase:"
+      label-lang-title-case: "Язык TitleCase:"
+      label-language: "Язык:"
+      placeholder-your-language: Язык Название Регистр языка...
   html-entities:
     title: Экранирование HTML сущностей
     description: Экранируйте или разэкранируйте HTML сущности (заменяйте символы,
@@ -1080,6 +1202,10 @@ tools:
       tag-refresh-key-pair: Обновить пару ключей
       tag-public-key: Открытый ключ
       tag-private-key: Закрытый ключ
+      tag-fingerprint: Отпечаток пальца
+      tag-md5-fingerprint: Отпечаток пальца (MD5)
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Количество бит должно быть 256 <= бит <= 16384 и кратно 8.
   html-wysiwyg-editor:
     title: HTML WYSIWYG редактор
     description: Онлайн, многофункциональный WYSIWYG HTML редактор, который
@@ -1433,6 +1559,8 @@ tools:
       tag-quantity: Количество
       tag-copy: Копировать
       tag-refresh: Обновить
+      uppercase: Заглавные буквы
+      no-hyphen: Без дефиса
   ipv4-address-converter:
     title: Конвертер IPv4 адресов
     description: Конвертируйте IP-адрес в десятичное, двоичное, шестнадцатеричное
@@ -1820,6 +1948,13 @@ tools:
   angle-converter:
     title: Конвертер углов
     description: Конвертируйте значения между единицами измерения углов
+    texts:
+      label-degree: градус (°)
+      label-radian: радиан
+      label-turn: повернуть
+      label-gradian: градиан
+      label-grad: степень
+      label-gon: гон
   ansible-vault-crypt-decrypt:
     title: Шифрование/дешифрование Ansible Vault
     description: Шифруйте и дешифруйте секреты Ansible Vault
@@ -1864,6 +1999,32 @@ tools:
   area-converter:
     title: Конвертер единиц площади
     description: Конвертируйте значения между единицами измерения площади
+    texts:
+      label-square-meter: квадратный метр
+      label-square-petameter: квадратный петаметр
+      label-square-terameter: квадратный терметр
+      label-square-gigameter: квадратный гигаметр
+      label-square-megameter: квадратный мегаметр
+      label-square-kilometer: квадратный километр
+      label-square-hectometer: квадратный гектометр
+      label-square-decameter: квадратный декаметр
+      label-square-decimeter: квадратный дециметр
+      label-square-centimeter: квадратный сантиметр
+      label-square-millimeter: квадратный миллиметр
+      label-square-micrometer: квадратный микрометр
+      label-square-nanometer: квадратный нанометр
+      label-square-picometer: квадратный пикометр
+      label-square-femtometer: квадратный фемтометр
+      label-acre: акр
+      label-centiare: быть сто
+      label-deciare: решить
+      label-are: являются
+      label-decare: дека
+      label-hectare: га
+      label-square-foot-ft2-sq-ft: квадратный фут (/фут²/кв. фут)
+      label-square-inch-in2-sq-in: квадратный дюйм (/дюйм²/кв. дюйм)
+      label-square-yard-yd2-sq-yd: квадратный ярд (кв. ярд)
+      label-square-mile-mi2-sq-mi: квадратная миля (миллионы ²/кв. миля)
   ascii-text-drawer:
     title: Рисователь ASCII текста
     description: Создавайте ASCII-арт текст с различными шрифтами и стилями
@@ -2044,6 +2205,23 @@ tools:
       label-fingerprint-base64: "Отпечаток пальца (base64):"
       label-fingerprint-asn1: "Отпечаток пальца (asn1):"
       label-fingerprint-ssh: "Отпечаток пальца (ssh):"
+      label-pem-header: "Тип заголовка PEM:"
+      autodetect: Автоматическое определение
+      certificate-x-509: Сертификат (X.509)
+      certificate-request-csr-pkcs-10: Запрос на сертификат (CSR / PKCS#10)
+      private-key-pkcs-8: Закрытый ключ (PKCS#8)
+      public-key-pkcs-8: Открытый ключ (PKCS#8)
+      encrypted-private-key-pkcs-8-encrypted: Зашифрованный закрытый ключ (зашифрованный с помощью PKCS#8)
+      rsa-private-key-pkcs-1: Закрытый ключ RSA (PKCS#1)
+      rsa-public-key-pkcs-1: Открытый ключ RSA (PKCS#1)
+      ec-private-key: Закрытый ключ EC
+      ec-parameters: Параметры ЕС
+      dsa-private-key: Закрытый ключ DSA
+      dsa-public-key: Открытый ключ DSA
+      openssh-private-key: Закрытый ключ OpenSSH
+      ssh-public-key-rfc4716: Открытый ключ SSH (RFC4716)
+      pgp-public-key-block: Блок открытого ключа PGP
+      pgp-private-key-block: Блок закрытого ключа PGP
     service:
       text:
         type: "Тип:"
@@ -2187,6 +2365,8 @@ tools:
       tag-certificate-signing-request: Запрос на подпись сертификата
       tag-public-key: Открытый ключ
       tag-private-key: Закрытый ключ
+      label-rsa-bits: "RSA Bits:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Количество бит должно быть 256 <= бит <= 16384 и кратно 8.
   css-prettifier:
     title: Форматирование CSS
     description: Форматируйте CSS-код
@@ -2576,6 +2756,8 @@ tools:
       tag-refresh-key-pair: Обновить пару ключей
       tag-public-key: Открытый ключ
       tag-private-key: Закрытый ключ
+      tag-fingerprint: Отпечаток пальца
+      tag-md5-fingerprint: Отпечаток пальца (MD5)
   ed25519-key-pair-generator:
     title: Генератор ключей Ed25519
     description: Генерируйте новые случайные приватные и публичные ключи Ed25519 (с
@@ -2595,6 +2777,8 @@ tools:
       tag-refresh-key-pair: Обновить пару ключей
       tag-public-key: Открытый ключ
       tag-private-key: Закрытый ключ
+      tag-md5-fingerprint: Отпечаток пальца (MD5)
+      tag-fingerprint: Отпечаток пальца
   email-normalizer:
     title: Нормализатор email
     description: Нормализуйте email-адреса для упрощения сравнения. Полезно для
@@ -2652,6 +2836,37 @@ tools:
   energy-converter:
     title: Конвертер единиц энергии
     description: Конвертируйте значения между единицами энергии
+    texts:
+      label-joule: джоуль
+      label-petajoule: петаджоуль
+      label-terajoule: тераджоуль
+      label-gigajoule: гигаджоуль
+      label-megajoule: мегаджоуль
+      label-kilojoule: килоджоуль
+      label-hectojoule: гектожоуль
+      label-decajoule: декаджоуль
+      label-decijoule: дециджоуль
+      label-centijoule: сантиджоуль
+      label-millijoule: миллиджоуль
+      label-microjoule: микроджоуль
+      label-nanojoule: наноджоуль
+      label-picojoule: пикоджоуль
+      label-femtojoule: фемтоджоуль
+      label-watt-hour: ватт-час
+      label-petawatt-hour: петаватт-час
+      label-terawatt-hour: тераватт-час
+      label-gigawatt-hour: гигаватт-час
+      label-megawatt-hour: мегаватт-час
+      label-kilowatt-hour: киловатт-час
+      label-hectowatt-hour: гектоватт-час
+      label-decawatt-hour: декаватт-час
+      label-deciwatt-hour: дециватт-час
+      label-centiwatt-hour: сантиватт-час
+      label-milliwatt-hour: милливатт-час
+      label-microwatt-hour: микроватт-час
+      label-nanowatt-hour: нановатт-час
+      label-picowatt-hour: пиковатт-час
+      label-femtowatt-hour: фемтоватт-час
   file-hasher:
     title: Хеширование файлов
     description: Вычисляйте хеш файлов
@@ -2695,6 +2910,7 @@ tools:
       label-file-name: "Имя файла:"
       label-extension: "Расширение:"
       label-mime-type: "Тип MIME:"
+      an-error-occured-processing: Произошла ошибка при обработке.
   folder-structure-diagram:
     title: Диаграмма структуры папок
     description: Утилита для генерации ASCII-диаграмм структуры папок
@@ -2706,6 +2922,35 @@ tools:
   force-converter:
     title: Конвертер единиц силы
     description: Конвертируйте значения между единицами силы
+    texts:
+      label-newton: Ньютон
+      label-petanewton: петаньютон
+      label-teranewton: тераньютон
+      label-giganewton: гиганьютон
+      label-meganewton: меганьютон
+      label-kilonewton: килоньютон
+      label-hectonewton: гектоновтон
+      label-decanewton: деканьютон
+      label-decinewton: дециньютон
+      label-centinewton: сентиньвтон
+      label-millinewton: миллиньютон
+      label-micronewton: микроньютон
+      label-nanonewton: наноньютон
+      label-piconewton: пиконьютон
+      label-femtonewton: фемтоньютон
+      label-dyne: дина
+      label-pound-of-force: фунт силы
+      label-kip: кип
+      label-klb: клуб
+      label-kipf: кипф
+      label-klbf: клбф
+      label-poundal: фунт
+      label-kilogram-force: килограмм-сила
+      label-kilopond: килопонд
+      label-megapond: мегапруд
+      label-tonne-force: тон-сила
+      label-metric-ton-force: метрическая тонно-сила
+      label-megagram-force: мегаграмм силы
   geo-distance-calculator:
     title: Калькулятор географического расстояния
     description: Рассчитывайте расстояние между двумя географическими точками (и
@@ -2793,10 +3038,10 @@ tools:
       label-gib: ГиБ
       label-tib: ТиБ
       label-pib: ПиБ
-      label-claimed-capacity: "Заявленная вместимость:"
-      label-unit: "Единица:"
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1МиБ = 1024КБ; 1МБ = 1000КБ; 1ГиБ = 1024МиБ; 1ГБ = 1000МБ;
       tag-see-here-for-details: подробности смотрите здесь
+      column-decimal: Десятичная дробь
+      column-binary: Двоичный
   heic-converter:
     title: Конвертер HEIC
     description: Конвертируйте HEIC в JPEG или PNG
@@ -2805,6 +3050,7 @@ tools:
       label-png: PNG
       label-output-format: Формат вывода
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: Перетащите сюда файл HEIC или щелкните, чтобы выбрать файл.
+      an-error-occured-processing-heic-heif-is-invalid: "Произошла ошибка обработки: код HEIC/HEIF недействителен."
   hex-converter:
     title: Конвертер Hex
     description: Кодируйте и декодируйте Hex буферы в числа (биты, порядок байтов,
@@ -2994,6 +3240,9 @@ tools:
     description: Конвертируйте из PNG/JPEG в ICO и обратно
     texts:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file: Перетащите сюда файл ICO или PNG/JPEG или щелкните, чтобы выбрать файл.
+      an-error-occured-processing: Произошла ошибка при обработке.
+      invalid-ico-file: Недействительный файл ICO!
+      invalid-png-file: Недействительный PNG-файл!
   ies-lighting-guidelines:
     title: Рекомендации по освещению IES
     description: Поиск в рекомендациях по освещению Illuminating Engineering Society (IES)
@@ -3029,6 +3278,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Затем перетащите изображения ниже, и они будут немедленно преобразованы
         и загружены:"
+      invalid-image-file: Недействительный файл изображения!
+      an-error-occured-processing: Произошла ошибка при обработке.
   image-exif-reader:
     title: Чтение EXIF/метаданных изображений
     description: Читайте EXIF, IPTC, XMP, GPS и другие метаданные, качество JPEG и
@@ -3230,6 +3481,7 @@ tools:
       tag-iso2-iso3: Изо2/Изо3
       tag-name-and-info: Имя и информация
       tag-gt-see-on-openstreetmap: "&gt; Посмотреть на OpenStreetMap"
+      loading-more-results: Загрузка дополнительных результатов...
   javascript-prettifier:
     title: Форматирование JavaScript
     description: Форматируйте JavaScript-код
@@ -3283,6 +3535,7 @@ tools:
       title-schema-validation-errors: Ошибки проверки схемы
       label-indent-size-0-compact: "Размер отступа (0 = Компактный):"
       repair-json: Исправить JSON
+      label-auto-height: Автоматическая высота
     externalAccess: При запросе проверки этот инструмент может загрузить JSON-схему
       с сайта https://www.schemastore.org. Внешние данные не передаются.
   json-escaper:
@@ -3442,6 +3695,29 @@ tools:
   length-converter:
     title: Конвертер единиц длины
     description: Конвертируйте значения между единицами длины
+    texts:
+      label-meter: метр
+      label-petameter: петаметр
+      label-terameter: тереметр
+      label-gigameter: гигаметр
+      label-megameter: мегаметр
+      label-kilometer: километр
+      label-hectometer: гектометр
+      label-decameter: декаметр
+      label-decimeter: дециметр
+      label-centimeter: сантиметр
+      label-millimeter: миллиметр
+      label-micrometer: микрометр
+      label-nanometer: нанометр
+      label-picometer: пикометр
+      label-femtometer: фемтометр
+      label-inch: дюйм (")
+      label-yard: площадка
+      label-mile: миля
+      label-nautical-mile-m-nm: морская миля (М/ММ)
+      label-light-year: световой год
+      label-parsec: парсек
+      label-pica: пика
   list-comparer:
     title: Сравнение списков
     description: Сравнивайте элементы двух списков
@@ -3549,6 +3825,35 @@ tools:
   mass-converter:
     title: Конвертер единиц массы
     description: Конвертируйте значения между единицами массы
+    texts:
+      label-gram: грамм
+      label-petagram: петаграмма
+      label-teragram: тераграмма
+      label-gigagram: гигаграмм
+      label-megagram: мегаграмма
+      label-kilogram: килограмм
+      label-hectogram: гектограмм
+      label-decagram: декаграмма
+      label-decigram: десять граммов
+      label-centigram: сантиграмм
+      label-milligram: миллиграмм
+      label-microgram: микрограмм
+      label-nanogram: нанограмм
+      label-picogram: пикограмма
+      label-femtogram: фемтограмма
+      label-tonne: тонна
+      label-metric-ton: метрическая тонна
+      label-kilotonne: килотонна
+      label-megatonne: мегатонна
+      label-gigatonne: гигатонне
+      label-pound: фунт
+      label-stone: камень
+      label-ounce: унция
+      label-short-ton: короткий тонн
+      label-us-ton: тонн США
+      label-long-ton: длинная тонна
+      label-imperial-ton: имперский тонн
+      label-displacement-ton: перемещение тонн
   math-formats-converter:
     title: Конвертер математических форматов
     description: Конвертируйте математические выражения между форматами
@@ -3594,6 +3899,18 @@ tools:
       tag-export-as-png: Экспортировать как PNG
       tag-export-as-jpg: Экспортировать как JPG
       tag-export-as-svg: Экспортировать как SVG
+      tag-showing-last-valid-diagram: Отображается последняя действительная диаграмма.
+      tag-hint-ctrl-scroll-to-zoom: Удерживайте клавишу Ctrl (или ⌘) и прокрутите для масштабирования.
+      label-diagram-preview: Предварительный просмотр диаграммы — перетаскивайте
+        курсор или используйте клавиши со стрелками для перемещения, + и - для
+        масштабирования.
+      label-zoom-level-reset: Масштабирование {zoom}%, нажмите, чтобы сбросить до 100%
+      title-zoom-in: Увеличить масштаб
+      title-zoom-out: Отдалиться
+      title-reset-zoom: Сбросить масштаб до 100%
+      title-fit-view: Подгоните диаграмму для просмотра
+      title-fullscreen: Полноэкранный
+      title-exit-fullscreen: Выйти из полноэкранного режима
   mime-converter:
     title: Конвертер MIME-кодировки
     description: Конвертируйте из/в MIME-кодировку (Mail Subject)
@@ -3770,6 +4087,11 @@ tools:
       placeholder-passphrase: Парольная фраза...
       tag-copy: Копировать
       tag-refresh: Обновить
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Не удается сгенерировать парольную фразу из [{0} - {1}] символов с
+        текущими настройками, попробуйте изменить количество слов."
+      words-words: Слова ({0})
+      label-min-passphrase-len: "Минимальная длина кодовой фразы:"
   paste-as-markdown:
     title: Вставить как Markdown
     description: Вставляйте ячейки/таблицы и ссылки из содержимого буфера обмена как
@@ -3828,10 +4150,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Перетащите PDF-файл сюда или щелкните, чтобы выбрать файл.
       title-logs: Журналы
       label-qpdf: qpdf
-      label-password: 'Пароль:'
+      label-password: "Пароль:"
       placeholder-password: Пароль
       tag-decrypt-pdf: Расшифровать PDF
-      tag-output-file: 'Выходной файл:'
+      tag-output-file: "Выходной файл:"
   pgp-encryption:
     title: Шифрование PGP
     description: Шифруйте и дешифруйте текст с использованием PGP-ключей
@@ -3966,12 +4288,97 @@ tools:
       title-drag-and-drop-an-image-here-or-click-to-select-a-file: Перетащите изображение сюда или щелкните, чтобы выбрать файл.
       tag-posterize: Постеризовать?
       tag-potrace-result: Результат поиска
+      button-trace: След
+      minimum-angle-displacement-in-degrees-to-be-considered-a-cutting-point-between-curves:
+        Минимальный угол смещения (в градусах), при котором кривая считается
+        точкой среза.
+      splice-threshold-more-accurate: "Порог соединения (более точный):"
+      perform-iterative-subdivide-smooth-until-all-segments-are-shorter-than-this-length:
+        Выполняйте итеративное подразделение и сглаживание до тех пор, пока все
+        сегменты не станут короче этой длины.
+      length-threshold-more-coarse: "Пороговое значение длины (более грубое):"
+      minimum-momentary-angle-in-degrees-to-be-considered-a-corner-to-be-kept-after-smoothing:
+        Минимальный моментный угол (в градусах), при котором угол считается
+        угловым (и сохраняется после сглаживания).
+      corner-threshold-smoother: "Пороговое значение угла (более плавное):"
+      layer-difference: "Разница между слоями:"
+      number-of-significant-bits-to-use-in-a-rgb-channel: Количество значащих битов, используемых в RGB-канале.
+      color-precision-more-accurate: "Точность цветопередачи (более высокая точность):"
+      color-difference-between-gradient-layers: Разница в цвете между градиентными слоями
+      gradient-step-less-layers: "Градиентный шаг (меньше слоев):"
+      discard-patches-small-than-x-px-in-size: Отбрасывайте фрагменты размером меньше X пикселей.
+      filter-speckle-cleaner: "Фильтрация зернистости (очиститель):"
+      hierarchical-mode: "Иерархический режим:"
+      curve-fitting: "Аппроксимация кривой:"
+      color-vtracer: Цвет (VTracer)
+      color-potrace: Цвет (потрас)
+      bw: БВ
+      interpolate: Интерполяция?
+      pixel: Пиксель
+      polygon: Многоугольник
+      spline: Сплайн
+      stacked: Сложенный
+      cutout: Вырезать
   power-converter:
     title: Конвертер мощности
     description: Конвертируйте значения между единицами мощности
+    texts:
+      label-watt: ватт
+      label-petawatt: петаватт
+      label-terawatt: тераватт
+      label-gigawatt: гигаватт
+      label-megawatt: мегаватт
+      label-kilowatt: киловатт
+      label-hectowatt: гектоватт
+      label-decawatt: декаватт
+      label-deciwatt: дециватт
+      label-centiwatt: центиватт
+      label-milliwatt: милливатт
+      label-microwatt: микроватт
+      label-nanowatt: нановатт
+      label-picowatt: пиковатт
+      label-femtowatt: фемтоватт
+      label-horsepower: лошадиные силы
+      label-mechanical-horsepower: механическая лошадиная сила
   pressure-converter:
     title: Конвертер давления
     description: Конвертируйте значения между единицами давления
+    texts:
+      label-pascal: паскаль
+      label-pettapascal: петтапаскаль
+      label-terapascal: терапаскаль
+      label-gigapascal: гигапаскаль
+      label-megapascal: мегапаскаль
+      label-kilopascal: килопаскаль
+      label-hectopascal: гектопаскаль
+      label-decapascal: декапаскал
+      label-decipascal: деципаскал
+      label-centipascal: сантипаскаль
+      label-millipascal: миллипаскаль
+      label-micropascal: микропаскаль
+      label-nanopascal: нанопаскаль
+      label-picopascal: пикопаскаль
+      label-femtopascal: фемтопаскаль
+      label-bar: бар
+      label-petabar: петабар
+      label-terabar: рассредоточенные
+      label-gigabar: гигабар
+      label-megabar: мегабар
+      label-kilobar: килобар
+      label-hectobar: гектобар
+      label-decabar: Меня обезглавили.
+      label-decibar: расшифровать
+      label-centibar: сентибар
+      label-millibar: миллибар
+      label-microbar: микробар
+      label-nanobar: нанобар
+      label-picobar: пикобар
+      label-femtobar: фемтобар
+      label-torr: торр
+      label-millitorr: миллиторр
+      label-atmosphere: атмосфера
+      label-pound-per-square-inch: фунт на квадратный дюйм
+      label-lbf-in2: фунт/дюйм²
   properties-to-yaml:
     title: Properties в YAML
     description: Конвертируйте содержимое Java .properties в YAML
@@ -4390,6 +4797,11 @@ tools:
       title-country-to-timezones: Страна в часовых поясах
       label-country: Страна
       title-timezones-to-countries: Часовые пояса стран
+      title-posix-timezones: Строки POSIX для часовых поясов
+      search-posix-timezones: Введите часовой пояс или строку POSIX для поиска.
+      tag-no-results: Результаты отсутствуют
+      tag-timezone: Часовой пояс
+      tag-posix: Строка POSIX
   torrent-to-magnet:
     title: Конвертер Torrent в Magnet
     description: Преобразуйте торрент-файл в Magnet-ссылку
@@ -4584,6 +4996,65 @@ tools:
   volume-converter:
     title: Конвертер объема
     description: Конвертируйте значения между единицами объема
+    texts:
+      label-cubic-meter-stere: кубический метр/стерео
+      label-cubic-petameter: кубический петаметр
+      label-cubic-terameter: кубический тереметр
+      label-cubic-gigameter: кубический гигаметр
+      label-cubic-megameter: кубический мегаметр
+      label-cubic-kilometer: кубический километр
+      label-cubic-hectometer: кубический гектометр
+      label-cubic-decameter: кубический декаметр
+      label-cubic-decimeter: кубический дециметр
+      label-cubic-centimeter: кубический сантиметр
+      label-cubic-millimeter: кубический миллиметр
+      label-cubic-micrometer: кубический микрометр
+      label-cubic-nanometer: кубический нанометр
+      label-cubic-picometer: кубический пикометр
+      label-cubic-femtometer: кубический фемтометр
+      label-liter: литр
+      label-petaliter: петалитер
+      label-teraliter: терралитер
+      label-gigaliter: гигалитр
+      label-megaliter: мегалитр
+      label-kiloliter: килолитр
+      label-hectoliter: гектолитр
+      label-decaliter: декалитр
+      label-deciliter: децилитр
+      label-centiliter: сантилитр
+      label-milliliter: миллилитр
+      label-microliter: микролитр
+      label-nanoliter: нанолитр
+      label-picoliter: пиколитр
+      label-femtoliter: фемтолитр
+      label-cubic-mile: кубическая миля
+      label-acre-foot: акр-фут
+      label-cubic-yard: кубический ярд
+      label-cubic-foot: кубический фут
+      label-board-feet: досок ног
+      label-cubic-inch: кубический дюйм
+      label-measurement-ton: тонна измерения
+      label-imperial-barrel: имперская бочка
+      label-imperial-bushel: имперский бушель
+      label-imperial-peck: имперский пек
+      label-imperial-gallon: имперский галлон
+      label-imperial-quart: имперская кварта
+      label-imperial-pint: имперская пинта
+      label-imperial-fluid-ounce: имперская жидкая унция
+      label-teaspoon: чайная ложка
+      label-tablespoon: столовая ложка
+      label-us-fluid-ounce: Американская жидкая унция
+      label-cup: чашка
+      label-us-legal-cup: Кубок США, разрешенный законом
+      label-us-liquid-pint: жидкая пинта США
+      label-us-liquid-quart: жидкая кварта США
+      label-us-liquid-gallon: жидкий галлон США
+      label-us-bushel: американский бушель
+      label-us-peck: США пек
+      label-us-dry-gallon: американский сухой галлон
+      label-us-dry-barrel: США сухой бочковой
+      label-us-dry-quart: американская сухая кварта
+      label-us-dry-pint: сухая пинта США
   websocket-tester:
     title: Тестер WebSocket
     description: Тестируйте соединения WebSocket
@@ -4664,6 +5135,7 @@ tools:
       tag-fingerprint: "Отпечаток пальца:"
       tag-public-key: Открытый ключ
       tag-private-key: Закрытый ключ
+      rsa-bits: "RSA Bits:"
   xml-to-json:
     title: XML в JSON
     description: Конвертируйте XML в JSON
@@ -5048,8 +5520,6 @@ tools:
       title-converted-data: Преобразованные данные
       tag-convert: Конвертировать
   firewalld-generator:
-    title: Генератор командной строки FW
-    description: Генерация командных строк fw
     texts:
       label-service: Услуга
       label-port: Порт
@@ -5070,6 +5540,8 @@ tools:
       label-permanent: Постоянный
       title-generated-fw-command: "Сгенерированная команда fw:"
       tag-const-zone-ref: константная зона = ссылка
+    title: генератор командной строки firewalld
+    description: Сгенерировать командную строку firewalld
   fortune-wheel:
     title: Колесо фортуны
     description: Настраиваемое колесо фортуны
@@ -5854,9 +6326,14 @@ tools:
       tag-corners-square-options: Углы Квадратные Варианты
       tag-small-terminal: Малый Терминал
       title-image: Изображение
+      label-qr-code-embeddable-dataurl: "URL-адрес изображения QR-кода:"
+      link-qr-code-open-embeddable-link: Открыть встраиваемую ссылку
+      label-qr-code-image-viewer: Встраиваемый QR-код
   meta-tag-generator:
     texts:
       label-your-meta-tags: Ваши метатеги
+      isbn: ISBN
+      book: Книга
     article:
       text:
         tag-words-associated-with-this-article: Теги слов, связанные с этой статьей...
@@ -5938,6 +6415,8 @@ tools:
         summary-with-large-image: Резюме с большим изображением
         summary: Краткое содержание
         twitter: Твиттер
+        the-name-of-the-twitter-account-of-the-creator-ex-cthmsst: Название аккаунта
+          создателя в Твиттере (например, {':'} {'@'}cthmsst)...
     videoEpisode:
       text:
         which-series-this-episode-belongs-to: К какой серии относится этот эпизод...
@@ -5958,6 +6437,50 @@ tools:
     videoOther:
       text:
         other-video-details: Другие подробности видео
+    website:
+      text:
+        article: Статья
+        profile: Профиль
+        song: Песня
+        book: Книга
+        music: Музыка
+        music-0: Музыка
+        music-album: Музыкальный альбом
+        playlist: Плейлист
+        radio-station: Радиостанция
+        video: Видео
+        video-0: Видео
+        movie: Фильм
+        episode: Эпизод
+        tv-show: Телешоу
+        other-video: Другое видео
+        general-information: Общая информация
+        page-type: Тип страницы
+        select-the-type-of-your-website: Выберите тип вашего веб-сайта...
+        enter-the-title-of-your-website: Введите название вашего сайта...
+        enter-the-description-of-your-website: Введите описание вашего сайта...
+        page-url: URL страницы
+        enter-the-url-of-your-website: Введите URL-адрес вашего сайта...
+    ies-lighting-guidelines:
+      texts:
+        tag-application: Приложение
+    videoTVShow:
+      text:
+        tv-show-details: Подробности о телешоу
+    basic-auth-generator:
+      username: Введите имя пользователя...
+    qr-code-generator:
+      texts:
+        title-image: Изображение
+    qr-contact-info-generator:
+      texts:
+        label-website: Веб-сайт
+    xslt-tester:
+      texts:
+        tag-title: Заголовок
+    ical-generator:
+      texts:
+        label-description: Описание
   integer-base-converter:
     texts:
       label-input-number: Введите число
@@ -5975,6 +6498,13 @@ tools:
       label-base64-64: Base64 (64)
       placeholder-base64-version-will-be-here: Версия Base64 будет здесь...
       tag-custom: "Обычай:"
+      label-space-separation: Пространственное разделение
+      label-binary-size: Двоичный размер
+      label-octal-size: Восьмизначный размер
+      label-decimal-size: Десятичный размер
+      label-hexadecimal-size: Размер шестигранника
+      label-base64-size: Размер Base64
+      label-custom-size: Индивидуальный размер
     model:
       text:
         invalid-digit-digit-for-base-finalfrombase: Недопустимая цифра &quot;{0}&quot; для базы {1}.
@@ -6091,6 +6621,7 @@ tools:
       placeholder-paste-your-json-schema-here: Вставьте сюда вашу схему JSON...
       title-schema-validation-errors: Ошибки проверки схемы
       label-unescape-json-string: "Расшифровка JSON-строки:"
+      label-viewer: Зритель
     text:
       provided-json-is-not-valid: Указанный JSON недействителен.
       try-again-with-repairjsonlabel: Попробуйте еще раз с &quot;{0}&quot;
@@ -6265,6 +6796,9 @@ tools:
       label-django-secret-key: "Секретный ключ Django:"
       tag-copy: Копировать
       tag-regenerate: Регенерировать
+    service:
+      texts:
+        generating-range-is-too-large: Диапазон генерации слишком велик.
   dnsbl-checker:
     title: DNSBL-проверщик
     description: Проверьте, находится ли заданный IP-адрес в каком-либо из известных
@@ -6315,6 +6849,7 @@ tools:
       title-html-head-tags: 📄 HTML-теги заголовка
       tag-upload-png-image: Загрузить PNG-изображение
       tag-download-zip: 📦 Скачать ZIP-архив
+      invalid-png-file: Недействительный PNG-файл!
   font-compare:
     title: Сравнение шрифтов
     description: Сравните со шрифтами в данном тексте
@@ -6400,6 +6935,12 @@ tools:
       label-fallback: "Отступать:"
       placeholder-fallback-font: Резервный шрифт
       tag-defineprops: defineProps
+    text:
+      by-font-name: По названию шрифта
+      by-font-url: По URL-адресу шрифта
+      by-font-file: Файл шрифта
+      by-inline-css: С помощью встроенного CSS
+      by-css-url: По URL-адресу CSS
   gpt-token-encoder:
     title: Кодер/декодер токенов GPT
     description: Кодировать текст в токены GPT и декодировать токены GPT обратно в текст
@@ -6436,6 +6977,10 @@ tools:
       tag-original-image: Исходное изображение
       tag-inverted-image: Перевернутое изображение
       tag-clear-upload-new: Очистить и загрузить новый
+    service:
+      texts:
+        file-must-be-an-image: Файл должен быть изображением.
+        failed-to-process-image-err: "Не удалось обработать изображение:"
   image-comparer:
     title: Сравнение изображений
     description: Инструмент для визуального сравнения изображений
@@ -6450,6 +6995,9 @@ tools:
       tag-compare: Сравнивать
       tag-upload-left: Загрузить слева
       tag-upload-right: Загрузить справа
+    text:
+      compare-by-url: Сравнить по URL
+      compare-by-upload: Сравнить по загрузке
   logrotate-generator:
     title: Генератор Apache LogRotate
     description: Генерация конфигурации ротации Apache .log
@@ -6578,6 +7126,17 @@ tools:
       label-decimal: "Десятичная дробь:"
       label-octal: "Восьмеричный:"
       label-hexadecimal: "Шестнадцатеричный:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Неверный шестнадцатеричный ввод.
+          Допускаются только цифры от 0 до 9 и от A до F.
+        invalid-1: Неверный
+        invalid-0: Неверный
+        invalid: Неверный
+        unsupported-middle-endian-format: Неподдерживаемый формат с порядком байтов посередине.
+        failed-to-parse-bytes: Не удалось разобрать байты.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: Входные данные
+          должны состоять из {0} шестнадцатеричных символов для {1}-бита.
   mttdl-calculator:
     title: Калькулятор надежности RAID
     description: Вычисляет надежность системы хранения данных с использованием
@@ -6720,6 +7279,11 @@ tools:
       tag-convert: Конвертировать
       tag-axial: Осевой
       tag-radial: Радиальный
+    text:
+      bands-notation: Полосы → Обозначение
+      notation-bands: Обозначения → Полосы
+      number-notation: Число → Обозначение
+      notation-number: Обозначение → Число
   sed-command-generator:
     title: Генератор команд Sed
     description: Генерация команд sed для Unix
@@ -7105,6 +7669,9 @@ tools:
       title-mw-to-dbm: мВт в дБм
       label-mw-value: "Значение мВт:"
       label-corresponding-dbm-value: "Соответствующее значение дБм:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: Мощность в милливаттах должна быть больше 0.
   diceware-generator:
     title: Генератор паролей Diceware
     description: Генерация случайного пароля с помощью метода Diceware
@@ -7299,6 +7866,7 @@ tools:
       label-docker-compose-file: "Файл Docker Compose:"
       placeholder-paste-your-docker-compose-yaml-here: Вставьте сюда ваш docker-compose YAML...
       title-extract-env: Извлечь .env
+      title-updated-docker-compose: "Обновлен Docker Compose:"
   emv-tlv-decoder:
     title: Декодер EMV TLV
     description: Декодирует данные EMV TLV (тег-длина-значение) и их отдельные теги,
@@ -7339,6 +7907,9 @@ tools:
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x:
         "{'{'}&quot;to&quot;:&quot;0x...&quot;,&quot;data&quot;:&quot;0x...&quo\
         t;{'}'} или необработанный 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Данные транзакции должны начинаться с 0x.
   file-splitter:
     title: Разделитель файлов
     description: Разделить JSON, XML или текстовый файл по группе узлов или по группе строк
@@ -7354,6 +7925,9 @@ tools:
       tag-process-chunks: Процессные фрагменты
       tag-download-all: Скачать все
       tag-download: Скачать
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Неподдерживаемый формат или недопустимое содержимое
   gitignore-generator:
     title: Генератор GitIgnore
     description: Сгенерировать .gitignore для набора общих шаблонов
@@ -7465,6 +8039,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Перетащите PDF-файл сюда или щелкните, чтобы выбрать файл.
       title-logs: Журналы
       label-ghostscript: Ghostscript
+      process-run-failed: Запуск процесса завершился с ошибкой.
+      an-error-occured-processing: Произошла ошибка при обработке.
   serial-console:
     title: Консоль последовательного порта
     description: Подключение, чтение и отправка сообщения через последовательный порт
@@ -7724,6 +8300,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: Выход из режима битых пикселей
       tag-start-dead-pixel: Начало работы над мертвым пикселем
+    title: Тестер битых пикселей
+    description: Инструмент для проверки работоспособности пикселя на вашем экране.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Исключить префиксы СИ
@@ -7732,7 +8310,8 @@ tools:
   geo-coordinates-converter:
     title: Конвертер географических координат
     description: Преобразование географических координат между системами WGS84,
-      GCJ02, BD09 и CGCS2000.
+      GCJ02, BD09, CGCS2000 и WebMercator. Также преобразование между
+      десятичными, DMS и UTM системами. И интерактивная карта.
     texts:
       label-latitude: "Широта:"
       label-longitude: "Долгота:"
@@ -7753,6 +8332,32 @@ tools:
       tag-longitude-east-is-positive-west-is-negative: "Долгота: Восток – положительное значение, Запад – отрицательное."
       tag-latitude-north-is-positive-south-is-negative: "Широта: Северная широта —
         положительное значение, южная — отрицательное."
+      coordinates-notations: Обозначения координат
+      decimal-projections: Десятичные проекции
+      north: Север
+      south: Юг
+      decimal-notation: Десятичная запись
+      latitude-decimal: Широта (в десятичном формате)
+      longitude-decimal: Долгота (в десятичном представлении)
+      dms-notation: Обозначения DMS
+      latitude-dms: Широта (DMS)
+      longitude-dms: Долгота (DMS)
+      utm-notation: UTM-обозначение
+      utm-zone: Зона UTM
+      hemisphere: Полушарие
+      easting: Восток
+      northing: Северное направление
+      label-n: Н
+      label-s: С
+      label-e: И
+      label-w: В
+    text:
+      coordinate-system: Система координат
+      decimal-format-lng-lat: Десятичный формат (долгота, широта)
+      dms-format-lng-lat: Формат DMS (долгота, широта)
+      download-results-csv: Скачать результаты в формате CSV
+      batch-lat-lng-converter: Пакетный конвертер широты/долготы
+      single-lat-lng-converter: Конвертер широты/долготы в одном направлении
   si-prefixes-converter:
     title: Конвертер префиксов СИ
     description: Преобразование между метрическими префиксами
@@ -7795,10 +8400,14 @@ tools:
     layout:
       text:
         made-with-npmpackages: Сделано с помощью {0}
+        runs-entirely-in-your-browser-no-external-requests: Работает полностью в вашем браузере. Никаких внешних запросов.
   acceleration-converter:
     title: Ускорительный преобразователь
     description: Преобразование значений между единицами измерения ускорения.
     externalAccess: нулевой
+    texts:
+      label-g-force: перегрузка
+      label-meter-per-second-squared: метр в секунду в квадрате
   docker-image-downloader:
     title: Загрузчик образов Docker
     description: Загрузите образ Docker, указав реестр Docker, архитектуру и имя образа.
@@ -7873,6 +8482,16 @@ tools:
     title: Частотный преобразователь
     description: Преобразование значений между единицами частоты.
     externalAccess: нулевой
+    texts:
+      label-hertz: герц
+      label-millihertz: миллигерц
+      label-kilohertz: килогерц
+      label-megahertz: мегагерц
+      label-gigahertz: гигагерц
+      label-terahertz: терагерц
+      label-revolutions-per-minute: оборотов в минуту
+      label-degree-per-second: градус в секунду
+      label-radian-per-second: радиан в секунду
   markdown-to-text:
     title: Преобразование Markdown в текст
     description: Преобразовать Markdown в обычный текст.
@@ -7914,7 +8533,6 @@ tools:
       tag-back: Назад (←)
       tag-next: Далее (→)
       tag-reset: Перезагрузить
-      tag-: ↓
       tag-or: "- ИЛИ -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Управляйте воспроизведением и навигацией без использования мыши.
       tag-shortcut: Быстрый доступ
@@ -7933,10 +8551,26 @@ tools:
       tag-jump-to-start: Перейти к началу
       tag-end: Конец
       tag-jump-to-end: Перейти к концу
+    text:
+      please-provide-some-text-first: Пожалуйста, сначала предоставьте какой-нибудь текст.
+      unsupported-file-type: Неподдерживаемый тип файла.
+      display: Отображать
+      text: Текст
+      settings: Настройки
+      keyboard-shortcuts: Клавиатурные сочетания
+      ready: Готовый
+      words: слова
+      wpm: слов в минуту
   speed-converter:
     title: Преобразователь скорости
     description: Преобразование значений между единицами измерения скорости.
     externalAccess: нулевой
+    texts:
+      label-meter-per-second: метр в секунду
+      label-kilometer-per-hour: километр в час
+      label-miles-per-hour: миль в час
+      label-knot: узел
+      label-feet-per-second: футы в секунду
   tab-to-spaces:
     title: Переход к пробелам с помощью клавиши Tab
     description: Преобразовать табуляцию в несколько пробелов
@@ -7983,10 +8617,1586 @@ tools:
       tag-apply-configuration: Применить конфигурацию
       tag-clear-logs: Очистить журналы
       tag-send: Отправлять
+      already-connected: ⚠️ Уже подключено
+      connected-to-websocket-bridge: ✅ Подключено к мосту WebSocket
+      disconnected: 🔌 Отключено
+      no-active-connection: ⚠️ Нет активного соединения
+      sent-text: "➡️ Отправлено сообщение:"
+      configured: ⚙️ Настроено
+      sent-hex: "➡️ Отправлен шестнадцатеричный код:"
+      disconnecting: 🔻 Отключение...
+      error: "❌ Ошибка:"
+      end: "🛑 Конец:"
+      text: "📩 Текст:"
+      binary: "📩 Двоичный код:"
+    text:
+      connected: Подключено
+      disconnected: Отключено
   volume-flow-rate-converter:
     title: Преобразователь объемного расхода
     description: Преобразование значений между единицами измерения объемного расхода
     externalAccess: нулевой
+    texts:
+      label-cubic-millimeters-per-second: кубических миллиметров в секунду
+      label-cubic-centimeters-per-second: кубических сантиметров в секунду
+      label-milliliters-per-second: миллилитры в секунду
+      label-centiliters-per-second: сантилитры в секунду
+      label-deciliters-per-second: децилитры в секунду
+      label-liters-per-second: литров в секунду
+      label-liters-per-minute: литров в минуту
+      label-liters-per-hour: литры в час
+      label-kiloliters-per-second: килолитров в секунду
+      label-kiloliters-per-minute: килолитров в минуту
+      label-kiloliters-per-hour: килолитров в час
+      label-cubic-meters-per-second: кубических метров в секунду
+      label-cubic-meters-per-minute: кубических метров в минуту
+      label-cubic-meters-per-hour: кубических метров в час
+      label-cubic-kilometers-per-second: кубических километров в секунду
+      label-teaspoons-per-second: чайных ложек в секунду
+      label-tablespoons-per-second: столовых ложек в секунду
+      label-cubic-inches-per-second: кубических дюймов в секунду
+      label-cubic-inches-per-minute: кубических дюймов в минуту
+      label-cubic-inches-per-hour: кубических дюймов в час
+      label-fluid-ounces-per-second: жидких унций в секунду
+      label-fluid-ounces-per-minute: жидких унций в минуту
+      label-fluid-ounces-per-hour: жидких унций в час
+      label-cups-per-second: чашки в секунду
+      label-pints-per-second: пинты в секунду
+      label-pints-per-minute: пинты в минуту
+      label-pints-per-hour: пинты в час
+      label-quarts-per-second: кварт в секунду
+      label-gallons-per-second: галлонов в секунду
+      label-gallons-per-minute: галлонов в минуту
+      label-gallons-per-hour: галлонов в час
+      label-cubic-feet-per-second: кубических футов в секунду
+      label-cubic-feet-per-minute: кубических футов в минуту
+      label-cubic-feet-per-hour: кубических футов в час
+      label-cubic-yards-per-second: кубических ярдов в секунду
+      label-cubic-yards-per-minute: кубических ярдов в минуту
+      label-cubic-yards-per-hour: кубических ярдов в час
+  tip-calculator:
+    title: калькулятор чаевых
+    description: Рассчитайте сумму чаевых и разделите ее между несколькими людьми.
+    texts:
+      title-bill-details: Детали счета
+      label-bill-amount: "Сумма счета:"
+      placeholder-total-bill: Общая сумма счета
+      label-tip-percentage: "Процент чаевых:"
+      placeholder-tip: Кончик %
+      label-number-of-person: "Количество человек:"
+      placeholder-people: Люди
+      title-results: Результаты
+      label-tip-amount: "Сумма чаевых:"
+      label-total-bill: "Общая сумма счета:"
+      label-amount-per-person: "Сумма на человека:"
+      title-quick-tip: Быстрый совет %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: JSON в .env
+    description: Преобразует плоский JSON-объект в файл .env. Ключи записываются в
+      верхнем регистре, а значения, содержащие пробелы, кавычки или специальные
+      символы окружения, безопасно заключаются в кавычки.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: Представленный JSON не является допустимым плоским объектом.
+      input-label-your-json: Ваш JSON
+      input-placeholder-paste-your-json-here: Вставьте сюда свой JSON-код...
+      output-label-env-from-your-json: .env из вашего JSON
+  calendar-converter:
+    service:
+      text:
+        sunday: Воскресенье
+        wednesday: Среда
+        tuesday: Вторник
+        monday: Понедельник
+        thursday: Четверг
+        friday: Пятница
+        saturday: Суббота
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Недопустимая продолжительность года: {0} дней."
+        common-deficient-353-days: Обычный дефицит (353 дня)
+        common-regular-354-days: Обычный регулярный (354 дня)
+        common-complete-355-days: Полный рабочий день (355 дней)
+        embolismic-deficient-383-days: Эмболический дефицит (383 дня)
+        embolismic-regular-384-days: Эмболический регулярный (384 дня)
+        embolismic-complete-385-days: Эмболическая реакция завершена (385 дней)
+        normal-year: Нормальный год
+        leap-year: високосный год
+    title: Конвертер календарей
+    description: Преобразование дат и времени между григорианским, юлианским,
+      еврейским, исламским, персидским, майянским, индийским, французским
+      республиканским, ISO-8601, Unix-форматом и форматом серийных чисел Excel.
+    externalAccess: нулевой
+    texts:
+      label-january: Январь
+      label-february: Февраль
+      label-march: Маршировать
+      label-april: Апрель
+      label-may: Может
+      label-june: Июнь
+      label-july: Июль
+      label-august: Август
+      label-september: Сентябрь
+      label-october: Октябрь
+      label-november: Ноябрь
+      label-december: Декабрь
+      label-nisan-נִיסָן: Нисан
+      label-iyyar-אִיָּר: Ийяр (Ийяр)
+      label-sivan-סִיוָן: Сиван
+      label-tammuz-תַּמּוּז: Таммуз
+      label-av-אָב: Ав (Ав)
+      label-elul-אֱלוּל: Элул
+      label-tishri-תִּשְׁרֵי: Тишри
+      label-heshvan-חֶשְׁוָן: Хешван (Хешван)
+      label-kislev-כִּסְלֵו: Кислев
+      label-teveth-טֵבֵת: Тевет
+      label-shevat-שְׁבָט: Шеват (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Адар/Адар I (Адар)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Веадар/Адар II (Второй Адар)
+      label-muharram-مُحَرَّم: Мухаррам (مُحَرَّم)
+      label-safar-صَفَر: Сафар (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Раби аль-Авваль (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Раби ас-Сани (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Джумада аль-Ула (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Джумада ат-Сания (جُمادى الآخرة)
+      label-rajab-رَجَب: Раджаб (رَجَب)
+      label-shaʿban-شَعْبان: Шабан (شَعْبان)
+      label-ramadan-رَمَضان: Рамадан
+      label-shawwal-شَوّال: Шавваль
+      label-dhu-al-qaʿda-ذو-القَعْدة: Зу аль-Када (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Зу аль-Хиджа (ذو الحِجّة)
+      label-farvardin-فروردین: Фарвардин (Фарвардин)
+      label-ordibehesht-اردیبهشت: Ордибехешт (Ordibehesht)
+      label-khordad-خرداد: Хордад (Khordad)
+      label-tir-تیر: Тир (Тир)
+      label-mordad-مرداد: Мордад (Мордад)
+      label-shahrivar-شهریور: Шахривар (Шахривар)
+      label-mehr-مهر: Мехр (Мехр)
+      label-aban-آبان: Абан (ноябрь)
+      label-azar-آذر: Азар (Азар)
+      label-dey-دی: Дей (The)
+      label-bahman-بهمن: Бахман (Бахман)
+      label-esfand-اسفند: Эсфанд (март)
+      label-caitra-चैत्र: Чайтра (Чайтра)
+      label-vaisakha-वैशाख: Вайшакха (Вайшакх)
+      label-jyaistha-ज्येष्ठ: Джайштха (старший)
+      label-asadha-आषाढ़: Асадха
+      label-sravana-श्रावण: Шравана
+      label-bhadra-भाद्रपद: Бхадра (Бхадрапада)
+      label-asvina-आश्विन: Асвина (Ашвин)
+      label-kartika-कार्तिक: Картика
+      label-agrahayana-अग्रहायण: Аграхаяна (Agrahayana)
+      label-pausa-पौष: Пауза
+      label-magha-माघ: Магха
+      label-phalguna-फाल्गुन: Фалгуна
+      label-vendémiaire: Вандемьер
+      label-brumaire: Брюмер
+      label-frimaire: Фример
+      label-nivôse: Нивозе
+      label-pluviôse: Плювиоз
+      label-ventôse: Вентозе
+      label-germinal: Зародышевый
+      label-floréal: Флореаль
+      label-prairial: Прерийный
+      label-messidor: Мессидор
+      label-thermidor: Термидор
+      label-fructidor: Фруктидор
+      label-sans-culottides: Санкюлоты
+      label-i: я
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Примиди (1)
+      label-duodi-2: Дайте (2)
+      label-tridi-3: Три (3)
+      label-quartidi-4: Кварталы (4)
+      label-quintidi-5: Квинтидий (5)
+      label-sextidi-6: Секстиди (6)
+      label-septidi-7: Септиди (7)
+      label-octidi-8: Октиди (8)
+      label-nonidi-9: Действительно (9)
+      label-décadi-10: Декади (10)
+      label-vertu-1: Добродетель (1)
+      label-génie-2: Гений (2)
+      label-travail-3: Работа (3)
+      label-opinion-4: Мнение (4)
+      label-récompenses-5: Награды (5)
+      label-révolution-6: Революция (6)
+      tab-gregorian: григорианский
+      label-date: Дата
+      label-leap: "Прыгнуть:"
+      label-time: "Время:"
+      label-weekday: "Будний день:"
+      tab-julian-day: Джулиан Дэй
+      label-julian-day: "Джулиан Дэй:"
+      tab-modified-julian: Модифицированный Юлиан
+      label-modified-julian-day: "Модифицированный юлианский день:"
+      tab-julian-calendar: Юлианский календарь
+      tab-gregorian-serial: Григорианский сериал
+      label-gregorian-serial-day: "День Григорианского сериала:"
+      tab-hebrew: иврит
+      tab-islamic: исламский
+      tab-persian: персидский
+      tab-persian-algorithmic: Персидский алгоритмический
+      tab-mayan: майя
+      label-long-count: "Длинный счёт:"
+      label-haab: Надеяться
+      label-tzolkin: Цолькин
+      tab-indian-civil: Индийская гражданская
+      tab-french-republican: Французская республиканская
+      label-day: "День:"
+      label-month: "Месяц:"
+      label-décade: "Десятилетие:"
+      label-year: "Год:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "День недели:"
+      label-week: "Неделя:"
+      label-day-of-year: "День года:"
+      tab-unix-time: Время Unix()
+      label-unix-time: "Функция времени Unix (Time()):"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Порядковый номер в Excel (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Серия Excel, день (1904):"
+      tag-this-is-a-port-of-wonderful: Это замечательный порт
+      tag-fourmilab-ch-calendar-converter: Конвертер календарей Fourmilab.ch
+      tag-by-john-walker: Джон Уокер
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: Обновить другие календари
+      tag-today: Сегодня
+  bech32:
+    title: Кодировщик/декодер Bech32
+    description: Кодирование/декодирование/проверка betch32(m)
+    externalAccess: нулевой
+    texts:
+      label-bech32: Бех32
+      label-bech32m: Bech32m
+      tab-decode: Расшифровка
+      label-bech32-m-string: "Строка Bech32(m):"
+      placeholder-bech32-bech32m-string: Bech32 / Bech32m string
+      label-variant: "Вариант:"
+      label-hrp: "HRP:"
+      placeholder-hrp: ХРП
+      label-payload: "Полезная нагрузка:"
+      placeholder-hex-payload: Шестигранная полезная нагрузка
+      placeholder-variant: Вариант
+      tab-encode: Кодировать
+      label-encoded-bech32-string: "Закодированная строка bech32:"
+      placeholder-bech32-string: bech32 string
+      tab-batch: Партия
+      label-bech32-strings-one-per-line: "Строки Bech32 (по одной на строку):"
+      placeholder-one-bech32-string-per-line: Одна строка Bech32 на каждой строке
+      title-results: Результаты
+      tag-auto-detect: Автоматическое определение
+      tag-manual: Руководство
+      tag-checksum-only: Только контрольная сумма
+      tag-full-decode: Полное расшифровка
+      tag-checksum-valid: Контрольная сумма действительна
+      tag-checksum-invalid: Контрольная сумма неверна
+      tag-encode: Кодировать
+      tag-convert: Преобразовать
+      tag-export-csv: Экспорт CSV
+      invalid-hex-payload: Недопустимая шестнадцатеричная полезная нагрузка
+      input: Вход
+      variant: Вариант
+      status: Статус
+      hex: Шестиугольник
+      hrp: ХРП
+  docker-pangolin-labels:
+    title: Метки Docker Pangolin
+    description: Преобразование меток Docker Compose Pangolin в шаблоны и наоборот.
+    externalAccess: нулевой
+    texts:
+      tab-compose-blueprint: Создать → Чертеж
+      label-docker-compose-yaml: "Docker Compose YAML:"
+      placeholder-paste-full-docker-compose-yml-here: Вставьте сюда полный файл docker-compose.yml…
+      label-generated-blueprint: "Сгенерированный план:"
+      placeholder-blueprint-yaml-will-appear-here: Здесь появится шаблон в формате YAML…
+      tab-blueprint-labels: Чертеж → Метки
+      label-blueprint-yaml: "Шаблон YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Вставьте сюда YAML-файл с описанием проекта Pangolin…
+      label-generated-docker-labels: "Сгенерированные метки Docker:"
+      placeholder-docker-labels-will-appear-here: Здесь появятся метки Docker...
+      tag-extract-pangolin-blueprint: Извлечь чертеж панголина
+      tag-array-key-value: Массив (- ключ=значение)
+      tag-object-key-value: "Объект (ключ: значение)"
+      tag-convert-to-docker-labels: Преобразовать в метки Docker
+      invalid-blueprint-yaml: Неверный шаблон YAML
+  fitness-computer:
+    title: Фитнес-компьютер
+    description: "Вычислите BMR (базальный метаболизм), TDEE / калории (общие
+      суточные затраты энергии), BMI (индекс массы тела), идеальный вес
+      (идеальный вес тела), процент жира в организме (процент жира в организме),
+      максимальную частоту сердечных сокращений (Max HR): ключевые показатели,
+      используемые для оценки общей физической формы и физиологического
+      здоровья."
+    externalAccess: нулевой
+    texts:
+      label-bmr: БМР
+      label-tdee-calories: TDEE/Калории
+      label-bmi: "ИМТ:"
+      label-ideal-weight: "Идеальный вес:"
+      label-body-fat-us-navy: Жировая масса тела (ВМС США)
+      label-body-fat-bmi: Жировая масса тела (ИМТ)
+      label-max-heart-rate: Максимальная частота сердечных сокращений
+      label-sedentary-little-or-no-exercise: "Сидячий образ жизни: мало или совсем нет физических упражнений"
+      label-light-exercise-1-3-times-week: "Легкая нагрузка: упражнения 1-3 раза в неделю"
+      label-moderate-exercise-4-5-times-week: "Умеренный уровень: заниматься спортом 4-5 раз в неделю."
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week:
+        "Активный образ жизни: ежедневные упражнения или интенсивные физические
+        упражнения 3-4 раза в неделю."
+      label-very-active-intense-exercise-6-7-times-week: "Очень активный образ жизни: интенсивные тренировки 6-7 раз в неделю."
+      label-extra-active-very-intense-exercise-daily-or-physical-job:
+        "Сверхактивный образ жизни: очень интенсивные ежедневные физические
+        упражнения или работа, требующая физического труда."
+      label-units: "Единицы измерения:"
+      label-formula: "Формула:"
+      label-gender: "Пол:"
+      label-age: "Возраст:"
+      title-body-measurements: Параметры тела
+      label-activity-level: "Уровень активности:"
+      title-results: Результаты
+      label-bmr-kcal-day: "Базальный метаболизм (ккал/день):"
+      label-tdee-calories-kcal-day: "TDEE/Калории (ккал/день):"
+      label-bmi-category: "Категория ИМТ:"
+      label-healthy-range-min: "Здоровый диапазон (мин):"
+      label-healthy-range-max: "Нормальный диапазон (макс.):"
+      label-devine-1974: "— (Наступает 1974 год):"
+      label-hamwi-1964: "— (Хамви 1964):"
+      label-miller-1983: "— (Миллер 1983):"
+      label-robinson-1983: "— (Робинсон 1983):"
+      label-body-fat: "Процент жира в организме:"
+      label-fat-mass: "Жировая масса:"
+      label-lean-mass: "Мышечная масса:"
+      label-max-heart-rate-bpm: "Максимальная частота сердечных сокращений (уд/мин):"
+      tag-metric-kg-cm: Метрическая система (кг, см)
+      tag-us-lbs-inches: США (фунты, дюймы)
+      tag-male: Мужской
+      tag-female: Женский
+  food-energy-converter:
+    title: Преобразователь пищевой энергии
+    description: Перевод единиц измерения (джоули, калории) между продуктами питания.
+    externalAccess: нулевой
+  iso-639-searcher:
+    title: Поисковик ISO 639
+    description: Поиск по языковым кодам ISO 639-1/2T/2B/3
+    externalAccess: нулевой
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Поиск по коду языка ISO-639 по ISO-1, ISO-2T/2B, ISO-3, названию...
+      label-max-results: "Максимальное количество результатов:"
+      label-2b: "2B:"
+      label-2t: "2Т:"
+      label-eng: "АНГЛИЙСКИЙ:"
+      tag-no-results: Результаты отсутствуют
+      tag-search-results: Результаты поиска
+      tag-iso-639-1: изо-639-1
+      tag-iso-639-2t-2b: изо-639-2Т/2Б
+      tag-iso-639-3: изо-639-3
+      tag-english-and-local-name: Английское и местное название
+      loading-more-results: Загрузка дополнительных результатов...
+  jasypt-string-encryption:
+    title: Шифрование строк Jasypt
+    description: Шифрование и расшифровка строк с использованием стандарта Jasypt
+      (Java Simplified Encryption).
+    externalAccess: нулевой
+    texts:
+      label-mode: "Режим:"
+      label-password-secret-key: "Пароль (секретный ключ):"
+      placeholder-enter-jasypt-password-salt-secret-key: Введите пароль Jasypt (соль / секретный ключ).
+      title-results: Результаты
+      label-decoded: "Расшифровано:"
+      label-raw: "Сырой:"
+      label-enc-form: "Форма ENC:"
+      tag-encrypt: Шифрование
+      tag-decrypt: Расшифровка
+      plain-text: "Простой текст:"
+      jasypt-encrypted-string: "Зашифрованная строка Jasypt:"
+      text-to-encrypt-e-g-db-password: Текст для шифрования (например, пароль к базе данных)
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Зашифрованное значение (например,
+        ENC(...)) или необработанная строка Jasypt
+  k8s-rbac-generator:
+    title: Генератор RBAC для Kubernetes
+    description: Сгенерировать YAML-файл политики RBAC для Kubernetes
+    externalAccess: нулевой
+    texts:
+      label-user: Пользователь
+      label-group: Группа
+      label-serviceaccount: Учетная запись службы
+      label-role-name: "Название должности:"
+      label-role-type: Тип роли
+      label-namespace: Пространство имен
+      title-rules: Правила
+      label-resources: Ресурсы
+      placeholder-select-resources-supports: Выберите ресурсы (поддерживают *)
+      label-resource-names-optional: Названия ресурсов (необязательно)
+      placeholder-specific-resources-names: Названия конкретных ресурсов
+      label-verbs: Глаголы
+      placeholder-select-verbs-supports: Выберите глаголы (поддерживает *)
+      title-subjects: Темы
+      label-kind: Добрый
+      label-name: Имя
+      title-output-yaml: Вывод в формате YAML
+      tab-role-yaml: Роль YAML
+      tab-rolebinding-yaml: RoleBinding YAML
+      tag-clusterrole-global: ClusterRole (Global)
+      tag-role-namespaced: Роль (с пространством имен)
+      tag-add-rule: + Добавить правило
+      tag-remove-rule: Удалить правило
+      tag-add-subject: + Добавить тему
+      tag-remove-subject: Удалить тему
+  objgen-html:
+    title: ObjGen в HTML
+    description: Генерация сложного HTML из TOML-подобного синтаксиса.
+    externalAccess: нулевой
+    texts:
+      input-label-objgen-html-definition: Определение ObjGen HTML
+      input-placeholder-put-your-objgen-html-definition-here: Вставьте сюда определение вашего объекта ObjGen HTML...
+      output-label-generated-html: Сгенерированный HTML
+      tag-documentation: Документация
+  objgen-json:
+    title: ObjGen в JSON
+    description: Генерация многослойного JSON из TOML-подобного синтаксиса.
+    externalAccess: нулевой
+    texts:
+      input-label-objgen-json-definition: Определение ObjGen в формате JSON
+      input-placeholder-put-your-objgen-json-definition-here: Вставьте сюда определение вашего объекта ObjGen в формате JSON...
+      output-label-generated-json: Сгенерированный JSON
+      tag-documentation: Документация
+  pgp-file-encryption:
+    title: Шифрование файлов PGP
+    description: Шифрование и расшифровка файлов с помощью PGP
+    externalAccess: нулевой
+    texts:
+      title-1-select-a-file: 1. Выберите файл
+      title-drag-and-drop-a-file-or-click-to-select: Перетащите файл или выберите его щелчком мыши.
+      title-2-public-key-for-encryption: 2. Открытый ключ (для шифрования)
+      title-3-private-key-passphrase-for-decryption: 3. Закрытый ключ + парольная фраза (для расшифровки)
+      label-passphrase: "Кодовая фраза:"
+      placeholder-passphrase: Кодовая фраза
+      tag-selected-file: "Выбранный файл:"
+      tag-encrypt-stream: Шифрование (потока)
+      tag-decrypt-stream: Расшифровка (потока)
+      tag-encrypting: Шифрование…
+      tag-decrypting: Расшифровка…
+      tag-encrypted-file-ready: Зашифрованный файл готов.
+      tag-download-encrypted: Скачать в зашифрованном виде
+      tag-decrypted-file-ready: Расшифрованный файл готов.
+      tag-download-decrypted: Скачать расшифрованный
+  remove-background:
+    title: Удалить фоновое изображение
+    description: Удаление фона с изображения с помощью ИИ
+    externalAccess: Загрузка моделей, удаляющих фон из HuggingFace. Обработка
+      выполняется в вашем браузере.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG‑1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Прозрачный
+      label-solid-color: Однотонный цвет
+      label-pattern: "Шаблон:"
+      label-blurred-original: Размытое оригинальное изображение
+      label-adjust-contrast-brightness: Настройте контрастность/яркость
+      label-diagonal-stripes: Диагональные полосы
+      label-dots: Точки
+      label-checkerboard: Шахматная доска
+      title-drag-and-drop-an-image-or-click-to-select: Перетащите изображение или выберите его щелчком мыши.
+      label-model: "Модель:"
+      label-blur: "Размытие:"
+      label-contrast: "Контраст:"
+      label-brightness: "Яркость:"
+      title-original: Оригинал
+      title-result: Результат
+      tag-apply-background: Применить фон
+      tag-download-result: Скачать результат
+  shell-formatter:
+    title: Форматировщик команд оболочки
+    description: Форматировать команды оболочки как многострочные команды,
+      разделенные по аргументам.
+    externalAccess: нулевой
+    texts:
+      input-label-shell-commands-to-format: Команды оболочки для форматирования
+      input-placeholder-put-your-shell-commands-to-format-here: Здесь вы можете отформатировать ваши команды оболочки...
+      output-label-formatted-shell-commands: Отформатированные команды оболочки
+  shell-linearizer:
+    title: Линеаризатор команд оболочки
+    description: Линеаризация многострочных команд оболочки
+    externalAccess: нулевой
+    texts:
+      input-label-shell-commands-to-linearize: Команды оболочки для линеаризации
+      input-placeholder-put-your-shell-commands-to-linearize-here: Здесь укажите команды оболочки для линеаризации...
+      output-label-linearized-shell-commands: Линеаризованные команды оболочки
+  ufw-generator:
+    title: Генератор команд UFW
+    description: Генерация командных строк UFW
+    externalAccess: нулевой
+    texts:
+      label-allow: Позволять
+      label-deny: Отрицать
+      label-reject: Отклонять
+      label-limit: Лимит
+      label-incoming: Входящие
+      label-outgoing: Исходящий
+      label-tcp: TCP
+      label-udp: УДП
+      label-any: Любой
+      label-action: "Действие:"
+      label-direction: "Направление:"
+      label-protocol: "Протокол:"
+      label-port: "Порт:"
+      placeholder-80: "80"
+      label-port-to-range: "Порт в (диапазон):"
+      placeholder-443: "443"
+      label-from-ip: "С IP-адреса:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "К IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Интерфейс:"
+      placeholder-eth0: eth0
+      label-logging: "Ведение журнала:"
+      label-comment: "Комментарий:"
+      placeholder-optional-comment: Необязательный комментарий
+      title-generated-command: Сгенерированная команда
+      missing-port: Отсутствует порт
+  visual-subnet-calculator:
+    title: Визуальный калькулятор подсетей
+    description: Инструмент для быстрого проектирования сетей и совместной работы
+      над этим проектом с другими. Он ориентирован на ускорение работы сетевых
+      администраторов, а не на академическую математику подсетей.
+    externalAccess: нулевой
+  zalgo:
+    title: Генератор/баннер Zalgo
+    description: Сгенерировать текст Zalgo и очистить сгенерированный текст Zalgo.
+    externalAccess: нулевой
+    texts:
+      text-zalgo-text-copied: Текст Zalgo скопирован!
+      title-zalgo-text-generation: Генерация текста Zalgo
+      placeholder-put-your-string-here: Прикрепите сюда свою нить...
+      label-text-to-decorate-with-zalgo: Текст для оформления с помощью Zalgo
+      label-intensity: "Интенсивность:"
+      title-zalgo-text: Залго Текст
+      title-zalgo-cleaner: Очиститель Залго
+      placeholder-put-zalgo-text-to-clean-here: Вставьте сюда текст Zalgo для очистки...
+      label-zalgo-text-to-clean: Текст Залго для очистки
+      label-cleaned-text: Очищенный текст
+      placeholder-clean-zalgo-text-will-appear-here: Здесь появится чистый текст на языке Zalgo...
+      tag-generate: Сгенерировать
+      tag-copy: Копия
+      tag-clean: Чистый
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: Необходимо установить одно из сообщений | функцию
+        function-must-set-messages: Функция должна устанавливать сообщения.
+  dead-pixel-tester:
+    title: Тестер битых пикселей
+  gif-to-mp4:
+    title: GIF в MP4
+    description: Преобразуйте GIF в MP4 с помощью ffmpeg
+    externalAccess: нулевой
+    texts:
+      label-stream-loop: "Циклическая запись потока:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Перетащите GIF-файл сюда или выберите его, щелкнув мышью.
+      title-logs: Журналы
+  html-to-pdf:
+    title: HTML в PDF
+    description: Создавайте PDF-файлы из HTML-контента или URL-адреса с выбором
+      формата и автоматическим скрытием баннеров о файлах cookie.
+    externalAccess: Этот инструмент отправляет URL-адреса и HTML-контент в
+      *самостоятельно размещенный* веб-сервис Puppeteer, который был настроен
+      соответствующим образом.
+    texts:
+      label-a2: А2
+      label-a3: А3
+      label-a4: А4
+      label-a5: А5
+      label-letter: Письмо
+      label-legal: Юридические
+      label-html-to-pdf-service-url: "URL-адрес сервиса преобразования HTML в PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Базовая аутентификация:"
+      placeholder-username-password: имя пользователя:пароль
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "HTML-контент:"
+      tab-batch-url-pdf: Пакетный URL → PDF
+      label-urls-one-per-line: "URL-адреса (по одному на строку):"
+      title-results: Результаты
+      tab-custom-pdf-options: Настраиваемые параметры PDF
+      label-format: "Формат:"
+      label-language: "Язык:"
+      placeholder-en-us: en-US
+      label-landscape: "Пейзаж:"
+      label-one-long-page: "Одна длинная страница:"
+      label-auto-hide-cookie-banners: "Автоматическое скрытие баннеров cookie:"
+      label-print-background: "Фон для печати:"
+      title-margins: Поля
+      label-top-mm: "Верхняя граница (мм):"
+      label-bottom-mm: "Дно (мм):"
+      label-left-mm: "Слева (мм):"
+      label-right-mm: "Справа (мм):"
+      tag-html-to-pdf-service-configuration-self-hosted: Настройка сервиса преобразования HTML в PDF (собственное размещение)
+      tag-you-must-self-host-html-to-pdf-service-see: "Вам необходимо самостоятельно
+        разместить службу преобразования HTML в PDF. См.:"
+      tag-html-to-pdf-service-install: Установка сервиса преобразования HTML в PDF.
+      tag-generate-pdf: Сгенерировать PDF
+      tag-generate-pdfs: Создать PDF-файлы
+      tag-url: URL
+      tag-download: Скачать
+      tag-download-pdf: Скачать PDF
+      tag-failed: Неуспешный
+  shutdown-command-generator:
+    title: Генератор команд завершения работы
+    description: Генерация команд завершения работы для различных операционных систем.
+    externalAccess: нулевой
+    texts:
+      label-windows: Windows
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Задерживать:"
+      label-specific-time: конкретное время
+      label-platform: "Платформа:"
+      label-shutdown-time: "Время отключения:"
+      label-force: Сила
+      label-reboot: Перезагрузить
+      label-logoff: Выйти
+      label-cancel: Отмена
+      label-hibernate: Впасть в спячку
+      title-generated-command: Сгенерированная команда
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: м
+      tag-nbsp-s: с
+  random-line-picker:
+    title: Выбор случайных строк
+    description: Выбирайте случайные строки из текстового ввода
+    externalAccess: "null"
+    texts:
+      label-allow-repeated-lines: Разрешить повторяющиеся строки
+      label-number-of-lines-to-pick: "Количество строк для выбора:"
+      label-prefix-lines-with-line-number: Добавить номера строк
+      placeholder-picked-lines: Выбранные строки
+      placeholder-put-your-text-here: Поместите ваш текст здесь...
+      tag-copy: Копировать
+      tag-refresh: Обновить
+      text-picked-lines-copied-to-clipboard: Выбранные строки скопированы в буфер обмена!
+  keyboard-tester:
+    instructions:
+      highlight: Нажатые клавиши будут выделены.
+      press: Нажмите любую клавишу на клавиатуре, чтобы проверить это.
+      reset: Нажмите кнопку «Сброс», чтобы очистить записи тестирования.
+      tested: Проверенные ключи будут отображаться зеленым цветом.
+      title: Инструкции
+    keys: Ключи
+    layout: "Раскладка клавиатуры:"
+    legend:
+      pressed: Нажатый
+      tested: Проверено
+      untested: Непроверенный
+    progress: Ход тестирования
+    reset: Перезагрузить
+    size: "Размер клавиатуры:"
+    sizes:
+      "60": 60% компактный
+      full: Полный размер (100%)
+      tkl: ТКЛ (80%)
+    texts:
+      label-qwerty: QWERTY
+      label-azerty: АЗЕРТИ
+      label-dvorak: ДВОРАКА
+      label-colemak: КОЛЕМАК
+  markdown-to-data:
+    texts:
+      label-paste-your-markdown-content: "Вставьте содержимое в формате Markdown:"
+      placeholder-your-markdown: Ваша скидка...
+    title: Markdown для данных
+    description: Преобразуйте таблицу Markdown в JSON, YAML, CSV, SQL INSERT, XML,
+      Markdown или XLSX.
+    externalAccess: нулевой
+  html-to-data:
+    texts:
+      label-paste-your-html-content: "Вставьте свой HTML-контент:"
+      placeholder-your-html: Ваш HTML-код здесь...
+      error-multiple-json-blocks: Невозможно преобразовать несколько таблиц одновременно.
+    title: HTML в данные
+    description: Преобразуйте HTML-таблицу в JSON, YAML, CSV, SQL INSERT, XML,
+      Markdown или XLSX.
+    externalAccess: нулевой
+  cron-expression-builder:
+    title: Конструктор выражений Cron
+    description: Создание выражений Cron из пользовательского интерфейса
+    externalAccess: нулевой
+    texts:
+      label-seconds: Секунды
+      label-minutes: Протокол
+      label-hours: Часы
+      label-day-of-month: День месяца
+      label-month: Месяц
+      label-january: Январь
+      label-february: Февраль
+      label-march: Маршировать
+      label-april: Апрель
+      label-may: Может
+      label-june: Июнь
+      label-july: Июль
+      label-august: Август
+      label-september: Сентябрь
+      label-october: Октябрь
+      label-november: Ноябрь
+      label-december: Декабрь
+      label-day-of-week: День недели
+      label-sunday: Воскресенье
+      label-monday: Понедельник
+      label-tuesday: Вторник
+      label-wednesday: Среда
+      label-thursday: Четверг
+      label-friday: Пятница
+      label-saturday: Суббота
+      label-year: Год
+      label-every: каждый
+      label-specific-values: Конкретные значения
+      label-range: Диапазон
+      label-increment: Приращение
+      title-generated-cron-expression: Сгенерированное выражение Cron
+      title-validation-errors: Ошибки проверки
+      label-mode: "Режим:"
+      label-from: "От:"
+      label-to: "К:"
+      label-start-at: "Начните с:"
+      tag-cron-expression-is-invalid: Выражение Cron недействительно.
+      paste-cron-expression: Вставить выражение Cron
+      e-g-5-0-12-1-2025: например, */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (воскресенье = 0, понедельник = 1, ..., суббота = 6)
+      label-select-at-least-one-value: "{0}: выберите хотя бы одно значение"
+      day-of-month-and-day-of-week-cannot-both-be-specific: День месяца и день недели не могут быть одновременно и конкретными.
+      label-start-cannot-be-greater-than-end: "{0}: начало не может быть больше конца"
+      label-start-must-be-within-allowed-range: "{0}: начало должно находиться в допустимом диапазоне"
+      label-step-must-be-greater-than-1: "{0}: шаг должен быть >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: начало не может быть больше конца"
+      seconds: Секунды
+      minutes: Протокол
+      hours: Часы
+      day-of-month: День месяца
+      month: Месяц
+      day-of-week: День недели
+      year: Год
+  css-js-prettify-minify:
+    title: Улучшение и минимизация CSS/JS
+    description: Улучшайте или минимизируйте свой CSS и JavaScript код онлайн.
+    externalAccess: нулевой
+    texts:
+      label-javascript: JavaScript
+      label-css: CSS
+      label-language: Язык
+      label-indent-size: Размер отступа
+      placeholder-2: "2"
+      title-prettify: Украсить
+      label-your-code: Ваш код
+      placeholder-paste-your-code-to-prettify: Вставьте свой код, чтобы улучшить внешний вид...
+      label-prettified-code: Упрощенный код
+      title-minify: Свернуть
+      placeholder-paste-your-code-to-minify: Вставьте свой код для минимизации...
+      label-minified-code: Сокращенный код
+  dns-propagation-tester:
+    title: Тестер распространения DNS
+    description: Простой инструмент для проверки распространения DNS-запросов между
+      различными серверами.
+    externalAccess: Этот инструмент вызывает службу сетевых утилит вашего локального
+      сервера для выполнения DNS-запросов.
+    texts:
+      label-network-utilities-service-url: "URL-адрес службы сетевых утилит:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Базовая аутентификация:"
+      placeholder-username-password: имя пользователя:пароль
+      tab-dns-propagation: Распространение DNS
+      label-domain: "Домен:"
+      placeholder-example-com: example.com
+      label-record-type: "Тип записи:"
+      title-resolvers-to-check: Решатели для проверки
+      title-results: Результаты
+      tab-custom-resolvers: Пользовательские решатели
+      title-add-custom-resolver: Добавить пользовательский резолвер
+      label-resolver-name: "Имя преобразователя:"
+      placeholder-resolver-name-e-g-my-dns: Имя DNS-сервера (например, My DNS)
+      label-resolver-ip: "IP-адрес резолвера:"
+      placeholder-resolver-ip-e-g-10-0-0-1: IP-адрес резолвера (например, 10.0.0.1)
+      title-your-custom-resolvers: Ваши пользовательские решатели
+      tag-network-utilities-service-configuration-self-hosted: Настройка службы сетевых утилит (самостоятельно размещенная)
+      tag-you-must-self-host-network-utilities-service-see: "Вам необходимо
+        самостоятельно разместить службу сетевых утилит на своем сервере. См.:"
+      tag-network-utilities-service-docker-install: Установка Docker для службы сетевых утилит.
+      tag-select-all: Выбрать все
+      tag-deselect-all: Снять выделение со всех элементов
+      tag-check-propagation: Проверка распространения
+      tag-resolver: Решать
+      tag-resolver-ip: IP-адрес резолвера
+      tag-status: Статус
+      tag-answers: Ответы
+      tag-checking: Проверка...
+      tag-no-answers: Нет ответов
+      tag-add-resolver: Добавить решатель
+      tag-remove: Удалять
+      tag-no-custom-resolvers-added-yet: Пользовательские резолверы пока не добавлены.
+  dns-query:
+    title: DNS/RDAP-запросы Cloudflare
+    description: С помощью Cloudflare DNS/RDAP.org вы можете запрашивать DNS-записи
+      и RDAP-доступ для любого доменного имени в режиме онлайн.
+    externalAccess: нулевой
+    texts:
+      message-please-enter-a-valid-domain-name: Пожалуйста, введите допустимое доменное имя.
+      text-dns-records-copied-to-the-clipboard: DNS-записи скопированы в буфер обмена
+      label-domain-name: Доменное имя
+      placeholder-e-g-example-com: например, example.com
+      tag-name: Имя
+      tag-ttl: ТТЛ
+      tag-data: Данные
+      tag-copy-results: Скопировать результаты
+      tag-no-records-found-for-this-domain: Записи по этому домену не найдены.
+      tag-loading-whois-info: Загрузка информации WHOIS...
+      tag-whois: ВОИС
+      tag-domain-name: Доменное имя
+      tag-registrar: Регистратор
+      tag-registration-date: Дата регистрации
+      tag-expiration-date: Дата окончания срока
+      tag-updated-date: Дата обновления
+      tag-registrant: Зарегистрированный
+      tag-name-servers: Серверы имен
+      tag-domain-status: Статус домена
+      tag-dnssec: DNSSEC
+  dns-tester:
+    title: DNS-тестер
+    description: Простой инструмент для проверки разрешения DNS-имен, запросов Whois
+      и других задач, связанных с DNS.
+    externalAccess: Этот инструмент вызывает службу сетевых утилит вашего локального
+      сервера для выполнения DNS/Whois-запросов и связанных с ними задач.
+    texts:
+      label-a-ipv4-address: A — IPv4-адрес
+      label-aaaa-ipv6-address: AAAA — IPv6-адрес
+      label-afsdb-afs-database-location: AFSDB — местоположение базы данных AFS
+      label-apl-address-prefix-list: APL — Список префиксов адресов
+      label-caa-certificate-authority-authorization: CAA — Управление по выдаче сертификатов.
+      label-cdnskey-child-dnskey: CDNSKEY — Дочерний DNSKEY
+      label-cds-child-ds: CDS — Детский синдром Дауна
+      label-cert-certificate-storage: CERT — Хранилище сертификатов
+      label-cname-canonical-name: CNAME — Каноническое имя
+      label-csync-child-to-parent-sync: CSYNC — Синхронизация дочерних и родительских устройств
+      label-dhcid-dhcp-identifier: DHCID — идентификатор DHCP
+      label-dlv-dnssec-lookaside-validation-obsolete: DLV — дополнительная проверка DNSSEC (устарело)
+      label-dname-non-terminal-rename: DNAME — Переименование нетерминала
+      label-dnskey-dnssec-public-key: DNSKEY — открытый ключ DNSSEC
+      label-ds-delegation-signer: ДС — Подписавший Делегацию
+      label-eui48-mac-address-48-bit: EUI48 — MAC-адрес (48-бит)
+      label-eui64-mac-address-64-bit: EUI64 — MAC-адрес (64-бит)
+      label-hinfo-host-information: HINFO — Информация о хосте
+      label-hip-host-identity-protocol: HIP — протокол идентификации хоста
+      label-https-https-service-binding: HTTPS — привязка сервиса HTTPS
+      label-ipseckey-ipsec-key: IPSECKEY — ключ IPsec
+      label-key-security-key-obsolete: КЛЮЧ — Ключ безопасности (устаревший)
+      label-kx-key-exchanger: KX — Обмен ключами
+      label-loc-geographic-location: LOC — Географическое местоположение
+      label-mx-mail-exchanger: MX — Почтовый обменник
+      label-naptr-regex-based-rewrite: NAPTR — Переписывание на основе регулярных выражений
+      label-ns-name-server: NS — Сервер имен
+      label-nsec-dnssec-denial-of-existence: NSEC — DNSSEC отрицает существование
+      label-nsec3-hashed-denial-of-existence: NSEC3 — Хэшированное отрицание существования
+      label-nsec3param-nsec3-parameters: NSEC3PARAM — параметры NSEC3
+      label-openpgpkey-openpgp-public-key: OPENPGPKEY — Открытый ключ OpenPGP
+      label-ptr-reverse-lookup-pointer: PTR — Указатель обратного поиска
+      label-rrsig-dnssec-signature: RRSIG — подпись DNSSEC
+      label-rp-responsible-person: РП — Ответственное лицо
+      label-sig-signature-obsolete: SIG — Signature (устаревшее название)
+      label-smimea-s-mime-cert-association: SMIMEA — Ассоциация сертификации S/MIME
+      label-soa-start-of-authority: SOA — Начало полномочий
+      label-spf-sender-policy-framework-deprecated: SPF — Sender Policy Framework (устаревшая версия)
+      label-srv-service-locator: SRV — Поиск сервисных центров
+      label-sshfp-ssh-public-key-fingerprint: SSHFP — Отпечаток открытого ключа SSH
+      label-svcb-service-binding: SVCB — Сервисное обязательство
+      label-ta-trust-anchor-experimental: ТА — Якорь доверия (экспериментальный)
+      label-tkey-secret-key-agreement: TKEY — Соглашение о секретном ключе
+      label-tlsa-dane-tls-association: TLSA — Ассоциация DANE TLS
+      label-tsig-transaction-signature: TSIG — Подпись транзакции
+      label-txt-text-record: TXT — Текстовая запись
+      label-uri-uri-template: URI — шаблоны URI
+      label-zonemd-zone-message-digest: ZONEMD — Краткий обзор сообщений зоны
+      label-system-default: Системные настройки по умолчанию
+      label-custom-dns-resolver: Пользовательский DNS-резолвер
+      label-google-8-8-8-8: Google 8.8.8.8
+      label-google-8-8-4-4: Google 8.8.4.4
+      label-cloudflare-1-1-1-1: Cloudflare 1.1.1.1
+      label-cloudflare-1-0-0-1: Cloudflare 1.0.0.1
+      label-quad9-9-9-9-9: Quad9 9.9.9.9
+      label-quad9-149-112-112-112: Quad9 149.112.112.112
+      label-opendns-208-67-222-222: OpenDNS 208.67.222.222
+      label-opendns-208-67-220-220: OpenDNS 208.67.220.220
+      label-cleanbrowsing-185-228-168-9: CleanBrowsing 185.228.168.9
+      label-cleanbrowsing-185-228-169-9: CleanBrowsing 185.228.169.9
+      label-dns-watch-84-200-69-80: DNS.Watch 84.200.69.80
+      label-dns-watch-84-200-70-40: DNS.Watch 84.200.70.40
+      label-freedns-37-235-1-174: FreeDNS 37.235.1.174
+      label-freedns-37-235-1-177: FreeDNS 37.235.1.177
+      label-fdn-france-80-67-169-12: FDN Франция 80.67.169.12
+      label-fdn-france-80-67-169-40: FDN Франция 80.67.169.40
+      label-neustar-eu-156-154-70-1: Neustar EU 156.154.70.1
+      label-neustar-eu-156-154-71-1: Neustar EU 156.154.71.1
+      label-level3-209-244-0-3: Уровень 3 209.244.0.3
+      label-level3-209-244-0-4: Уровень 3 209.244.0.4
+      label-comodo-8-26-56-26: Комфортный 8.26.56.26
+      label-comodo-8-20-247-20: Удобно 8.20.247.20
+      label-centurylink-205-171-3-65: CenturyLink 205.171.3.65
+      label-centurylink-205-171-2-65: CenturyLink 205.171.2.65
+      label-dnspod-119-29-29-29: DNSPod 119.29.29.29
+      label-alidns-223-5-5-5: AliDNS 223.5.5.5
+      label-alidns-223-6-6-6: AliDNS 223.6.6.6
+      label-yandex-77-88-8-8: Яндекс 77.88.8.8
+      label-yandex-77-88-8-1: Яндекс 77.88.8.1
+      label-naver-korea-125-209-222-141: Naver Korea 125.209.222.141
+      label-naver-korea-125-209-249-1: Naver Korea 125.209.249.1
+      label-gigadns-brazil-189-38-95-95: GigaDNS Бразилия 189.38.95.95
+      label-gigadns-brazil-189-38-95-96: GigaDNS Бразилия 189.38.95.96
+      label-opendns-africa-196-3-132-153: OpenDNS Africa 196.3.132.153
+      label-opendns-africa-196-3-132-154: OpenDNS Africa 196.3.132.154
+      label-network-utilities-service-url: "URL-адрес службы сетевых утилит:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Базовая аутентификация:"
+      placeholder-username-password: имя пользователя:пароль
+      label-target-dns-resolver-ip: "Целевой IP-адрес DNS-резолвера:"
+      placeholder-system-default: Системные настройки по умолчанию
+      placeholder-e-g-10-0-0-53: например, 10.0.0.53
+      tab-dns-query: DNS-запрос
+      label-domain: Домен
+      placeholder-example-com: example.com
+      label-dns-record-type: "Тип DNS-записи:"
+      title-result: Результат
+      label-record-type: Тип записи
+      title-answers: Ответы
+      tab-whois: ВОИС
+      label-raw-whois: Исходный WHOIS
+      label-parsed: Разобрано
+      tab-dnssec-validation: Проверка DNSSEC
+      label-validated: Проверено
+      label-dnskey: DNSKEY
+      label-rrsig: РРСИГ
+      tab-reverse-dns-ptr: Обратное DNS (PTR)
+      label-ip-address: "IP-адрес:"
+      placeholder-8-8-8-8: 8.8.8.8
+      label-ip: IP
+      label-ptr: ПТР
+      tab-soa-axfr-test: SOA + тест AXFR
+      label-soa: SOA
+      label-axfr-allowed: AXFR разрешен
+      label-records: Записи
+      tag-network-utilities-service-configuration-self-hosted: Настройка службы сетевых утилит (самостоятельно размещенная)
+      tag-you-must-self-host-network-utilities-service-see: "Вам необходимо
+        самостоятельно разместить службу сетевых утилит на своем сервере. См.:"
+      tag-network-utilities-service-docker-install: Установка Docker для службы сетевых утилит.
+      tag-query-dns: Запрос DNS
+      tag-lookup-whois: Найдите информацию о сайте WHOIS.
+      tag-validate-dnssec: Проверка DNSSEC
+      tag-reverse-lookup: Обратный поиск
+      tag-run-soa-axfr: Запуск SOA + AXFR
+  dockerfile-label-generator:
+    title: Генератор меток Dockerfile
+    description: Простой инструмент для генерации меток для Docker-файлов.
+    externalAccess: нулевой
+    texts:
+      label-title: "Заголовок:"
+      placeholder-my-project: Мой проект
+      label-description: "Описание:"
+      placeholder-short-project-description: Краткое описание проекта
+      label-repository-url: "URL репозитория:"
+      placeholder-https-github-com-username-repo: https://github.com/username/repo
+      label-source-url: "Исходный URL:"
+      label-documentation-url: "URL документации:"
+      placeholder-https-github-com-username-repo-readme: https://github.com/username/repo#readme
+      label-license-spdx: "Лицензия (SPDX):"
+      placeholder-mit: С
+      label-version: "Версия:"
+      placeholder-1-0-0: 1.0.0
+      label-revision-commit-sha: "Ревизия (хеш SHA для фиксации):"
+      placeholder-abcdef123456: abcdef123456
+      label-created: "Созданный:"
+      placeholder-2024-01-01t12-00-00z: 2024-01-01T12:00:00Z
+      label-authors: "Авторы:"
+      placeholder-your-name-you-example-com: Ваше имя {'<'}you{'@'}example.com{'>'}
+      title-generated-label-block: Сгенерированный блок LABEL
+  https-tester:
+    title: Тестер HTTPS
+    description: Проверка HTTPS-сертификата, HSTS и перенаправления 302.
+    externalAccess: Этот инструмент вызывает службу сетевых утилит вашего локального
+      сервера для выполнения задач, связанных с HTTPS/HSTS.
+    texts:
+      label-network-utilities-service-url: "URL-адрес службы сетевых утилит:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Базовая аутентификация:"
+      placeholder-username-password: имя пользователя:пароль
+      tab-certificate: Сертификат
+      label-host: "Хозяин:"
+      placeholder-example-com: example.com
+      label-port: "Порт:"
+      placeholder-443: "443"
+      title-result: Результат
+      label-hostname: "Имя хоста:"
+      label-not-before: "Не раньше:"
+      label-not-after: "Не после:"
+      label-days-until-expiry: "Количество дней до истечения срока действия:"
+      label-subject: "Предмет:"
+      label-issuer: "Эмитент:"
+      label-sub-alt-name: "Дополнительное альтернативное имя:"
+      tab-hsts: HSTS
+      label-url: URL
+      placeholder-https-example-com: https://example.com
+      label-hsts-present: HSTS присутствует
+      label-max-age: Максимальный возраст
+      label-inc-subdomains: Субдомены Inc.
+      label-preload: Предварительная загрузка
+      label-raw-header: Необработанный заголовок
+      tab-http-https-redirect: Перенаправление HTTP → HTTPS
+      label-domain: "Домен:"
+      label-http-url: HTTP URL
+      label-redirected: Перенаправление
+      label-final-url: Итоговый URL
+      label-status-code: Код состояния
+      label-redirect-chain: Цепочка перенаправлений
+      title-redirect-chain-details: Подробности цепочки перенаправлений
+      tag-network-utilities-service-configuration-self-hosted: Настройка службы сетевых утилит (самостоятельно размещенная)
+      tag-you-must-self-host-network-utilities-service-see: "Вам необходимо
+        самостоятельно разместить службу сетевых утилит на своем сервере. См.:"
+      tag-network-utilities-service-docker-install: Установка Docker для службы сетевых утилит.
+      tag-check-certificate: Проверка сертификата
+      tag-check-hsts: Проверьте HSTS
+      tag-check-redirect: Проверить перенаправление
+  k6-script-generator:
+    title: Генератор скриптов для нагрузочного тестирования K6
+    description: Создайте скрипты для нагрузочного тестирования k6 с использованием
+      распространенных предустановок.
+    externalAccess: нулевой
+    texts:
+      label-smoke-test: дымовой тест
+      label-load-test: Тестирование под нагрузкой
+      label-stress-test: Стресс-тест
+      label-spike-test: Тест на пик
+      label-soak-test: Испытание на замачивание
+      label-get: ПОЛУЧАТЬ
+      label-post: ПОЧТА
+      label-put: ПОМЕЩАТЬ
+      label-patch: ПЛАСТЫРЬ
+      label-delete: УДАЛИТЬ
+      label-scenario-preset: "Предварительно заданный сценарий:"
+      label-virtual-users-vus: "Виртуальные пользователи (ВУ):"
+      label-duration: "Продолжительность:"
+      label-ramp-up-duration: "Продолжительность периода наращивания нагрузки:"
+      label-ramp-down-duration: "Продолжительность снижения интенсивности:"
+      label-thresholds-name-expression: "Пороговые значения (название/выражение):"
+      placeholder-metric: Метрическая система
+      placeholder-rule: Правило
+      label-checks-name-expression: "Проверки (Имя/Выражение):"
+      placeholder-check-name: Проверьте имя
+      placeholder-expression: Выражение
+      label-request-steps: "Этапы запроса:"
+      placeholder-request-url: URL запроса
+      label-payload: "Полезная нагрузка:"
+      placeholder-payload-json-or-text: Полезная нагрузка (JSON или текст)
+      placeholder-headers-json: Заголовки (JSON)
+      label-headers: "Заголовки:"
+      label-sleep-after-this-step-seconds: "После этого шага (в секундах) наступит сон:"
+      title-generated-k6-script: Сгенерированный скрипт K6
+      tag-apply-preset: Применить предустановку
+      tag-remove: Удалять
+      tag-add-threshold: Добавить пороговое значение
+      tag-add-check: Добавить галочку
+      tag-remove-step: Удалить шаг
+      tag-add-step: Добавить шаг
+  markdown-diff:
+    title: Markdown Diff
+    description: Сравните два документа в формате Markdown и выявите различия между ними.
+    externalAccess: нулевой
+    texts:
+      label-code: Код
+      label-preview: Предварительный просмотр
+      tag-source-markdown: Исходный код Markdown
+      tag-modified-markdown: Модифицированный Markdown
+  markdown-preview:
+    title: Предварительный просмотр Markdown
+    description: Предварительный просмотр Markdown в режиме реального времени по
+      мере ввода текста.
+    externalAccess: нулевой
+    texts:
+      placeholder-your-markdown-content: Ваш контент в формате Markdown...
+      label-your-markdown-to-preview: "Предварительный просмотр вашего Markdown-файла:"
+      label-rendered-preview: "Предварительный просмотр изображения:"
+  markdown-table-generator:
+    title: Генератор таблиц Markdown
+    description: Создавайте таблицы Markdown в стиле GitHub с помощью визуального редактора.
+    externalAccess: нулевой
+    texts:
+      label-left: Левый
+      label-center: Центр
+      label-right: Верно
+      label-paste-clipboard-table-data-here: "Вставьте данные из буфера обмена сюда:"
+      placeholder-paste-your-table-to-edit: Вставьте таблицу для редактирования...
+      label-generated-markdown-table: "Сгенерированная таблица Markdown:"
+      tag-import-table-data: Импорт данных таблицы
+      tag-add-row: Добавить строку
+      tag-add-column: Добавить столбец
+  nmap-command-builder:
+    title: Nmap Command Builder
+    description: Простой конструктор команд для генерации команд сканирования Nmap.
+    externalAccess: нулевой
+    texts:
+      label-default-scan: Сканирование по умолчанию
+      label-quick-scan: Быстрое сканирование
+      label-intense-scan: Интенсивное сканирование
+      label-full-tcp-scan: Полное сканирование TCP
+      label-udp-scan: UDP-сканирование
+      label-ping-sweep: Пинг-свип
+      label-no-ping-stealth-host-discovery: Нет пинга (скрытое обнаружение хостов)
+      label-top-ports-100: Лучшие порты (100)
+      label-top-ports-1000: Топ-порты (1000)
+      label-firewall-evasion: Обход брандмауэра
+      label-ipv6-scan: Сканирование IPv6
+      label-service-version-deep-scan: Глубокое сканирование сервисов и версий
+      label-vulnerability-scan-nse-vuln: Сканирование уязвимостей (NSE vuln)
+      label-http-enumeration: HTTP-перечисление
+      label-smb-enumeration: Перечисление SMB
+      label-dns-brute-force: DNS Brute Force
+      label-ftp-audit: Аудит FTP
+      label-ssh-audit: Аудит SSH
+      label-full-recon-os-version-scripts: Полная разведка (ОС + версия + скрипты)
+      label-target: "Цель:"
+      placeholder-example-com-or-192-168-1-1: example.com или 192.168.1.1
+      tab-presets: Предустановки
+      label-preset: "Предустановка:"
+      placeholder-choose-a-preset: Выберите предустановку
+      tab-custom: Обычай
+      title-scan-options: Параметры сканирования
+      label-os-detection-o: Обнаружение ОС (-O)
+      label-version-detection-sv: Определение версии (-sV)
+      label-default-scripts-sc: Скрипты по умолчанию (-sC)
+      label-traceroute-traceroute: Трассировка маршрута (--traceroute)
+      label-verbose-v: Многословный (-v)
+      label-aggressive-a: Агрессивный (-А)
+      title-advanced: Передовой
+      label-custom-ports-p: Пользовательские порты (-p)
+      placeholder-80-443-or-1-65535: 80,443 или 1-65535
+      label-timing-t: Время (-Т)
+      label-nse-scripts-script: Скрипты NSE (--script)
+      placeholder-vuln-http-title: уязвимость, http-title, ...
+      label-output-file-on: Выходной файл (-oN)
+      placeholder-scan-txt: scan.txt
+      title-generated-command: Сгенерированная команда
+  picomatch-tester:
+    title: Тестер Picomatch
+    description: Простой тестер для библиотеки picomatch, используемой для
+      сопоставления шаблонов glob.
+    externalAccess: нулевой
+    texts:
+      label-pattern: "Шаблон:"
+      placeholder-enter-a-glob-pattern-like-js: Введите шаблон glob, например, *.js
+      label-options: "Параметры:"
+      label-generated-regex: "Сгенерированное регулярное выражение:"
+      label-test-lines-one-per-line: "Тестовые строки (по одной на строку):"
+      placeholder-enter-one-string-per-line: Введите одну строку на каждой строке.
+      tag-case-insensitive: Регистр не имеет значения
+      tag-match-dotfiles: Сопоставление точечных файлов
+      tag-no-nested-directories-with-globstars: Нет вложенных каталогов с символами globstar (**)
+      tag-allows-glob-to-match-any-part-of-the-given-string-s: Позволяет использовать
+        функцию glob для сопоставления любой части заданной строки (строк).
+      tag-don-t-match-trailing-slashes-with-single-stars: Не следует сопоставлять завершающие косые черты с одиночными звёздочками.
+  powershell-memo:
+    title: Шпаргалка по PowerShell
+    description: PowerShell — это мощный скриптовый язык и оболочка командной
+      строки, предназначенная для системного администрирования и автоматизации.
+      Он предоставляет широкий спектр командлетов и функций, позволяющих
+      пользователям эффективно управлять задачами и автоматизировать их в
+      системах Windows.
+    externalAccess: нулевой
+  running-pace-calculator:
+    title: Калькулятор темпа бега
+    description: Рассчитайте свой темп бега, оцените время финиша на популярных
+      соревнованиях, проанализируйте результаты на отдельных этапах и определите
+      свои тренировочные зоны.
+    externalAccess: нулевой
+    texts:
+      label-length: "Длина:"
+      placeholder-e-g-10km-or-100m: например, 10 км или 100 м
+      label-time: "Время:"
+      placeholder-e-g-45-00-or-45min-or-1h30m: например, 45:00 или 45 мин или 1 ч 30 мин...
+      label-pace: "Шаг:"
+      placeholder-e-g-4-30-km: например, 4:30/км
+      label-unit: "Единица:"
+      label-output-speed-in-instead-of-pace: "Вместо темпа вывода используйте скорость:"
+      title-result: Результат
+      tag-km: км
+      tag-mile: миля
+      tag-calculate: Рассчитайте
+  saml-parser:
+    title: Парсер SAML
+    description: Обнаруживает входные данные SAML (Base64, DEFLATE или XML),
+      анализирует их, проверяет подпись и отображает структурированное
+      представление утверждения, включая эмитента, субъекта, условия, контекст
+      аутентификации, утверждения и статус проверки.
+    externalAccess: нулевой
+    texts:
+      label-saml-assertion-base64-deflate-or-xml: "Утверждение SAML (Base64, DEFLATE или XML):"
+      placeholder-paste-saml-assertion-base64-deflate-or-xml: Вставьте утверждение SAML (Base64, DEFLATE или XML).
+      title-validation-options: Варианты проверки
+      label-thumbprint: "Отпечаток пальца:"
+      placeholder-thumbprint-optional: Отпечаток пальца (по желанию)
+      label-public-key: "Открытый ключ:"
+      placeholder-public-key-optional: Открытый ключ (необязательно)
+      label-audience: "Аудитория:"
+      placeholder-audience-optional: Аудитория (необязательно)
+      title-parsed-saml-assertion: Разобранное утверждение SAML
+      label-issuer: "Эмитент:"
+      label-assertion-id: "Идентификатор утверждения:"
+      label-session-index: "Содержание сессии:"
+      label-notbefore: "Ранее:"
+      label-notonorafter: "NotOnOrAfter:"
+      label-signature-validation-status: "Статус проверки подписи:"
+      title-claims: Претензии
+      title-raw-assertion: Необоснованное утверждение
+      tag-bypass-expiration: Срок действия обходного протокола истекает
+      tag-don-t-bypass-expiration: Не игнорируйте срок действия.
+      tag-detect-parse-and-validate: Обнаружение, анализ и проверка
+  url-builder:
+    title: Конструктор URL-адресов
+    description: Позволяет редактировать и создавать URL-адреса с параметрами запроса.
+    externalAccess: нулевой
+    texts:
+      label-string: нить
+      label-number: число
+      label-boolean: логический
+      label-date: дата
+      label-datetime: дата и время
+      label-array: множество
+      label-load-url: "Загрузить URL:"
+      placeholder-paste-url-to-parse: Вставьте URL-адрес для анализа.
+      label-base-url: "Базовый URL:"
+      placeholder-base-url: Базовый URL
+      title-url-parameters: Параметры URL
+      placeholder-key: ключ
+      placeholder-value: ценить
+      title-generated-url: Сгенерированный URL
+      tag-parse: Разбор
+  json-patch:
+    texts:
+      text-json-paths-copied-to-clipboard: Пути в формате JSON скопированы в буфер обмена!
+      tab-paths: Пути
+      label-input-json: Входной JSON
+      placeholder-paste-json: Вставьте JSON...
+      tab-generate-patch: Сгенерировать патч
+      label-before-json: До появления JSON
+      placeholder-before-json: До появления JSON...
+      label-after-json: После JSON
+      placeholder-after-json: После JSON...
+      title-generate-json-patch: Сгенерировать JSON-патч
+      tab-apply-patch: Наложить заплатку
+      label-json-to-patch: JSON для исправления
+      placeholder-json-to-patch: JSON для исправления...
+      label-json-patch-array: Массив JSON-патчей
+      placeholder-json-patch-array: Массив JSON-патчей...
+      title-patched-json: Исправленный JSON
+      tag-generate-paths: Сгенерировать пути
+      tag-copy-json-paths: Скопировать пути JSON
+      tag-generate-patch: Сгенерировать патч
+      tag-apply-patch: Применить патч
+  ping:
+    title: Пинг
+    description: Проверьте доступность набора имен хостов, IP-адресов, CIDR или
+      диапазона IP-адресов, отправив ping-запрос.
+    externalAccess: Этот инструмент вызывает службу сетевых утилит вашего локального
+      сервера для выполнения ICMP-пингов.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Целевые адреса
+        (IP-адреса/CIDR-адреса/имена хостов, по одному на строку или , или ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Считать:"
+      label-timeout-seconds: "Время ожидания (секунды):"
+      tag-ping-all: Пинг всех
+      tag-target: Цель
+      tag-ip: IP
+      tag-status: Статус
+      tag-avg-rtt-ms: Среднее время отклика (мс)
+      tag-packet-loss: Потеря пакетов
+      tag-error: Ошибка
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR расширяется до {0} IP-адресов, превышая лимит {1}.
+      tag-reachable: Доступный
+      tag-unreachable: Недостижимый
+  command-palette:
+    store:
+      texts:
+        pages: Страницы
+        learn-more-about-it-tools: Узнайте больше об IT-инструментах.
+        actions-0: Действия
+        report-a-bug-or-an-issue-to-help-improve-it-tools: Сообщите об ошибке или проблеме, чтобы помочь улучшить IT-инструменты.
+        report-a-bug-or-an-issue: Сообщить об ошибке или проблеме
+        view-the-source-code-of-it-tools-on-github: Исходный код it-tools можно посмотреть на Github.
+        external: Внешний
+        github-repository: Репозиторий на GitHub
+        actions: Действия
+        toggle-dark-mode-on-or-off: Включать или выключать темный режим.
+        toggle-dark-mode: Включить/выключить темный режим
+        tools-0: Инструменты
+        get-a-random-tool-from-the-list: Выберите случайный инструмент из списка.
+        random-tool: Случайный инструмент
+        tools: Инструменты
+  external-self-hosted-required: Требуется внешнее размещение на собственном сервере.
+  markdown-format-converter:
+    title: Конвертер форматов
+    description: Конвертация между стандартным Markdown, Obsidian, Logseq, Slack,
+      Jira и другими форматами.
+    texts:
+      label-source-format: Исходный формат
+      label-target-format: Целевой формат
+      placeholder-input-markdown: Вставьте или введите здесь свой стандартный
+        Markdown-код, код Obsidian или Logseq...
+      label-input-markdown: Ввод Markdown
+      label-converted-output: Преобразованный вывод
+      label-text: Текст
+      label-preview: Предварительный просмотр
+  restic-command-generator:
+    title: Генератор команд Restic
+    description: "Сгенерируйте команды CLI restic для восстановления репозитория
+      Backrest или обычного restic: целого снимка, только некоторых файлов или
+      доступного для просмотра монтирования."
+    texts:
+      intro: "Только генератор: здесь ничего не запускается, и ничто из того, что вы
+        вводите, не покидает ваш браузер. Опишите свой репозиторий, выберите то,
+        что вам нужно восстановить, и скопируйте фрагмент кода оболочки."
+      title-repository: Репозиторий
+      label-backend: Бэкенд
+      backend-s3: Совместимость с S3 (Backblaze B2, MinIO, Wasabi, AWS...)
+      backend-b2: Backblaze B2 (родной)
+      backend-local: Локальный путь или смонтированный диск
+      backend-sftp: SFTP
+      backend-rest: REST-сервер restic
+      backend-rclone: Rclone
+      backend-azure: Azure Blob Storage
+      backend-gs: Google Облачное хранилище
+      backend-raw: Другое (исходный URI репозитория)
+      label-local-path: Путь к репозиторию
+      label-endpoint: Конечная точка
+      label-bucket: Ведро
+      label-prefix: Тропа в ведре
+      label-region: Регион (необязательно)
+      label-user: Пользователь
+      label-host: Хозяин
+      label-port: Порт (необязательно)
+      label-path: Путь к репозиторию
+      label-url: URL сервера
+      label-remote: Rclone удаленный доступ и путь
+      label-container: Контейнер
+      label-raw-repository: URI репозитория
+      label-repository-mode: Репозиторий передан как
+      repository-flag: Флаг -r для каждой команды
+      repository-env: переменная среды RESTIC_REPOSITORY
+      label-repository-uri: URI репозитория
+      label-password: Пароль репозитория
+      password-prompt: Запросите это в командной оболочке (прочитайте -rs, чтобы не
+        просматривать историю).
+      password-file: --файл-пароля
+      password-command: --password-command
+      password-placeholder: Экспорт RESTIC_PASSWORD с заполнителем
+      password-none: Уже настроено в моей среде
+      label-password-file: файл паролей
+      label-password-command: Команда пароля
+      label-credentials: Учетные данные бэкэнда
+      credentials-prompt: Подсказка для разгадки секрета в раковине
+      credentials-placeholder: Экспортируйте их с заполнителями.
+      credentials-none: Уже настроено в моей среде
+      label-account-id: Идентификатор ключа / имя учетной записи
+      hint-secrets: 'В сгенерированную команду никогда не закладываются никакие
+        секреты: параметры приглашения командной строки считывают их в вашу
+        оболочку с помощью команды "read -rs", поэтому они не попадают в историю
+        командной строки.'
+      title-operation: Что ты хочешь делать?
+      operation-restore: Восстановление — запись файлов из снимка обратно на диск.
+      operation-dump: дамп — потоковая передача одного файла или папки из снимка.
+      operation-mount: mount — просмотр репозитория как файловой системы
+      operation-snapshots: snapshots — список снимков репозитория
+      operation-ls: ls — выводит список файлов внутри снимка
+      operation-find: найти — определить местоположение файла в разных снимках.
+      operation-diff: diff — сравнение двух снимков
+      operation-check: проверка — подтверждение целостности репозитория
+      operation-stats: статистика — размер снимка или репозитория
+      operation-unlock: разблокировать — удалить устаревшие замки
+      title-snapshot: Выбор снимка
+      label-snapshot-id: Идентификатор снимка
+      label-subfolder: Только эта подпапка снимка
+      label-plan: Схема спинки ID
+      label-instance: Идентификатор экземпляра спинки
+      label-filter-host: Хозяин
+      label-tags: Дополнительные теги
+      placeholder-tag: руководство
+      label-filter-paths: Пути
+      placeholder-path: /home/me/documents
+      hint-tags: Backrest помечает создаваемые снимки тегами "plan:" и "created-by:",
+        за которыми следуют идентификаторы плана и экземпляра. Теги внутри
+        одного флага --tag объединяются с помощью операции И, а повторяющиеся
+        флаги --tag объединяются с помощью операции ИЛИ, поэтому план и
+        экземпляр остаются в одном флаге, а каждый дополнительный тег получает
+        свой собственный.
+      title-restore-options: Восстановить параметры
+      label-target: Целевой каталог
+      label-include: Восстановите только эти пути или узоры.
+      placeholder-include: /home/me/documents/**/*.pdf
+      label-exclude: Исключите эти пути или шаблоны.
+      placeholder-exclude: "**/node_modules"
+      label-overwrite: Перезаписать существующие файлы
+      overwrite-default: restic по умолчанию (всегда)
+      overwrite-always: всегда
+      overwrite-if-changed: если-измененный
+      overwrite-if-newer: если-новее
+      overwrite-never: никогда
+      label-case-insensitive: шаблоны, нечувствительные к регистру
+      label-dry-run: Пробный запуск
+      label-verify: Проверьте восстановленные файлы.
+      label-sparse: Запись разреженных файлов
+      label-delete: Удалите файлы, отсутствующие в снимке.
+      title-dump-options: Варианты сброса
+      label-dump-path: Файл или папка внутри снимка
+      label-archive: Архивный формат
+      archive-none: Исходный файл
+      archive-tar: берет
+      archive-zip: зип
+      label-output-file: Перенаправление на локальный файл (необязательно)
+      hint-dump: Функция dump streams считывает один файл или папку непосредственно из
+        репозитория, поэтому вам не нужно восстанавливать весь снимок, чтобы
+        получить один конфигурационный файл.
+      title-mount-options: Варианты крепления
+      label-mount-point: Маунт-Пойнт
+      label-allow-other: Разрешите другим пользователям доступ к креплению.
+      title-ls-options: Варианты списка
+      label-ls-directory: Каталог для отображения (необязательно)
+      label-long: Длинный список
+      label-recursive: Рекурсивный
+      title-find-options: Найти варианты
+      label-find-pattern: Шаблон
+      label-restrict-snapshot: Поиск только в выбранном снимке.
+      title-diff-options: Различные варианты
+      label-diff-snapshot: Сравните со снимком
+      label-metadata: Сообщайте также об изменениях метаданных.
+      title-snapshots-options: Параметры снимков
+      label-compact: Компактный вывод
+      title-check-options: Выберите варианты
+      label-read-data-subset: Прочитать подмножество данных
+      label-read-data: Прочитайте и проверьте каждый файл пакета.
+      label-check-unused: Сообщить о неиспользуемых блоках данных
+      label-with-cache: Используйте существующий кэш
+      title-stats-options: Параметры статистики
+      label-stats-mode: Режим подсчета
+      stats-restore-size: restore-size — размер восстанавливаемого файла
+      stats-files-by-contents: файлы по содержимому — уникальные файлы
+      stats-raw-data: необработанные данные — размер до дедупликации
+      stats-blobs-per-file: количество блоков на файл
+      label-stats-all: Все снимки
+      title-unlock-options: Разблокировать параметры
+      label-remove-all: Снимите все замки, включая те, которые используются.
+      title-global-options: Глобальные опции
+      label-cache-dir: Каталог кэша
+      label-limit-download: Ограничение на скачивание (КиБ/с)
+      label-retry-lock: Попробуйте повторно использовать заблокированный репозиторий для
+      label-extra-options: Параметры бэкэнда (-o)
+      placeholder-extra-option: s3.connections=4
+      label-extra-arguments: Дополнительные аргументы (добавлены как есть)
+      label-no-lock: --безблокировки
+      label-no-cache: --no-cache
+      label-insecure-tls: --insecure-tls
+      label-json: --json
+      label-quiet: --тихий
+      label-verbose: --verbose
+      title-output: Сгенерированная команда
+      label-include-environment: Включите настройку среды.
+      label-multiline: Один аргумент на строку
+      button-reset: Сбросить до значений по умолчанию
+      warning-history: "После заполнения поля с заполнителями, значения-заполнители
+        сохраняются в истории командной строки: вы можете выбрать
+        предпочтительные параметры командной строки или очистить историю после
+        этого."
+      warning-target: Функция восстановления воссоздает полный путь ко всем файлам в
+        целевом каталоге, поэтому файл /etc/hosts окажется в подпапке etc/hosts
+        целевого каталога.
+      warning-delete: Параметр --delete удаляет файлы целевого каталога, которых нет в
+        снимке. Сначала попробуйте с параметром --dry-run.
+      warning-restic-version: Для использования параметров --dry-run, --delete и
+        --overwrite требуется restic версии 0.17 или новее.
+      warning-mount: Для работы команды mount требуется FUSE, она делает снимки
+        доступными только для чтения и продолжает работать до тех пор, пока вы
+        не остановите её с помощью Ctrl-C.
+      title-walkthrough: Пошаговое руководство по восстановлению
+      hint-walkthrough: Обычная последовательность действий, когда остается только
+        репозиторий, сформированный на основе указанных выше настроек.
+      walkthrough-snapshots: Перечислите снимки состояния репозитория.
+      walkthrough-find: Найдите снимок, содержащий нужный вам файл.
+      walkthrough-ls: Вывести список файлов выбранного снимка.
+      walkthrough-restore: Восстанавливайте только необходимые файлы.
+      walkthrough-mount: Или просмотрите репозиторий и скопируйте файлы вручную.
+      title-backrest: Шпаргалка по спинке
+      table-item: Элемент
+      table-value: Путь или формат по умолчанию (образ Docker в скобках)
+      backrest-config: Конфигурационный файл, содержащий URI репозитория, его пароль и
+        переменные среды бэкэнда.
+      backrest-data: Каталог данных
+      backrest-binary: Бинарная версия Restic загружена пользователем Backrest.
+      backrest-plan-tag: Метка, идентифицирующая план
+      backrest-instance-tag: Метка, идентифицирующая экземпляр
+      hint-backrest: "Репозиторий Backrest — это обычный репозиторий restic: если
+        веб-интерфейс недоступен, извлеките URI и пароль из файла config.json и
+        запустите его с помощью уже загруженного бинарного файла restic
+        Backrest."
+  epc-qrcode-generator:
+    title: Генератор QR-кодов EPC
+    description: Сгенерируйте QR-код Европейского платежного совета (EPC) для
+      инициирования кредитного перевода SEPA.
+    externalAccess: нулевой
+    texts:
+      text-copied-to-clipboard: Скопировано в буфер обмена
+      label-v1: В1
+      label-v2: V2
+      label-beneficiary-name: "Имя получателя:"
+      placeholder-beneficiary-name: имя бенефициара
+      label-account-iban: "Счет (IBAN):"
+      placeholder-fr76: FR76...
+      label-bic: "BIC:"
+      placeholder-bank-bic-optional: Банковский BIC-код (необязательно)
+      label-amount-eur: "Сумма (евро):"
+      label-payment-reference: "Номер платежа:"
+      placeholder-optional: Необязательный
+      label-purpose: "Цель:"
+      label-version: "Версия:"
+      label-foreground-color: "Цвет переднего плана:"
+      label-background-color: "Цвет фона:"
+      label-qr-size: "Размер QR-кода:"
+      tag-generate-qr: Сгенерировать QR-код
+      tag-download-qrcode: Скачать QR-код
+      tag-copy-qrcode-text: Скопировать текст QR-кода
+  url-redirection-checker:
+    title: Проверка перенаправлений URL
+    description: Проверьте, перенаправляет ли один URL-адрес на другой.
+    externalAccess: нулевой
+    texts:
+      label-get: ПОЛУЧАТЬ
+      label-head: ГОЛОВА
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      label-method: "Метод:"
+      label-user-agent: "Агент пользователя:"
+      label-max-hops: "Максимальное количество хмеля:"
+      label-include-body-preview: Включить предварительный просмотр содержимого
+      label-preview-bytes: "Предварительный просмотр:"
+      title-warnings: Предупреждения
+      title-summary: Краткое содержание
+      label-input-url: "Введите URL-адрес:"
+      label-final-url: "Итоговая ссылка:"
+      label-hop-count: "Количество хмеля:"
+      title-redirect-chain: Цепочка перенаправлений
+      tag-inspect-redirect-chain: Проверить цепочку перенаправлений
+      tag-: "-"
+      tag-url: URL
+      tag-status: Статус
+      tag-duration: Продолжительность
+      tag-redirect: Перенаправление
+      tag-location: Расположение
+      tag-300-hop-status-code: = 300 && hop.status_code
+      tag-headers-body-preview: Предварительный просмотр заголовков и основного текста
+      tag-truncated: Усеченный
 spanCopyable:
   copy: Копировать в буфер обмена
   copied: Скопировано!
@@ -7998,9 +10208,16 @@ formatTransformer:
   input-placeholder: Вход...
   output: Выход
   download: Скачать
+  viewer: Зритель
 textareaCopyable:
   copy: Копировать в буфер обмена
   copied: Скопировано!
   download: Скачать
 locale-selector:
   select-a-language: Выберите язык
+collapsibleToolMenu:
+  text:
+    expanding: Расширение...
+    collapsing: Обрушение...
+    collapse-all-tools: Свернуть все инструменты
+    expand-all-tools: Развернуть все инструменты

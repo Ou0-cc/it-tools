@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n';
 import JSON5 from 'json5';
 import { jsonquery } from '@jsonquerylang/jsonquery';
-import TextareaCopyable from '@/components/TextareaCopyable.vue';
 import { useValidation } from '@/composable/validation';
 import { useQueryParam } from '@/composable/queryParams';
 
@@ -11,7 +10,9 @@ const { t } = useI18n();
 const indent = 2;
 
 const jsonQuery = useQueryParam({
-  tool: 'json-query', name: 'q', defaultValue: `
+  tool: 'json-query',
+  name: 'q',
+  defaultValue: `
   .friends 
     | filter(.city == "New York") 
     | sort(.age) 
@@ -34,8 +35,7 @@ const result = computed(() => {
   try {
     const obj = JSON.parseBigNum(json.value);
     return JSON.stringify(jsonquery(obj, jsonQuery.value), null, indent);
-  }
-  catch (e: any) {
+  } catch (e: any) {
     return e.toString();
   }
 });
@@ -44,7 +44,7 @@ const jsonValidation = useValidation({
   source: json,
   rules: [
     {
-      validator: v => JSON5.parse(v),
+      validator: (v) => JSON5.parse(v),
       message: t('tools.json-query.texts.message-provided-json-is-not-valid'),
     },
   ],
@@ -79,7 +79,7 @@ const jsonValidation = useValidation({
     </c-card>
 
     <c-card :title="t('tools.json-query.texts.title-result')">
-      <TextareaCopyable :value="result" language="json" />
+      <CodeBlockCopyable :value="result" language="json" />
     </c-card>
   </div>
 </template>

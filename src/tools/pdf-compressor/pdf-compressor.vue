@@ -3,6 +3,7 @@ import { useI18n } from 'vue-i18n';
 import { Base64 } from 'js-base64';
 import createGSModule from 'ghostscript-wasm-esm';
 import { useDownloadFileFromBase64 } from '@/composable/downloadBase64';
+import { appBaseUrl as base } from '@/utils/base-url';
 
 const { t } = useI18n();
 
@@ -30,12 +31,11 @@ const base64OutputPDF = ref('');
 const logs = ref<string[]>([]);
 const fileName = ref('');
 const fileExtension = ref('pdf');
-const { download } = useDownloadFileFromBase64(
-  {
-    source: base64OutputPDF,
-    filename: fileName,
-    extension: fileExtension,
-  });
+const { download } = useDownloadFileFromBase64({
+  source: base64OutputPDF,
+  filename: fileName,
+  extension: fileExtension,
+});
 const gsCommand = ref('');
 
 async function onFileUploaded(uploadedFile: File) {
@@ -45,7 +45,8 @@ async function onFileUploaded(uploadedFile: File) {
   fileName.value = `compressed_${uploadedFile.name}`;
   status.value = 'processing';
   try {
-    const outPdfBuffer = await callMainWithInOutPdf(fileBuffer,
+    const outPdfBuffer = await callMainWithInOutPdf(
+      fileBuffer,
       [
         '-sDEVICE=pdfwrite',
         `-dCompatibilityLevel=${compatibility.value}`,
@@ -56,18 +57,16 @@ async function onFileUploaded(uploadedFile: File) {
         '-sOutputFile=out.pdf',
         'in.pdf',
       ],
-      0);
+      0,
+    );
     base64OutputPDF.value = `data:application/pdf;base64,${Base64.fromUint8Array(outPdfBuffer)}`;
     status.value = 'done';
 
     download();
-  }
-  catch (e) {
+  } catch (e) {
     status.value = 'error';
   }
 }
-
-const base = import.meta.env.BASE_URL ?? '/';
 
 async function callMainWithInOutPdf(data: ArrayBuffer, args: string[], expected_exitcode: number) {
   gsCommand.value = args.join(' ');
@@ -86,7 +85,7 @@ async function callMainWithInOutPdf(data: ArrayBuffer, args: string[], expected_
   mod.FS.writeFile('in.pdf', new Uint8Array(data));
   const ret = mod.callMain(args);
   if (expected_exitcode !== ret) {
-    throw new Error('Process run failed');
+    throw new Error(t('tools.pdf-compressor.texts.process-run-failed'));
   }
   return mod.FS.readFile('out.pdf');
 }
@@ -118,18 +117,19 @@ async function callMainWithInOutPdf(data: ArrayBuffer, args: string[], expected_
 
     <div style="flex: 0 0 100%">
       <div mx-auto max-w-600px>
-        <c-file-upload :title="t('tools.pdf-compressor.texts.title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file')" accept=".pdf" @file-upload="onFileUploaded" />
+        <c-file-upload
+          :title="t('tools.pdf-compressor.texts.title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file')"
+          accept=".pdf"
+          @file-upload="onFileUploaded"
+        />
       </div>
     </div>
 
     <div mt-3 flex justify-center>
       <c-alert v-if="status === 'error'" type="error">
-        An error occured processing {{ fileName }}
+        {{ $t('tools.pdf-compressor.texts.an-error-occured-processing') }} <span>{{ fileName }}</span>
       </c-alert>
-      <n-spin
-        v-if="status === 'processing'"
-        size="small"
-      />
+      <n-spin v-if="status === 'processing'" size="small" />
     </div>
 
     <c-card :title="t('tools.pdf-compressor.texts.title-logs')">

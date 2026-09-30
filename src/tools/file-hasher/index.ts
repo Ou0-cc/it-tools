@@ -1,4 +1,3 @@
-import { EyeOff } from '@vicons/tabler';
 import { defineTool } from '../tool';
 import { translate as t } from '@/plugins/i18n.plugin';
 
@@ -6,7 +5,9 @@ export const tool = defineTool({
   name: t('tools.file-hasher.title'),
   path: '/file-hasher',
   description: t('tools.file-hasher.description'),
-  keywords: ['file', 'hash',
+  keywords: [
+    'file',
+    'hash',
     'digest',
     'crypto',
     'security',
@@ -32,9 +33,10 @@ export const tool = defineTool({
     'XXHASH128',
     'XXHASH3',
     'XXHASH32',
-    'XXHASH64'],
+    'XXHASH64',
+  ],
   component: () => import('./file-hasher.vue'),
-  icon: EyeOff,
+  icon: defineAsyncComponent(() => import('@vicons/tabler/es/EyeOff')),
   createdAt: new Date('2024-05-11'),
   category: 'Crypto',
 });

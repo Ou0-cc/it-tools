@@ -6,34 +6,37 @@ on:
     branches:
       - chore/all-my-stuffs
 
+concurrency:
+  # A new push supersedes the previous run on the same ref, so a burst of pushes
+  # costs one run instead of one per push.
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04-arm
 
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - run: |
-          echo "Before: corepack version => $(corepack --version || echo 'not installed')"
-          npm install -g corepack@latest
-          echo "After : corepack version => $(corepack --version)"
-          corepack enable
-          pnpm --version
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup pnpm and install dependencies
+        uses: pnpm/setup@fbda4c85fc2e1e08721cd8763afea8f48d60f024 # v3.0.0
         with:
-          node-version: 22
-          cache: 'pnpm'
+          cache: true
 
-      - name: Install dependencies
-        run: pnpm i --ignore-scripts
+      # The checks are independent of each other, so they share the runner
+      # instead of queueing behind one another. The build is the long pole.
+      - parallel:
+          - name: Check formatting
+            run: pnpm fmt:check
 
-      - name: Run linters
-        run: pnpm lint
+          - name: Run linters
+            run: pnpm lint
 
-      - name: Run unit test
-        run: pnpm test
+          - name: Run unit test
+            run: pnpm test:unit
 
-      - name: Type check
-        run: pnpm typecheck
+          - name: Type check
+            run: pnpm typecheck
 
-      - name: Build the app
-        run: pnpm build
+          - name: Build the app
+            run: pnpm build

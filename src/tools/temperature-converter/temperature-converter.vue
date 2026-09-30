@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import _ from 'lodash';
+import * as _ from 'es-toolkit/compat';
 import {
   convertCelsiusToKelvin,
   convertDelisleToKelvin,
@@ -22,67 +22,76 @@ type TemperatureScale = 'kelvin' | 'celsius' | 'fahrenheit' | 'rankine' | 'delis
 const units = reactive<
   Record<
     string | TemperatureScale,
-    { title: string; unit: string; ref: number; toKelvin: (v: number) => number; fromKelvin: (v: number) => number; min?: number; max?: number; maxLimit?: boolean }
+    {
+      title: string;
+      unit: string;
+      ref: number;
+      toKelvin: (v: number) => number;
+      fromKelvin: (v: number) => number;
+      min?: number;
+      max?: number;
+      maxLimit?: boolean;
+    }
   >
-      >({
-        kelvin: {
-          title: 'Kelvin',
-          unit: 'K',
-          ref: 0,
-          toKelvin: _.identity,
-          fromKelvin: _.identity,
-        },
-        celsius: {
-          title: 'Celsius',
-          unit: '°C',
-          ref: 0,
-          toKelvin: convertCelsiusToKelvin,
-          fromKelvin: convertKelvinToCelsius,
-        },
-        fahrenheit: {
-          title: 'Fahrenheit',
-          unit: '°F',
-          ref: 0,
-          toKelvin: convertFahrenheitToKelvin,
-          fromKelvin: convertKelvinToFahrenheit,
-        },
-        rankine: {
-          title: 'Rankine',
-          unit: '°R',
-          ref: 0,
-          toKelvin: convertRankineToKelvin,
-          fromKelvin: convertKelvinToRankine,
-        },
-        delisle: {
-          title: 'Delisle',
-          unit: '°De',
-          ref: 0,
-          toKelvin: convertDelisleToKelvin,
-          fromKelvin: convertKelvinToDelisle,
-          maxLimit: true,
-        },
-        newton: {
-          title: 'Newton',
-          unit: '°N',
-          ref: 0,
-          toKelvin: convertNewtonToKelvin,
-          fromKelvin: convertKelvinToNewton,
-        },
-        reaumur: {
-          title: 'Réaumur',
-          unit: '°Ré',
-          ref: 0,
-          toKelvin: convertReaumurToKelvin,
-          fromKelvin: convertKelvinToReaumur,
-        },
-        romer: {
-          title: 'Rømer',
-          unit: '°Rø',
-          ref: 0,
-          toKelvin: convertRomerToKelvin,
-          fromKelvin: convertKelvinToRomer,
-        },
-      });
+>({
+  kelvin: {
+    title: 'Kelvin',
+    unit: 'K',
+    ref: 0,
+    toKelvin: _.identity,
+    fromKelvin: _.identity,
+  },
+  celsius: {
+    title: 'Celsius',
+    unit: '°C',
+    ref: 0,
+    toKelvin: convertCelsiusToKelvin,
+    fromKelvin: convertKelvinToCelsius,
+  },
+  fahrenheit: {
+    title: 'Fahrenheit',
+    unit: '°F',
+    ref: 0,
+    toKelvin: convertFahrenheitToKelvin,
+    fromKelvin: convertKelvinToFahrenheit,
+  },
+  rankine: {
+    title: 'Rankine',
+    unit: '°R',
+    ref: 0,
+    toKelvin: convertRankineToKelvin,
+    fromKelvin: convertKelvinToRankine,
+  },
+  delisle: {
+    title: 'Delisle',
+    unit: '°De',
+    ref: 0,
+    toKelvin: convertDelisleToKelvin,
+    fromKelvin: convertKelvinToDelisle,
+    maxLimit: true,
+  },
+  newton: {
+    title: 'Newton',
+    unit: '°N',
+    ref: 0,
+    toKelvin: convertNewtonToKelvin,
+    fromKelvin: convertKelvinToNewton,
+  },
+  reaumur: {
+    title: 'Réaumur',
+    unit: '°Ré',
+    ref: 0,
+    toKelvin: convertReaumurToKelvin,
+    fromKelvin: convertKelvinToReaumur,
+  },
+  romer: {
+    title: 'Rømer',
+    unit: '°Rø',
+    ref: 0,
+    toKelvin: convertRomerToKelvin,
+    fromKelvin: convertKelvinToRomer,
+  },
+});
 
 function update(key: TemperatureScale) {
   const { ref: value, toKelvin } = units[key];
@@ -91,20 +100,18 @@ function update(key: TemperatureScale) {
 
   kelvins = kelvins < 0 ? 0 : kelvins;
 
-  _.chain(units)
-    .omit(key)
-    .forEach(({ fromKelvin }, index) => {
-      units[index].ref = fromKelvin(kelvins) ?? 0;
-    })
-    .value();
+  Object.entries(units)
+    .filter(([unitKey]) => unitKey !== key)
+    .forEach(([unitKey, { fromKelvin }]) => {
+      units[unitKey].ref = fromKelvin(kelvins) ?? 0;
+    });
 }
 
 function setupLimit() {
-  _.forEach(units, (unit) => {
+  Object.values(units).forEach((unit) => {
     if (unit.maxLimit) {
       unit.max = Math.ceil(unit.fromKelvin(0) * 100) / 100;
-    }
-    else {
+    } else {
       unit.min = Math.floor(unit.fromKelvin(0) * 100) / 100;
     }
   });

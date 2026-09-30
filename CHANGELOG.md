@@ -2,6 +2,176 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.09.27
+
+### Features
+- **Timezone Converter**: add POSIX string filterable list (7fc4b79)
+- **JSON Editor**: store data and add an auto height option (0f4c7b1)
+- **new tool**: Restic Command Generator (#573) (c96fd39)
+- **Keys Generator**: add fingerprint (bc1d9a3)
+- **new tool**: EPC QR Code Generator (c80a08b)
+- **new tool**: URL Redirection Checker (0039bd7)
+- **QRCode Generator**: add embeddable link and cropy dataurl (39c616f)
+- **docker**: serve the app from any subpath with a runtime BASE_URL (#565) (0a1f5dc)
+-  add i18n internationalization for memo and cheatsheet (#552) (04cfee6)
+-  mermaid live preview (#548) (db3a344)
+- **new tool**: Markdown Format Converter (#488) (671e8a1)
+- **k8s-memo**: add i18n support for memo content (#546) (db9ac4e)
+- **common-regex-memo**: add i18n support for memo content (#547) (bc12798)
+-  add warning about need of external self hosted for related tools (6e89d3d)
+-  useNetworkUtilsConfig and basic auth for all tools requiring external docker services (65955d9)
+- **Math OCR**: replace MathJAX by Katex (b1d3849)
+-  add Cross Origin Isolation (HTTP Headers) (c4f7ded)
+- **Sitemap**: add HOSTNAME env var to generate a sitemap (96a2079)
+-  Integer Base Converter space separator support (#481) (a2d6961)
+- **new tool**: Ping (aa515d9)
+- **IBAN Validator and Parser**: add bank infos (0620f57)
+
+### Bug fixes
+-  c-link to vs href (62ab0bf)
+- **deps**: move the two remaining deprecated direct dependencies onto supported versions (#559) (d39255a)
+- **docker**: run on read-only filesystems, IPv6-less hosts and cpu-limited containers (#556) (8b7bc0a)
+- **i18n**: tool search in current language and handle switching (e5a2017)
+- **Code Block Copyable**: enable lineWrapping (be4d225)
+- **Units Converter**: make units translatable (66e2ac5)
+- **Units Converter**: ensure label fits (fb6cc73)
+- **Regex Tester**: navigation bug due to shaddowroot (3864323)
+- **layout**: prevent horizontal page overflow with wide code content (#483) (f1358d5)
+-  allows cross origin isolation for tools with img and iframe (db32bb0)
+- **i18n**: some text (e1de52b)
+- **Dockerfile**: Add source label to Dockerfile (175c860)
+- **Cron Expression Generator**: handle input cron and standard only (fe2766e)
+
+### Performance
+- **bundle**: improve initial load + loading of tools (#575) (641fa85)
+
+### Refactoring
+- **websocket-tester**: use the native WebSocket instead of w-websocket-client (#558) (903ffb8)
+
+### Continuous integration
+-  pnpm 12, pnpm/setup v3, faster and pinned CI, single Vercel deploy workflow (#577) (da38faa)
+-  rework the test and lint toolchain — per-browser E2E, scoped jsdom, type-aware oxlint (#561) (ec740dd)
+-  use pnpm/setup for pnpm and Node setup, pin Node in package.json (#560) (fbc7d47)
+
+### Chores
+-  fix release script (51cb093)
+-  update deps (90b7793)
+-  remove fm:check ypass (a049d1c)
+-  global code formatting (bc44870)
+- **deps**: replace the five deprecated packages from the dependency dashboard (#557) (5e4972e)
+- **deps**: update dependency @playwright/test to ^1.62.0 (#511) (9bc3cb7)
+- **deps**: update type packages with their dependencies (#452) (db050b2)
+-  update deps (23dc0d4)
+
+### Other
+-  Restructure and enhance cheat sheets for improved readability (#566) (5bf94bc)
+-  add proxmox helper script (#568) (a5607e0)
+-  Enhance Docker Swarm documentation (#564) (002a211)
+-  Fix regex to clean base64 data URI (#563) (2912cf3)
+-  Optimize the Chinese translationUpdate zh.yml (#549) (69f5084)
+-  Update FUNDING.yml to include Buy Me a Coffee (c82794a)
+-  Fix French translations in fr.yml (#551) (07102a6)
+-  Optimize Chinese translation (#487) (27ab891)
+-  Translate another docker cheatsheets to zh-cn (#479) (c105c1e)
+
+### I18n
+-  extract and translate remaining (6aa2e1c)
+-  translate remaining (e725356)
+-  translate remaining (bbc819f)
+
+### Doc
+-  add a docker compose sample with all related services (2abda9b)
+
+## Version 2026.07.11
+
+### Features
+-  mobile UX overhaul, theme flash prevention and build cleanup (#474) (239c69e)
+- **Base64 String Converter**: handle text encoding other than utf8 (7460423)
+- **new tool**: Keyboard Tester (dfa836b)
+- **new tool**: Cron Expression Generator (b016d34)
+- **new tool**: DNS/RDAP queries (37cc92f)
+- **new tool**: CSS/JS Prettify & Minify (45ed4a7)
+- **new tool**: Markdown Diff (02df0f3)
+- **Token Generator**: add ambigous chars exclusion by default (8b19bf0)
+- **new tool**: Markdown Preview (b662c6b)
+- **new tool**: Markdown Table Generator (8114994)
+- **new tool**: nmap Command Builder (d041556)
+- **new tool**: k6 Generator (8ecdf99)
+- **new tool**: JSON Patch Tools (6f93cd1)
+- **Docker Compose to .env**: add updated Docker compose (00584bd)
+- **docker-compose-memo**: add Chinese translation and refactor locale-based memo loading (#421) (14bfc21)
+- **Case Converter**: add Language specific Title Case (9302b8e)
+-  add a viewer for JSON/XML and other languages with folding to many tools (3c76776)
+- **new tool**: Picomatch tester (d544bf2)
+- **new tool**: Docker Label Generator (218ae7a)
+- **Color Converter**: add oklab/oklch and lab as CSS (fe2a1be)
+- **new tools**: HTML/Markdown to data (2a4fcc6)
+- **Case Converter**: allow multiline (be6a951)
+- **new tool**: SAML Parser (652ac82)
+- **new tool**: URL Builder (040d659)
+-  hide network utils config when tools settings url is set (#411) (b6f8cb0)
+- **new tool**: Crop Image (#404) (5efbb87)
+- **new tool**: Running Pace Calculator (93d4318)
+- **Image to SVG**: intégration de esm-potrace-wasm et VTracer pour le mode couleur (bce809a)
+- **new tool**: HTTPS Tester (1a664fe)
+- **new tool**: Powershell Memo (5fd2bb6)
+- **new tool**: DNS Propagation Tester (4100059)
+- **new tool**: DNS Tester (d878731)
+- **x509 Certificate Generator**: add options for RSA bits (23ede48)
+- **new tool**: Random Line Picker (#393) (89975dc)
+- **Geo Coordinates Converter**: add DMS/Decimal/UTM and a interactive map (f0e35b0)
+- **UUID Generator**: Case and hyphen options (04c2575)
+- **new tool**: JSON to .env converter                                                                                                                                                      (#349) (b05e70d)
+
+### Bug fixes
+- **Release**: needs lodash for now (9ab81ab)
+- **Bash Cheatsheet**: fix default to en (329bf35)
+- **script**: Update set_node_mem.sh to work in MacOS (#405) (0889c13)
+- **Certificate Key Parser**: option to add missing BEGIN/END (464e005)
+- **Open graph meta generator**: display subtypes (for Music...) (521a957)
+- **Open Graph Metadata Generator**: fix missing translation keys (9bbff46)
+- **Fitness Computer**: Change arguments order to fix wrong BMI calculation (#407) (eaea6e9)
+- **Data Storage Units Converter**: fix b/iB/B conversion (102bb99)
+- **Speed Converter**: wrong m/h is in fact mi/h (miles) (dfb92f2)
+- **Amortization Calculator**: exclude historical currencies (fb8a1eb)
+-  optimize Home loading (3b7ddb4)
+-  node-forge patch for EcDSA (6cc1ad7)
+- **Geo Coordinates Converter**: fix marker display (7e9cf35)
+-  remove HTTP Headers security as this broke many tools (905de13)
+- **Pdf Signature Checker**: not supported certificate (92bf2b5)
+
+### Performance
+-  overhaul startup performance, dependencies and UI responsiveness (#419) (bad27cf)
+
+### Chores
+-  add rollup-plugin-visualizer (7e979b3)
+-  update dependencies (f7f82a5)
+
+### Other
+-  Add resolver dropdown to dns tester (#410) (93d5056)
+-  Add Chinese translation for bash memo and enhance dynamic loading in … (#408) (be4cf74)
+-  fix unit in placeholder (#414) (a510e50)
+-  jwt-parser -  show full date with timezone for date claims (#412) (9ff69dc)
+
+### I18n
+-  add Hindi (d1c51da)
+-  translate remaining (aa2674a)
+-  extract strings (b788aaf)
+-  translate remaining (efd0b25)
+-  extract more strings (4103bd7)
+
+### Upgrade toolchain
+-  Vite 8, Vue 3.5, Vitest 4, TypeScript 6, pnpm 11, Node 24; replace ESLint/Prettier with oxlint/oxfmt (#418) (63f011b)
+
+### Doc
+- **readme**: add build memory requirements (816dc55)
+
+### Documentation
+-  enhance Docker cheat sheet (#397) (c5a93af)
+
+### Fixup! fix
+-  node-forge patch for EcDSA (d5f4dcb)
+
 ## Version 2026.01.04
 
 ### Features

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import _ from 'lodash';
-
 type FoodEnergyScale = 'kcal' | 'cal' | 'kJ' | 'J';
 
 const units = reactive<
@@ -8,36 +6,36 @@ const units = reactive<
     string | FoodEnergyScale,
     { title: string; unit: string; ref: number; toBase: (v: number) => number; fromBase: (v: number) => number }
   >
-      >({
-        kcal: {
-          title: 'Calories (Nutritional, kcal)',
-          unit: 'kcal',
-          ref: 0,
-          toBase: (v: number) => v,
-          fromBase: (v: number) => v,
-        },
-        cal: {
-          title: 'Calories (cal)',
-          unit: 'cal',
-          ref: 0,
-          toBase: (v: number) => v / 1000,
-          fromBase: (v: number) => v * 1000,
-        },
-        kJ: {
-          title: 'Kilojoules (kJ)',
-          unit: 'kJ',
-          ref: 0,
-          toBase: (v: number) => v / 4.184,
-          fromBase: (v: number) => v * 4.184,
-        },
-        J: {
-          title: 'Joules (J)',
-          ref: 0,
-          unit: 'J',
-          toBase: (v: number) => v / 4184,
-          fromBase: (v: number) => v * 4184,
-        },
-      });
+>({
+  kcal: {
+    title: 'Calories (Nutritional, kcal)',
+    unit: 'kcal',
+    ref: 0,
+    toBase: (v: number) => v,
+    fromBase: (v: number) => v,
+  },
+  cal: {
+    title: 'Calories (cal)',
+    unit: 'cal',
+    ref: 0,
+    toBase: (v: number) => v / 1000,
+    fromBase: (v: number) => v * 1000,
+  },
+  kJ: {
+    title: 'Kilojoules (kJ)',
+    unit: 'kJ',
+    ref: 0,
+    toBase: (v: number) => v / 4.184,
+    fromBase: (v: number) => v * 4.184,
+  },
+  J: {
+    title: 'Joules (J)',
+    ref: 0,
+    unit: 'J',
+    toBase: (v: number) => v / 4184,
+    fromBase: (v: number) => v * 4184,
+  },
+});
 
 function update(key: FoodEnergyScale) {
   const { ref: value, toBase } = units[key];
@@ -46,12 +44,11 @@ function update(key: FoodEnergyScale) {
 
   bases = bases < 0 ? 0 : bases;
 
-  _.chain(units)
-    .omit(key)
-    .forEach(({ fromBase }, index) => {
-      units[index].ref = fromBase(bases) ?? 0;
-    })
-    .value();
+  Object.entries(units)
+    .filter(([unitKey]) => unitKey !== key)
+    .forEach(([unitKey, { fromBase }]) => {
+      units[unitKey].ref = fromBase(bases) ?? 0;
+    });
 }
 
 update('kcal');

@@ -3,6 +3,7 @@ import { RouterView, useRoute } from 'vue-router';
 import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme } from 'naive-ui';
 import { get } from '@vueuse/core';
 import { darkThemeOverrides, lightThemeOverrides } from './themes';
+import BaseLayout from './layouts/base.layout.vue';
 import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
 import { useAppTheme } from './ui/theme/themes';
@@ -43,10 +44,7 @@ watchEffect(() => {
 
 locale.value = get(getITToolsSetting('default_locale', locale.value));
 
-syncRef(
-  locale,
-  useStorage('locale', locale),
-);
+syncRef(locale, useStorage('locale', locale));
 </script>
 
 <template>
@@ -55,9 +53,13 @@ syncRef(
     <NMessageProvider placement="bottom">
       <NNotificationProvider placement="bottom-right">
         <div class="app-root">
-          <component :is="layout">
-            <RouterView />
-          </component>
+          <!-- Wraps the switch: inside it, this is to prevent moving between a plain and a tool route
+               tearing down down the sider and remounted its ~460 menu items. -->
+          <BaseLayout>
+            <component :is="layout">
+              <RouterView />
+            </component>
+          </BaseLayout>
         </div>
       </NNotificationProvider>
     </NMessageProvider>
@@ -78,6 +80,8 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  /* The document scrolls vertically (see MenuLayout.vue); never horizontally */
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -85,10 +89,10 @@ body {
   box-sizing: border-box;
 }
 
+/* No transform/contain here: they would make .app-root the containing block
+   for position:fixed descendants (the mobile menu), and the old inner-scroll
+   perf rationale no longer applies now that the document is the scroller. */
 .app-root {
-  contain: layout style paint;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -97,11 +101,22 @@ body .vld-container {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
   background-color: var(--loading-background-color);
-  z-index: 9999;
   text-align: center;
   pointer-events: none;
+}
+
+/* Fullscreen fallback: overlay mounted on <body> (first navigation) */
+body > .vld-container {
+  height: 100vh;
+  z-index: 9999;
+}
+
+/* Route-change overlay scoped to the page area (see router.ts) */
+.page-content > .vld-container {
+  height: 100%;
+  min-height: 350px;
+  z-index: 100;
 }
 
 body .vld-container.vl-active {

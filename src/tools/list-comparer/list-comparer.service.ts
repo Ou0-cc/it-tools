@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import intersect from 'fast_array_intersect';
 import diff from 'arr-diff';
 
@@ -9,21 +8,19 @@ export function compareLists({
   trimItems = true,
   separator = '',
 }: {
-  list1: string
-  list2: string
-  separator?: string
-  ignoreCase?: boolean
-  trimItems?: boolean
+  list1: string;
+  list2: string;
+  separator?: string;
+  ignoreCase?: boolean;
+  trimItems?: boolean;
 }) {
   const splitSep = separator ? `${separator}|` : '';
   const splitRegExp = new RegExp(`(?:${splitSep}\\n)`, 'g');
 
-  const prepareList = (list: string) =>
-    _.chain(list ?? '')
-      .thru(text => ignoreCase ? text.toLowerCase() : text)
-      .split(splitRegExp)
-      .map(text => trimItems ? text.trim() : text)
-      .value();
+  const prepareList = (list: string) => {
+    const text = ignoreCase ? (list ?? '').toLowerCase() : (list ?? '');
+    return text.split(splitRegExp).map((item) => (trimItems ? item.trim() : item));
+  };
 
   const list1Arr = prepareList(list1);
   const list2Arr = prepareList(list2);

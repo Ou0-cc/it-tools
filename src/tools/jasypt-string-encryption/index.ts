@@ -1,13 +1,13 @@
-import { ShieldOff } from '@vicons/tabler';
+import { translate as t } from '@/plugins/i18n.plugin';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Jasypt String Encryption',
+  name: t('tools.jasypt-string-encryption.title'),
   path: '/jasypt-string-encryption',
-  description: 'Encrypt and decrypt strings using the Jasypt (Java Simplified Encryption) standard.',
+  description: t('tools.jasypt-string-encryption.description'),
   keywords: ['jasypt', 'java', 'spring', 'boot', 'string', 'encryption'],
   component: () => import('./jasypt-string-encryption.vue'),
-  icon: ShieldOff,
+  icon: defineAsyncComponent(() => import('@vicons/tabler/es/ShieldOff')),
   createdAt: new Date('2026-03-15'),
   category: 'Crypto',
 });
